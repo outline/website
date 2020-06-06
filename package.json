@@ -6,7 +6,7 @@
     "dev": "next dev --port=4000",
     "build": "next build",
     "start": "next start",
-    "lint": "yarn eslint pages/*.tsx"
+    "lint": "yarn eslint pages/*.tsx  components/*.tsx"
   },
   "dependencies": {
     "next": "9.3.5",
