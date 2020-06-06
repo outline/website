@@ -1,21 +1,11 @@
 import Link from "next/link";
 import Layout from "components/Layout";
-import Logo from "components/Logo";
-import HeaderNavigation from "components/HeaderNavigation";
+import Button from "components/Button";
 import { spacing, colors } from "theme";
 
 export default function Home() {
   return (
     <Layout>
-      <header className="pure-g container">
-        <div className="pure-u-1 pure-u-md-1-2 header">
-          <Logo />
-        </div>
-        <div className="pure-u-1 pure-u-md-1-2 header">
-          <HeaderNavigation />
-        </div>
-      </header>
-
       <main>
         <h1 className="title">Your team’s knowledge base</h1>
 
@@ -25,7 +15,7 @@ export default function Home() {
         </p>
 
         <p>
-          <button>Get Started</button>
+          <Button href="//app.getoutline.com">Get Started for Free</Button>
         </p>
 
         <p className="screenshot-wrapper">
@@ -36,89 +26,107 @@ export default function Home() {
           />
         </p>
 
-        <div>
-          <h2>Fed up with slow tools? So were we</h2>
-          <p>
-            With Outline, you get the kind of experience you’d expect from a
-            professional tool. No spinners, no waiting, just your teams
-            information at your fingertips.
-          </p>
-        </div>
+        <section className="feature">
+          <div className="pure-grid container">
+            <h2 className="pure-u-1 pure-u-md-1-2">
+              <em>Fed up with slow and frustrating apps? So were we.</em> — With
+              Outline, you get the kind of experience you’d expect from a
+              professional tool. No spinners, no waiting, just your team’s
+              information at your fingertips.
+            </h2>
+          </div>
+        </section>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Blazing Fast &rarr;</h3>
-            <p>
-              Outline is fast, really fast. We’ve worked hard to ensure
-              millisecond response times – documents load instantly, search is
-              speedy and navigating the UI is delightful.
-            </p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Markdown &rarr;</h3>
-            <p>
-              Markdown support makes editing, import and export painless.
-              Shortcuts are also built into the editor so you can easily format
-              using **markdown syntax**.
-            </p>
-          </a>
-
-          <Link href="/integrations">
-            <a className="card">
-              <h3>Integrations &rarr;</h3>
+        <div className="pure-grid container">
+          <div className="pure-u-1 pure-u-md-1-3">
+            <div className="card">
+              <h3>Blazing Fast</h3>
               <p>
-                Simple integrations into tools you use every day like Slack,
-                Figma, Loom and many more. Can’t find the integration you need?
-                There is an open API too.
+                Outline is fast, really fast. We’ve worked hard to ensure
+                millisecond response times – documents load instantly, search is
+                speedy and navigating the UI is delightful.
+              </p>
+            </div>
+          </div>
+          <div className="pure-u-1 pure-u-md-1-3">
+            <div className="card">
+              <h3>Intuitive</h3>
+              <p>
+                The Outline editor has been designed from the ground up to be as
+                intuitive as possible. We want to make reading and writing docs
+                enjoyable.
+              </p>
+            </div>
+          </div>
+          <div className="pure-u-1 pure-u-md-1-3">
+            <div className="card">
+              <h3>Organized</h3>
+              <p>
+                Give your documentation structure – with nesting, collections,
+                and automatic backlinks to build a tree of useful information.
+              </p>
+            </div>
+          </div>
+          <div className="pure-u-1 pure-u-md-1-3">
+            <a href="https://nextjs.org/learn" className="card">
+              <h3>Markdown &rarr;</h3>
+              <p>
+                Markdown support makes editing, import and export painless.
+                Shortcuts are also built into the editor so you can easily
+                format using **markdown syntax**.
               </p>
             </a>
-          </Link>
-          <a href="https://github.com/outline" target="_blank" className="card">
-            <h3>Open Source &rarr;</h3>
-            <p>
-              Outline’s source code is public, and the editor is open source
-              licensed so the community can help improve it too. Prefer to host
-              a copy in your own infrastructure? No problem.
-            </p>
-          </a>
+          </div>
+          <div className="pure-u-1 pure-u-md-1-3">
+            <Link href="/integrations">
+              <a className="card">
+                <h3>Integrated &rarr;</h3>
+                <p>
+                  Simple integrations into tools you use every day like Slack,
+                  Figma, Loom and many more. Can’t find the integration you
+                  need? There is an open API too.
+                </p>
+              </a>
+            </Link>
+          </div>
+
+          <div className="pure-u-1 pure-u-md-1-3">
+            <a
+              href="https://github.com/outline"
+              target="_blank"
+              className="card"
+            >
+              <h3>Open Source &rarr;</h3>
+              <p>
+                Outline’s source code is public, and the editor is open source
+                so the community can help improve it too. Prefer to host a copy
+                in your own infrastructure? No problem.
+              </p>
+            </a>
+          </div>
         </div>
       </main>
 
       <style jsx>{`
-        .header {
+        .feature {
+          background: #383b3c;
+          color: #f2f2f2;
+          width: 95vw;
           padding: ${spacing.large};
+          margin-bottom: ${spacing.large};
         }
 
-        h2 {
-          font-size: 2.5rem;
+        .feature h2 {
+          font-size: 2.2em;
           letter-spacing: 0.01em;
-          font-weight: 600;
+          font-weight: 500;
           line-height: 1.2;
         }
 
-        button {
-          background-color: ${colors.primary};
-          border-color: ${colors.primary};
-          color: white;
-          border-width: 2px;
-          border-style: solid;
-          font-weight: 500;
-          cursor: pointer;
-          text-align: center;
-          border-radius: 4px;
-          padding: 10px 20px;
-          box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
-          font-size: 16px;
-          line-height: 1.8em;
-          height: 50px;
-        }
-
-        .logo {
-          display: flex;
-          align-items: center;
-          font-size: 24px;
-          font-weight: 500;
+        .feature h2 em {
+          font-weight: 600;
+          font-style: normal;
+          color: #fff;
         }
 
         .screenshot {
@@ -129,8 +137,9 @@ export default function Home() {
         }
 
         .screenshot-wrapper {
-          padding: 30px;
+          padding: ${spacing.large} ${spacing.xlarge};
           border-bottom: 1px solid #eaeaea;
+          margin-bottom: 0;
           overflow: hidden;
         }
 
@@ -141,30 +150,6 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
         }
 
         .title {
@@ -185,17 +170,8 @@ export default function Home() {
           max-width: 900px;
         }
 
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
         .card {
+          display: block;
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
@@ -203,15 +179,15 @@ export default function Home() {
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
-          border-radius: 10px;
+          border-radius: 8px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: ${colors.primary};
+          border-color: ${colors.primary};
         }
 
         .card h3 {
@@ -223,79 +199,6 @@ export default function Home() {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        button,
-        input,
-        select,
-        textarea,
-        .pure-g [class*="pure-u"] {
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-          font-family: "HK Grotesk";
-        }
-
-        @font-face {
-          font-family: "HK Grotesk";
-          src: url("/fonts/HKGrotesk-Light.eot") format("eot"),
-            url("/fonts/HKGrotesk-Light.woff2") format("woff2"),
-            url("/fonts/HKGrotesk-Light.woff") format("woff");
-          font-weight: 300;
-          font-style: normal;
-        }
-
-        @font-face {
-          font-family: "HK Grotesk";
-          src: url("/fonts/HKGrotesk-Regular.eot") format("eot"),
-            url("/fonts/HKGrotesk-Regular.woff2") format("woff2"),
-            url("/fonts/HKGrotesk-Regular.woff") format("woff");
-          font-weight: 400;
-          font-style: normal;
-        }
-
-        @font-face {
-          font-family: "HK Grotesk";
-          src: url("/fonts/HKGrotesk-SemiBold.eot") format("eot"),
-            url("/fonts/HKGrotesk-SemiBold.woff2") format("woff2"),
-            url("/fonts/HKGrotesk-SemiBold.woff") format("woff");
-          font-weight: 600;
-          font-style: normal;
-        }
-
-        @font-face {
-          font-family: "HK Grotesk";
-          src: url("/fonts/HKGrotesk-Bold.eot") format("eot"),
-            url("/fonts/HKGrotesk-Bold.woff2") format("woff2"),
-            url("/fonts/HKGrotesk-Bold.woff") format("woff");
-          font-weight: 700;
-          font-style: normal;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </Layout>

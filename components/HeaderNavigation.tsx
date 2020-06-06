@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExpandedIcon } from "outline-icons";
 
 export default function HeaderNavigation() {
   return (
@@ -6,7 +7,9 @@ export default function HeaderNavigation() {
       <ul>
         <li>
           <Link href="/features">
-            <a aria-haspopup="true">Product</a>
+            <a className="menu-with-icon" aria-haspopup="true">
+              Product <ExpandedIcon color="currentColor" />
+            </a>
           </Link>
           <ul className="dropdown">
             <li>
@@ -62,10 +65,14 @@ export default function HeaderNavigation() {
           }
 
           li a {
+            display: flex;
+            align-items: center;
             padding: 8px;
             margin: 0 16px;
-            color: #5E6573;
+            color: rgba(0, 0, 0, 0.75);
             text-decoration: none;
+            white-space: nowrap;
+            min-height: 40px;
           }
 
           li ul li a {
@@ -81,10 +88,11 @@ export default function HeaderNavigation() {
             opacity: 0;
             position: absolute;
             transition: all 0.5s ease;
-            margin-top: .5rem;
+            margin-top: 0.1rem;
             left: 0;
             display: none;
-            background: white;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(10px);
           }
 
           ul li:hover > ul,
