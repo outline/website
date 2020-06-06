@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,36 +16,58 @@ export default function Home() {
         <nav role="navigation">
           <ul>
             <li>
-              <Link href="/product"><a aria-haspopup="true">Product</a></Link>
+              <Link href="/features">
+                <a aria-haspopup="true">Product</a>
+              </Link>
               <ul className="dropdown">
-                <li><Link href="/features"><a>Features</a></Link></li>
-                <li><Link href="/integrations"><a>Integrations</a></Link></li>
-                <li><Link href="/developers"><a>API</a></Link></li>
+                <li>
+                  <Link href="/features">
+                    <a>Features</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/integrations">
+                    <a>Integrations</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/developers">
+                    <a>API</a>
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
-              <Link href="/pricing"><a>Pricing</a></Link>
+              <Link href="/pricing">
+                <a>Pricing</a>
+              </Link>
             </li>
             <li>
-              <Link href="/company"><a>Company</a></Link>
+              <Link href="/company">
+                <a>Company</a>
+              </Link>
             </li>
             <li>
               <div className="authenticate">
-                <Link href="//app.getoutline.com"><a>Log in</a></Link> | <Link href="//app.getoutline.com"><a>Sign up</a></Link>
-              </div> 
+                <Link href="//app.getoutline.com">
+                  <a>Log in</a>
+                </Link>{" "}
+                |{" "}
+                <Link href="//app.getoutline.com">
+                  <a>Sign up</a>
+                </Link>
+              </div>
             </li>
           </ul>
         </nav>
       </header>
-      
 
       <main>
-        <h1 className="title">
-          Your team’s knowledge base
-        </h1>
+        <h1 className="title">Your team’s knowledge base</h1>
 
         <p className="description">
-          A team wiki and knowledgebase for your internal documentation, meeting notes, playbooks, onboarding, work logs, brainstorming, &amp; more…
+          A team wiki and knowledgebase for your internal documentation, meeting
+          notes, playbooks, onboarding, work logs, brainstorming, &amp; more…
         </p>
 
         <p>
@@ -53,32 +75,41 @@ export default function Home() {
         </p>
 
         <p>
-          <img src="/screenshot.png" alt="Outline screenshot" className="screenshot" />
+          <img
+            src="/screenshot.png"
+            alt="Outline screenshot"
+            className="screenshot"
+          />
         </p>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
             <h3>Blazing Fast &rarr;</h3>
-            <p>Outline is fast, really fast. We’ve worked hard to ensure millisecond response times – documents load instantly, search is speedy and navigating the UI is delightful.
-
-</p>
+            <p>
+              Outline is fast, really fast. We’ve worked hard to ensure
+              millisecond response times – documents load instantly, search is
+              speedy and navigating the UI is delightful.
+            </p>
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
             <h3>Markdown &rarr;</h3>
-            <p>Markdown support makes editing, import and export painless. Shortcuts are also built into the editor so you can easily format using **markdown syntax**.
-
-</p>
+            <p>
+              Markdown support makes editing, import and export painless.
+              Shortcuts are also built into the editor so you can easily format
+              using **markdown syntax**.
+            </p>
           </a>
 
-          <Link
-            href="/integrations"
-          >
-            <a 
-            className="card">
-
-            <h3>Integrations &rarr;</h3>
-            <p>Documents are stored in plain Markdown making editing, import and export painless. Shortcuts are also built right into the editor so you can easily format using **markdown syntax** if you like.</p>
+          <Link href="/integrations">
+            <a className="card">
+              <h3>Integrations &rarr;</h3>
+              <p>
+                Documents are stored in plain Markdown making editing, import
+                and export painless. Shortcuts are also built right into the
+                editor so you can easily format using **markdown syntax** if you
+                like.
+              </p>
             </a>
           </Link>
           <a
@@ -88,15 +119,16 @@ export default function Home() {
           >
             <h3>Open Source &rarr;</h3>
             <p>
-              Outline’s source code is public, and the editor is open source licensed so the community can help improve it too. You get new features, interface improvements, bug fixes, and a transparent roadmap for free.
+              Outline’s source code is public, and the editor is open source
+              licensed so the community can help improve it too. You get new
+              features, interface improvements, bug fixes, and a transparent
+              roadmap for free.
             </p>
           </a>
         </div>
       </main>
 
-      <footer>
-        &copy; General Outline, Inc.
-      </footer>
+      <footer>&copy; General Outline, Inc.</footer>
 
       <style jsx>{`
         header {
@@ -117,11 +149,11 @@ export default function Home() {
           transition-duration: 0.5s;
           position: relative;
         }
-        
+
         li:hover {
           cursor: pointer;
         }
-        
+
         ul li ul {
           visibility: hidden;
           opacity: 0;
@@ -131,7 +163,7 @@ export default function Home() {
           left: 0;
           display: none;
         }
-        
+
         ul li:hover > ul,
         ul li:focus-within > ul,
         ul li ul:hover,
@@ -140,7 +172,7 @@ export default function Home() {
           opacity: 1;
           display: block;
         }
-        
+
         ul li ul li {
           clear: both;
           width: 100%;
@@ -303,5 +335,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
