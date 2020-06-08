@@ -5,7 +5,7 @@ export default function Logo() {
     <>
       <Link href="/">
         <a className="logo">
-          <img src="/logo.svg" alt="Outline Logo" /> outline
+          <img src="/images/logo.svg" alt="Outline Logo" /> outline
         </a>
       </Link>
       <style jsx>{`

@@ -1,17 +1,16 @@
 import Link from "next/link";
 import { ExpandedIcon } from "outline-icons";
+import { spacing } from "theme";
 
 export default function HeaderNavigation() {
   return (
     <nav role="navigation">
       <ul>
         <li>
-          <Link href="/features">
-            <a className="menu-with-icon" aria-haspopup="true">
-              Product <ExpandedIcon color="currentColor" />
-            </a>
-          </Link>
-          <ul className="dropdown">
+          <a className="menu-with-icon" aria-haspopup="true">
+            Product <ExpandedIcon color="currentColor" />
+          </a>
+          <ul>
             <li>
               <Link href="/features">
                 <a>Features</a>
@@ -24,7 +23,12 @@ export default function HeaderNavigation() {
             </li>
             <li>
               <Link href="/developers">
-                <a>API</a>
+                <a>Developers</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/changelog">
+                <a>Changelog</a>
               </Link>
             </li>
           </ul>
@@ -35,9 +39,32 @@ export default function HeaderNavigation() {
           </Link>
         </li>
         <li>
-          <Link href="/company">
-            <a>Company</a>
-          </Link>
+          <a className="menu-with-icon" aria-haspopup="true">
+            Community <ExpandedIcon color="currentColor" />
+          </a>
+          <ul>
+            <li>
+              <a href="mailto:hello@getoutline.com">Contact Us</a>
+            </li>
+            <li>
+              <a href="https://github.com/outline" target="_blank">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/outline/outline/discussions"
+                target="_blank"
+              >
+                Discuss
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/outlinewiki" target="_blank">
+                Twitter
+              </a>
+            </li>
+          </ul>
         </li>
         <li>
           <Link href="//app.getoutline.com">
@@ -68,7 +95,7 @@ export default function HeaderNavigation() {
             display: flex;
             align-items: center;
             padding: 8px;
-            margin: 0 16px;
+            margin: 0 0 0 ${spacing.medium};
             color: rgba(0, 0, 0, 0.75);
             text-decoration: none;
             white-space: nowrap;
@@ -77,6 +104,7 @@ export default function HeaderNavigation() {
 
           li ul li a {
             display: block;
+            margin: 0 ${spacing.medium};
           }
 
           li:hover {
@@ -88,11 +116,13 @@ export default function HeaderNavigation() {
             opacity: 0;
             position: absolute;
             transition: all 0.5s ease;
-            margin-top: 0.1rem;
+            margin-top: 0;
             left: 0;
             display: none;
             background: rgba(255, 255, 255, 0.75);
             backdrop-filter: blur(10px);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
           }
 
           ul li:hover > ul,

@@ -20,7 +20,7 @@ export default function Home() {
 
         <p className="screenshot-wrapper">
           <img
-            src="/screenshot.png"
+            src="/images/screenshot.png"
             alt="Outline screenshot"
             className="screenshot"
           />
@@ -29,80 +29,82 @@ export default function Home() {
         <section className="feature">
           <div className="pure-grid container">
             <h2 className="pure-u-1 pure-u-md-1-2">
-              <em>Fed up with slow and frustrating apps? So were we.</em> — With
-              Outline, you get the kind of experience you’d expect from a
-              professional tool. No spinners, no waiting, just your team’s
-              information at your fingertips.
+              <em>Outline is built with speed in mind</em> — no spinners, no
+              waiting.
             </h2>
           </div>
         </section>
 
-        <div className="pure-grid container">
-          <div className="pure-u-1 pure-u-md-1-3">
-            <div className="card">
-              <h3>Blazing Fast</h3>
-              <p>
-                Outline is fast, really fast. We’ve worked hard to ensure
-                millisecond response times – documents load instantly, search is
-                speedy and navigating the UI is delightful.
-              </p>
-            </div>
-          </div>
-          <div className="pure-u-1 pure-u-md-1-3">
-            <div className="card">
-              <h3>Intuitive</h3>
-              <p>
-                The Outline editor has been designed from the ground up to be as
-                intuitive as possible. We want to make reading and writing docs
-                enjoyable.
-              </p>
-            </div>
-          </div>
-          <div className="pure-u-1 pure-u-md-1-3">
-            <div className="card">
-              <h3>Organized</h3>
-              <p>
-                Give your documentation structure – with nesting, collections,
-                and automatic backlinks to build a tree of useful information.
-              </p>
-            </div>
-          </div>
-          <div className="pure-u-1 pure-u-md-1-3">
-            <a href="https://nextjs.org/learn" className="card">
-              <h3>Markdown &rarr;</h3>
-              <p>
-                Markdown support makes editing, import and export painless.
-                Shortcuts are also built into the editor so you can easily
-                format using **markdown syntax**.
-              </p>
-            </a>
-          </div>
-          <div className="pure-u-1 pure-u-md-1-3">
-            <Link href="/integrations">
-              <a className="card">
-                <h3>Integrated &rarr;</h3>
+        <div className="container">
+          <div className="pure-grid cards">
+            <div className="pure-u-1 pure-u-md-1-3">
+              <div className="card">
+                <h3>Blazing Fast</h3>
                 <p>
-                  Simple integrations into tools you use every day like Slack,
-                  Figma, Loom and many more. Can’t find the integration you
-                  need? There is an open API too.
+                  Outline is fast, really fast. We’ve worked hard to ensure
+                  millisecond response times – documents load instantly, search
+                  is speedy and navigating the UI is delightful.
+                </p>
+              </div>
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <div className="card">
+                <h3>Intuitive</h3>
+                <p>
+                  The Outline editor has been designed from the ground up to be
+                  as intuitive as possible. We want to make reading and writing
+                  docs enjoyable.
+                </p>
+              </div>
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <div className="card">
+                <h3>Organized</h3>
+                <p>
+                  Give your documentation structure – with nesting, collections,
+                  and automatic backlinks to build a tree of useful information.
+                </p>
+              </div>
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <Link href="/editor">
+                <a className="card">
+                  <h3>Markdown &rarr;</h3>
+                  <p>
+                    Markdown support makes editing, import and export painless.
+                    Shortcuts are also built into the editor so you can easily
+                    format using **markdown syntax**.
+                  </p>
+                </a>
+              </Link>
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <Link href="/integrations">
+                <a className="card">
+                  <h3>Integrated &rarr;</h3>
+                  <p>
+                    Simple integrations into tools you use every day like Slack,
+                    Figma, Loom and many more. Can’t find the integration you
+                    need? There is an open API too.
+                  </p>
+                </a>
+              </Link>
+            </div>
+
+            <div className="pure-u-1 pure-u-md-1-3">
+              <a
+                href="https://github.com/outline"
+                target="_blank"
+                className="card"
+              >
+                <h3>Open Source &rarr;</h3>
+                <p>
+                  Outline’s source code is public, and the editor is open source
+                  so the community can help improve it too. Prefer to host a
+                  copy in your own infrastructure? No problem.
                 </p>
               </a>
-            </Link>
-          </div>
-
-          <div className="pure-u-1 pure-u-md-1-3">
-            <a
-              href="https://github.com/outline"
-              target="_blank"
-              className="card"
-            >
-              <h3>Open Source &rarr;</h3>
-              <p>
-                Outline’s source code is public, and the editor is open source
-                so the community can help improve it too. Prefer to host a copy
-                in your own infrastructure? No problem.
-              </p>
-            </a>
+            </div>
           </div>
         </div>
       </main>
@@ -168,6 +170,10 @@ export default function Home() {
           line-height: 1.5;
           font-size: 1.5rem;
           max-width: 900px;
+        }
+
+        .cards {
+          margin: 0 -1rem;
         }
 
         .card {

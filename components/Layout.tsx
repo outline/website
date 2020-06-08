@@ -57,19 +57,19 @@ export default function Layout({
         <meta name="og:site_name" content="Outline" />
         <meta name="og:type" content="website" />
         <meta name="og:title" content={title} />
-        <meta name="og:image" content="screenshot.png" />
+        <meta name="og:image" content="/images/screenshot.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
         <meta name="twitter:title" content={title} />
-        <meta name="twitter:image" content="screenshot.png" />
+        <meta name="twitter:image" content="/images/screenshot.png" />
       </Head>
-      <header>
+      <header className={header && "with-header"}>
         <div className="container">
           <div className="pure-g">
-            <div className="pure-u-1 pure-u-md-1-2 header">
+            <div className="pure-u-1 pure-u-md-1-2 header-left">
               <Logo />
             </div>
-            <div className="pure-u-1 pure-u-md-1-2 header">
+            <div className="pure-u-1 pure-u-md-1-2 header-right">
               <HeaderNavigation />
             </div>
           </div>
@@ -79,22 +79,35 @@ export default function Layout({
       </header>
       <div className="page">{children}</div>
       <Footer />
-      <style global jsx>
+      <style jsx>
         {`
           header {
             color: ${color};
             background-color: ${background};
           }
 
-          .header {
+          .header-left,
+          .header-right {
             display: flex;
             padding: ${spacing.large} 0;
+          }
+
+          .header-right {
+            justify-content: flex-end;
+          }
+
+          .with-header {
+            padding-bottom: 1em;
+            margin-bottom: 2em;
           }
 
           .page {
             min-height: calc(100vh - 300px);
           }
-
+        `}
+      </style>
+      <style global jsx>
+        {`
           .container {
             max-width: 1140px;
             width: 95vw;
