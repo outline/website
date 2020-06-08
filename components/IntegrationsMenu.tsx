@@ -1,3 +1,4 @@
+import * as React from "react";
 import Link from "next/link";
 import { groupBy } from "lodash";
 import { spacing } from "theme";
@@ -9,21 +10,21 @@ export default function IntegrationsMenu() {
       {Object.entries(groupBy(content, "category")).map(
         ([category, items]: [string, Record<string, any>]) => {
           return (
-            <>
+            <React.Fragment key={category}>
               <h3>{category}</h3>
               <ul>
                 {items.map((item) => (
-                  <li className="integration">
+                  <li className="integration" key={item.slug}>
                     <Link href={`/integrations/${item.slug}`}>
                       <a>
-                        <img src={`/images/${item.slug}.png`} />
+                        <img src={`/images/integrations/${item.slug}.png`} />
                         {item.name}
                       </a>
                     </Link>
                   </li>
                 ))}
               </ul>
-            </>
+            </React.Fragment>
           );
         }
       )}

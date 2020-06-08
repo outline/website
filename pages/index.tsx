@@ -1,6 +1,7 @@
 import Link from "next/link";
-import Layout from "components/Layout";
 import Button from "components/Button";
+import Card from "components/Card";
+import Layout from "components/Layout";
 import { spacing, colors } from "theme";
 
 export default function Home() {
@@ -38,72 +39,55 @@ export default function Home() {
         <div className="container">
           <div className="pure-grid cards">
             <div className="pure-u-1 pure-u-md-1-3">
-              <div className="card">
-                <h3>Blazing Fast</h3>
-                <p>
-                  Outline is fast, really fast. We’ve worked hard to ensure
-                  millisecond response times – documents load instantly, search
-                  is speedy and navigating the UI is delightful.
-                </p>
-              </div>
+              <Card
+                title="Blazing Fast"
+                description="Outline is fast, really fast. We’ve worked hard to ensure
+                millisecond response times – documents load instantly, search
+                is speedy and navigating the UI is delightful."
+              />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
-              <div className="card">
-                <h3>Intuitive</h3>
-                <p>
-                  The Outline editor has been designed from the ground up to be
+              <Card
+                title="Intuitive"
+                description="The Outline editor has been designed from the ground up to be
                   as intuitive as possible. We want to make reading and writing
-                  docs enjoyable.
-                </p>
-              </div>
+                  docs enjoyable."
+              />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
-              <div className="card">
-                <h3>Organized</h3>
-                <p>
-                  Give your documentation structure – with nesting, collections,
-                  and automatic backlinks to build a tree of useful information.
-                </p>
-              </div>
+              <Card
+                title="Organized"
+                description="Give your documentation structure – with nesting, collections,
+                  and automatic backlinks to build a tree of useful information."
+              />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
-              <Link href="/editor">
-                <a className="card">
-                  <h3>Markdown &rarr;</h3>
-                  <p>
-                    Markdown support makes editing, import and export painless.
+              <Card
+                href="/editor"
+                title="Markdown &rarr;"
+                description="Markdown support makes editing, import and export painless.
                     Shortcuts are also built into the editor so you can easily
-                    format using **markdown syntax**.
-                  </p>
-                </a>
-              </Link>
+                    format using **markdown syntax**."
+              />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
-              <Link href="/integrations">
-                <a className="card">
-                  <h3>Integrated &rarr;</h3>
-                  <p>
-                    Simple integrations into tools you use every day like Slack,
+              <Card
+                href="/integrations"
+                title="Integrated &rarr;"
+                description="Simple integrations into tools you use every day like Slack,
                     Figma, Loom and many more. Can’t find the integration you
-                    need? There is an open API too.
-                  </p>
-                </a>
-              </Link>
+                    need? There is an open API too."
+              />
             </div>
 
             <div className="pure-u-1 pure-u-md-1-3">
-              <a
+              <Card
                 href="https://github.com/outline"
-                target="_blank"
-                className="card"
-              >
-                <h3>Open Source &rarr;</h3>
-                <p>
-                  Outline’s source code is public, and the editor is open source
+                title="Open Source &rarr;"
+                description="Outline’s source code is public, and the editor is open source
                   so the community can help improve it too. Prefer to host a
-                  copy in your own infrastructure? No problem.
-                </p>
-              </a>
+                  copy in your own infrastructure? No problem."
+              />
             </div>
           </div>
         </div>
@@ -112,6 +96,11 @@ export default function Home() {
       <style jsx>{`
         .feature {
           background: #383b3c;
+          background-image: url(/images/squiggles.png);
+          background-repeat: no-repeat;
+          background-position: center right;
+          background-size: 50%;
+
           color: #f2f2f2;
           width: 95vw;
           padding: ${spacing.large};
@@ -174,37 +163,6 @@ export default function Home() {
 
         .cards {
           margin: 0 -1rem;
-        }
-
-        .card {
-          display: block;
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 8px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: ${colors.primary};
-          border-color: ${colors.primary};
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
         }
       `}</style>
     </Layout>

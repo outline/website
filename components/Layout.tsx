@@ -83,7 +83,7 @@ export default function Layout({
         {`
           header {
             color: ${color};
-            background-color: ${background};
+            background: ${background};
           }
 
           .header-left,
@@ -134,6 +134,10 @@ export default function Layout({
           body {
             padding: 0;
             margin: 0;
+          }
+
+          h1 {
+            font-size: 3em;
           }
 
           h1,
