@@ -30,7 +30,6 @@ export default function Integration({ name, description }) {
   )
 }
 
-
 export async function getStaticPaths() {
   const paths = content.map(integration => `/integrations/${integration.slug}`)
 

@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <div className="container">
       <Head>
-        <title>Features – Outline</title>
+        <title>Features</title>
       </Head>
     </div>
   );

@@ -3,6 +3,8 @@ import Link from "next/link";
 import { groupBy } from "lodash";
 import { spacing } from "theme";
 import content from "data/integrations.json";
+import SidebarMenu from "components/SidebarMenu";
+import SidebarMenuItem from "components/SidebarMenuItem";
 
 export default function IntegrationsMenu() {
   return (
@@ -10,44 +12,27 @@ export default function IntegrationsMenu() {
       {Object.entries(groupBy(content, "category")).map(
         ([category, items]: [string, Record<string, any>]) => {
           return (
-            <React.Fragment key={category}>
-              <h3>{category}</h3>
-              <ul>
-                {items.map((item) => (
-                  <li className="integration" key={item.slug}>
-                    <Link href={`/integrations/${item.slug}`}>
-                      <a>
-                        <img src={`/images/integrations/${item.slug}.png`} />
-                        {item.name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </React.Fragment>
+            <SidebarMenu title={category} key={category}>
+              {items.map((item) => (
+                <SidebarMenuItem
+                  key={item.slug}
+                  href={`/integrations/${item.slug}`}
+                >
+                  <img
+                    className="integration-icon"
+                    src={`/images/integrations/${item.slug}.png`}
+                  />
+                  {item.name}
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
           );
         }
       )}
 
       <style jsx>
         {`
-          ul {
-            margin: 0 0 2.5em;
-            padding: 0;
-          }
-
-          .integration {
-            list-style: none;
-            padding: 0;
-            margin: ${spacing.medium} 0;
-          }
-
-          .integration a {
-            display: flex;
-            align-items: center;
-          }
-
-          .integration img {
+          .integration-icon {
             width: 24px;
             height: 24px;
             margin-right: ${spacing.small};

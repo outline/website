@@ -11,7 +11,7 @@ export default function Home() {
         <h1 className="title">Your team’s knowledge base</h1>
 
         <p className="description">
-          A team wiki and knowledgebase for your internal documentation, meeting
+          A modern team knowledgebase for your internal documentation, meeting
           notes, playbooks, onboarding, work logs, brainstorming, &amp; more…
         </p>
 
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </p>
 
-        <section className="feature">
+        <section className="feature dark">
           <div className="pure-grid container">
             <h2 className="pure-u-1 pure-u-md-1-2">
               <em>Outline is built with speed in mind</em> — no spinners, no
@@ -36,7 +36,26 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="container">
+        <section className="feature">
+          <div className="pure-grid container">
+            <div className="pure-u-1 pure-u-md-3-5"></div>
+            <h2 className="pure-u-1 pure-u-md-2-5">
+              <em>Beautiful documents, without even trying</em> — an intuitive
+              editor with everything you expect.
+            </h2>
+          </div>
+        </section>
+
+        <section className="feature right">
+          <div className="pure-grid container">
+            <h2 className="pure-u-1 pure-u-md-2-5">
+              <em>Open Core</em> — an open source editor and a self hosted option, plus all our source code is public.
+            </h2>
+            <div className="pure-u-1 pure-u-md-3-5"></div>
+          </div>
+        </section>
+
+        <section className="container">
           <div className="pure-grid cards">
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
@@ -90,21 +109,37 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </section>
+
+        <section className="feature dark right">
+          <div className="pure-grid container">
+            <div className="pure-u-1 pure-u-md-3-5"></div>
+            <h2 className="pure-u-1 pure-u-md-2-5">
+              <em>Beautiful documents, without even trying.</em> — an intuitive
+              editor with everything you expect.
+            </h2>
+          </div>
+        </section>
       </main>
 
       <style jsx>{`
         .feature {
+          width: 95vw;
+          padding: ${spacing.large};
+          margin-bottom: ${spacing.large};
+        }
+
+        .feature.dark {
           background: #383b3c;
           background-image: url(/images/squiggles.png);
           background-repeat: no-repeat;
           background-position: center right;
-          background-size: 50%;
-
+          background-size: 600px;
           color: #f2f2f2;
-          width: 95vw;
-          padding: ${spacing.large};
-          margin-bottom: ${spacing.large};
+        }
+
+        .feature.right {
+          background-position: center left;
         }
 
         .feature h2 {
@@ -117,6 +152,9 @@ export default function Home() {
         .feature h2 em {
           font-weight: 600;
           font-style: normal;
+        }
+
+        .feature.dark h2 em {
           color: #fff;
         }
 
