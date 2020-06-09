@@ -2,7 +2,7 @@ import Link from "next/link";
 import { darken } from "polished";
 import { colors } from "theme";
 
-export default function Button({ children, href, ...rest }) {
+export default function Button({ children, light = false, href, ...rest }) {
   return (
     <>
       <Link href={href} {...rest}>
@@ -11,8 +11,8 @@ export default function Button({ children, href, ...rest }) {
       <style jsx>{`
         .button {
           display: inline-block;
-          background-color: ${colors.primary};
-          border-color: ${colors.primary};
+          background-color: ${light ? colors.white : colors.primary};
+          border-color: ${light ? colors.white : colors.primary};
           color: white;
           border-width: 2px;
           border-style: solid;
