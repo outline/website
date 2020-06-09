@@ -49,7 +49,8 @@ export default function Home() {
         <section className="feature right">
           <div className="pure-grid container">
             <h2 className="pure-u-1 pure-u-md-2-5">
-              <em>Open Core</em> — an open source editor and a self hosted option, plus all our source code is public.
+              <em>Open Core</em> — an open source editor and a self hosted
+              option, plus all our source code is public.
             </h2>
             <div className="pure-u-1 pure-u-md-3-5"></div>
           </div>
@@ -160,6 +161,7 @@ export default function Home() {
 
         .screenshot {
           width: 920px;
+          height: 573px;
           box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.4);
           border-radius: 8px;
           margin-bottom: -40px;
@@ -200,7 +202,7 @@ export default function Home() {
         }
 
         .cards {
-          margin: 0 -1rem;
+          margin: 4em -1rem;
         }
       `}</style>
     </Layout>

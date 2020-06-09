@@ -22,8 +22,8 @@ export default function Card({ title, description, href }: Props) {
           <a className="card">{content}</a>
         </Link>
       ) : (
-          <div className="card">{content}</div>
-        )}
+        <div className="card">{content}</div>
+      )}
       <style jsx>{`
         .card {
           display: block;

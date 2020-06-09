@@ -8,11 +8,11 @@ import Layout from "components/Layout";
 import Markdown from "components/Markdown";
 
 export default function Changelog({ releases }) {
-  const months = groupBy(releases, release =>
-    format(new Date(release.created_at), 'MMMM, yyyy')
+  const months = groupBy(releases, (release) =>
+    format(new Date(release.created_at), "MMMM, yyyy")
   );
   const years = groupBy(months, (releases) =>
-    format(new Date(releases[0].created_at), 'yyyy')
+    format(new Date(releases[0].created_at), "yyyy")
   );
 
   const sortedYears = Object.keys(years).reverse();
@@ -42,25 +42,30 @@ export default function Changelog({ releases }) {
           {map(sortedYears, (year) => (
             <SidebarMenu title={year} key={year}>
               {years[year].map((releases) => {
-                const release = releases[0]
+                const release = releases[0];
                 return (
-                  <SidebarMenuItem key={release.id} href={`#${format(new Date(release.created_at), 'yyyy-MMMM')}`}>
-                    {format(new Date(release.created_at), 'MMMM')}
+                  <SidebarMenuItem
+                    key={release.id}
+                    href={`#${format(
+                      new Date(release.created_at),
+                      "yyyy-MMMM"
+                    )}`}
+                  >
+                    {format(new Date(release.created_at), "MMMM")}
                   </SidebarMenuItem>
-                )
+                );
               })}
             </SidebarMenu>
           ))}
-
         </div>
         <div className="pure-u-1 pure-u-md-4-5">
           {releases.map((release) => (
             <article key={release.id}>
-              <a id={format(new Date(release.created_at), 'yyyy-MMMM')} />
+              <a id={format(new Date(release.created_at), "yyyy-MMMM")} />
               <a id={release.name} />
               <h2>{release.name}</h2>
               <time dateTime={release.created_at}>
-                {format(new Date(release.created_at), 'MMMM do, yyyy')}
+                {format(new Date(release.created_at), "MMMM do, yyyy")}
               </time>
               <Markdown source={release.body} />
             </article>

@@ -6,7 +6,6 @@ export default function Markdown(props) {
       <ReactMarkdown {...props} />
       <style jsx>
         {`
-          
           .md :global(blockquote) {
             margin-left: 0;
             margin-right: 0;

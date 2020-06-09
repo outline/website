@@ -4,8 +4,6 @@ import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
 
 export default function Integrations() {
-  let lastCategory: string;
-
   return (
     <Layout
       title="Integrations"
