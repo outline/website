@@ -1,10 +1,12 @@
+import fs from 'fs'
+import path from 'path'
 import { find } from "lodash";
 import content from "data/integrations.json";
-import Hero from "components/Hero";
+import Markdown from "components/Markdown";
 import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
 
-export default function Integration({ name, description }) {
+export default function Integration({ name, body, description }) {
   return (
     <Layout
       title="Integrations"
@@ -21,9 +23,7 @@ export default function Integration({ name, description }) {
           <IntegrationsMenu />
         </div>
         <div className="pure-u-1 pure-u-md-4-5">
-          <Hero>
-            Some description here.
-          </Hero>
+          <Markdown source={body} />
         </div>
       </div>
     </Layout>
@@ -38,7 +38,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  const filePath = path.join(process.cwd(), 'data', `${context.params.slug}.md`)
+  const body = fs.readFileSync(filePath, 'utf8');
+
   return {
-    props: find(content, { slug: context.params.slug }),
+    props: {
+      ...find(content, { slug: context.params.slug }),
+      body
+    },
   }
 }

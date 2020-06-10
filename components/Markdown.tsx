@@ -6,6 +6,11 @@ export default function Markdown(props) {
       <ReactMarkdown {...props} />
       <style jsx>
         {`
+          .md {
+            font-size: 1.2em;
+            line-height: 1.4;
+          }
+
           .md :global(blockquote) {
             margin-left: 0;
             margin-right: 0;
@@ -26,7 +31,7 @@ export default function Markdown(props) {
             box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1),
               -1px -1px 0 rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            margin: 1em 0;
+            margin: 2em auto;
           }
 
           .md :global(code) {
