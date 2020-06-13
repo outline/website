@@ -22,8 +22,8 @@ export default function Card({ title, description, href }: Props) {
           <a className="card">{content}</a>
         </Link>
       ) : (
-        <div className="card">{content}</div>
-      )}
+          <div className="card">{content}</div>
+        )}
       <style jsx>{`
         .card {
           display: block;
@@ -36,6 +36,7 @@ export default function Card({ title, description, href }: Props) {
           border: 1px solid #eaeaea;
           border-radius: 8px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          min-height: 250px;
         }
 
         a.card:hover,

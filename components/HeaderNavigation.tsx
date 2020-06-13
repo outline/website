@@ -104,11 +104,15 @@ export default function HeaderNavigation() {
 
           li ul li a {
             display: block;
-            margin: 0 ${spacing.medium};
+            margin: 0;
           }
 
           li:hover {
             cursor: pointer;
+          }
+
+          li:hover > a {
+            background: rgba(255, 255, 255, 0.75);
           }
 
           ul li ul {
@@ -117,10 +121,19 @@ export default function HeaderNavigation() {
             position: absolute;
             transition: all 0.5s ease;
             margin-top: 0;
+            margin-left: ${spacing.medium};
             left: 0;
             display: none;
             background: rgba(255, 255, 255, 0.75);
             backdrop-filter: blur(10px);
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            min-width: 124px;
+            z-index: 1;
+
+          }
+
+          ul li ul a:last-child {
             border-bottom-left-radius: 4px;
             border-bottom-right-radius: 4px;
           }
