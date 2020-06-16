@@ -79,9 +79,17 @@ export default function Resources({ spec }) {
             opacity: 0.95;
           }
 
-          :global(.api-info h1),
-          :global(.operation-type) {
+          :global(.redoc-wrap .api-info),
+          :global(.redoc-wrap .operation-type) {
             display: none;
+          }
+
+          :global(.redoc-wrap h1),
+          :global(.redoc-wrap h2),
+          :global(.redoc-wrap h3),
+          :global(.redoc-wrap h4) {
+              font-family: "HK Grotesk";
+            font-weight: 600;
           }
         `}
       </style>
