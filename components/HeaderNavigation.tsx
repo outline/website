@@ -130,7 +130,6 @@ export default function HeaderNavigation() {
             border-bottom-right-radius: 4px;
             min-width: 124px;
             z-index: 1;
-
           }
 
           ul li ul a:last-child {

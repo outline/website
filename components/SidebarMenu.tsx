@@ -1,9 +1,15 @@
+import * as React from "react";
 import { spacing } from "theme";
 
-export default function SidebarMenu({ title, children }) {
+type Props = {
+  title?: string;
+  children: React.ReactNode;
+};
+
+export default function SidebarMenu({ title, children }: Props) {
   return (
     <>
-      <h3>{title}</h3>
+      {title && <h3>{title}</h3>}
       <ul>{children}</ul>
       <style jsx>
         {`

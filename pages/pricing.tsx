@@ -120,7 +120,9 @@ export default function Pricing() {
         <h2>Pricing questions</h2>
 
         <dl className="pure-grid">
-          <dt className="pure-u-1 pure-u-md-1-2"><h3>How does the free month work?</h3></dt>
+          <dt className="pure-u-1 pure-u-md-1-2">
+            <h3>How does the free month work?</h3>
+          </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               When you start your trial, your first 30 days are free. Once this
@@ -130,30 +132,40 @@ export default function Pricing() {
             </p>
           </dd>
 
-          <dt className="pure-u-1 pure-u-md-1-2"><h3>Do you have discounts for non-profits or educational institutions?</h3></dt>
+          <dt className="pure-u-1 pure-u-md-1-2">
+            <h3>
+              Do you have discounts for non-profits or educational institutions?
+            </h3>
+          </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Yep, absolutely – we’re also happy to sponsor accounts for companies
-               working on solving climate change. Please <a href="mailto:hello@getoutline.com">contact us</a> for more details.
+              Yep, absolutely – we’re also happy to sponsor accounts for
+              companies working on solving climate change. Please{" "}
+              <a href="mailto:hello@getoutline.com">contact us</a> for more
+              details.
             </p>
           </dd>
 
-          <dt className="pure-u-1 pure-u-md-1-2"><h3>How do I choose a plan?</h3></dt>
+          <dt className="pure-u-1 pure-u-md-1-2">
+            <h3>How do I choose a plan?</h3>
+          </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Currently plans are based on the number of members in your team. If
-              your team outgrows your plan then it will automatically move to the next
-              pricing plan.
+              Currently plans are based on the number of members in your team.
+              If your team outgrows your plan then it will automatically move to
+              the next pricing plan.
             </p>
           </dd>
 
-          <dt className="pure-u-1 pure-u-md-1-2"><h3>Wait, you didn’t answer my question?</h3></dt>
+          <dt className="pure-u-1 pure-u-md-1-2">
+            <h3>Wait, you didn’t answer my question?</h3>
+          </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Reach out <a href="mailto:hello@getoutline.com">by email</a> with your question and we will be sure to answer within a working day.
+              Reach out <a href="mailto:hello@getoutline.com">by email</a> with
+              your question and we will be sure to answer within a working day.
             </p>
           </dd>
-
         </dl>
       </div>
       <style jsx>

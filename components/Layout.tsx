@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "components/Footer";
 import Logo from "components/Logo";
 import HeaderNavigation from "components/HeaderNavigation";
-import { spacing } from "theme";
+import { spacing, typography } from "theme";
 
 type Props = {
   title?: string;
@@ -21,7 +21,7 @@ export default function Layout({
 }: Props) {
   const pageTitle = `${
     title ? title + " – " : ""
-  }Outline – Team wiki & knowledgebase`;
+    }Outline – Team wiki & knowledgebase`;
 
   return (
     <>
@@ -125,9 +125,7 @@ export default function Layout({
           textarea,
           .pure-g [class*="pure-u"] {
             color: #121212;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
+            font-family: ${typography.fontFamily};
           }
 
           html,
@@ -154,6 +152,10 @@ export default function Layout({
           a {
             color: inherit;
             text-decoration: none;
+          }
+
+          p {
+            line-height: 1.4;
           }
 
           @font-face {
