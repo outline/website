@@ -21,7 +21,7 @@ export default function Layout({
 }: Props) {
   const pageTitle = `${
     title ? title + " – " : ""
-    }Outline – Team wiki & knowledgebase`;
+  }Outline – Team wiki & knowledgebase`;
 
   return (
     <>
