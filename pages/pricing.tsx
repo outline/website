@@ -121,7 +121,7 @@ export default function Pricing() {
 
         <dl className="pure-grid">
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>How does the free month work?</h3>
+            <h3>How does the free trial work?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>

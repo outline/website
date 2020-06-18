@@ -93,7 +93,7 @@ export default function Developers({ spec }) {
 
         .redoc-wrap .api-info,
         .redoc-wrap .operation-type,
-        .redoc-wrap .menu-content ul+div {
+        .redoc-wrap .menu-content ul + div {
           display: none;
         }
 
@@ -121,7 +121,7 @@ export default function Developers({ spec }) {
 
         .redoc-wrap h1 {
           color: ${colors.almostBlack};
-          margin: 1em 0 -.5em;
+          margin: 1em 0 -0.5em;
         }
 
         .redoc-wrap h1,
@@ -133,7 +133,7 @@ export default function Developers({ spec }) {
         }
 
         .redoc-wrap h5,
-        .redoc-wrap a[href='#section/Authentication/http'] {
+        .redoc-wrap a[href="#section/Authentication/http"] {
           display: none;
         }
       `}</style>

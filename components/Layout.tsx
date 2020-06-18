@@ -132,6 +132,7 @@ export default function Layout({
           body {
             padding: 0;
             margin: 0;
+            line-height: 1.6;
           }
 
           h1 {
@@ -147,6 +148,7 @@ export default function Layout({
           h4 {
             font-family: "HK Grotesk";
             font-weight: 600;
+            line-height: 1;
           }
 
           a {

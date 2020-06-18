@@ -15,7 +15,6 @@ export const colors = {
     white10: "rgba(255, 255, 255, 0.1)",
     black: "#000",
     black10: "rgba(0, 0, 0, 0.1)",
-    greyLight: "#F4F7FA",
     grey: "#E8EBED",
     greyMid: "#C5CCD3",
     greyDark: "#DAE1E9",
