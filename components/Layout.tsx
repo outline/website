@@ -81,9 +81,7 @@ export default function Layout({
             </div>
           </div>
 
-          {header ? (
-            header
-          ) : (
+          {hero ? (
             <div className="pure-g">
               <div className="pure-u-1 pure-u-md-2-5">
                 <h1>{title}</h1>
@@ -93,6 +91,8 @@ export default function Layout({
                 <img src={illustration} />
               </div>
             </div>
+          ) : (
+            header
           )}
         </div>
       </header>

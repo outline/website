@@ -5,7 +5,7 @@ import { spacing, colors } from "theme";
 
 export default function Home() {
   return (
-    <Layout header={<></>}>
+    <Layout>
       <main>
         <h1 className="title">Your team’s knowledge base</h1>
 
