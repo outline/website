@@ -1,7 +1,6 @@
 import * as React from "react";
 import fetch from "isomorphic-fetch";
 import { RedocStandalone } from "redoc";
-import Hero from "components/Hero";
 import Layout from "components/Layout";
 import { colors, typography } from "../theme";
 
@@ -10,23 +9,12 @@ export default function Developers({ spec }) {
     <Layout
       title="Developers"
       background="#F4F7FA"
-      header={
-        <div className="pure-grid">
-          <div className="pure-u-1 pure-u-md-2-5">
-            <h1>Developers</h1>
-            <Hero>
-              Outline is built on an open, best-in-class, RPC API. Easily
-              integrate the creation and publishing of documents into your teams
-              workflows.
-            </Hero>
-          </div>
-          <div className="pure-u-1 pure-u-md-3-5">
-            <img src="/images/robot.png" />
-          </div>
-        </div>
-      }
+      hero="Outline is built on an open, best-in-class, RPC API. Easily
+      integrate the creation and publishing of documents into your teams
+      workflows."
+      illustration="/images/robot.png"
     >
-      <div className="pure-grid container">
+      <div className="container">
         <RedocStandalone
           spec={spec}
           options={{
@@ -77,15 +65,6 @@ export default function Developers({ spec }) {
           }}
         />
       </div>
-      <style jsx>
-        {`
-          img {
-            height: 200px;
-            float: right;
-            opacity: 0.95;
-          }
-        `}
-      </style>
       <style jsx global>{`
         .redoc-wrap .api-content {
           margin-top: -42px;

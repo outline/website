@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "components/Footer";
 import Logo from "components/Logo";
+import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, typography } from "theme";
 
@@ -9,12 +10,18 @@ type Props = {
   background?: string;
   color?: string;
   header?: React.ReactNode;
+  hero?: React.ReactNode;
+  illustration?: string;
+  sidebar?: React.ReactNode;
   children: React.ReactNode;
 };
 
 export default function Layout({
   title,
   header,
+  hero,
+  illustration,
+  sidebar,
   background = "transparent",
   color = "inherit",
   children,
@@ -63,7 +70,7 @@ export default function Layout({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:image" content="/images/screenshot.png" />
       </Head>
-      <header className={header && "with-header"}>
+      <header className={(header || hero) && "with-header"}>
         <div className="container">
           <div className="pure-g">
             <div className="pure-u-1 pure-u-md-1-2 header-left">
@@ -74,10 +81,33 @@ export default function Layout({
             </div>
           </div>
 
-          {header}
+          {header ? (
+            header
+          ) : (
+            <div className="pure-g">
+              <div className="pure-u-1 pure-u-md-2-5">
+                <h1>{title}</h1>
+                <Hero>{hero}</Hero>
+              </div>
+              <div className="pure-u-1 pure-u-md-3-5">
+                <img src={illustration} />
+              </div>
+            </div>
+          )}
         </div>
       </header>
-      <div className="page">{children}</div>
+      <div className="page">
+        {sidebar ? (
+          <div className="pure-g container">
+            <div className="pure-u-1 pure-u-md-1-5">{sidebar}</div>
+            <div className="pure-u-1 pure-u-md-4-5">
+              <div className="content">{children}</div>
+            </div>
+          </div>
+        ) : (
+          children
+        )}
+      </div>
       <Footer />
       <style jsx>
         {`
@@ -103,6 +133,16 @@ export default function Layout({
 
           .page {
             min-height: calc(100vh - 300px);
+          }
+
+          .content {
+            padding: 0 ${spacing.large};
+          }
+
+          img {
+            height: 200px;
+            float: right;
+            opacity: 0.95;
           }
         `}
       </style>
@@ -145,7 +185,11 @@ export default function Layout({
           h1,
           h2,
           h3,
-          h4 {
+          h4,
+          .pure-g h1[class*="pure-u"],
+          .pure-g h2[class*="pure-u"],
+          .pure-g h3[class*="pure-u"],
+          .pure-g h4[class*="pure-u"] {
             font-family: "HK Grotesk";
             font-weight: 600;
             line-height: 1;

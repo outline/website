@@ -12,7 +12,7 @@ export default function Pricing() {
       title="Pricing"
       background={colors.lightGrey}
       header={
-        <div className="pure-grid">
+        <div className="pure-g">
           <div className="pure-u-1 pure-u-md-2-5">
             <h1>Pricing</h1>
             <Hero>
@@ -119,7 +119,7 @@ export default function Pricing() {
 
         <h2>Pricing questions</h2>
 
-        <dl className="pure-grid">
+        <dl className="pure-g">
           <dt className="pure-u-1 pure-u-md-1-2">
             <h3>How does the free trial work?</h3>
           </dt>

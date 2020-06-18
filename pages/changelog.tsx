@@ -1,7 +1,6 @@
 import fetch from "isomorphic-fetch";
 import { map, groupBy } from "lodash";
 import { format } from "date-fns";
-import Hero from "components/Hero";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Layout from "components/Layout";
@@ -19,25 +18,18 @@ export default function Changelog({ releases }) {
 
   return (
     <Layout
-      title="Integrations"
+      title="Changelog"
       background="#F4F7FA"
-      header={
-        <div className="pure-grid squiggles">
-          <div className="pure-u-1 pure-u-md-2-5">
-            <h1>Changelog</h1>
-            <Hero>
-              New updates and improvements to Outline.{" "}
-              <a href="https://twitter.com/outlinewiki">Follow us on twitter</a>{" "}
-              to find out when features are released.
-            </Hero>
-          </div>
-          <div className="pure-u-1 pure-u-md-3-5">
-            <img src="/images/flower.png" />
-          </div>
-        </div>
+      illustration="/images/flower.png"
+      hero={
+        <>
+          New updates and improvements to Outline.{" "}
+          <a href="https://twitter.com/outlinewiki">Follow us on twitter</a> to
+          find out when features are released.
+        </>
       }
     >
-      <div className="pure-grid container">
+      <div className="pure-g container">
         <div className="pure-u-1 pure-u-md-1-5 sticky">
           {map(sortedYears, (year) => (
             <SidebarMenu title={year} key={year}>
@@ -74,12 +66,6 @@ export default function Changelog({ releases }) {
       </div>
       <style jsx>
         {`
-          img {
-            height: 200px;
-            float: right;
-            opacity: 0.95;
-          }
-
           article {
             margin: 0 0 8em;
           }

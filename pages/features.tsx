@@ -1,12 +1,5 @@
-import Head from "next/head";
-import Link from "next/link";
+import Layout from "components/Layout";
 
 export default function Features() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Features</title>
-      </Head>
-    </div>
-  );
+  return <Layout title="Features" background="#F4F7FA">&nbsp;</Layout>;
 }

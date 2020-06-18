@@ -97,7 +97,7 @@ export default function Footer() {
       <style jsx>
         {`
           footer {
-            padding-top: ${spacing.large};
+            padding-top: ${spacing.xlarge};
           }
 
           .copy {

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Button from "components/Button";
 import Card from "components/Card";
 import Layout from "components/Layout";
@@ -6,7 +5,7 @@ import { spacing, colors } from "theme";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout header={<></>}>
       <main>
         <h1 className="title">Your team’s knowledge base</h1>
 
@@ -28,7 +27,7 @@ export default function Home() {
         </p>
 
         <section className="feature dark">
-          <div className="pure-grid container">
+          <div className="pure-g container">
             <h2 className="pure-u-1 pure-u-md-1-2">
               <em>Outline is built with speed in mind</em> — no spinners, no
               waiting.
@@ -37,7 +36,7 @@ export default function Home() {
         </section>
 
         <section className="feature">
-          <div className="pure-grid container">
+          <div className="pure-g container">
             <div className="pure-u-1 pure-u-md-3-5"></div>
             <h2 className="pure-u-1 pure-u-md-2-5">
               <em>Beautiful documents, without even trying</em> — an intuitive
@@ -47,7 +46,7 @@ export default function Home() {
         </section>
 
         <section className="feature right">
-          <div className="pure-grid container">
+          <div className="pure-g container">
             <h2 className="pure-u-1 pure-u-md-2-5">
               <em>Open Core</em> — an open source editor and a self hosted
               option, plus all our source code is public.
@@ -57,7 +56,7 @@ export default function Home() {
         </section>
 
         <section className="container">
-          <div className="pure-grid cards">
+          <div className="pure-g cards">
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
                 title="Blazing Fast"
@@ -113,7 +112,7 @@ export default function Home() {
         </section>
 
         <section className="feature dark right">
-          <div className="pure-grid container">
+          <div className="pure-g container">
             <div className="pure-u-1 pure-u-md-3-5"></div>
             <h2 className="pure-u-1 pure-u-md-2-5">
               <em>Beautiful documents, without even trying.</em> — an intuitive
@@ -155,7 +154,7 @@ export default function Home() {
           font-style: normal;
         }
 
-        .feature.dark h2 em {
+        .feature.dark h2 {
           color: #fff;
         }
 
