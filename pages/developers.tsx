@@ -12,7 +12,6 @@ export default function Developers({ spec }) {
       hero="Outline is built on an open, best-in-class, RPC API. Easily
       integrate the creation and publishing of documents into your teams
       workflows."
-      illustration="/images/robot.png"
     >
       <div className="container">
         <RedocStandalone

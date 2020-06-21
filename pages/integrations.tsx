@@ -10,7 +10,6 @@ export default function Integrations() {
       hero="Outline is extensible and designed to integrate with your existing
       workflow and tools. If you can’t find the integration you’re
       after, reach out – we are adding new applications all the time."
-      illustration="/images/interface.png"
       sidebar={<IntegrationsMenu />}
     >
       <h2>Featured</h2>

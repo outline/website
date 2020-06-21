@@ -20,7 +20,6 @@ export default function Changelog({ releases }) {
     <Layout
       title="Changelog"
       background="#F4F7FA"
-      illustration="/images/flower.png"
       hero={
         <>
           New updates and improvements to Outline.{" "}
