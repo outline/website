@@ -2,11 +2,26 @@ import Link from "next/link";
 import { darken } from "polished";
 import { colors } from "theme";
 
-export default function Button({ children, light = false, href, ...rest }) {
+type Props = {
+  children: React.ReactNode;
+  onClick?: () => void;
+  light?: boolean;
+  href?: string;
+};
+
+export default function Button({
+  children,
+  onClick,
+  light = false,
+  href,
+  ...rest
+}: Props) {
   return (
     <>
       <Link href={href} {...rest}>
-        <a className="button">{children}</a>
+        <a className="button" role="button" onClick={onClick}>
+          {children}
+        </a>
       </Link>
       <style jsx>{`
         .button {

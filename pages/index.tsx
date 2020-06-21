@@ -131,10 +131,6 @@ export default function Home() {
 
         .feature.dark {
           background: #383b3c;
-          background-image: url(/images/squiggles.png);
-          background-repeat: no-repeat;
-          background-position: center right;
-          background-size: 600px;
           color: #f2f2f2;
         }
 

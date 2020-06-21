@@ -21,7 +21,8 @@
     "react-dom": "16.13.1",
     "react-markdown": "^4.3.1",
     "redoc": "^2.0.0-rc.30",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "tiny-cookie": "^2.3.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.11",
