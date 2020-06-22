@@ -36,11 +36,7 @@ function MenuItem({
             font-weight: 500;
             position: relative;
             user-select: none;
-          }
-
-          a.open,
-          a.open:hover {
-            background: none;
+            overflow: hidden;
           }
 
           a.menu-with-icon {
@@ -49,17 +45,16 @@ function MenuItem({
             z-index: 2;
           }
 
-          li ul li a {
-            display: flex;
-            margin: 0;
-            overflow: hidden;
-          }
-
           a.launch,
           a.highlighted,
           a:hover {
             background: rgba(0,0,0,.1);
             border-radius: 4px;
+          }
+
+          a.open,
+          a.open:hover {
+            background: none;
           }
 
           a.launch {

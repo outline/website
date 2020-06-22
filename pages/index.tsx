@@ -48,8 +48,7 @@ export default function Home() {
         <section className="feature right">
           <div className="pure-g container">
             <h2 className="pure-u-1 pure-u-md-2-5">
-              <em>Open Core</em> — an open source editor and a self hosted
-              option, plus all our source code is public.
+              <em>Integrated with Slack</em> — search and share documents without ever leaving your team chat.
             </h2>
             <div className="pure-u-1 pure-u-md-3-5"></div>
           </div>
@@ -108,16 +107,6 @@ export default function Home() {
                   copy in your own infrastructure? No problem."
               />
             </div>
-          </div>
-        </section>
-
-        <section className="feature dark right">
-          <div className="pure-g container">
-            <div className="pure-u-1 pure-u-md-3-5"></div>
-            <h2 className="pure-u-1 pure-u-md-2-5">
-              <em>Beautiful documents, without even trying.</em> — an intuitive
-              editor with everything you expect.
-            </h2>
           </div>
         </section>
       </main>

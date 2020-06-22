@@ -72,11 +72,6 @@ export default function Changelog({ releases }) {
             margin-top: -1.5em;
             margin-bottom: 2em;
           }
-
-          .sticky {
-            position: sticky;
-            top: 1em;
-          }
         `}
       </style>
     </Layout>
