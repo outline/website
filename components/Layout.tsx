@@ -73,10 +73,10 @@ export default function Layout({
       <header className={(header || hero) && "with-header"}>
         <div className="container">
           <div className="pure-g">
-            <div className="pure-u-1 pure-u-md-1-2 header-left">
+            <div className="pure-u-1-2 header-left">
               <Logo />
             </div>
-            <div className="pure-u-1 pure-u-md-1-2 header-right">
+            <div className="pure-u-1-2 header-right">
               <HeaderNavigation />
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function Layout({
                 <Hero>{hero}</Hero>
               </div>
               <div className="pure-u-1 pure-u-md-3-5">
-                <img src={illustration} />
+                {illustration && <img src={illustration} />}
               </div>
             </div>
           ) : (
@@ -139,6 +139,12 @@ export default function Layout({
             padding: 0 ${spacing.large};
           }
 
+          @media (max-width: 48em) {
+            .content {
+              padding: 0;
+            }
+          }
+
           img {
             height: 200px;
             float: right;
@@ -150,7 +156,7 @@ export default function Layout({
         {`
           .container {
             max-width: 1140px;
-            width: 95vw;
+            width: 90vw;
             margin: 0 auto;
           }
 

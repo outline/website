@@ -1,9 +1,109 @@
 import * as React from "react";
 import Link from "next/link";
 import { getCookie } from "tiny-cookie";
+import classnames from "classnames";
 import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
+
+function MenuItem({
+  children,
+  href,
+  onClick,
+  className,
+}: {
+  children: React.ReactNode;
+  href?: string;
+  onClick?: (event) => void;
+  className?: string;
+  target?: string;
+}) {
+  return (
+    <>
+      <a href={href} onClick={onClick} className={className}>
+        {children}
+      </a>
+      <style jsx>
+        {`
+          a {
+            display: flex;
+            align-items: center;
+            padding: ${spacing.small} ${spacing.medium};
+            color: rgba(0, 0, 0, 0.75);
+            text-decoration: none;
+            white-space: nowrap;
+            min-height: 40px;
+            font-weight: 500;
+            position: relative;
+            user-select: none;
+          }
+
+          a.open,
+          a.open:hover {
+            background: none;
+          }
+
+          a.menu-with-icon {
+            padding-right: 8px;
+            position: relative;
+            z-index: 2;
+          }
+
+          li ul li a {
+            display: flex;
+            margin: 0;
+            overflow: hidden;
+          }
+
+          a.launch,
+          a.highlighted,
+          a:hover {
+            background: ${colors.grey};
+            border-radius: 4px;
+          }
+
+          a.launch {
+            width: 160px;
+          }
+        `}
+      </style>
+    </>
+  );
+}
+
+function Teams({ sessions }) {
+  return (
+    <>
+      {Object.keys(sessions).map((teamId) => {
+        const session = sessions[teamId];
+        return (
+          <li key={teamId}>
+            <MenuItem href={session.url} className="session">
+              <img className="teamLogo" src={session.logoUrl} />{" "}
+              <span>{session.name}</span>
+            </MenuItem>
+          </li>
+        );
+      })}
+      <style jsx>
+        {`
+          a.session {
+            font-weight: 500;
+          }
+
+          .teamLogo {
+            display: inline-block;
+            margin-right: ${spacing.small};
+            border: 1px solid ${colors.grey};
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+          }
+        `}
+      </style>
+    </>
+  );
+}
 
 export default function HeaderNavigation() {
   const ref = React.useRef();
@@ -27,99 +127,173 @@ export default function HeaderNavigation() {
   return (
     <nav role="navigation" ref={ref}>
       <ul>
-        <li className={openNav === "product" && "open"}>
-          <a
-            className="menu-with-icon"
+        <li className={openNav === "product" ? "open" : "hidden-on-mobile"}>
+          <MenuItem
+            className={classnames(
+              "menu-with-icon",
+              openNav === "product" && "open"
+            )}
             aria-haspopup="true"
             onClick={setActiveNav("product")}
           >
             Product <ExpandedIcon color="currentColor" />
-          </a>
+          </MenuItem>
           <ul>
             <li>
               <Link href="/integrations">
-                <a>Integrations</a>
+                <MenuItem>Integrations</MenuItem>
               </Link>
             </li>
             <li>
               <Link href="/developers">
-                <a>Developers</a>
+                <MenuItem>Developers</MenuItem>
               </Link>
             </li>
             <li>
               <Link href="/changelog">
-                <a>Changelog</a>
+                <MenuItem>Changelog</MenuItem>
               </Link>
             </li>
           </ul>
         </li>
-        <li>
+        <li className="hidden-on-mobile">
           <Link href="/pricing">
-            <a>Pricing</a>
+            <MenuItem>Pricing</MenuItem>
           </Link>
         </li>
-        <li className={openNav === "community" && "open"}>
-          <a
-            className="menu-with-icon"
+        <li className={openNav === "community" ? "open" : "hidden-on-mobile"}>
+          <MenuItem
+            className={classnames(
+              "menu-with-icon",
+              openNav === "community" && "open"
+            )}
             aria-haspopup="true"
             onClick={setActiveNav("community")}
           >
             Community <ExpandedIcon color="currentColor" />
-          </a>
+          </MenuItem>
           <ul>
             <li>
-              <a href="mailto:hello@getoutline.com">Contact Us</a>
+              <MenuItem href="mailto:hello@getoutline.com">Contact Us</MenuItem>
             </li>
             <li>
-              <a href="https://github.com/outline" target="_blank">
+              <MenuItem href="https://github.com/outline" target="_blank">
                 GitHub
-              </a>
+              </MenuItem>
             </li>
             <li>
-              <a
+              <MenuItem
                 href="https://github.com/outline/outline/discussions"
                 target="_blank"
               >
                 Discuss
-              </a>
+              </MenuItem>
             </li>
             <li>
-              <a href="https://twitter.com/outlinewiki" target="_blank">
+              <MenuItem href="https://twitter.com/outlinewiki" target="_blank">
                 Twitter
-              </a>
+              </MenuItem>
             </li>
           </ul>
         </li>
-        <li className={openNav === "sessions" && "open"} key={isSignedIn}>
+        <li
+          className={openNav === "sessions" ? "open" : "hidden-on-mobile"}
+          key={isSignedIn}
+        >
           {isSignedIn ? (
             <>
-              <a
+              <MenuItem
                 href="#login"
-                className="launch menu-with-icon"
+                className={classnames(
+                  "launch",
+                  "menu-with-icon",
+                  openNav === "sessions" && "open"
+                )}
                 aria-haspopup="true"
                 onClick={setActiveNav("sessions")}
               >
                 Launch Outline <ExpandedIcon color="currentColor" />
-              </a>
+              </MenuItem>
               <ul className="sessions">
-                {Object.keys(sessions).map((teamId) => {
-                  const session = sessions[teamId];
-                  return (
-                    <li key={teamId}>
-                      <a href={session.url} className="session">
-                        <img className="teamLogo" src={session.logoUrl} />{" "}
-                        <span>{session.name}</span>
-                      </a>
-                    </li>
-                  );
-                })}
+                <Teams sessions={sessions} />
               </ul>
             </>
           ) : (
-              <Link href="//app.getoutline.com">
-                <a className="launch menu-with-icon">Log in | Sign up</a>
-              </Link>
+            <MenuItem className="highlighted" href="//app.getoutline.com">
+              Log in or Sign up
+            </MenuItem>
+          )}
+        </li>
+        <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
+          <MenuItem
+            href="#login"
+            className={classnames(
+              "highlighted",
+              "menu-with-icon",
+              openNav === "mobile" && "open"
             )}
+            aria-haspopup="true"
+            onClick={setActiveNav("mobile")}
+          >
+            Menu <ExpandedIcon color="currentColor" />
+          </MenuItem>
+          <ul className="mobile">
+            <h3>Launch</h3>
+            {isSignedIn ? (
+              <Teams sessions={sessions} />
+            ) : (
+              <li>
+                <MenuItem href="//app.getoutline.com">
+                  Log in | Sign up
+                </MenuItem>
+              </li>
+            )}
+
+            <h3>Product</h3>
+            <li>
+              <Link href="/integrations">
+                <MenuItem>Integrations</MenuItem>
+              </Link>
+            </li>
+            <li>
+              <Link href="/developers">
+                <MenuItem>Developers</MenuItem>
+              </Link>
+            </li>
+            <li>
+              <Link href="/changelog">
+                <MenuItem>Changelog</MenuItem>
+              </Link>
+            </li>
+            <li>
+              <Link href="/pricing">
+                <MenuItem>Pricing</MenuItem>
+              </Link>
+            </li>
+
+            <h3>Community</h3>
+            <li>
+              <MenuItem href="mailto:hello@getoutline.com">Contact Us</MenuItem>
+            </li>
+            <li>
+              <MenuItem href="https://github.com/outline" target="_blank">
+                GitHub
+              </MenuItem>
+            </li>
+            <li>
+              <MenuItem
+                href="https://github.com/outline/outline/discussions"
+                target="_blank"
+              >
+                Discuss
+              </MenuItem>
+            </li>
+            <li>
+              <MenuItem href="https://twitter.com/outlinewiki" target="_blank">
+                Twitter
+              </MenuItem>
+            </li>
+          </ul>
         </li>
       </ul>
       <style jsx>
@@ -131,6 +305,7 @@ export default function HeaderNavigation() {
 
           ul {
             display: flex;
+            list-style: none;
             margin: 0;
             padding: 0;
           }
@@ -139,49 +314,11 @@ export default function HeaderNavigation() {
             display: block;
             transition-duration: 0.5s;
             position: relative;
-          }
-
-          li a {
-            display: flex;
-            align-items: center;
-            padding: ${spacing.small} ${spacing.medium};
             margin: 0 0 0 ${spacing.medium};
-            color: rgba(0, 0, 0, 0.75);
-            text-decoration: none;
-            white-space: nowrap;
-            min-height: 40px;
-            position: relative;
-            user-select: none;
-          }
-
-          li a.menu-with-icon {
-            padding-right: 8px;
-            position: relative;
-            z-index: 2;
-          }
-
-          li ul li a {
-            display: flex;
-            margin: 0;
-            overflow: hidden;
-          }
-
-          li a.launch,
-          li a:hover {
-            background: ${colors.grey};
-            border-radius: 4px;
-          }
-
-          li a.launch {
-            width: 160px;
           }
 
           li:hover {
             cursor: pointer;
-          }
-
-          li.open > a {
-            background: rgba(255, 255, 255, 0.75);
           }
 
           ul li ul {
@@ -193,7 +330,7 @@ export default function HeaderNavigation() {
             margin-left: ${spacing.medium};
             left: 0;
             display: none;
-            background: rgba(255, 255, 255, 0.75);
+            background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
             border-radius: 4px;
             min-width: 136px;
@@ -203,6 +340,18 @@ export default function HeaderNavigation() {
           ul li ul.sessions {
             min-width: 160px;
             max-width: 260px;
+          }
+
+          ul li ul.mobile {
+            width: 55vw;
+            min-width: 0;
+            left: auto;
+            right: 0;
+          }
+
+          h3 {
+            margin-left: ${spacing.medium};
+            margin-bottom: 0.5em;
           }
 
           ul li ul a:last-child {
@@ -222,24 +371,26 @@ export default function HeaderNavigation() {
               0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);
             padding-top: 42px;
             margin-top: -42px;
+            margin-left: 0;
           }
 
           ul li ul li {
             clear: both;
             width: 100%;
+            margin: 0;
           }
 
-          a.session {
-            font-weight: 500;
+          li.hidden-on-desktop {
+            display: none;
           }
 
-          .teamLogo {
-            display: inline-block;
-            margin-right: ${spacing.small};
-            border: 1px solid ${colors.grey};
-            border-radius: 4px;
-            width: 32px;
-            height: 32px;
+          @media (max-width: 48em) {
+            li.hidden-on-desktop {
+              display: block;
+            }
+            li.hidden-on-mobile {
+              display: none;
+            }
           }
         `}
       </style>

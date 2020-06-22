@@ -155,8 +155,8 @@ export default function Home() {
         }
 
         .screenshot {
-          width: 920px;
-          height: 573px;
+          max-width: 920px;
+          width: 90vw;
           box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.4);
           border-radius: 8px;
           margin-bottom: -40px;
@@ -194,6 +194,18 @@ export default function Home() {
           line-height: 1.5;
           font-size: 1.5rem;
           max-width: 900px;
+        }
+
+        @media (max-width: 600px) {
+          .title {
+            font-size: 3rem;
+            max-width: 90vw;
+          }
+
+          .description {
+            font-size: 1.3rem;
+            max-width: 90vw;
+          }
         }
 
         .cards {

@@ -8,6 +8,7 @@ export default function Footer() {
       <div className="pure-g container">
         <div className="pure-u-1 pure-u-md-2-5">
           <Logo />
+          <br />
         </div>
         <div role="navigation" className="pure-u-1-2 pure-u-md-1-5">
           <h3>Product</h3>
@@ -97,6 +98,7 @@ export default function Footer() {
       <style jsx>
         {`
           footer {
+            margin-top: ${spacing.xlarge};
             padding-top: ${spacing.xlarge};
           }
 
@@ -119,6 +121,10 @@ export default function Footer() {
             margin: 0;
             padding: 0;
             list-style: none;
+          }
+
+          ul {
+            margin-bottom: ${spacing.large};
           }
 
           li {

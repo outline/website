@@ -9,7 +9,7 @@ type Props = {
 export default function SidebarMenu({ title, children }: Props) {
   return (
     <>
-      {title && <h3>{title}</h3>}
+      {title && <h3 className="title">{title}</h3>}
       <ul>{children}</ul>
       <style jsx>
         {`
