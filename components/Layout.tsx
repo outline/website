@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { darken } from "polished";
 import Footer from "components/Footer";
 import Logo from "components/Logo";
 import Hero from "components/Hero";
@@ -28,7 +29,7 @@ export default function Layout({
 }: Props) {
   const pageTitle = `${
     title ? title + " – " : ""
-  }Outline – Team wiki & knowledgebase`;
+    }Outline – Team wiki & knowledgebase`;
 
   return (
     <>
@@ -92,21 +93,21 @@ export default function Layout({
               </div>
             </div>
           ) : (
-            header
-          )}
+              header
+            )}
         </div>
       </header>
       <div className="page">
         {sidebar ? (
           <div className="pure-g container">
-            <div className="pure-u-1 pure-u-md-1-5">{sidebar}</div>
+            <div className="pure-u-1 pure-u-md-1-5 sidebar">{sidebar}</div>
             <div className="pure-u-1 pure-u-md-4-5">
               <div className="content">{children}</div>
             </div>
           </div>
         ) : (
-          children
-        )}
+            children
+          )}
       </div>
       <Footer />
       <style jsx>
@@ -142,6 +143,13 @@ export default function Layout({
           @media (max-width: 48em) {
             .content {
               padding: 0;
+            }
+
+            .sidebar {
+              padding: 0 ${spacing.medium};
+              margin: -${spacing.large} -5vw ${spacing.large};
+              background: ${darken(.05, background)};
+              width: 100vw;
             }
           }
 

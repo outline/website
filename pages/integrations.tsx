@@ -13,12 +13,21 @@ export default function Integrations() {
       sidebar={<IntegrationsMenu />}
     >
       <h2>Featured</h2>
-      <div className="pure-u-1 pure-u-md-1-2">
-        <Card
-          title="Slack"
-          description="Deeply integrated into Slack. Use /slash commands to search for documentation in Outline without ever leaving chat."
-        />
+      <div className="pure-g cards">
+        <div className="pure-u-1 pure-u-md-1-2">
+          <Card
+            title="Slack"
+            description="Deeply integrated into Slack. Use /slash commands to search for documentation in Outline without ever leaving chat."
+          />
+        </div>
       </div>
+      <style jsx>
+        {`
+         .cards {
+          margin: 0 -1rem;
+        }
+        `}
+      </style>
     </Layout>
   );
 }

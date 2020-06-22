@@ -27,42 +27,38 @@ export default function Changelog({ releases }) {
           find out when features are released.
         </>
       }
+      sidebar={
+        <>{map(sortedYears, (year) => (
+          <SidebarMenu title={year} key={year}>
+            {years[year].map((releases) => {
+              const release = releases[0];
+              return (
+                <SidebarMenuItem
+                  key={release.id}
+                  href={`#${format(
+                    new Date(release.created_at),
+                    "yyyy-MMMM"
+                  )}`}
+                >
+                  {format(new Date(release.created_at), "MMMM")}
+                </SidebarMenuItem>
+              );
+            })}
+          </SidebarMenu>
+        ))}</>
+      }
     >
-      <div className="pure-g container">
-        <div className="pure-u-1 pure-u-md-1-5 sticky">
-          {map(sortedYears, (year) => (
-            <SidebarMenu title={year} key={year}>
-              {years[year].map((releases) => {
-                const release = releases[0];
-                return (
-                  <SidebarMenuItem
-                    key={release.id}
-                    href={`#${format(
-                      new Date(release.created_at),
-                      "yyyy-MMMM"
-                    )}`}
-                  >
-                    {format(new Date(release.created_at), "MMMM")}
-                  </SidebarMenuItem>
-                );
-              })}
-            </SidebarMenu>
-          ))}
-        </div>
-        <div className="pure-u-1 pure-u-md-4-5">
-          {releases.map((release) => (
-            <article key={release.id}>
-              <a id={format(new Date(release.created_at), "yyyy-MMMM")} />
-              <a id={release.name} />
-              <h2>{release.name}</h2>
-              <time dateTime={release.created_at}>
-                {format(new Date(release.created_at), "MMMM do, yyyy")}
-              </time>
-              <Markdown source={release.body} />
-            </article>
-          ))}
-        </div>
-      </div>
+      {releases.map((release) => (
+        <article key={release.id}>
+          <a id={format(new Date(release.created_at), "yyyy-MMMM")} />
+          <a id={release.name} />
+          <h2>{release.name}</h2>
+          <time dateTime={release.created_at}>
+            {format(new Date(release.created_at), "MMMM do, yyyy")}
+          </time>
+          <Markdown source={release.body} />
+        </article>
+      ))}
       <style jsx>
         {`
           article {
