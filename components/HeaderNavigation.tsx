@@ -6,64 +6,71 @@ import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
 
-function MenuItem({
-  children,
-  href,
-  onClick,
-  className,
-}: {
+const isBrowser = typeof document !== "undefined";
+let isHydrating = true;
+
+class MenuItem extends React.Component<{
   children: React.ReactNode;
   href?: string;
   onClick?: (event) => void;
   className?: string;
   target?: string;
-}) {
-  return (
-    <>
-      <a href={href} onClick={onClick} className={className}>
-        {children}
-      </a>
-      <style jsx>
-        {`
-          a {
-            display: flex;
-            align-items: center;
-            padding: ${spacing.small} ${spacing.medium};
-            color: rgba(0, 0, 0, 0.75);
-            text-decoration: none;
-            white-space: nowrap;
-            min-height: 40px;
-            font-weight: 500;
-            position: relative;
-            user-select: none;
-            overflow: hidden;
-          }
+}> {
+  render() {
+    const {
+      children,
+      href,
+      onClick,
+      className,
+    } = this.props;
 
-          a.menu-with-icon {
-            padding-right: 8px;
-            position: relative;
-            z-index: 2;
-          }
-
-          a.launch,
-          a.highlighted,
-          a:hover {
-            background: rgba(0,0,0,.1);
-            border-radius: 4px;
-          }
-
-          a.open,
-          a.open:hover {
-            background: none;
-          }
-
-          a.launch {
-            width: 160px;
-          }
-        `}
-      </style>
-    </>
-  );
+    return (
+      <>
+        <a href={href} onClick={onClick} className={className}>
+          {children}
+        </a>
+        <style jsx>
+          {`
+            a {
+              display: flex;
+              align-items: center;
+              padding: ${spacing.small} ${spacing.medium};
+              color: rgba(0, 0, 0, 0.75);
+              text-decoration: none;
+              white-space: nowrap;
+              min-height: 40px;
+              font-weight: 500;
+              position: relative;
+              user-select: none;
+              overflow: hidden;
+            }
+  
+            a.menu-with-icon {
+              padding-right: 8px;
+              position: relative;
+              z-index: 2;
+            }
+  
+            a.launch,
+            a.highlighted,
+            a:hover {
+              background: rgba(0,0,0,.1);
+              border-radius: 4px;
+            }
+  
+            a.open,
+            a.open:hover {
+              background: none;
+            }
+  
+            a.launch {
+              width: 160px;
+            }
+          `}
+        </style>
+      </>
+    );
+  }
 }
 
 function Teams({ sessions }) {
@@ -100,24 +107,39 @@ function Teams({ sessions }) {
   );
 }
 
+function getSessions() {
+  if (isBrowser) {
+    isHydrating = false;
+    return JSON.parse(getCookie("sessions") || "{}");
+  }
+  return {};
+}
+
 export default function HeaderNavigation() {
   const ref = React.useRef();
   const [openNav, setOpenNav] = React.useState(null);
+  const [sessions, setSessions] = React.useState(null);
+  const isSignedIn = sessions ? Object.keys(sessions).length : false;
+
+  // don't try and load the users active sessions during SSR, it ain't ever
+  // gonna work – load sessions from cookies when they haven't already been
+  // loaded on the client
+  if (isBrowser && !sessions) {
+    if (isHydrating) {
+      setTimeout(() => {
+        setSessions(getSessions())
+      }, 0);
+    } else {
+      setSessions(getSessions())
+    }
+  }
 
   useOnClickOutside(ref, () => setOpenNav(null));
-
-  let sessions = {};
 
   const setActiveNav = (name) => (event) => {
     event.preventDefault();
     setOpenNav(name);
   };
-
-  if (typeof document !== "undefined") {
-    sessions = JSON.parse(getCookie("sessions") || "{}");
-  }
-
-  const isSignedIn = Object.keys(sessions).length;
 
   return (
     <nav role="navigation" ref={ref}>
