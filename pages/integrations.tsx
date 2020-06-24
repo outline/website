@@ -23,9 +23,9 @@ export default function Integrations() {
       </div>
       <style jsx>
         {`
-         .cards {
-          margin: 0 -1rem;
-        }
+          .cards {
+            margin: 0 -1rem;
+          }
         `}
       </style>
     </Layout>

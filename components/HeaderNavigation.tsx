@@ -17,12 +17,7 @@ class MenuItem extends React.Component<{
   target?: string;
 }> {
   render() {
-    const {
-      children,
-      href,
-      onClick,
-      className,
-    } = this.props;
+    const { children, href, onClick, className } = this.props;
 
     return (
       <>
@@ -44,25 +39,25 @@ class MenuItem extends React.Component<{
               user-select: none;
               overflow: hidden;
             }
-  
+
             a.menu-with-icon {
               padding-right: 8px;
               position: relative;
               z-index: 2;
             }
-  
+
             a.launch,
             a.highlighted,
             a:hover {
-              background: rgba(0,0,0,.1);
+              background: rgba(0, 0, 0, 0.1);
               border-radius: 4px;
             }
-  
+
             a.open,
             a.open:hover {
               background: none;
             }
-  
+
             a.launch {
               width: 160px;
             }
@@ -127,10 +122,10 @@ export default function HeaderNavigation() {
   if (isBrowser && !sessions) {
     if (isHydrating) {
       setTimeout(() => {
-        setSessions(getSessions())
+        setSessions(getSessions());
       }, 0);
     } else {
-      setSessions(getSessions())
+      setSessions(getSessions());
     }
   }
 
@@ -215,7 +210,7 @@ export default function HeaderNavigation() {
         </li>
         <li
           className={openNav === "sessions" ? "open" : "hidden-on-mobile"}
-          key={isSignedIn}
+          key={isSignedIn ? "signed-in" : ""}
         >
           {isSignedIn ? (
             <>
@@ -236,10 +231,10 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-              <MenuItem className="highlighted" href="//app.getoutline.com">
-                Log in or Sign up
-              </MenuItem>
-            )}
+            <MenuItem className="highlighted" href="//app.getoutline.com">
+              Log in or Sign up
+            </MenuItem>
+          )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
           <MenuItem
@@ -252,8 +247,18 @@ export default function HeaderNavigation() {
             aria-haspopup="true"
             onClick={setActiveNav("mobile")}
           >
-            Menu&nbsp;<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6ZM14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z" fill="currentColor" />
+            Menu&nbsp;
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12ZM14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6ZM14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z"
+                fill="currentColor"
+              />
             </svg>
           </MenuItem>
           <ul className="mobile">
@@ -261,12 +266,12 @@ export default function HeaderNavigation() {
             {isSignedIn ? (
               <Teams sessions={sessions} />
             ) : (
-                <li>
-                  <MenuItem href="//app.getoutline.com">
-                    Log in | Sign up
+              <li>
+                <MenuItem href="//app.getoutline.com">
+                  Log in | Sign up
                 </MenuItem>
-                </li>
-              )}
+              </li>
+            )}
 
             <h3>Product</h3>
             <li>

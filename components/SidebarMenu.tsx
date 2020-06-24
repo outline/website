@@ -13,7 +13,16 @@ export default function SidebarMenu({ title, children }: Props) {
 
   return (
     <>
-      {title && <h3 className="title"><a onClick={() => setIsOpen(!isOpen)}>{title} <span className={classnames("toggle", { "open": isOpen })}><ExpandedIcon color="currentColor" /></span></a></h3>}
+      {title && (
+        <h3 className="title">
+          <a onClick={() => setIsOpen(!isOpen)}>
+            {title}{" "}
+            <span className={classnames("toggle", { open: isOpen })}>
+              <ExpandedIcon color="currentColor" />
+            </span>
+          </a>
+        </h3>
+      )}
       <ul className={isOpen && "open"}>{children}</ul>
       <style jsx>
         {`
@@ -50,7 +59,7 @@ export default function SidebarMenu({ title, children }: Props) {
           }
 
           @media (max-width: 48em) {
-            ul { 
+            ul {
               display: none;
             }
 

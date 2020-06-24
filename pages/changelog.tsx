@@ -28,24 +28,26 @@ export default function Changelog({ releases }) {
         </>
       }
       sidebar={
-        <>{map(sortedYears, (year) => (
-          <SidebarMenu title={year} key={year}>
-            {years[year].map((releases) => {
-              const release = releases[0];
-              return (
-                <SidebarMenuItem
-                  key={release.id}
-                  href={`#${format(
-                    new Date(release.created_at),
-                    "yyyy-MMMM"
-                  )}`}
-                >
-                  {format(new Date(release.created_at), "MMMM")}
-                </SidebarMenuItem>
-              );
-            })}
-          </SidebarMenu>
-        ))}</>
+        <>
+          {map(sortedYears, (year) => (
+            <SidebarMenu title={year} key={year}>
+              {years[year].map((releases) => {
+                const release = releases[0];
+                return (
+                  <SidebarMenuItem
+                    key={release.id}
+                    href={`#${format(
+                      new Date(release.created_at),
+                      "yyyy-MMMM"
+                    )}`}
+                  >
+                    {format(new Date(release.created_at), "MMMM")}
+                  </SidebarMenuItem>
+                );
+              })}
+            </SidebarMenu>
+          ))}
+        </>
       }
     >
       {releases.map((release) => (

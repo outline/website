@@ -132,9 +132,14 @@ export default function Footer() {
           }
 
           li a {
-            color: #5e6573;
+            color: ${colors.textSecondary};
             text-decoration: none;
             line-height: 1.4em;
+          }
+
+          li a:hover {
+            padding-bottom: 1px;
+            border-bottom: 2px solid ${colors.textSecondary};
           }
         `}
       </style>

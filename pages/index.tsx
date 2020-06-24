@@ -15,7 +15,9 @@ export default function Home() {
         </p>
 
         <p>
-          <Button href="//app.getoutline.com">Get Started for Free</Button>
+          <Button href="//app.getoutline.com">
+            Get Started for Free &rarr;
+          </Button>
         </p>
 
         <p className="screenshot-wrapper">
@@ -37,10 +39,23 @@ export default function Home() {
 
         <section className="feature">
           <div className="pure-g container">
-            <div className="pure-u-1 pure-u-md-3-5"></div>
+            <div className="pure-u-1 pure-u-md-3-5">
+              <video
+                width="386"
+                height="344"
+                className="video"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="/videos/slash-menu.mp4" type="video/mp4"></source>
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <h2 className="pure-u-1 pure-u-md-2-5">
-              <em>Beautiful documents, without even trying</em> — an intuitive
-              editor with everything you expect.
+              <em>Beautiful documents, without even trying.</em> <br />
+              An intuitive editor with everything you expect.
             </h2>
           </div>
         </section>
@@ -48,9 +63,22 @@ export default function Home() {
         <section className="feature right">
           <div className="pure-g container">
             <h2 className="pure-u-1 pure-u-md-2-5">
-              <em>Integrated with Slack</em> — search and share documents without ever leaving your team chat.
+              <em>Integrated with Slack.</em>
+              <br />
+              Search and share documents without ever leaving your team chat.
             </h2>
             <div className="pure-u-1 pure-u-md-3-5"></div>
+          </div>
+        </section>
+
+        <section className="feature">
+          <div className="pure-g container">
+            <div className="pure-u-1 pure-u-md-3-5"></div>
+            <h2 className="pure-u-1 pure-u-md-2-5">
+              <em>Markdown support.</em>
+              <br />
+              Write using full support for markdown and keyboard shortcuts.
+            </h2>
           </div>
         </section>
 
@@ -81,11 +109,8 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                href="/editor"
-                title="Markdown &rarr;"
-                description="Markdown support makes editing, import and export painless.
-                    Shortcuts are also built into the editor so you can easily
-                    format using **markdown syntax**."
+                title="Manageable"
+                description="Manage the knowledge base with read &amp; write permissions, user groups, guest users, public sharing, and more…"
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -103,8 +128,7 @@ export default function Home() {
                 href="https://github.com/outline"
                 title="Open Source &rarr;"
                 description="Outline’s source code is public, and the editor is open source
-                  so the community can help improve it too. Prefer to host a
-                  copy in your own infrastructure? No problem."
+                  so the community can help improve it too. Prefer to host on your own infrastructure? No problem."
               />
             </div>
           </div>
@@ -119,12 +143,13 @@ export default function Home() {
         }
 
         .feature.dark {
-          background: #383b3c;
-          color: #f2f2f2;
+          background-image: url(/images/dot-pattern.png);
+          background-repeat: repeat;
+          color: ${colors.almostBlack};
         }
 
         .feature.right {
-          background-position: center left;
+          background-position: top left;
         }
 
         .feature h2 {
@@ -140,11 +165,11 @@ export default function Home() {
         }
 
         .feature.dark h2 {
-          color: #fff;
+          color: ${colors.almostBlack};
         }
 
         .screenshot {
-          max-width: 920px;
+          max-width: 1040px;
           width: 90vw;
           box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.4);
           border-radius: 8px;
@@ -152,9 +177,11 @@ export default function Home() {
         }
 
         .screenshot-wrapper {
-          padding: ${spacing.large} ${spacing.xlarge};
-          border-bottom: 1px solid #eaeaea;
+          padding: 24px;
           margin-bottom: 0;
+          background: ${colors.lightGrey};
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
           overflow: hidden;
         }
 
@@ -174,6 +201,13 @@ export default function Home() {
           font-weight: 600;
         }
 
+        .video {
+          background: ${colors.white};
+          border-radius: 12px;
+          position: relative;
+          max-width: 100%;
+        }
+
         .title,
         .description {
           text-align: center;
@@ -185,15 +219,19 @@ export default function Home() {
           max-width: 900px;
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 48em) {
           .title {
-            font-size: 3rem;
+            font-size: 2.8rem;
             max-width: 90vw;
           }
 
           .description {
             font-size: 1.3rem;
             max-width: 90vw;
+          }
+
+          .feature {
+            padding: 0;
           }
         }
 
