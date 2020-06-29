@@ -8,21 +8,22 @@ type Props = {
 };
 
 export default function Card({ title, description, href }: Props) {
-  const content = (
-    <>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </>
-  );
-
   return (
     <>
       {href ? (
         <Link href={href}>
-          <a className="card">{content}</a>
+          <a className="card">
+            {" "}
+            <h3 className="heading">{title}</h3>
+            <p className="content">{description}</p>
+          </a>
         </Link>
       ) : (
-        <div className="card">{content}</div>
+        <div className="card">
+          {" "}
+          <h3 className="heading">{title}</h3>
+          <p className="content">{description}</p>
+        </div>
       )}
       <style jsx>{`
         .card {
@@ -46,12 +47,12 @@ export default function Card({ title, description, href }: Props) {
           border-color: ${colors.primary};
         }
 
-        .card :global(h3) {
+        .heading {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
 
-        .card :global(p) {
+        .content {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;

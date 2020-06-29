@@ -1,8 +1,11 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
 import Button from "components/Button";
 import Card from "components/Card";
+import Hero from "components/Hero";
 import Layout from "components/Layout";
 import { spacing, colors, typography } from "theme";
+
+resetIdCounter();
 
 export default function Home() {
   return (
@@ -114,40 +117,97 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container">
+        <section className="use-cases">
           <Tabs defaultIndex={1}>
-            <TabList>
-              <Tab disabled>
-                <h2 className="for">Outline for:</h2>
-              </Tab>
-              <Tab>
-                <h3>Documentation</h3>
-              </Tab>
-              <Tab>
-                <h3>Support teams</h3>
-              </Tab>
-              <Tab>
-                <h3>Sales teams</h3>
-              </Tab>
-            </TabList>
+            <div className="container">
+              <TabList>
+                <Tab disabled>
+                  <h2 className="for">Outline for:</h2>
+                </Tab>
+                <Tab>
+                  <h3>Remote work</h3>
+                </Tab>
+                <Tab>
+                  <h3>Support teams</h3>
+                </Tab>
+                <Tab>
+                  <h3>Sales teams</h3>
+                </Tab>
+              </TabList>
 
-            <TabPanel />
-            <TabPanel>
-              <p>Structured documentation and relevant search results.</p>
-            </TabPanel>
-            <TabPanel>
-              <p>
-                Outline makes it fast and easy to find the answers your support
-                team needs to make customers happy.
-              </p>
-            </TabPanel>
-            <TabPanel>
-              <p>
-                Outline makes it easy to store and find the information sales
-                reps need to answers questions in real time and close deals
-                faster.
-              </p>
-            </TabPanel>
+              <TabPanel />
+              <TabPanel>
+                <div className="pure-g">
+                  <div className="pure-u-1 pure-u-md-3-5">
+                    <h3 className="heading">Onboarding</h3>
+                    <p className="content">
+                      Onboard new team members easily through internal
+                      guides, resources, and checklists. Give new team members
+                      a leg up getting to know your product, best practices, and culture.
+                    </p>
+                    <h3 className="heading">Integrated</h3>
+                    <p className="content">
+                      Outline comes integrated with tools already use. Sign in
+                      with Slack or GSuite and avoid messing around with yet another account.
+                    </p>
+                  </div>
+                  <div className="pure-u-1 pure-u-md-2-5">
+                    <Hero>
+                      Whether your team are seasoned remote workers or new to working
+                      from home – Outline is a great place to keep your team’s shared
+                      knowledge accessible, searchable, and coordinated.
+                    </Hero>
+                  </div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="pure-g">
+                  <div className="pure-u-1 pure-u-md-3-5">
+                    <h3 className="heading">Product answers</h3>
+                    <p className="content">
+                      With instant search results, customer queries can get
+                      answered faster than ever. Make sure your customers have a
+                      delightful support experience.
+                    </p>
+                    <h3 className="heading">Scalable support</h3>
+                    <p className="content">
+                      Onboard new customer service reps easily through internal
+                      guides and resources. Give everyone access to the
+                      knowledge in your team and get your newest team members up
+                      to speed in no time.
+                    </p>
+                  </div>
+                  <div className="pure-u-1 pure-u-md-2-5">
+                    <Hero>
+                      Outline makes it fast and easy to find the answers your
+                      support team needs to keep customers happy.
+                </Hero></div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="pure-g">
+                  <div className="pure-u-1 pure-u-md-3-5">
+                    <h3 className="heading">Product answers</h3>
+                    <p className="content">
+                      With instant search results, you can answer all a
+                      potential customers questions in the moment and keep the
+                      conversation flowing.
+                    </p>
+                    <h3 className="heading">Sales playbooks</h3>
+                    <p className="content">
+                      Arm your reps with all the content and strategies they
+                      need to close a deal and onboard new team members faster.
+                    </p>
+                  </div>
+                  <div className="pure-u-1 pure-u-md-2-5">
+                    <Hero>
+                      Outline makes it easy to create and find the information sales
+                      reps need to answers prospective customers questions in real
+                      time and close deals faster.
+                </Hero></div>
+                </div>
+              </TabPanel>
+            </div>
           </Tabs>
         </section>
 
@@ -283,6 +343,7 @@ export default function Home() {
           background: ${colors.lightGrey};
           border-radius: 12px;
           overflow: hidden;
+          max-width: 100vw;
         }
 
         main {
@@ -331,6 +392,24 @@ export default function Home() {
           color: ${colors.textSecondary};
         }
 
+        .use-cases {
+          width: 100%;
+          background: ${colors.lightGrey};
+          margin: ${spacing.xlarge} 0;
+        }
+
+        .content {
+          margin-right: ${spacing.xlarge};
+        }
+
+        .heading {
+          margin-top: ${spacing.large};
+        }
+
+        .cards {
+          margin: 4em -1rem;
+        }
+
         @media (max-width: 48em) {
           .title {
             font-size: 2.8rem;
@@ -347,6 +426,10 @@ export default function Home() {
             max-width: 90vw;
           }
 
+          .screenshot {
+            width: 150vw;
+          }
+
           .feature {
             padding: 0;
           }
@@ -355,10 +438,10 @@ export default function Home() {
           .feature-right {
             justify-content: center;
           }
-        }
 
-        .cards {
-          margin: 4em -1rem;
+          .content {
+            margin-right: 0;
+          }
         }
       `}</style>
       <style jsx global>
@@ -382,12 +465,12 @@ export default function Home() {
             padding: 6px 12px;
             cursor: pointer;
             user-select: none;
+            max-width: 33%;
+            text-align: center;
           }
 
           .react-tabs__tab--selected {
-            color: ${colors.white};
-            border-radius: 4px 4px 0 0;
-            background: ${colors.almostBlack};
+            border-bottom: 2px solid ${colors.almostBlack};
           }
 
           .react-tabs__tab:focus {
@@ -412,9 +495,13 @@ export default function Home() {
 
           .react-tabs__tab-panel--selected {
             display: block;
-            color: ${colors.white};
-            background: ${colors.almostBlack};
-            padding: ${spacing.large};
+            padding: ${spacing.large} ${spacing.medium};
+          }
+
+          @media (max-width: 48em) {
+            .react-tabs__tab:first-child {
+              display: none;
+            }
           }
         `}
       </style>

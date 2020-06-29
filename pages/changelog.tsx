@@ -5,7 +5,7 @@ import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Layout from "components/Layout";
 import Markdown from "components/Markdown";
-import { typography } from "theme";
+import { typography, colors } from "theme";
 
 export default function Changelog({ releases }) {
   const months = groupBy(releases, (release) =>
@@ -71,6 +71,7 @@ export default function Changelog({ releases }) {
           time {
             display: block;
             font-family: ${typography.fontFamilyMono};
+            color: ${colors.textSecondary};
             font-size: 0.8em;
             margin-top: -1.5em;
             margin-bottom: 2em;
