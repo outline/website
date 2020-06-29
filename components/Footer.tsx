@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "components/Logo";
-import { spacing, colors } from "theme";
+import { spacing, typography, colors } from "theme";
 
 export default function Footer() {
   return (
@@ -104,7 +104,7 @@ export default function Footer() {
 
           .copy {
             font-size: 12px;
-            font-family: "Roboto Mono", "Menlo", monospace;
+            font-family: ${typography.fontFamilyMono};
             background: ${colors.lightGrey};
             padding: 2px 4px;
             margin-top: ${spacing.large};

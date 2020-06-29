@@ -56,6 +56,12 @@ export default function Card({ title, description, href }: Props) {
           font-size: 1.25rem;
           line-height: 1.5;
         }
+
+        @media (max-width: 48em) {
+          .card {
+            min-height: 0;
+          }
+        }
       `}</style>
     </>
   );

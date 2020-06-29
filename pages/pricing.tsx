@@ -22,7 +22,9 @@ export default function Pricing() {
           </div>
           <div className="pure-u-1 pure-u-md-3-5 ">
             <div className="get-started">
-              <Button href="//app.getoutline.com">Get Started</Button>
+              <Button href="//app.getoutline.com">
+                Get Started for Free &rarr;
+              </Button>
             </div>
           </div>
         </div>
