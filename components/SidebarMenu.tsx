@@ -49,6 +49,7 @@ export default function SidebarMenu({ title, children }: Props) {
           .title a {
             display: flex;
             align-items: center;
+            color: inherit;
           }
 
           .toggle {

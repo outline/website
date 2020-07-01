@@ -4,7 +4,7 @@ import Footer from "components/Footer";
 import Logo from "components/Logo";
 import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
-import { spacing, typography } from "theme";
+import { spacing, colors, typography } from "theme";
 
 type Props = {
   title?: string;
@@ -29,7 +29,7 @@ export default function Layout({
 }: Props) {
   const pageTitle = `${
     title ? title + " – " : ""
-  }Outline – Team wiki & knowledgebase`;
+    }Outline – Team wiki & knowledgebase`;
 
   return (
     <>
@@ -93,8 +93,8 @@ export default function Layout({
               </div>
             </div>
           ) : (
-            header
-          )}
+              header
+            )}
         </div>
       </header>
       <div className="page">
@@ -106,8 +106,8 @@ export default function Layout({
             </div>
           </div>
         ) : (
-          children
-        )}
+            children
+          )}
       </div>
       <Footer />
       <style jsx>
@@ -210,7 +210,7 @@ export default function Layout({
           }
 
           a {
-            color: inherit;
+            color: ${colors.primary};
             text-decoration: none;
           }
 

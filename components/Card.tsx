@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { colors } from "theme";
-
 type Props = {
   href?: string;
   title: React.ReactNode;
@@ -10,21 +7,11 @@ type Props = {
 export default function Card({ title, description, href }: Props) {
   return (
     <>
-      {href ? (
-        <Link href={href}>
-          <a className="card">
-            {" "}
-            <h3 className="heading">{title}</h3>
-            <p className="content">{description}</p>
-          </a>
-        </Link>
-      ) : (
-        <div className="card">
-          {" "}
-          <h3 className="heading">{title}</h3>
-          <p className="content">{description}</p>
-        </div>
-      )}
+      <div className="card">
+        {" "}
+        <h3 className="heading">{title}</h3>
+        <p className="content">{description}</p>
+      </div>
       <style jsx>{`
         .card {
           display: block;
@@ -38,13 +25,6 @@ export default function Card({ title, description, href }: Props) {
           border-radius: 8px;
           transition: color 0.15s ease, border-color 0.15s ease;
           min-height: 250px;
-        }
-
-        a.card:hover,
-        a.card:focus,
-        a.card:active {
-          color: ${colors.primary};
-          border-color: ${colors.primary};
         }
 
         .heading {

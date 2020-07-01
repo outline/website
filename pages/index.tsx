@@ -1,4 +1,5 @@
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
+import Link from "next/link";
 import Button from "components/Button";
 import Card from "components/Card";
 import Hero from "components/Hero";
@@ -14,7 +15,7 @@ export default function Home() {
         <h1 className="title">Your team’s knowledge base</h1>
 
         <p className="description">
-          A modern team knowledgebase for your internal documentation, product
+          A modern team knowledge base for your internal documentation, product
           specs, support answers, meeting notes, onboarding, &amp; more…
         </p>
 
@@ -127,9 +128,6 @@ export default function Home() {
                 <Tab>
                   <h3>Sales teams</h3>
                 </Tab>
-                <Tab>
-                  <h3>Engineering teams</h3>
-                </Tab>
               </TabList>
 
               <TabPanel />
@@ -210,27 +208,6 @@ export default function Home() {
                   </div>
                 </div>
               </TabPanel>
-              <TabPanel>
-                <div className="pure-g">
-                  <div className="pure-u-1 pure-u-md-3-5">
-                    <h3 className="heading">Best Practices</h3>
-                    <p className="content">
-                      Whether it’s documenting frontend best-practices, your
-                      infrastructure, or how to get the monorepo up and running
-                      – Outline is a safe sapce to store the team braindump.
-                    </p>
-                    <h3 className="heading">Checklists</h3>
-                    <p className="content"></p>
-                  </div>
-                  <div className="pure-u-1 pure-u-md-2-5">
-                    <Hero>
-                      Outline makes it easy to create and find the information
-                      sales reps need to answers prospective customers questions
-                      in real time and close deals faster.
-                    </Hero>
-                  </div>
-                </div>
-              </TabPanel>
             </div>
           </Tabs>
         </section>
@@ -268,20 +245,32 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                href="/integrations"
-                title="Integrated &rarr;"
-                description="Simple integrations into tools you use every day like Slack,
-                    Figma, Loom and many more. Can’t find the integration you
-                    need? There is an open API too."
+                title="Integrated"
+                description={
+                  <>
+                    Simple <Link href="/integrations">integrations</Link> into
+                    tools you use every day like Slack, Figma, Loom and many
+                    more. Can’t find the integration you need? There is an{" "}
+                    <Link href="/developers">open API</Link> too.
+                  </>
+                }
               />
             </div>
 
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                href="https://github.com/outline"
-                title="Open Source &rarr;"
-                description="Outline’s source code is public, and the editor is open source
-                  so the community can help improve it too. Prefer to host on your own infrastructure? No problem."
+                title="Open Source"
+                description={
+                  <>
+                    Outline’s{" "}
+                    <a href="https://github.com/outline" rel="noopener nofollow">
+                      source code is public
+                    </a>
+                    , and the editor is open source so the community can help
+                    improve it too. Prefer to host on your own infrastructure?
+                    No problem.
+                  </>
+                }
               />
             </div>
           </div>
@@ -302,12 +291,6 @@ export default function Home() {
           width: 95vw;
           padding: ${spacing.large};
           margin: ${spacing.xlarge} 0;
-        }
-
-        .feature.dark {
-          background-image: url(/images/dot-pattern.png);
-          background-repeat: repeat;
-          color: ${colors.almostBlack};
         }
 
         .feature-left,

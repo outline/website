@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "components/Logo";
+import { darken } from "polished";
 import { spacing, typography, colors } from "theme";
 
 export default function Footer() {
@@ -100,12 +101,13 @@ export default function Footer() {
           footer {
             margin-top: ${spacing.xlarge};
             padding-top: ${spacing.xlarge};
+            background: ${colors.lightGrey};
           }
 
           .copy {
             font-size: 12px;
             font-family: ${typography.fontFamilyMono};
-            background: ${colors.lightGrey};
+            background: ${darken(.05, colors.lightGrey)};
             padding: 2px 4px;
             margin-top: ${spacing.large};
             color: #444;

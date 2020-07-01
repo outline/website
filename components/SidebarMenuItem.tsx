@@ -21,6 +21,7 @@ export default function SidebarMenuItem({ children, href }) {
           li a {
             display: flex;
             align-items: center;
+            color: inherit;
           }
         `}
       </style>
