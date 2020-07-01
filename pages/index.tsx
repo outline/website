@@ -78,7 +78,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="pure-u-1 pure-u-md-3-5 feature-right">
-              <div className="lil-wrapper">
+              <div className="lil-wrapper slack">
                 <img
                   src="/images/slack-integration.png"
                   style={{ maxWidth: "558px", maxHeight: "294px" }}
@@ -91,27 +91,21 @@ export default function Home() {
         <section className="feature">
           <div className="pure-g container">
             <div className="pure-u-1 pure-u-md-3-5 feature-left">
-              <div className="lil-wrapper video">
-                <video
-                  width="497"
-                  height="350"
-                  className="video"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source src="/videos/search.mp4" type="video/mp4"></source>
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+              <img
+                src="/images/dark-mode.png"
+                style={{
+                  maxWidth: "785px",
+                  maxHeight: "615px",
+                  marginLeft: "-32px",
+                }}
+              />
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
-                <em>Blazing fast.</em>
+                <em>Structured &amp; instantly searchable.</em>
                 <br />
-                Outline is built with speed in mind. Documents load in
-                milliseconds – no page reloads, no waiting.
+                Nest documents in a hierachy, build a network of references and
+                search across everything.
               </h2>
             </div>
           </div>
@@ -133,6 +127,9 @@ export default function Home() {
                 <Tab>
                   <h3>Sales teams</h3>
                 </Tab>
+                <Tab>
+                  <h3>Engineering teams</h3>
+                </Tab>
               </TabList>
 
               <TabPanel />
@@ -141,21 +138,24 @@ export default function Home() {
                   <div className="pure-u-1 pure-u-md-3-5">
                     <h3 className="heading">Onboarding</h3>
                     <p className="content">
-                      Onboard new team members easily through internal
-                      guides, resources, and checklists. Give new team members
-                      a leg up getting to know your product, best practices, and culture.
+                      Onboard new team members easily through internal guides,
+                      resources, and checklists. Give new team members a leg up
+                      getting to know your product, best practices, and culture.
                     </p>
-                    <h3 className="heading">Integrated</h3>
+                    <h3 className="heading">Handbook</h3>
                     <p className="content">
-                      Outline comes integrated with tools already use. Sign in
-                      with Slack or GSuite and avoid messing around with yet another account.
+                      Don't lock away your company handbook in a PDF document
+                      hidden on a shared drive. Make it accessible, searchable
+                      and easily updatable so everyone can find the information
+                      they need
                     </p>
                   </div>
                   <div className="pure-u-1 pure-u-md-2-5">
                     <Hero>
-                      Whether your team are seasoned remote workers or new to working
-                      from home – Outline is a great place to keep your team’s shared
-                      knowledge accessible, searchable, and coordinated.
+                      Whether your team are seasoned remote workers or new to
+                      working from home – Outline is a great place to keep your
+                      team’s shared knowledge accessible, searchable, and
+                      coordinated.
                     </Hero>
                   </div>
                 </div>
@@ -163,12 +163,6 @@ export default function Home() {
               <TabPanel>
                 <div className="pure-g">
                   <div className="pure-u-1 pure-u-md-3-5">
-                    <h3 className="heading">Product answers</h3>
-                    <p className="content">
-                      With instant search results, customer queries can get
-                      answered faster than ever. Make sure your customers have a
-                      delightful support experience.
-                    </p>
                     <h3 className="heading">Scalable support</h3>
                     <p className="content">
                       Onboard new customer service reps easily through internal
@@ -176,12 +170,19 @@ export default function Home() {
                       knowledge in your team and get your newest team members up
                       to speed in no time.
                     </p>
+                    <h3 className="heading">Product answers</h3>
+                    <p className="content">
+                      With instant search results, customer queries can get
+                      answered faster than ever. Make sure your customers have a
+                      delightful support experience.
+                    </p>
                   </div>
                   <div className="pure-u-1 pure-u-md-2-5">
                     <Hero>
                       Outline makes it fast and easy to find the answers your
                       support team needs to keep customers happy.
-                </Hero></div>
+                    </Hero>
+                  </div>
                 </div>
               </TabPanel>
               <TabPanel>
@@ -196,15 +197,38 @@ export default function Home() {
                     <h3 className="heading">Sales playbooks</h3>
                     <p className="content">
                       Arm your reps with all the content and strategies they
-                      need to close a deal and onboard new team members faster.
+                      need to close a deal and get new team members up to speed
+                      faster.
                     </p>
                   </div>
                   <div className="pure-u-1 pure-u-md-2-5">
                     <Hero>
-                      Outline makes it easy to create and find the information sales
-                      reps need to answers prospective customers questions in real
-                      time and close deals faster.
-                </Hero></div>
+                      Outline makes it easy to create and find the information
+                      sales reps need to answers prospective customers questions
+                      in real time and close deals faster.
+                    </Hero>
+                  </div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div className="pure-g">
+                  <div className="pure-u-1 pure-u-md-3-5">
+                    <h3 className="heading">Best Practices</h3>
+                    <p className="content">
+                      Whether it’s documenting frontend best-practices, your
+                      infrastructure, or how to get the monorepo up and running
+                      – Outline is a safe sapce to store the team braindump.
+                    </p>
+                    <h3 className="heading">Checklists</h3>
+                    <p className="content"></p>
+                  </div>
+                  <div className="pure-u-1 pure-u-md-2-5">
+                    <Hero>
+                      Outline makes it easy to create and find the information
+                      sales reps need to answers prospective customers questions
+                      in real time and close deals faster.
+                    </Hero>
+                  </div>
                 </div>
               </TabPanel>
             </div>
@@ -320,7 +344,7 @@ export default function Home() {
           border-radius: 8px;
         }
 
-        .lil-wrapper img {
+        img {
           display: block;
           width: 100%;
         }
@@ -328,6 +352,11 @@ export default function Home() {
         .lil-wrapper.video {
           padding-top: 0;
           padding-bottom: 0;
+          border-left: 30px solid #edf2f7;
+        }
+
+        .lil-wrapper.slack {
+          border-left: 30px solid #4a1d51;
         }
 
         .screenshot {
@@ -340,7 +369,6 @@ export default function Home() {
         .screenshot-wrapper {
           padding: 24px;
           margin-bottom: 0;
-          background: ${colors.lightGrey};
           border-radius: 12px;
           overflow: hidden;
           max-width: 100vw;
@@ -457,16 +485,15 @@ export default function Home() {
 
           .react-tabs__tab {
             display: inline-block;
-            border: 1px solid transparent;
-            border-bottom: none;
+            border: 2px solid transparent;
             bottom: -1px;
             position: relative;
             list-style: none;
             padding: 6px 12px;
             cursor: pointer;
             user-select: none;
-            max-width: 33%;
             text-align: center;
+            white-space: nowrap;
           }
 
           .react-tabs__tab--selected {
@@ -499,6 +526,9 @@ export default function Home() {
           }
 
           @media (max-width: 48em) {
+            .react-tabs__tab {
+              width: 50%;
+            }
             .react-tabs__tab:first-child {
               display: none;
             }
