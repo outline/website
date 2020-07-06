@@ -231,9 +231,18 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-            <MenuItem className="highlighted" href="//app.getoutline.com">
-              Log in or Sign up
-            </MenuItem>
+            <span className="auth">
+              <MenuItem className="highlighted" href="//app.getoutline.com">
+                Log in
+              </MenuItem>{" "}
+              <span className="or">or</span>{" "}
+              <MenuItem
+                className="highlighted"
+                href="//app.getoutline.com/create"
+              >
+                Sign up
+              </MenuItem>
+            </span>
           )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
@@ -406,6 +415,15 @@ export default function HeaderNavigation() {
 
           li.hidden-on-desktop {
             display: none;
+          }
+
+          .auth {
+            display: flex;
+            align-items: center;
+          }
+
+          .or {
+            padding: 0 4px;
           }
 
           @media (max-width: 48em) {

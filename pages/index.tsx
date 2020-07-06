@@ -263,7 +263,10 @@ export default function Home() {
                 description={
                   <>
                     Outline’s{" "}
-                    <a href="https://github.com/outline" rel="noopener nofollow">
+                    <a
+                      href="https://github.com/outline"
+                      rel="noopener nofollow"
+                    >
                       source code is public
                     </a>
                     , and the editor is open source so the community can help

@@ -107,7 +107,7 @@ export default function Footer() {
           .copy {
             font-size: 12px;
             font-family: ${typography.fontFamilyMono};
-            background: ${darken(.05, colors.lightGrey)};
+            background: ${darken(0.05, colors.lightGrey)};
             padding: 2px 4px;
             margin-top: ${spacing.large};
             color: #444;
