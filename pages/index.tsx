@@ -12,26 +12,28 @@ export default function Home() {
   return (
     <Layout>
       <main>
-        <h1 className="title">Your team’s knowledge base</h1>
+        <div className="hero">
+          <h1 className="title">Your team’s knowledge base</h1>
 
-        <p className="description">
-          A modern team knowledge base for your internal documentation, product
-          specs, support answers, meeting notes, onboarding, &amp; more…
-        </p>
+          <p className="description">
+            A modern team knowledge base for your internal documentation, product
+            specs, support answers, meeting notes, onboarding, &amp; more…
+</p>
 
-        <p>
-          <Button href="//app.getoutline.com">
-            Get Started for Free &rarr;
-          </Button>
-        </p>
+          <p>
+            <Button href="//app.getoutline.com">
+              Get Started for Free &rarr;
+  </Button>
+          </p>
 
-        <p className="screenshot-wrapper">
-          <img
-            src="/images/screenshot.png"
-            alt="Outline screenshot"
-            className="screenshot"
-          />
-        </p>
+          <p className="screenshot-wrapper">
+            <img
+              src="/images/screenshot.png"
+              alt="Outline screenshot"
+              className="screenshot"
+            />
+          </p>
+        </div>
 
         <h1 className="subtitle">Why you’ll love using Outline</h1>
         <p className="description">
@@ -61,7 +63,7 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
-                <em>Beautiful documents, without even trying.</em> <br />
+                <em>Beautiful documents, without even trying.</em>
                 An intuitive editor with markdown support, slash commands, rich
                 embeds, and more…
               </h2>
@@ -74,7 +76,6 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
               <h2>
                 <em>Integrated with Slack.</em>
-                <br />
                 Search and share documents without ever leaving your team chat.
               </h2>
             </div>
@@ -104,7 +105,6 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
                 <em>Structured &amp; instantly searchable.</em>
-                <br />
                 Nest documents in a hierachy, build a network of references and
                 search across everything.
               </h2>
@@ -226,7 +226,7 @@ export default function Home() {
               <Card
                 title="Intuitive"
                 description="The Outline editor has been designed from the ground up to be
-                  as intuitive as possible. We want to make reading and writing
+                  easy to use, but powerful. We want to make reading and writing
                   docs enjoyable."
               />
             </div>
@@ -316,10 +316,8 @@ export default function Home() {
         .feature h2 em {
           font-weight: 600;
           font-style: normal;
-        }
-
-        .feature.dark h2 {
-          color: ${colors.almostBlack};
+          display: block;
+          margin-bottom: .25em;
         }
 
         .lil-wrapper {
@@ -348,7 +346,7 @@ export default function Home() {
         .screenshot {
           max-width: 1140px;
           width: 90vw;
-          box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.25);
           border-radius: 8px;
         }
 
@@ -367,6 +365,16 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .hero {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background: linear-gradient(180deg, #fff, ${colors.lightGrey});
         }
 
         .title {
@@ -419,7 +427,20 @@ export default function Home() {
         }
 
         .heading {
+          position: relative;
           margin-top: ${spacing.large};
+        }
+
+        .heading:before {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 2px;
+          background: ${colors.almostBlack};
+          position: absolute;
+          left: -16px;
+          top: 4px;
         }
 
         .cards {

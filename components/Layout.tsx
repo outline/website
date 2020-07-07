@@ -29,7 +29,7 @@ export default function Layout({
 }: Props) {
   const pageTitle = `${
     title ? title + " – " : ""
-  }Outline – Team wiki & knowledgebase`;
+    }Outline – Team wiki & knowledgebase`;
 
   return (
     <>
@@ -93,8 +93,8 @@ export default function Layout({
               </div>
             </div>
           ) : (
-            header
-          )}
+              header
+            )}
         </div>
       </header>
       <div className="page">
@@ -106,8 +106,8 @@ export default function Layout({
             </div>
           </div>
         ) : (
-          children
-        )}
+            children
+          )}
       </div>
       <Footer />
       <style jsx>

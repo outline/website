@@ -20,11 +20,6 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/features">
-                <a>Features</a>
-              </Link>
-            </li>
-            <li>
               <Link href="/integrations">
                 <a>Integrations</a>
               </Link>

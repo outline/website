@@ -15,7 +15,7 @@ export default function Card({ title, description, href }: Props) {
       <style jsx>{`
         .card {
           display: block;
-          margin: 1rem;
+          margin: 1.5rem 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
@@ -23,7 +23,6 @@ export default function Card({ title, description, href }: Props) {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 8px;
-          transition: color 0.15s ease, border-color 0.15s ease;
           min-height: 250px;
         }
 
