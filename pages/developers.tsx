@@ -45,6 +45,9 @@ export default function Developers({ spec }) {
                   primary: colors.almostBlack,
                   secondary: colors.greyMid,
                 },
+                error: {
+                  main: colors.brand.red
+                }
               },
               typography: {
                 fontSize: "16px",
@@ -54,6 +57,10 @@ export default function Developers({ spec }) {
                   fontWeight: "500",
                   lineHeight: "inherit",
                 },
+                code: {
+                  fontFamily: typography.fontFamilyMono,
+                  color: colors.brand.red
+                }
               },
               sidebar: {
                 width: "20%",
@@ -65,6 +72,22 @@ export default function Developers({ spec }) {
         />
       </div>
       <style jsx global>{`
+        .redoc-wrap .token.boolean {
+          color: ${colors.brand.red} !important;
+        }
+
+        .redoc-wrap .token.number {
+          color: ${colors.brand.marine} !important;
+        }
+
+        .redoc-wrap .token.string {
+          color: ${colors.brand.green} !important;
+        }
+
+        .redoc-wrap .token.keyword {
+          color: ${colors.brand.pink} !important;
+        }
+
         .redoc-wrap .api-content {
           margin-top: -42px;
         }
