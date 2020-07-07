@@ -124,5 +124,12 @@
         "url": "https://zapier.com",
         "category": "Developers",
         "description": "Connect applications and automate workflows"
+    },
+    {
+        "slug": "alfred",
+        "name": "Alfred",
+        "url": "https://github.com/outline/alfred-outline",
+        "category": "Tools",
+        "description": "Search Outline from the comfort of your desktop"
     }
 ]
