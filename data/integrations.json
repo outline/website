@@ -11,7 +11,8 @@
         "name": "Figma",
         "url": "https://figma.com",
         "category": "Design",
-        "description": "Figma is a collaborative interface design tool"
+        "description": "Figma is a collaborative interface design tool",
+        "summary": "Whether it's product specs, or your brand design system, you can embed interactive Figma artboards into Outline documents"
     },
     {
         "slug": "framer",
@@ -46,7 +47,8 @@
         "name": "Google Docs",
         "url": "https://docs.google.com",
         "category": "Collaboration",
-        "description": "Create documents, spreadsheets, and presentations."
+        "description": "Create documents, spreadsheets, and presentations",
+        "summary": "Embed spreadsheets and presentations from Google Docs directly into an Outline document"
     },
     {
         "slug": "lucidchart",
@@ -74,7 +76,8 @@
         "name": "Slack",
         "url": "https://slack.com",
         "category": "Collaboration",
-        "description": "Chat, collaboration, and file sharing for teams"
+        "description": "Chat, collaboration, and file sharing for teams",
+        "summary": "Use /slash commands to search for documentation in Outline without leaving chat, and post document updates into your Slack channels"
     },
     {
         "slug": "trello",
@@ -130,6 +133,7 @@
         "name": "Alfred",
         "url": "https://github.com/outline/alfred-outline",
         "category": "Tools",
-        "description": "Search Outline from the comfort of your desktop"
+        "description": "Search Outline from the comfort of your desktop",
+        "summary": "Search Outline from the comfort of your desktop by using our Powerpack plugin, install in seconds"
     }
 ]

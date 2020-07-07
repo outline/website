@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { colors } from "theme";
+
 type Props = {
   href?: string;
   title: React.ReactNode;
@@ -5,17 +8,26 @@ type Props = {
 };
 
 export default function Card({ title, description, href }: Props) {
+  const content = (
+    <>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </>
+  );
+
   return (
     <>
-      <div className="card">
-        {" "}
-        <h3 className="heading">{title}</h3>
-        <p className="content">{description}</p>
-      </div>
+      {href ? (
+        <Link href={href}>
+          <a className="card">{content}</a>
+        </Link>
+      ) : (
+        <div className="card">{content}</div>
+      )}
       <style jsx>{`
         .card {
           display: block;
-          margin: 1.5rem 1rem;
+          margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
@@ -23,24 +35,27 @@ export default function Card({ title, description, href }: Props) {
           text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 8px;
+          transition: color 0.15s ease, border-color 0.15s ease;
           min-height: 250px;
         }
 
-        .heading {
+        a.card:hover,
+        a.card:focus,
+        a.card:active {
+          color: ${colors.primary};
+          border-color: ${colors.primary};
+          outline: none;
+        }
+
+        .card :global(h3) {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
 
-        .content {
+        .card :global(p) {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
-        }
-
-        @media (max-width: 48em) {
-          .card {
-            min-height: 0;
-          }
         }
       `}</style>
     </>

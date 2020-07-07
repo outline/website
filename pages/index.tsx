@@ -16,14 +16,15 @@ export default function Home() {
           <h1 className="title">Your team’s knowledge base</h1>
 
           <p className="description">
-            A modern team knowledge base for your internal documentation, product
-            specs, support answers, meeting notes, onboarding, &amp; more…
-</p>
+            A modern team knowledge base for your internal documentation,
+            product specs, support answers, meeting notes, onboarding, &amp;
+            more…
+          </p>
 
           <p>
             <Button href="//app.getoutline.com">
               Get Started for Free &rarr;
-  </Button>
+            </Button>
           </p>
 
           <p className="screenshot-wrapper">
@@ -317,7 +318,7 @@ export default function Home() {
           font-weight: 600;
           font-style: normal;
           display: block;
-          margin-bottom: .25em;
+          margin-bottom: 0.25em;
         }
 
         .lil-wrapper {

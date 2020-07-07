@@ -46,8 +46,8 @@ export default function Developers({ spec }) {
                   secondary: colors.greyMid,
                 },
                 error: {
-                  main: colors.brand.red
-                }
+                  main: colors.brand.red,
+                },
               },
               typography: {
                 fontSize: "16px",
@@ -59,8 +59,8 @@ export default function Developers({ spec }) {
                 },
                 code: {
                   fontFamily: typography.fontFamilyMono,
-                  color: colors.brand.red
-                }
+                  color: colors.brand.red,
+                },
               },
               sidebar: {
                 width: "20%",
