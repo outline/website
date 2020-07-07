@@ -57,10 +57,10 @@ export default function Pricing() {
               </td>
             </tr>
             <tr>
-              <td>Max team members</td>
-              <td>10</td>
-              <td>100</td>
-              <td>250</td>
+              <td>No. team members</td>
+              <td>1 – 10</td>
+              <td>11 – 100</td>
+              <td>101 – 250</td>
             </tr>
             <tr>
               <td>Unlimited documents</td>

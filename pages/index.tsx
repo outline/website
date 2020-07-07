@@ -342,7 +342,7 @@ export default function Home() {
         }
 
         .lil-wrapper.slack {
-          border-left: 30px solid #4a1d51;
+          border-left: 30px solid ${colors.brand.marine};
         }
 
         .screenshot {
@@ -353,7 +353,7 @@ export default function Home() {
         }
 
         .screenshot-wrapper {
-          padding: 24px;
+          padding: 24px 24px 48px;
           margin-bottom: 0;
           border-radius: 12px;
           overflow: hidden;
@@ -408,8 +408,10 @@ export default function Home() {
 
         .use-cases {
           width: 100%;
+          min-height: 520px;
           background: ${colors.lightGrey};
           margin: ${spacing.xlarge} 0;
+          padding: ${spacing.xlarge} 0;
         }
 
         .content {
