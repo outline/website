@@ -16,8 +16,8 @@ export default function Pricing() {
           <div className="pure-u-1 pure-u-md-2-5">
             <h1>Pricing</h1>
             <Hero>
-              Our pricing is simple, flexible and fair. All accounts come with a 30
-              day trial with no credit card required.
+              Our pricing is simple, flexible and fair. All accounts come with a
+              30 day trial with no credit card required.
             </Hero>
           </div>
           <div className="pure-u-1 pure-u-md-3-5 ">

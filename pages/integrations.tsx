@@ -116,6 +116,7 @@ export default function Integrations() {
             border: 0;
             padding: 24px ${spacing.medium};
             background: ${colors.lightGrey};
+            box-shadow: 0 0 0 2px ${colors.greyDark};
             font-size: 16px;
             margin: 16px 0;
           }

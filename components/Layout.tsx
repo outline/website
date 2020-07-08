@@ -1,3 +1,5 @@
+import ReactGA from "react-ga";
+import * as React from "react";
 import Head from "next/head";
 import { darken } from "polished";
 import Footer from "components/Footer";
@@ -5,6 +7,8 @@ import Logo from "components/Logo";
 import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, colors, typography } from "theme";
+
+ReactGA.initialize("UA-109435745-1");
 
 type Props = {
   title?: string;
@@ -27,6 +31,11 @@ export default function Layout({
   color = "inherit",
   children,
 }: Props) {
+  React.useEffect(() => {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   const pageTitle = `${
     title ? title + " – " : ""
   }Outline – Team wiki & knowledgebase`;
@@ -59,6 +68,11 @@ export default function Layout({
           rel="stylesheet"
           href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
         />
+        <meta
+          name="description"
+          content="A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"
+        />
+        <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
         <meta name="slack-app-id" content="A0W3UMKBQ" />

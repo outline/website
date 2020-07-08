@@ -51,7 +51,7 @@ class MenuItem extends React.Component<{
             a.launch,
             a.highlighted,
             a:hover {
-              background: ${top ? 'rgba(0, 0, 0, 0.1)' : colors.primary};
+              background: ${top ? "rgba(0, 0, 0, 0.1)" : colors.primary};
               color: ${top ? colors.almostBlack : colors.white};
             }
 
@@ -236,20 +236,20 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-              <span className="auth">
-                <MenuItem className="highlighted" href="//app.getoutline.com" top>
-                  Log in
+            <span className="auth">
+              <MenuItem className="highlighted" href="//app.getoutline.com" top>
+                Log in
               </MenuItem>{" "}
-                <span className="or">or</span>{" "}
-                <MenuItem
-                  className="highlighted"
-                  href="//app.getoutline.com/create"
-                  top
-                >
-                  Sign up
+              <span className="or">or</span>{" "}
+              <MenuItem
+                className="highlighted"
+                href="//app.getoutline.com/create"
+                top
+              >
+                Sign up
               </MenuItem>
-              </span>
-            )}
+            </span>
+          )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
           <MenuItem
@@ -282,12 +282,12 @@ export default function HeaderNavigation() {
             {isSignedIn ? (
               <Teams sessions={sessions} />
             ) : (
-                <li>
-                  <MenuItem href="//app.getoutline.com">
-                    Log in | Sign up
+              <li>
+                <MenuItem href="//app.getoutline.com">
+                  Log in | Sign up
                 </MenuItem>
-                </li>
-              )}
+              </li>
+            )}
 
             <h3>Product</h3>
             <li>
