@@ -16,7 +16,7 @@ export default function Pricing() {
           <div className="pure-u-1 pure-u-md-2-5">
             <h1>Pricing</h1>
             <Hero>
-              Our pricing is simple, flexible and fair. All plans come with a 30
+              Our pricing is simple, flexible and fair. All accounts come with a 30
               day trial with no credit card required.
             </Hero>
           </div>
@@ -155,7 +155,7 @@ export default function Pricing() {
             <p>
               Currently plans are based on the number of members in your team.
               If your team outgrows your plan then it will automatically move to
-              the next pricing plan.
+              the next pricing tier.
             </p>
           </dd>
 
@@ -237,6 +237,10 @@ export default function Pricing() {
 
           dl dt {
             padding-right: 2em;
+          }
+
+          dl dt h3 {
+            line-height: 1.4;
           }
 
           dl dd {

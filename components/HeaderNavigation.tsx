@@ -15,9 +15,10 @@ class MenuItem extends React.Component<{
   onClick?: (event) => void;
   className?: string;
   target?: string;
+  top?: boolean;
 }> {
   render() {
-    const { children, href, onClick, className } = this.props;
+    const { children, href, top, onClick, className } = this.props;
 
     return (
       <>
@@ -33,6 +34,7 @@ class MenuItem extends React.Component<{
               color: rgba(0, 0, 0, 0.75);
               text-decoration: none;
               white-space: nowrap;
+              border-radius: 4px;
               min-height: 40px;
               font-weight: 500;
               position: relative;
@@ -49,8 +51,8 @@ class MenuItem extends React.Component<{
             a.launch,
             a.highlighted,
             a:hover {
-              background: rgba(0, 0, 0, 0.1);
-              border-radius: 4px;
+              background: ${top ? 'rgba(0, 0, 0, 0.1)' : colors.primary};
+              color: ${top ? colors.almostBlack : colors.white};
             }
 
             a.open,
@@ -147,6 +149,7 @@ export default function HeaderNavigation() {
             )}
             aria-haspopup="true"
             onClick={setActiveNav("product")}
+            top
           >
             Product <ExpandedIcon color="currentColor" />
           </MenuItem>
@@ -170,7 +173,7 @@ export default function HeaderNavigation() {
         </li>
         <li className="hidden-on-mobile">
           <Link href="/pricing">
-            <MenuItem>Pricing</MenuItem>
+            <MenuItem top>Pricing</MenuItem>
           </Link>
         </li>
         <li className={openNav === "community" ? "open" : "hidden-on-mobile"}>
@@ -181,6 +184,7 @@ export default function HeaderNavigation() {
             )}
             aria-haspopup="true"
             onClick={setActiveNav("community")}
+            top
           >
             Community <ExpandedIcon color="currentColor" />
           </MenuItem>
@@ -223,6 +227,7 @@ export default function HeaderNavigation() {
                 )}
                 aria-haspopup="true"
                 onClick={setActiveNav("sessions")}
+                top
               >
                 Launch Outline <ExpandedIcon color="currentColor" />
               </MenuItem>
@@ -231,19 +236,20 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-            <span className="auth">
-              <MenuItem className="highlighted" href="//app.getoutline.com">
-                Log in
+              <span className="auth">
+                <MenuItem className="highlighted" href="//app.getoutline.com" top>
+                  Log in
               </MenuItem>{" "}
-              <span className="or">or</span>{" "}
-              <MenuItem
-                className="highlighted"
-                href="//app.getoutline.com/create"
-              >
-                Sign up
+                <span className="or">or</span>{" "}
+                <MenuItem
+                  className="highlighted"
+                  href="//app.getoutline.com/create"
+                  top
+                >
+                  Sign up
               </MenuItem>
-            </span>
-          )}
+              </span>
+            )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
           <MenuItem
@@ -255,6 +261,7 @@ export default function HeaderNavigation() {
             )}
             aria-haspopup="true"
             onClick={setActiveNav("mobile")}
+            top
           >
             Menu&nbsp;
             <svg
@@ -275,12 +282,12 @@ export default function HeaderNavigation() {
             {isSignedIn ? (
               <Teams sessions={sessions} />
             ) : (
-              <li>
-                <MenuItem href="//app.getoutline.com">
-                  Log in | Sign up
+                <li>
+                  <MenuItem href="//app.getoutline.com">
+                    Log in | Sign up
                 </MenuItem>
-              </li>
-            )}
+                </li>
+              )}
 
             <h3>Product</h3>
             <li>
@@ -358,11 +365,11 @@ export default function HeaderNavigation() {
             visibility: hidden;
             opacity: 0;
             position: absolute;
-            transition: all 0.5s ease;
+            pointer-events: none;
             margin-top: 0;
             margin-left: ${spacing.medium};
+            padding: 0 ${spacing.small} ${spacing.small};
             left: 0;
-            display: none;
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
             border-radius: 4px;
@@ -399,6 +406,8 @@ export default function HeaderNavigation() {
             visibility: visible;
             opacity: 1;
             display: block;
+            transition: opacity 200ms ease-in-out;
+            pointer-events: initial;
 
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05),
               0 4px 8px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.08);

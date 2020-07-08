@@ -17,14 +17,14 @@ export default function TermsOfService() {
             Accuracy of Materials
           </SidebarMenuItem>
           <SidebarMenuItem href="#links">Links</SidebarMenuItem>
-          <SidebarMenuItem href="#modifications">Modiciations</SidebarMenuItem>
+          <SidebarMenuItem href="#modifications">Modifications</SidebarMenuItem>
           <SidebarMenuItem href="#law">Governing Law</SidebarMenuItem>
         </SidebarMenu>
       }
     >
       <p>
         By accessing the website at{" "}
-        <a href="http://getoutline.com">http://getoutline.com</a>, you are
+        <a href="http://www.getoutline.com">http://www.getoutline.com</a>, you are
         agreeing to be bound by these terms of service, all applicable laws and
         regulations, and agree that you are responsible for compliance with any
         applicable local laws. If you do not agree with any of these terms, you

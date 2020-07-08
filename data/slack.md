@@ -1,11 +1,11 @@
 ### Sign In with Slack
 
-Sign In with Slack means your team doesn't have to worry about invites, passwords, or managing new team members. Everyone on your team can login with their existing Slack account and will automatically join your private knowledgebase.
+Sign In with Slack means your team doesn't have to worry about invites, passwords, or managing new team members. Everyone on your team can login with their existing Slack account and will automatically join your private knowledge base.
 
 > Note: Your team will also get a matching custom subdomain that you can link to from elsewhere.
 
 
-### Search your Knowledgebase
+### Search your Knowledge base
 
 Optionally [Connect to Slack](https://www.getoutline.com/settings/integrations/slack) to enable the `/outline` slack command. Once enabled, team members can easily search your wiki from within Slack by typing `/outline search term`, and post results directly back to the Slack channel.
 

@@ -240,7 +240,7 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Permissioned"
+                title="Governable"
                 description="Manage the knowledge base with read &amp; write permissions, user groups, guest users, public sharing, and more…"
               />
             </div>
