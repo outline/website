@@ -48,7 +48,7 @@
         "url": "https://docs.google.com",
         "category": "Collaboration",
         "description": "Create documents, spreadsheets, and presentations",
-        "summary": "Embed spreadsheets and presentations from Google Docs directly into an Outline document"
+        "summary": "Embed published spreadsheets, presentations, and documents from Google Docs directly into an Outline document"
     },
     {
         "slug": "lucidchart",
@@ -134,6 +134,6 @@
         "url": "https://github.com/outline/alfred-outline",
         "category": "Tools",
         "description": "Search Outline from the comfort of your desktop",
-        "summary": "Search Outline from the comfort of your desktop by using our Powerpack plugin, install in seconds"
+        "summary": "Search your knowledgebase from the comfort of your Mac desktop by using our Alfred Powerpack plugin – install in seconds"
     }
 ]
