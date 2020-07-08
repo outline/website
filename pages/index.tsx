@@ -81,7 +81,7 @@ export default function Home() {
         </section>
 
         <section className="feature">
-          <div className="pure-g container">
+          <div className="pure-g container reverse">
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
               <h2>
                 <em>Integrated with Slack.</em>
@@ -522,6 +522,10 @@ export default function Home() {
           .description {
             font-size: 1.3rem;
             max-width: 90vw;
+          }
+
+          .reverse .feature-left {
+            order: 2;
           }
 
           .screenshot {
