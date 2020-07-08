@@ -1,9 +1,17 @@
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
 import Link from "next/link";
+import {
+  PadlockIcon,
+  CollectionIcon,
+  BuildingBlocksIcon,
+  LightBulbIcon,
+  StarredIcon,
+} from "outline-icons";
 import Button from "components/Button";
 import Card from "components/Card";
 import Hero from "components/Hero";
 import Layout from "components/Layout";
+import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
 
 resetIdCounter();
@@ -217,7 +225,16 @@ export default function Home() {
           <div className="pure-g cards">
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Blazing Fast"
+                title={
+                  <>
+                    <StarredIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Blazing Fast
+                  </>
+                }
                 description="Outline is fast, really fast. We’ve worked hard to ensure
                 millisecond response times – documents load instantly, search
                 is speedy and navigating the UI is delightful."
@@ -225,7 +242,16 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Intuitive"
+                title={
+                  <>
+                    <LightBulbIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Intuitive
+                  </>
+                }
                 description="The Outline editor has been designed from the ground up to be
                   easy to use, but powerful. We want to make reading and writing
                   docs enjoyable."
@@ -233,20 +259,47 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Organized"
+                title={
+                  <>
+                    <CollectionIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Organized
+                  </>
+                }
                 description="Give your documentation structure – with nesting, collections,
                   and automatic backlinks to build a tree of useful information."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Governable"
+                title={
+                  <>
+                    <PadlockIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Secure
+                  </>
+                }
                 description="Manage the knowledge base with read &amp; write permissions, user groups, guest users, public sharing, and more…"
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Integrated"
+                title={
+                  <>
+                    <BuildingBlocksIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Integrated
+                  </>
+                }
                 description={
                   <>
                     Simple <Link href="/integrations">integrations</Link> into
@@ -260,7 +313,12 @@ export default function Home() {
 
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
-                title="Open Source"
+                title={
+                  <>
+                    <GithubLogo size={24} />
+                    &nbsp;Open Source
+                  </>
+                }
                 description={
                   <>
                     Outline’s{" "}
@@ -425,11 +483,13 @@ export default function Home() {
 
         .content {
           margin-right: ${spacing.xlarge};
+          margin-left: ${spacing.medium};
         }
 
         .heading {
           position: relative;
           margin-top: ${spacing.large};
+          margin-left: ${spacing.medium};
         }
 
         .heading:before {
@@ -484,6 +544,10 @@ export default function Home() {
       `}</style>
       <style jsx global>
         {`
+          .pull-icon {
+            margin-left: -4px;
+          }
+
           .react-tabs {
             -webkit-tap-highlight-color: transparent;
           }

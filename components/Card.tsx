@@ -48,6 +48,8 @@ export default function Card({ title, description, href }: Props) {
         }
 
         .card :global(h3) {
+          display: flex;
+          align-items: center;
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
