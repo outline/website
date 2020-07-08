@@ -364,6 +364,7 @@ export default function HeaderNavigation() {
           ul li ul {
             visibility: hidden;
             opacity: 0;
+            display: block;
             position: absolute;
             pointer-events: none;
             margin-top: 0;
