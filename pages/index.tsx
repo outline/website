@@ -302,10 +302,16 @@ export default function Home() {
                 }
                 description={
                   <>
-                    Simple <Link href="/integrations"><a>integrations</a></Link> into
-                    tools you use every day like Slack, Figma, Loom and many
-                    more. Can’t find the integration you need? There is an{" "}
-                    <Link href="/developers"><a>open API</a></Link> too.
+                    Simple{" "}
+                    <Link href="/integrations">
+                      <a>integrations</a>
+                    </Link>{" "}
+                    into tools you use every day like Slack, Figma, Loom and
+                    many more. Can’t find the integration you need? There is an{" "}
+                    <Link href="/developers">
+                      <a>open API</a>
+                    </Link>{" "}
+                    too.
                   </>
                 }
               />
