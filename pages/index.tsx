@@ -30,7 +30,7 @@ export default function Home() {
           </p>
 
           <p>
-            <Button href="//app.getoutline.com">
+            <Button href="//app.getoutline.com/create">
               Get Started for Free &rarr;
             </Button>
           </p>
@@ -348,7 +348,7 @@ export default function Home() {
           On the same page as us? Sign up in just a couple of clicks…
         </p>
         <p>
-          <Button href="//app.getoutline.com">
+          <Button href="//app.getoutline.com/create">
             Get Started for Free &rarr;
           </Button>
         </p>
