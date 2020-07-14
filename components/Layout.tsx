@@ -38,7 +38,7 @@ export default function Layout({
 
   const pageTitle = `${
     title ? title + " – " : ""
-  }Outline – Team wiki & knowledgebase`;
+  }Outline – Team wiki & knowledge base`;
 
   return (
     <>

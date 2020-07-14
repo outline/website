@@ -569,7 +569,7 @@ export default function Home() {
 
           .react-tabs__tab {
             display: inline-block;
-            border: 2px solid transparent;
+            border-bottom: 2px solid transparent;
             bottom: -1px;
             position: relative;
             list-style: none;

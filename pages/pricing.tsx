@@ -128,7 +128,7 @@ export default function Pricing() {
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               When you start your trial, your first 30 days are free. Once this
-              trial period elapses your knowledgebase becomes read-only until a
+              trial period elapses your knowledge base becomes read-only until a
               payment method is added. During this time you can easily export
               all of your data.
             </p>
