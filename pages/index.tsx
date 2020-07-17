@@ -114,8 +114,8 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
                 <em>Structured &amp; instantly searchable.</em>
-                Nest documents in a hierachy, build a network of references and
-                search across everything.
+                Nest documents in a hierachy, automatically build a network of
+                references and search across everything.
               </h2>
             </div>
           </div>
