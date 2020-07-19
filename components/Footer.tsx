@@ -34,6 +34,11 @@ export default function Footer() {
                 <a>Pricing</a>
               </Link>
             </li>
+            <li>
+              <Link href="https://status.getoutline.com">
+                <a>Status</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div role="navigation" className="pure-u-1-2 pure-u-md-1-5">
