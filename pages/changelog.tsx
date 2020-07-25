@@ -1,5 +1,7 @@
-import fetch from "isomorphic-fetch";
-import { map, groupBy } from "lodash";
+import fs from "fs";
+import path from "path";
+import matter from 'gray-matter';
+import { map, sortBy, groupBy } from "lodash";
 import { format } from "date-fns";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
@@ -7,12 +9,12 @@ import Layout from "components/Layout";
 import Markdown from "components/Markdown";
 import { typography, colors } from "theme";
 
-export default function Changelog({ releases }) {
-  const months = groupBy(releases, (release) =>
-    format(new Date(release.created_at), "MMMM, yyyy")
+export default function Changelog({ posts }) {
+  const months = groupBy(posts, (post) =>
+    format(new Date(post.date), "MMMM, yyyy")
   );
-  const years = groupBy(months, (releases) =>
-    format(new Date(releases[0].created_at), "yyyy")
+  const years = groupBy(months, (posts) =>
+    format(new Date(posts[0].date), "yyyy")
   );
 
   const sortedYears = Object.keys(years).reverse();
@@ -32,17 +34,17 @@ export default function Changelog({ releases }) {
         <>
           {map(sortedYears, (year) => (
             <SidebarMenu title={year} key={year}>
-              {years[year].map((releases) => {
-                const release = releases[0];
+              {years[year].map((posts) => {
+                const post = posts[0];
                 return (
                   <SidebarMenuItem
-                    key={release.id}
+                    key={post.slug}
                     href={`#${format(
-                      new Date(release.created_at),
+                      new Date(post.date),
                       "yyyy-MMMM"
                     )}`}
                   >
-                    {format(new Date(release.created_at), "MMMM")}
+                    {format(new Date(post.date), "MMMM")}
                   </SidebarMenuItem>
                 );
               })}
@@ -51,15 +53,15 @@ export default function Changelog({ releases }) {
         </>
       }
     >
-      {releases.map((release) => (
-        <article key={release.id}>
-          <a id={format(new Date(release.created_at), "yyyy-MMMM")} />
-          <a id={release.name} />
-          <h2>{release.name}</h2>
-          <time dateTime={release.created_at}>
-            {format(new Date(release.created_at), "MMMM do, yyyy")}
+      {posts.map((post) => (
+        <article key={post.slug}>
+          <a id={format(new Date(post.date), "yyyy-MMMM")} />
+          <a id={post.title} />
+          <h2>{post.title}</h2>
+          <time dateTime={post.date}>
+            {format(new Date(post.date), "MMMM do, yyyy")}
           </time>
-          <Markdown source={release.body} />
+          <Markdown source={post.content} />
         </article>
       ))}
       <style jsx>
@@ -83,14 +85,27 @@ export default function Changelog({ releases }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://api.github.com/repos/outline/outline/releases"
-  );
-  const releases = await res.json();
+  const fileNames = fs.readdirSync(path.join(process.cwd(), "posts"));
+  let posts = [];
+
+  for (const fileName of fileNames) {
+    if ([".DS_Store", "..", "."].includes(fileName)) {
+      continue;
+    }
+
+    const { data, content } = matter(
+      fs.readFileSync(path.join(process.cwd(), "posts", fileName), "utf8").trim()
+    );
+
+    const title = data.title;
+    const slug = data.slug;
+    const date = data.date.toISOString();
+    posts.push({ title, slug, date, content });
+  }
 
   return {
     props: {
-      releases,
+      posts: sortBy(posts, post => post.date).reverse()
     },
   };
 }

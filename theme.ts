@@ -6,9 +6,9 @@ export const spacing = {
 }
 
 export const colors = {
-  primary: '#3141F5',
-  white: '#FFFFFF',
-  lightGrey: '#f4f7fa',
+  primary: "#3141F5",
+  white: "#FFFFFF",
+  lightGrey: "#f4f7fa",
   almostBlack: "#181A1B",
   lightBlack: "#2F3336",
   almostWhite: "#E6E6E6",

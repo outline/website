@@ -3,7 +3,7 @@ import { filter, find } from "lodash";
 import Card from "components/Card";
 import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
-import content from "data/integrations.json";
+import content from "integrations/index.json";
 import { colors, spacing } from "theme";
 
 export default function Integrations() {
@@ -77,35 +77,35 @@ export default function Integrations() {
           </div>
         </>
       ) : (
-        <>
-          <h2>Featured</h2>
-          <div className="pure-g cards">
-            {["slack", "google-docs", "alfred", "figma"].map((slug) => {
-              const integration = find(content, { slug });
+          <>
+            <h2>Featured</h2>
+            <div className="pure-g cards">
+              {["slack", "google-docs", "alfred", "figma"].map((slug) => {
+                const integration = find(content, { slug });
 
-              return (
-                <div className="pure-u-1 pure-u-md-1-2" key={slug}>
-                  <Card
-                    title={
-                      <div>
-                        <img
-                          className="integration-icon"
-                          src={`/images/integrations/${integration.slug}.png`}
-                        />
-                        <div>{integration.name}</div>
-                      </div>
-                    }
-                    description={
-                      <>{integration.summary || integration.description}.</>
-                    }
-                    href={`/integrations/${integration.slug}`}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </>
-      )}
+                return (
+                  <div className="pure-u-1 pure-u-md-1-2" key={slug}>
+                    <Card
+                      title={
+                        <div>
+                          <img
+                            className="integration-icon"
+                            src={`/images/integrations/${integration.slug}.png`}
+                          />
+                          <div>{integration.name}</div>
+                        </div>
+                      }
+                      description={
+                        <>{integration.summary || integration.description}.</>
+                      }
+                      href={`/integrations/${integration.slug}`}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
 
       <style jsx>
         {`

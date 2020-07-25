@@ -1,8 +1,7 @@
 import * as React from "react";
-import Link from "next/link";
 import { groupBy } from "lodash";
 import { spacing } from "theme";
-import content from "data/integrations.json";
+import content from "integrations/index.json";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 

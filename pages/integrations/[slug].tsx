@@ -1,7 +1,7 @@
-import fs from 'fs'
-import path from 'path'
+import fs from "fs"
+import path from "path"
 import { find } from "lodash";
-import content from "data/integrations.json";
+import content from "integrations/index.json";
 import Markdown from "components/Markdown";
 import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
@@ -27,8 +27,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  const filePath = path.join(process.cwd(), 'data', `${context.params.slug}.md`)
-  const body = fs.readFileSync(filePath, 'utf8');
+  const filePath = path.join(process.cwd(), "integrations", `${context.params.slug}.md`)
+  const body = fs.readFileSync(filePath, "utf8");
 
   return {
     props: {
