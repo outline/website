@@ -1,13 +1,13 @@
-import fs from "fs";
-import path from "path";
-import matter from 'gray-matter';
-import { map, sortBy, groupBy } from "lodash";
+import { map, groupBy } from "lodash";
+import Link from "next/link";
 import { format } from "date-fns";
+import { getPosts } from "lib/posts";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Layout from "components/Layout";
 import Markdown from "components/Markdown";
-import { typography, colors } from "theme";
+import Metadata from "components/PostMetadata";
+import { colors } from "theme";
 
 export default function Changelog({ posts }) {
   const months = groupBy(posts, (post) =>
@@ -39,10 +39,7 @@ export default function Changelog({ posts }) {
                 return (
                   <SidebarMenuItem
                     key={post.slug}
-                    href={`#${format(
-                      new Date(post.date),
-                      "yyyy-MMMM"
-                    )}`}
+                    href={`#${format(new Date(post.date), "yyyy-MMMM")}`}
                   >
                     {format(new Date(post.date), "MMMM")}
                   </SidebarMenuItem>
@@ -53,30 +50,41 @@ export default function Changelog({ posts }) {
         </>
       }
     >
-      {posts.map((post) => (
-        <article key={post.slug}>
+      {posts.map((post, index) => (
+        <article key={post.slug} className={index < 20 ? "" : "compact"}>
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
-          <a id={post.title} />
-          <h2>{post.title}</h2>
-          <time dateTime={post.date}>
-            {format(new Date(post.date), "MMMM do, yyyy")}
-          </time>
-          <Markdown source={post.content} />
+          <a id={post.slug} />
+          <h2>
+            <Link href={`/changelog/${post.slug}`}>
+              <a className="heading">{post.title}</a>
+            </Link>
+          </h2>
+          <Metadata tag={post.tag} date={post.date} />
+          {index < 20 && <Markdown source={post.content} />}
         </article>
       ))}
       <style jsx>
         {`
-          article {
-            margin: 0 0 8em;
+          .heading {
+            color: ${colors.text};
           }
 
-          time {
-            display: block;
-            font-family: ${typography.fontFamilyMono};
-            color: ${colors.textSecondary};
-            font-size: 0.8em;
-            margin-top: -1.5em;
-            margin-bottom: 2em;
+          .heading:hover {
+            text-decoration: underline;
+          }
+
+          article {
+            padding: 4em 0;
+            border-bottom: 1px solid ${colors.greyMid};
+          }
+
+          article:first-child {
+            padding-top: 0;
+          }
+
+          article.compact {
+            padding: 0;
+            border-bottom: 0;
           }
         `}
       </style>
@@ -85,27 +93,9 @@ export default function Changelog({ posts }) {
 }
 
 export async function getStaticProps() {
-  const fileNames = fs.readdirSync(path.join(process.cwd(), "posts"));
-  let posts = [];
-
-  for (const fileName of fileNames) {
-    if ([".DS_Store", "..", "."].includes(fileName)) {
-      continue;
-    }
-
-    const { data, content } = matter(
-      fs.readFileSync(path.join(process.cwd(), "posts", fileName), "utf8").trim()
-    );
-
-    const title = data.title;
-    const slug = data.slug;
-    const date = data.date.toISOString();
-    posts.push({ title, slug, date, content });
-  }
-
   return {
     props: {
-      posts: sortBy(posts, post => post.date).reverse()
+      posts: getPosts(),
     },
   };
 }

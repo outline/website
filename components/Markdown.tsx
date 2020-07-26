@@ -29,7 +29,7 @@ export default function Markdown(props) {
             display: block;
             max-width: 100%;
             zoom: 50%;
-            box-shadow:  0 0 0 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             margin: 2em auto;
           }

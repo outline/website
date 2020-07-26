@@ -12,12 +12,12 @@ const octokit = new Octokit();
   });
 
   for (const release of data) {
-    const post = `
----
+    const post = `---
 id: ${release.id}
 title: ${release.name}
 date: ${release.published_at}
 slug: ${release.tag_name}
+tag: ${release.tag_name}
 ---
     
 ${release.body}

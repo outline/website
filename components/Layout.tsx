@@ -12,6 +12,7 @@ ReactGA.initialize("UA-109435745-1");
 
 type Props = {
   title?: string;
+  pageTitle?: string;
   background?: string;
   color?: string;
   header?: React.ReactNode;
@@ -23,6 +24,7 @@ type Props = {
 
 export default function Layout({
   title,
+  pageTitle,
   header,
   hero,
   illustration,
@@ -36,14 +38,15 @@ export default function Layout({
     ReactGA.pageview(window.location.pathname);
   }, []);
 
-  const pageTitle = `${
-    title ? title + " – " : ""
+  const resolvedTitle = pageTitle || title;
+  const fullTitle = `${
+    resolvedTitle ? resolvedTitle + " – " : ""
   }Outline – Team wiki & knowledge base`;
 
   return (
     <>
       <Head>
-        <title>{pageTitle}</title>
+        <title>{fullTitle}</title>
         <link
           rel="shortcut icon"
           type="image/png"
@@ -78,11 +81,11 @@ export default function Layout({
         <meta name="slack-app-id" content="A0W3UMKBQ" />
         <meta name="og:site_name" content="Outline" />
         <meta name="og:type" content="website" />
-        <meta name="og:title" content={title} />
+        <meta name="og:title" content={resolvedTitle} />
         <meta name="og:image" content="/images/screenshot.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content={resolvedTitle} />
         <meta name="twitter:image" content="/images/screenshot.png" />
       </Head>
       <header className={(header || hero) && "with-header"}>

@@ -18,6 +18,7 @@ export const colors = {
   grey: "#E8EBED",
   greyMid: "#C5CCD3",
   greyDark: "#DAE1E9",
+  text: "#181A1B",
   textSecondary: "#5E6573",
   brand: {
     red: "#FF5C80",
