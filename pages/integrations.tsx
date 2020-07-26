@@ -3,7 +3,7 @@ import { filter, find } from "lodash";
 import Card from "components/Card";
 import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
-import content from "data/integrations.json";
+import content from "integrations/index.json";
 import { colors, spacing } from "theme";
 
 export default function Integrations() {

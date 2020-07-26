@@ -1,18 +1,20 @@
-import fetch from "isomorphic-fetch";
 import { map, groupBy } from "lodash";
+import Link from "next/link";
 import { format } from "date-fns";
+import { getPosts } from "lib/posts";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Layout from "components/Layout";
 import Markdown from "components/Markdown";
-import { typography, colors } from "theme";
+import Metadata from "components/PostMetadata";
+import { colors } from "theme";
 
-export default function Changelog({ releases }) {
-  const months = groupBy(releases, (release) =>
-    format(new Date(release.created_at), "MMMM, yyyy")
+export default function Changelog({ posts }) {
+  const months = groupBy(posts, (post) =>
+    format(new Date(post.date), "MMMM, yyyy")
   );
-  const years = groupBy(months, (releases) =>
-    format(new Date(releases[0].created_at), "yyyy")
+  const years = groupBy(months, (posts) =>
+    format(new Date(posts[0].date), "yyyy")
   );
 
   const sortedYears = Object.keys(years).reverse();
@@ -32,17 +34,14 @@ export default function Changelog({ releases }) {
         <>
           {map(sortedYears, (year) => (
             <SidebarMenu title={year} key={year}>
-              {years[year].map((releases) => {
-                const release = releases[0];
+              {years[year].map((posts) => {
+                const post = posts[0];
                 return (
                   <SidebarMenuItem
-                    key={release.id}
-                    href={`#${format(
-                      new Date(release.created_at),
-                      "yyyy-MMMM"
-                    )}`}
+                    key={post.slug}
+                    href={`#${format(new Date(post.date), "yyyy-MMMM")}`}
                   >
-                    {format(new Date(release.created_at), "MMMM")}
+                    {format(new Date(post.date), "MMMM")}
                   </SidebarMenuItem>
                 );
               })}
@@ -51,30 +50,41 @@ export default function Changelog({ releases }) {
         </>
       }
     >
-      {releases.map((release) => (
-        <article key={release.id}>
-          <a id={format(new Date(release.created_at), "yyyy-MMMM")} />
-          <a id={release.name} />
-          <h2>{release.name}</h2>
-          <time dateTime={release.created_at}>
-            {format(new Date(release.created_at), "MMMM do, yyyy")}
-          </time>
-          <Markdown source={release.body} />
+      {posts.map((post, index) => (
+        <article key={post.slug} className={index < 20 ? "" : "compact"}>
+          <a id={format(new Date(post.date), "yyyy-MMMM")} />
+          <a id={post.slug} />
+          <h2>
+            <Link href={`/changelog/${post.slug}`}>
+              <a className="heading">{post.title}</a>
+            </Link>
+          </h2>
+          <Metadata tag={post.tag} date={post.date} />
+          {index < 20 && <Markdown source={post.content} />}
         </article>
       ))}
       <style jsx>
         {`
-          article {
-            margin: 0 0 8em;
+          .heading {
+            color: ${colors.text};
           }
 
-          time {
-            display: block;
-            font-family: ${typography.fontFamilyMono};
-            color: ${colors.textSecondary};
-            font-size: 0.8em;
-            margin-top: -1.5em;
-            margin-bottom: 2em;
+          .heading:hover {
+            text-decoration: underline;
+          }
+
+          article {
+            padding: 4em 0;
+            border-bottom: 1px solid ${colors.greyMid};
+          }
+
+          article:first-child {
+            padding-top: 0;
+          }
+
+          article.compact {
+            padding: 0;
+            border-bottom: 0;
           }
         `}
       </style>
@@ -83,14 +93,9 @@ export default function Changelog({ releases }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://api.github.com/repos/outline/outline/releases"
-  );
-  const releases = await res.json();
-
   return {
     props: {
-      releases,
+      posts: getPosts(),
     },
   };
 }

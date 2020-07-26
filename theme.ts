@@ -6,9 +6,9 @@ export const spacing = {
 }
 
 export const colors = {
-  primary: '#3141F5',
-  white: '#FFFFFF',
-  lightGrey: '#f4f7fa',
+  primary: "#3141F5",
+  white: "#FFFFFF",
+  lightGrey: "#f4f7fa",
   almostBlack: "#181A1B",
   lightBlack: "#2F3336",
   almostWhite: "#E6E6E6",
@@ -18,6 +18,7 @@ export const colors = {
   grey: "#E8EBED",
   greyMid: "#C5CCD3",
   greyDark: "#DAE1E9",
+  text: "#181A1B",
   textSecondary: "#5E6573",
   brand: {
     red: "#FF5C80",
