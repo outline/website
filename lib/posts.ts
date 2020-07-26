@@ -9,7 +9,7 @@ export function getPost(fileName: string) {
   );
   const title = data.title;
   const slug = data.slug;
-  const tag = data.tag;
+  const tag = data.tag || "";
   const date = data.date.toISOString();
   return { title, slug, date, tag, content };
 }

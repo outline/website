@@ -40,6 +40,10 @@ export default function Markdown(props) {
             padding: 2px 4px;
             border-radius: 2px;
           }
+
+          .md :global(h3) {
+            margin-top: 1.5em;
+          }
         `}
       </style>
     </div>
