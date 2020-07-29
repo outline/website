@@ -149,6 +149,19 @@ export default function Pricing() {
 
           <dt className="pure-u-1 pure-u-md-1-2">
             <h3>
+              Do you have an on-premises solution?
+            </h3>
+          </dt>
+          <dd className="pure-u-1 pure-u-md-1-2">
+            <p>
+              Yes – Outline can easily be installed behind you firewall or VPC.
+              Please <a href="mailto:hello@getoutline.com">contact us</a> for
+              more details.
+            </p>
+          </dd>
+
+          <dt className="pure-u-1 pure-u-md-1-2">
+            <h3>
               Do you have discounts for non-profits or educational institutions?
             </h3>
           </dt>
@@ -162,7 +175,7 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>How do I choose a plan?</h3>
+            <h3>How do I choose a specific plan?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
