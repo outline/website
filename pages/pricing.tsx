@@ -53,7 +53,7 @@ export default function Pricing() {
                 $79 <span className="period">per month</span>
               </td>
               <td className="price">
-                $199 <span className="period">per month</span>
+                $249 <span className="period">per month</span>
               </td>
             </tr>
             <tr>
