@@ -1,5 +1,5 @@
 ---
-title: Tempting templates
+title: Document templates are here
 date: 2020-08-13T00:00:00Z
 slug: document-templates
 ---
