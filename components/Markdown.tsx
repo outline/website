@@ -41,6 +41,10 @@ export default function Markdown(props) {
             border-radius: 2px;
           }
 
+          .md :global(li) {
+            line-height: 1.6;
+          }
+
           .md :global(h3) {
             margin-top: 1.5em;
           }
