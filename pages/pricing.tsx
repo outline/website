@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "components/Button";
 import { CheckmarkIcon } from "outline-icons";
 import Layout from "components/Layout";
@@ -142,7 +143,7 @@ export default function Pricing() {
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               We're happy to support enterprise teams larger than 250 users.
-              Please <a href="mailto:hello@getoutline.com">contact us</a> to discuss
+              Please <Link href="/contact"><a>contact us</a></Link> to discuss
               pricing options.
             </p>
           </dd>
@@ -155,7 +156,7 @@ export default function Pricing() {
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               Yes – Outline can easily be installed behind you firewall or VPC.
-              Please <a href="mailto:hello@getoutline.com">contact us</a> for
+              Please <Link href="/contact"><a>contact us</a></Link> for
               more details.
             </p>
           </dd>
@@ -169,7 +170,7 @@ export default function Pricing() {
             <p>
               Yep, absolutely – we’re also happy to sponsor accounts for
               companies working on solving climate change. Please{" "}
-              <a href="mailto:hello@getoutline.com">contact us</a> for more
+              <Link href="/contact"><a>contact us</a></Link> for more
               details.
             </p>
           </dd>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Layout from "components/Layout";
@@ -51,7 +52,7 @@ export default function Privacy() {
 
       <p>
         If you have questions about deleting or correcting your personal data
-        please contact support.
+        please <Link href="/contact"><a>contact support</a></Link>.
       </p>
 
       <p>

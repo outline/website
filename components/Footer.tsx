@@ -35,9 +35,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="https://status.getoutline.com">
-                <a>Status</a>
-              </Link>
+              <a href="https://status.getoutline.com">Status</a>
             </li>
           </ul>
         </div>
@@ -45,7 +43,7 @@ export default function Footer() {
           <h3>Community</h3>
           <ul>
             <li>
-              <a href="mailto:hello@getoutline.com">Contact Us</a>
+              <Link href="/contact"><a>Contact Us</a></Link>
             </li>
             <li>
               <a href="https://github.com/outline" target="_blank">

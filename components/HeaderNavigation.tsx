@@ -190,7 +190,7 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <MenuItem href="mailto:hello@getoutline.com">Contact Us</MenuItem>
+              <MenuItem href="/contact">Contact Us</MenuItem>
             </li>
             <li>
               <MenuItem href="https://github.com/outline" target="_blank">
@@ -236,20 +236,20 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-            <span className="auth">
-              <MenuItem className="highlighted" href="//app.getoutline.com" top>
-                Log in
+              <span className="auth">
+                <MenuItem className="highlighted" href="//app.getoutline.com" top>
+                  Log in
               </MenuItem>{" "}
-              <span className="or">or</span>{" "}
-              <MenuItem
-                className="highlighted"
-                href="//app.getoutline.com/create"
-                top
-              >
-                Sign up
+                <span className="or">or</span>{" "}
+                <MenuItem
+                  className="highlighted"
+                  href="//app.getoutline.com/create"
+                  top
+                >
+                  Sign up
               </MenuItem>
-            </span>
-          )}
+              </span>
+            )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
           <MenuItem
@@ -282,12 +282,12 @@ export default function HeaderNavigation() {
             {isSignedIn ? (
               <Teams sessions={sessions} />
             ) : (
-              <li>
-                <MenuItem href="//app.getoutline.com">
-                  Log in | Sign up
+                <li>
+                  <MenuItem href="//app.getoutline.com">
+                    Log in | Sign up
                 </MenuItem>
-              </li>
-            )}
+                </li>
+              )}
 
             <h3>Product</h3>
             <li>
@@ -313,7 +313,7 @@ export default function HeaderNavigation() {
 
             <h3>Community</h3>
             <li>
-              <MenuItem href="mailto:hello@getoutline.com">Contact Us</MenuItem>
+              <MenuItem href="/contact">Contact Us</MenuItem>
             </li>
             <li>
               <MenuItem href="https://github.com/outline" target="_blank">
