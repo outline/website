@@ -143,6 +143,7 @@ export default function HeaderNavigation() {
       <ul>
         <li className={openNav === "product" ? "open" : "hidden-on-mobile"}>
           <MenuItem
+            href="#product"
             className={classnames(
               "menu-with-icon",
               openNav === "product" && "open"
@@ -155,29 +156,30 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/integrations">
+              <Link href="/integrations" passHref>
                 <MenuItem>Integrations</MenuItem>
               </Link>
             </li>
             <li>
-              <Link href="/developers">
+              <Link href="/developers" passHref>
                 <MenuItem>Developers</MenuItem>
               </Link>
             </li>
             <li>
-              <Link href="/changelog">
+              <Link href="/changelog" passHref>
                 <MenuItem>Changelog</MenuItem>
               </Link>
             </li>
           </ul>
         </li>
         <li className="hidden-on-mobile">
-          <Link href="/pricing">
+          <Link href="/pricing" passHref>
             <MenuItem top>Pricing</MenuItem>
           </Link>
         </li>
         <li className={openNav === "community" ? "open" : "hidden-on-mobile"}>
           <MenuItem
+            href="#community"
             className={classnames(
               "menu-with-icon",
               openNav === "community" && "open"
@@ -190,7 +192,9 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <MenuItem href="/contact">Contact Us</MenuItem>
+              <Link href="/contact" passHref>
+                <MenuItem>Contact Us</MenuItem>
+              </Link>
             </li>
             <li>
               <MenuItem href="https://github.com/outline" target="_blank">
@@ -237,13 +241,13 @@ export default function HeaderNavigation() {
             </>
           ) : (
               <span className="auth">
-                <MenuItem className="highlighted" href="//app.getoutline.com" top>
+                <MenuItem className="highlighted" href="https://app.getoutline.com" top>
                   Log in
               </MenuItem>{" "}
                 <span className="or">or</span>{" "}
                 <MenuItem
                   className="highlighted"
-                  href="//app.getoutline.com/create"
+                  href="https://app.getoutline.com/create"
                   top
                 >
                   Sign up
@@ -283,7 +287,7 @@ export default function HeaderNavigation() {
               <Teams sessions={sessions} />
             ) : (
                 <li>
-                  <MenuItem href="//app.getoutline.com">
+                  <MenuItem href="https://app.getoutline.com">
                     Log in | Sign up
                 </MenuItem>
                 </li>
@@ -291,29 +295,31 @@ export default function HeaderNavigation() {
 
             <h3>Product</h3>
             <li>
-              <Link href="/integrations">
+              <Link href="/integrations" passHref>
                 <MenuItem>Integrations</MenuItem>
               </Link>
             </li>
             <li>
-              <Link href="/developers">
+              <Link href="/developers" passHref>
                 <MenuItem>Developers</MenuItem>
               </Link>
             </li>
             <li>
-              <Link href="/changelog">
+              <Link href="/changelog" passHref>
                 <MenuItem>Changelog</MenuItem>
               </Link>
             </li>
             <li>
-              <Link href="/pricing">
+              <Link href="/pricing" passHref>
                 <MenuItem>Pricing</MenuItem>
               </Link>
             </li>
 
             <h3>Community</h3>
             <li>
-              <MenuItem href="/contact">Contact Us</MenuItem>
+              <Link href="/contact" passHref>
+                <MenuItem>Contact Us</MenuItem>
+              </Link>
             </li>
             <li>
               <MenuItem href="https://github.com/outline" target="_blank">
