@@ -22,9 +22,9 @@ export default function Privacy() {
       hero="How to get in touch with the team"
     >
       <div className="container">
-        <p>You can email us directly at <a href="mailto:hello@getoutline.com">hello@getoutline.com</a> from your favorite email client, or <a href="https://twitter.com/outlinewiki" target="_blank">
-          reach out on twitter</a>.</p>
-        <p>To make things easy we also have a direct contact form below that you can fill out in just a few clicks…</p>
+        <p>You can email us directly at <a href="mailto:hello@getoutline.com">hello@getoutline.com</a> from your favorite email client, or reach out on twitter <a href="https://twitter.com/outlinewiki" target="_blank">@outlinewiki</a>.</p>
+        <p>We aim to reply to all enquiries within 24 hours, but we often reply much faster than that during PST waking hours. To make things easy we also have a direct contact form below that you can fill out in just a few clicks.</p>
+
         <div ref={callback} className="typeform-widget" data-url="https://form.typeform.com/to/tQ5Uoqi8" data-transparency="50" data-hide-headers="true" data-hide-footer="true"></div>
       </div>
       <style jsx>
