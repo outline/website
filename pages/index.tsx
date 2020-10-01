@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
 import Link from "next/link";
 import {
@@ -13,10 +14,30 @@ import Hero from "components/Hero";
 import Layout from "components/Layout";
 import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
+import useSearchParams from "lib/hooks/useSearchParams";
+
+const isBrowser = typeof document !== "undefined";
+let isHydrating = true;
 
 resetIdCounter();
 
 export default function Home() {
+  const storedSearch = useSearchParams();
+  const [search, setSearch] = React.useState("");
+
+  // don't try and load the users active sessions during SSR, it ain't ever
+  // gonna work – load sessions from cookies when they haven't already been
+  // loaded on the client
+  if (isBrowser) {
+    if (isHydrating) {
+      setTimeout(() => {
+        setSearch(storedSearch);
+      }, 0);
+    } else {
+      setSearch(storedSearch);
+    }
+  }
+
   return (
     <Layout>
       <main>
@@ -30,7 +51,7 @@ export default function Home() {
           </p>
 
           <p>
-            <Button href="//app.getoutline.com/create">
+            <Button href={`//app.getoutline.com/create${search}`}>
               Get Started for Free &rarr;
             </Button>
           </p>
@@ -348,7 +369,7 @@ export default function Home() {
           On the same page as us? Sign up in just a couple of clicks…
         </p>
         <p>
-          <Button href="//app.getoutline.com/create">
+          <Button href={`//app.getoutline.com/create${search}`}>
             Get Started for Free &rarr;
           </Button>
         </p>

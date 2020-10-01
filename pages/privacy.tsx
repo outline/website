@@ -52,7 +52,11 @@ export default function Privacy() {
 
       <p>
         If you have questions about deleting or correcting your personal data
-        please <Link href="/contact"><a>contact support</a></Link>.
+        please{" "}
+        <Link href="/contact">
+          <a>contact support</a>
+        </Link>
+        .
       </p>
 
       <p>

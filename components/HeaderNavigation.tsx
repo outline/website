@@ -5,6 +5,7 @@ import classnames from "classnames";
 import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
+import useSearchParams from "lib/hooks/useSearchParams";
 
 const isBrowser = typeof document !== "undefined";
 let isHydrating = true;
@@ -106,7 +107,6 @@ function Teams({ sessions }) {
 
 function getSessions() {
   if (isBrowser) {
-    isHydrating = false;
     return JSON.parse(getCookie("sessions") || "{}");
   }
   return {};
@@ -114,6 +114,8 @@ function getSessions() {
 
 export default function HeaderNavigation() {
   const ref = React.useRef();
+  const storedSearch = useSearchParams();
+  const [search, setSearch] = React.useState("");
   const [openNav, setOpenNav] = React.useState(null);
   const [sessions, setSessions] = React.useState(null);
   const isSignedIn = sessions ? Object.keys(sessions).length : false;
@@ -124,10 +126,13 @@ export default function HeaderNavigation() {
   if (isBrowser && !sessions) {
     if (isHydrating) {
       setTimeout(() => {
+        isHydrating = false;
         setSessions(getSessions());
+        setSearch(storedSearch);
       }, 0);
     } else {
       setSessions(getSessions());
+      setSearch(storedSearch);
     }
   }
 
@@ -240,20 +245,24 @@ export default function HeaderNavigation() {
               </ul>
             </>
           ) : (
-              <span className="auth">
-                <MenuItem className="highlighted" href="https://app.getoutline.com" top>
-                  Log in
+            <span className="auth">
+              <MenuItem
+                className="highlighted"
+                href={`https://app.getoutline.com${search}`}
+                top
+              >
+                Log in
               </MenuItem>{" "}
-                <span className="or">or</span>{" "}
-                <MenuItem
-                  className="highlighted"
-                  href="https://app.getoutline.com/create"
-                  top
-                >
-                  Sign up
+              <span className="or">or</span>{" "}
+              <MenuItem
+                className="highlighted"
+                href={`https://app.getoutline.com/create${search}`}
+                top
+              >
+                Sign up
               </MenuItem>
-              </span>
-            )}
+            </span>
+          )}
         </li>
         <li className={openNav === "mobile" ? "open" : "hidden-on-desktop"}>
           <MenuItem
@@ -286,12 +295,12 @@ export default function HeaderNavigation() {
             {isSignedIn ? (
               <Teams sessions={sessions} />
             ) : (
-                <li>
-                  <MenuItem href="https://app.getoutline.com">
-                    Log in | Sign up
+              <li>
+                <MenuItem href={`https://app.getoutline.com${search}`}>
+                  Log in | Sign up
                 </MenuItem>
-                </li>
-              )}
+              </li>
+            )}
 
             <h3>Product</h3>
             <li>

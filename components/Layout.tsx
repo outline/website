@@ -7,6 +7,7 @@ import Logo from "components/Logo";
 import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, colors, typography } from "theme";
+import useSearchParams from "lib/hooks/useSearchParams";
 
 ReactGA.initialize("UA-109435745-1");
 
@@ -33,6 +34,8 @@ export default function Layout({
   color = "inherit",
   children,
 }: Props) {
+  useSearchParams();
+
   React.useEffect(() => {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);

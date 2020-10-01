@@ -43,7 +43,9 @@ export default function Footer() {
           <h3>Community</h3>
           <ul>
             <li>
-              <Link href="/contact"><a>Contact Us</a></Link>
+              <Link href="/contact">
+                <a>Contact Us</a>
+              </Link>
             </li>
             <li>
               <a href="https://github.com/outline" target="_blank">

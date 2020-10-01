@@ -136,28 +136,30 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>
-              What about teams larger than 250 users?
-            </h3>
+            <h3>What about teams larger than 250 users?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               We're happy to support enterprise teams larger than 250 users.
-              Please <Link href="/contact"><a>contact us</a></Link> to discuss
-              pricing options.
+              Please{" "}
+              <Link href="/contact">
+                <a>contact us</a>
+              </Link>{" "}
+              to discuss pricing options.
             </p>
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>
-              Do you have an on-premises solution?
-            </h3>
+            <h3>Do you have an on-premises solution?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               Yes – Outline can easily be installed behind you firewall or VPC.
-              Please <Link href="/contact"><a>contact us</a></Link> for
-              more details.
+              Please{" "}
+              <Link href="/contact">
+                <a>contact us</a>
+              </Link>{" "}
+              for more details.
             </p>
           </dd>
 
@@ -170,8 +172,10 @@ export default function Pricing() {
             <p>
               Yep, absolutely – we’re also happy to sponsor accounts for
               companies working on solving climate change. Please{" "}
-              <Link href="/contact"><a>contact us</a></Link> for more
-              details.
+              <Link href="/contact">
+                <a>contact us</a>
+              </Link>{" "}
+              for more details.
             </p>
           </dd>
 
