@@ -46,7 +46,7 @@ class MenuItem extends React.Component<{
             a.menu-with-icon {
               padding-right: 8px;
               position: relative;
-              z-index: 2;
+              z-index: 3;
             }
 
             a.launch,
@@ -399,6 +399,7 @@ export default function HeaderNavigation() {
           }
 
           ul li ul.mobile {
+            z-index: 2;
             width: 55vw;
             min-width: 0;
             left: auto;
