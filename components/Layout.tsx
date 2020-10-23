@@ -74,6 +74,12 @@ export default function Layout({
           rel="stylesheet"
           href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
         />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Changelog RSS"
+          href="/rss.xml"
+        />
         <meta
           name="description"
           content="A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"

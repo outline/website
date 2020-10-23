@@ -1,4 +1,5 @@
 import { map, groupBy } from "lodash";
+import fs from "fs";
 import Link from "next/link";
 import { format } from "date-fns";
 import { getPosts } from "lib/posts";
@@ -8,6 +9,7 @@ import Layout from "components/Layout";
 import Markdown from "components/Markdown";
 import Metadata from "components/PostMetadata";
 import { colors } from "theme";
+import { generateRSS } from "lib/rss";
 
 export default function Changelog({ posts }) {
   const months = groupBy(posts, (post) =>
@@ -93,9 +95,14 @@ export default function Changelog({ posts }) {
 }
 
 export async function getStaticProps() {
+  const posts = getPosts();
+  const rss = generateRSS(posts);
+
+  fs.writeFileSync("./public/rss.xml", rss);
+
   return {
     props: {
-      posts: getPosts(),
+      posts,
     },
   };
 }
