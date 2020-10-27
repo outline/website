@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 13 Oct 2020 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 27 Oct 2020 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>confluence-import</guid>
+    <title>Import from Confluence</title>
+    <link>https://www.getoutline.com/changelog/confluence-import</link>
+    <description><![CDATA[ <div class="jsx-70390131 md" data-reactroot=""><p>We&#x27;ve made further improvements to importing, in particular it&#x27;s now possible to import <code>.doc</code> files that are exported from Confluence, this is now the recommended format to get content from Confluence into Outline as it supports the greatest range of formatting – including tables.</p><p>We plan on releasing a CLI tool soon to allow bulk import for Confluence, Notion, GitHub and other services – watch this space!</p><h3>Other fixes and improvements</h3><h4>Platform</h4><ul><li>Teams using Google Workplace to sign-in can now still search their wiki from Slack after connecting in settings (previously this required Slack auth).</li><li>Notification emails are now a little delayed to reduce the chances of receiving too many.</li><li>Realtime connections are now more performant in Safari, aka the websocket doesn&#x27;t always fall back to long-polling!</li></ul><h4>Editor</h4><ul><li>When scrolling to headers from the table of contents the document will no longer scroll behind the fixed header area.</li><li>There is no longer an erroneous pointer cursor on headings.</li></ul></div> ]]></description>
+    <pubDate>Tue, 27 Oct 2020 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>something-brewing</guid>
     <title>We've got something brewing…</title>
