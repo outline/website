@@ -13,7 +13,7 @@ We plan on releasing a CLI tool soon to allow bulk import for Confluence, Notion
 
 #### Platform
 
-- Teams using Google Workplace to sign-in can now still search their wiki from Slack after connecting in settings (previously this required Slack auth).
+- Teams using Google Workspace to sign-in can now still search their wiki from Slack after connecting in settings (previously this required Slack auth).
 - Notification emails are now a little delayed to reduce the chances of receiving too many.
 - Realtime connections are now more performant in Safari, aka the websocket doesn't always fall back to long-polling!
 
