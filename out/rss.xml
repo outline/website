@@ -5,9 +5,19 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 27 Oct 2020 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 05 Nov 2020 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>custom-domains</guid>
+    <title>Custom Domains</title>
+    <link>https://www.getoutline.com/changelog/custom-domains</link>
+    <description><![CDATA[ <div class="jsx-70390131 md" data-reactroot=""><p><img alt="Outline custom domain" src="https://www.getoutline.com/images/custom-domains.png"/></p><p>This week brings support for custom domains to the cloud hosted version of Outline.
+Now you can easily have <code>wiki.myteam.com</code> or <code>kb.yourcompany.com</code> without the
+hassle of hosting your own Outline servers.</p><p>Custom domains are available as an add-on for a flat rate of <strong>$20/mo</strong>. Interested? <a href="http://localhost:4000/contact">Contact support</a> to arrange setup for your team.</p></div> ]]></description>
+    <pubDate>Thu, 05 Nov 2020 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>confluence-import</guid>
     <title>Import from Confluence</title>
