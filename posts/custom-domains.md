@@ -11,4 +11,4 @@ This week brings support for custom domains to the cloud hosted version of Outli
 Now you can easily have `wiki.myteam.com` or `kb.yourcompany.com` without the
 hassle of hosting your own Outline servers.
 
-Custom domains are available as an add-on for a flat rate of **$20/mo**. Interested? [Contact support](http://localhost:4000/contact) to arrange setup for your team.
+Custom domains are available as an add-on for a flat rate of **$20/mo**. Interested? [Contact support](/contact) to arrange setup for your team.
