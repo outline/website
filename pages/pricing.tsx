@@ -154,7 +154,7 @@ export default function Pricing() {
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Yes – Outline can easily be installed behind you firewall or VPC.
+              Yes – Outline can easily be installed behind your firewall or VPC.
               Please{" "}
               <Link href="/contact">
                 <a>contact us</a>
