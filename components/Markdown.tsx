@@ -34,6 +34,10 @@ export default function Markdown(props) {
             margin: 2em auto;
           }
 
+          .md :global(img[title="@1x"]) {
+            zoom: 100%;
+          }
+
           .md :global(code) {
             font-size: 15px;
             background: #f2f2f2;

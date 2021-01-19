@@ -20,9 +20,7 @@ export default function Changelog({ title, date, tag, content }) {
       }
       sidebar={
         <SidebarMenu>
-          <SidebarMenuItem
-            href="/changelog"
-          >
+          <SidebarMenuItem href="/changelog">
             &larr; Back to all
           </SidebarMenuItem>
         </SidebarMenu>
@@ -32,15 +30,15 @@ export default function Changelog({ title, date, tag, content }) {
       <Metadata tag={tag} date={date} />
       <Markdown source={content} />
     </Layout>
-  )
+  );
 }
 
 export async function getStaticPaths() {
-  const posts = getPosts()
-  const paths = posts.map(post => `/changelog/${post.slug}`)
+  const posts = getPosts();
+  const paths = posts.map((post) => `/changelog/${post.slug}`);
 
   // We'll pre-render only these paths at build time.
-  return { paths, fallback: false }
+  return { paths, fallback: false };
 }
 
 export async function getStaticProps(context) {
@@ -48,7 +46,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      ...post
+      ...post,
     },
-  }
+  };
 }
