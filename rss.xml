@@ -5,9 +5,21 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 18 Jan 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 22 Feb 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>progressive-web-app</guid>
+    <title>Progressive Web App</title>
+    <link>https://www.getoutline.com/changelog/progressive-web-app</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline on macOS" src="https://www.getoutline.com/images/pwa.png"/></p><p>This week brings PWA support to Outline, allowing you to install the app to your
+desktop and dock in just a couple of seconds. We&#x27;ve been enjoying how lightweight
+this install is while keeping the two best parts of a native app experience – an 
+icon in the dock and a dedicated window. To try it out, head over to <a href="https://app.getoutline.com">the app</a>, signin, and 
+<strong>hit the &quot;Install&quot; button that appears in the address bar</strong>.</p><h3>Other fixes and improvements</h3><h4>Platform</h4><ul><li>It&#x27;s now possible edit the description of a collection inline.</li><li>We added the ability to disable sharing of individual collections.</li><li>The sidebar is now resizable, you can also grab the edge and drag it all the way to the left to collapse.</li><li>Newly created documents now sort to the top of manually organized collections.</li><li>The sidebar now automatically scrolls to ensure that the active item is kept visible.</li><li>When navigating to a collection the default tab now reflects the sidebar rather than a &quot;recently updated&quot; view.</li><li>Added total user counts to tabs on people management screen.</li><li>Added <a href="https://drawings.google.com">Google Drawings</a> Integration.</li><li>Unpublishing a document created by another user now puts it in your drafts, not theres.</li></ul><h4>Editor</h4><ul><li>Fixed highlighted text with link in dark mode is impossible to read</li><li>Fixed a case where it was possible to to keep the block menu open while formatting menus are also open</li><li>Editor <code>ctrl+x</code> shortcuts now work correctly on Windows</li><li><code>Shift+Enter</code> keys now split list items and create a newline</li><li><code>Shift+Enter</code> and <code>Tab</code> keys now behave as expected within code blocks</li><li>Fixed an issue where the text caret in an empty notice block is invisible</li></ul></div> ]]></description>
+    <pubDate>Mon, 22 Feb 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>sidebar-improvements</guid>
     <title>New year, new sidebar</title>
