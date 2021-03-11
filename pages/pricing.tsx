@@ -88,6 +88,12 @@ export default function Pricing() {
               <td>{check}</td>
             </tr>
             <tr>
+              <td>Templates</td>
+              <td>{check}</td>
+              <td>{check}</td>
+              <td>{check}</td>
+            </tr>
+            <tr>
               <td>Groups &amp; permissions</td>
               <td>{check}</td>
               <td>{check}</td>
@@ -130,8 +136,8 @@ export default function Pricing() {
             <p>
               When you start your trial, your first 30 days are free. Once this
               trial period elapses your knowledge base becomes read-only until a
-              payment method is added. During this time you can easily export
-              all of your data.
+              payment method is added. During this time you can export all of
+              your documents.
             </p>
           </dd>
 
@@ -154,8 +160,9 @@ export default function Pricing() {
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Yes – Outline can easily be installed behind your firewall or VPC.
-              Please{" "}
+              Yes – Outline can easily be installed behind your firewall or on
+              your own AWS account. Our enterprise edition also includes support
+              for SAML authentication. Please{" "}
               <Link href="/contact">
                 <a>contact us</a>
               </Link>{" "}
