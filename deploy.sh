@@ -1,3 +1,4 @@
+set -e
 rm -rf node_modules/.cache
 next build
 next export
