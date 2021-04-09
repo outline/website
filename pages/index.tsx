@@ -6,7 +6,9 @@ import {
   CollectionIcon,
   BuildingBlocksIcon,
   LightBulbIcon,
+  GlobeIcon,
   StarredIcon,
+  EyeIcon,
 } from "outline-icons";
 import Button from "components/Button";
 import Card from "components/Card";
@@ -136,7 +138,7 @@ export default function Home() {
               <h2>
                 <em>Structured &amp; instantly searchable.</em>
                 Nest documents in a hierachy, automatically build a network of
-                references and search across everything.
+                backlinks and search across everything.
               </h2>
             </div>
           </div>
@@ -256,9 +258,7 @@ export default function Home() {
                     &nbsp;Blazing Fast
                   </>
                 }
-                description="Outline is fast, really fast. We’ve worked hard to ensure
-                millisecond response times – documents load instantly, search
-                is speedy and navigating the UI is delightful."
+                description="Outline is fast, really fast. We’ve worked hard to ensure millisecond response times – documents load instantly, search is speedy and navigating the UI is snappy."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -273,9 +273,7 @@ export default function Home() {
                     &nbsp;Intuitive
                   </>
                 }
-                description="The Outline editor has been designed from the ground up to be
-                  easy to use, but powerful. We want to make reading and writing
-                  docs enjoyable."
+                description="The Outline editor has been designed from the ground up to be easy to use, but powerful. Reading and writing docs should be enjoyable."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -287,11 +285,10 @@ export default function Home() {
                       color="currentColor"
                       className="pull-icon"
                     />
-                    &nbsp;Organized
+                    &nbsp;Structured
                   </>
                 }
-                description="Give your documentation structure – with nesting, collections,
-                  and automatic backlinks to build a tree of useful information."
+                description="Give your documentation structure with collections, nested documents, and automatic backlinks to build a tree of information."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -303,10 +300,10 @@ export default function Home() {
                       color="currentColor"
                       className="pull-icon"
                     />
-                    &nbsp;Secure
+                    &nbsp;Security &amp; permissions
                   </>
                 }
-                description="Manage the knowledge base with read &amp; write permissions, user groups, guest users, public sharing, and more…"
+                description="Manage the knowledge base with read & write permissions, user groups, guest users, public sharing, and more…"
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -318,7 +315,7 @@ export default function Home() {
                       color="currentColor"
                       className="pull-icon"
                     />
-                    &nbsp;Integrated
+                    &nbsp;20+ Integrations
                   </>
                 }
                 description={
@@ -337,13 +334,51 @@ export default function Home() {
                 }
               />
             </div>
-
+            <div className="pure-u-1 pure-u-md-1-3">
+              <Card
+                title={
+                  <>
+                    <GlobeIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;In your language
+                  </>
+                }
+                description="Outline is available in 9 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
+              />
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <Card
+                title={
+                  <>
+                    <EyeIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Built in public
+                  </>
+                }
+                description={
+                  <>
+                    Outline is updated with new features and fixes regularly,
+                    checkout our{" "}
+                    <Link href="/changelog">
+                      <a>public changelog</a>
+                    </Link>{" "}
+                    to see how things are progressing!
+                  </>
+                }
+              />
+            </div>
             <div className="pure-u-1 pure-u-md-1-3">
               <Card
                 title={
                   <>
                     <GithubLogo size={24} />
-                    &nbsp;Open Source
+                    &nbsp;Open source
                   </>
                 }
                 description={
@@ -351,13 +386,35 @@ export default function Home() {
                     Outline’s{" "}
                     <a
                       href="https://github.com/outline"
-                      rel="noopener nofollow"
+                      target="_blank"
+                      rel="nofollow noreferrer"
                     >
                       source code is public
                     </a>
                     , and the editor is open source so the community can help
                     improve it too. Prefer to host on your own infrastructure?
                     No problem.
+                  </>
+                }
+              />
+            </div>
+            <div className="pure-u-1 pure-u-md-1-3">
+              <Card
+                title={
+                  <>
+                    <BuildingBlocksIcon
+                      size={32}
+                      color="currentColor"
+                      className="pull-icon"
+                    />
+                    &nbsp;Customizable
+                  </>
+                }
+                description={
+                  <>
+                    Custom domains allow you to have{" "}
+                    <strong>docs.yourteam.com</strong>. White label with your
+                    own brand and colors.
                   </>
                 }
               />
