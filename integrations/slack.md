@@ -5,9 +5,9 @@ Sign In with Slack means your team doesn't have to worry about invites, password
 > Note: Your team will also get a matching custom subdomain that you can link to from elsewhere.
 
 
-### Search your Knowledge base
+### Search from Slack
 
-Optionally [Connect to Slack](https://app.getoutline.com/settings/integrations/slack) to enable the `/outline` slack command. Once enabled, team members can easily search your wiki from within Slack by typing `/outline search term`, and post results directly back to the Slack channel.
+Optionally [Connect to Slack](https://app.getoutline.com/settings/integrations/slack) to enable the `/outline` slack command. Once enabled, team members can easily search documents from within Slack by typing `/outline search term`, and post results directly back to the Slack channel for everyone to see.
 
 ![Slack Search Integration](/images/integrations/screenshots/slack-search.png)
 

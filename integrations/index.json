@@ -1,5 +1,27 @@
 [
     {
+        "slug": "google",
+        "name": "Google",
+        "url": "https://google.com",
+        "category": "Authentication",
+        "description": "Sign in to Outline using Google SSO"
+    },
+    {
+        "slug": "microsoft",
+        "name": "Microsoft",
+        "url": "https://microsoft.com",
+        "category": "Authentication",
+        "description": "Sign in to Outline using Microsoft SSO"
+    },
+    {
+        "slug": "slack",
+        "name": "Slack",
+        "url": "https://slack.com",
+        "category": "Authentication",
+        "description": "Chat, collaboration, and file sharing for teams",
+        "summary": "Use /slash commands to search for documentation in Outline without leaving chat, and post document updates into your Slack channels"
+    },
+    {
         "slug": "abstract",
         "name": "Abstract",
         "url": "https://abstract.com",
@@ -70,14 +92,6 @@
         "url": "https://miro.com",
         "category": "Collaboration",
         "description": "Simple whiteboarding for cross-functional team collaboration"
-    },
-    {
-        "slug": "slack",
-        "name": "Slack",
-        "url": "https://slack.com",
-        "category": "Collaboration",
-        "description": "Chat, collaboration, and file sharing for teams",
-        "summary": "Use /slash commands to search for documentation in Outline without leaving chat, and post document updates into your Slack channels"
     },
     {
         "slug": "trello",
