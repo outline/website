@@ -5,9 +5,20 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 14 Apr 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 28 Apr 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>microsoft-sso</guid>
+    <title>Microsoft SSO</title>
+    <link>https://www.getoutline.com/changelog/microsoft-sso</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Microsoft Sign In" src="https://www.getoutline.com/images/microsoft-sso.png"/></p><p>We’re excited to finally add a new sign-in method, Microsoft! Whether you’re using
+MS Teams, Education, or Office 365, you can now use your organization’s Microsoft
+account to sign-in to Outline and build a knowledge base.</p><p>We’ll soon be working on adding Microsoft Teams integration to allow searching 
+and accessing your Outline documents directly from chat too, just like Slack.</p><h3>Other fixes and improvements</h3><ul><li>Improvements to mobile styling and functionality</li><li>New &quot;Page break&quot; functionality allows splitting content across pages when printed</li><li>Sharing functionality got a new, faster, &quot;flyover&quot; view</li><li>Share links will now show when they were last accessed in the admin</li><li>The keyboard shortcut guide got a new splash of paint and filter functionality</li><li>Document content now expands to use more space on larger screens</li><li>We made a number of performance improvements so Outline got <em>even faster</em></li><li>As always, more translated screens</li></ul></div> ]]></description>
+    <pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>viewer-permissions</guid>
     <title>Collection Permissions & Viewers</title>
@@ -48,7 +59,7 @@ icon in the dock and a dedicated window. To try it out, head over to <a href="ht
 similar to before – but make no mistake it&#x27;s rebuilt from the ground up! With
 this new foundation comes the ability to reorder and move documents with drag
 and drop…</p><p><img alt="Re-ordering in Outline" title="@1x" src="https://www.getoutline.com/images/sidebar-reorder.gif"/></p><p>…plus you can now collapse the sidebar entirely (<code>cmd+.</code> is the handy shortcut 
-for this one).</p><p><img alt="Collapse the sidebar" src="/images/sidebar-collapse.png"/></p><h3>Other notable fixes and improvements</h3><ul><li>Switching between read / write in editor no longer resets scroll position</li><li>The &quot;highlighted&quot; text color was changed from blue to yellow, to better separate highlight from selection</li><li>Added syntax highlighting support for Golang</li><li>Added support for floating images left and right</li><li>Added a toggle for starred status when viewing a document </li><li>Fixed &quot;ctrl-x&quot; key shortcuts not bound correctly in Windows browsers</li><li>Fixed search results not updating when changing filters without reloading</li><li>The &quot;New&quot; badge will no longer show to document creator</li><li>Google Drive embeds are now supported</li><li>And much more…</li></ul></div> ]]></description>
+for this one).</p><h3>Other notable fixes and improvements</h3><ul><li>Switching between read / write in editor no longer resets scroll position</li><li>The &quot;highlighted&quot; text color was changed from blue to yellow, to better separate highlight from selection</li><li>Added syntax highlighting support for Golang</li><li>Added support for floating images left and right</li><li>Added a toggle for starred status when viewing a document </li><li>Fixed &quot;ctrl-x&quot; key shortcuts not bound correctly in Windows browsers</li><li>Fixed search results not updating when changing filters without reloading</li><li>The &quot;New&quot; badge will no longer show to document creator</li><li>Google Drive embeds are now supported</li><li>And much more…</li></ul></div> ]]></description>
     <pubDate>Mon, 18 Jan 2021 00:00:00 GMT</pubDate>
   </item>
 

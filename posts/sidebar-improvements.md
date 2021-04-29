@@ -14,8 +14,6 @@ and drop…
 …plus you can now collapse the sidebar entirely (`cmd+.` is the handy shortcut 
 for this one).
 
-![Collapse the sidebar](/images/sidebar-collapse.png)
-
 ### Other notable fixes and improvements
 
 - Switching between read / write in editor no longer resets scroll position
