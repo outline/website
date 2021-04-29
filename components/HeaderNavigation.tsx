@@ -396,8 +396,10 @@ export default function HeaderNavigation() {
             (-webkit-backdrop-filter: blur(20px)) or
               (backdrop-filter: blur(20px))
           ) {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
+            ul li ul {
+              background: rgba(255, 255, 255, 0.8);
+              backdrop-filter: blur(20px);
+            }
           }
 
           ul li ul.sessions {
