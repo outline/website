@@ -386,11 +386,18 @@ export default function HeaderNavigation() {
             margin-left: ${spacing.medium};
             padding: 0 ${spacing.small} ${spacing.small};
             left: 0;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.98);
             border-radius: 4px;
             min-width: 136px;
             z-index: 1;
+          }
+
+          @supports (
+            (-webkit-backdrop-filter: blur(20px)) or
+              (backdrop-filter: blur(20px))
+          ) {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
           }
 
           ul li ul.sessions {
