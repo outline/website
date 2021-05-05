@@ -82,16 +82,21 @@ export default function Layout({
         />
         <meta
           name="description"
+          property="og:description"
           content="A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"
         />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
         <meta name="slack-app-id" content="A0W3UMKBQ" />
-        <meta name="og:site_name" content="Outline" />
-        <meta name="og:type" content="website" />
-        <meta name="og:title" content={resolvedTitle} />
-        <meta name="og:image" content="/images/screenshot.png" />
+        <meta name="site_name" property="og:site_name" content="Outline" />
+        <meta name="type" property="og:type" content="website" />
+        <meta name="title" property="og:title" content={resolvedTitle} />
+        <meta
+          name="image"
+          property="og:image"
+          content="/images/screenshot.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
         <meta name="twitter:title" content={resolvedTitle} />
