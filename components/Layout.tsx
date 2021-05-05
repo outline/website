@@ -41,10 +41,9 @@ export default function Layout({
     ReactGA.pageview(window.location.pathname);
   }, []);
 
+  const siteTitle = "Outline – Team knowledge base & wiki";
   const resolvedTitle = pageTitle || title;
-  const fullTitle = `${
-    resolvedTitle ? resolvedTitle + " – " : ""
-  }Outline – Team wiki & knowledge base`;
+  const fullTitle = `${resolvedTitle ? resolvedTitle + " – " : ""}${siteTitle}`;
 
   return (
     <>
@@ -91,7 +90,11 @@ export default function Layout({
         <meta name="slack-app-id" content="A0W3UMKBQ" />
         <meta name="site_name" property="og:site_name" content="Outline" />
         <meta name="type" property="og:type" content="website" />
-        <meta name="title" property="og:title" content={resolvedTitle} />
+        <meta
+          name="title"
+          property="og:title"
+          content={resolvedTitle || siteTitle}
+        />
         <meta
           name="image"
           property="og:image"
@@ -99,7 +102,7 @@ export default function Layout({
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
-        <meta name="twitter:title" content={resolvedTitle} />
+        <meta name="twitter:title" content={resolvedTitle || siteTitle} />
         <meta name="twitter:image" content="/images/screenshot.png" />
       </Head>
       <header className={(header || hero) && "with-header"}>
