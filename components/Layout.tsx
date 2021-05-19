@@ -44,9 +44,11 @@ export default function Layout({
 
   React.useEffect(() => {
     // We don't want to create this cookie if there are no query params to set
+    // as it might override a previously legit cookie
     if (router.query && Object.keys(router.query).length) {
       setCookie("signupQueryParams", JSON.stringify(router.query), {
         domain: "getoutline.com",
+        expires: "1M",
       });
     }
   }, [router.query]);
