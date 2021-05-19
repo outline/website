@@ -5,7 +5,6 @@ import classnames from "classnames";
 import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
-import useSearchParams from "lib/hooks/useSearchParams";
 
 const isBrowser = typeof document !== "undefined";
 let isHydrating = true;
@@ -114,8 +113,6 @@ function getSessions() {
 
 export default function HeaderNavigation() {
   const ref = React.useRef();
-  const storedSearch = useSearchParams();
-  const [search, setSearch] = React.useState("");
   const [openNav, setOpenNav] = React.useState(null);
   const [sessions, setSessions] = React.useState(null);
   const isSignedIn = sessions ? Object.keys(sessions).length : false;
@@ -128,11 +125,9 @@ export default function HeaderNavigation() {
       setTimeout(() => {
         isHydrating = false;
         setSessions(getSessions());
-        setSearch(storedSearch);
       }, 0);
     } else {
       setSessions(getSessions());
-      setSearch(storedSearch);
     }
   }
 
@@ -248,7 +243,7 @@ export default function HeaderNavigation() {
             <span className="auth">
               <MenuItem
                 className="highlighted"
-                href={`https://app.getoutline.com${search}`}
+                href={`https://app.getoutline.com`}
                 top
               >
                 Log in
@@ -256,7 +251,7 @@ export default function HeaderNavigation() {
               <span className="or">or</span>{" "}
               <MenuItem
                 className="highlighted"
-                href={`https://app.getoutline.com/create${search}`}
+                href={`https://app.getoutline.com/create`}
                 top
               >
                 Sign up
@@ -296,7 +291,7 @@ export default function HeaderNavigation() {
               <Teams sessions={sessions} />
             ) : (
               <li>
-                <MenuItem href={`https://app.getoutline.com${search}`}>
+                <MenuItem href={`https://app.getoutline.com`}>
                   Log in | Sign up
                 </MenuItem>
               </li>

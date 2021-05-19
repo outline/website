@@ -2,12 +2,13 @@ import ReactGA from "react-ga";
 import * as React from "react";
 import Head from "next/head";
 import { darken } from "polished";
+import { setCookie } from "tiny-cookie";
 import Footer from "components/Footer";
 import Logo from "components/Logo";
 import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, colors, typography } from "theme";
-import useSearchParams from "lib/hooks/useSearchParams";
+import { useRouter } from "next/router";
 
 ReactGA.initialize("UA-109435745-1");
 
@@ -34,12 +35,21 @@ export default function Layout({
   color = "inherit",
   children,
 }: Props) {
-  useSearchParams();
+  const router = useRouter();
 
   React.useEffect(() => {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
   }, []);
+
+  React.useEffect(() => {
+    // We don't want to create this cookie if there are no query params to set
+    if (router.query && Object.keys(router.query).length) {
+      setCookie("signupQueryParams", JSON.stringify(router.query), {
+        domain: "getoutline.com",
+      });
+    }
+  }, [router.query]);
 
   const siteTitle = "Outline – Team knowledge base & wiki";
   const resolvedTitle = pageTitle || title;
