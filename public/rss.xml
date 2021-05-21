@@ -5,9 +5,20 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 28 Apr 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 20 May 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>viewer-details</guid>
+    <title>Document Insights</title>
+    <link>https://www.getoutline.com/changelog/viewer-details</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="viewer details" src="https://www.getoutline.com/images/viewer-popover.png"/></p><p>We&#x27;ve rolled out a number of UI improvements in the past couple of weeks within documents. It&#x27;s now possible
+to see who on your team has viewed a document, simply click on the <strong>&quot;Viewed by X people&quot;</strong> text beneath the
+title for a detailed flyover of everyone that has viewed and when.</p><p>The pile of faces at the top right of a document continues to show who has previously <em>edited</em> or is active right now.
+We&#x27;ll be adding more detailed team-level insights soon!</p><h3>Other fixes and improvements</h3><ul><li>Added print &quot;page break&quot; functionality to editor to adjust print layout (Insert via slash menu)</li><li>Permissions-policy header to disable <a href="https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea">FLOC</a> is now returned on all pages</li><li>Document content now takes up more horizontal space on larger screens</li></ul><h4>Fixes</h4><ul><li>Fixed content appearing behind status bar in iOS PWA on some models of iPhone</li><li>Moving a duplicated document from a private to a not-private collection now updates the permissions of it&#x27;s attachments</li><li>Improved frontend support for importing doc, docx files</li><li>Slack &#x27;Post to channel&#x27; functionality now works without the requirement of using Slack SSO </li><li>Page no longer reloads in Firefox when clicking some menu items</li><li>Removed extra space on left side of page when printing in Firefox</li><li>Fixed print styles in dark mode</li><li>Improved editor image upload to remove flickering of image when the placeholder is replaced</li><li>Fixed document hover preview appearing behind subheadings</li><li>Fixed several smaller editor issues and crashes</li><li>Typing a word with underscores in the middle no longer creates italic text</li></ul></div> ]]></description>
+    <pubDate>Thu, 20 May 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>microsoft-sso</guid>
     <title>Microsoft SSO</title>
