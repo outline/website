@@ -55,9 +55,16 @@ export default function Card({ title, description, href }: Props) {
         }
 
         .card :global(p) {
+          color: ${colors.textSecondary};
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
+        }
+
+        a.card:hover :global(p),
+        a.card:focus :global(p),
+        a.card:hover :global(p) {
+          color: ${colors.primary};
         }
       `}</style>
     </>
