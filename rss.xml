@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 20 May 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 02 Jun 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>public-sharing-improvements</guid>
+    <title>Sharing Improvements</title>
+    <link>https://www.getoutline.com/changelog/public-sharing-improvements</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline Public Sharing" src="https://www.getoutline.com/images/public-sharing-improvements.png"/></p><p>Last week brings some great improvements to public document sharing. We recently simplified the sharing dialog to a popover and now added the ability to share an entire tree of nested documents too. This much-requested feature is great for sharing structured help docs or several related documents with a single link!</p><p>As an additional security measure the Share button will also display a globe icon if a document is shared publicly because one of it&#x27;s parents has been shared.</p><h3>Other fixes and improvements</h3><ul><li>Images now show a Download button for easy downloading of images in a document</li><li>In the share dialog see when the link was last accessed</li><li>Improved behavior when typing words that include underscores in the editor</li><li>Improved behavior with the cursor around the edges of inline code</li><li>Added support for <a href="https://www.descript.com/">Descript</a> embeds</li></ul></div> ]]></description>
+    <pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>viewer-details</guid>
     <title>Document Insights</title>
