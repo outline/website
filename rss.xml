@@ -5,9 +5,19 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 02 Jun 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 14 Jun 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>friendly-collections</guid>
+    <title>Friendly Collection URLs</title>
+    <link>https://www.getoutline.com/changelog/friendly-collections</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Friendly collection url" src="https://www.getoutline.com/images/friendly-url.png"/></p><p>This week we&#x27;ve shipped lots of little improvements, one thing you might notice is that collections in Outline no longer have a long <code>UUID</code> in the address bar, instead you&#x27;ll see a shortened id and a friendly
+version of the collection name. Not only is this nicer to look at, but it also makes quickly returning to
+collections via searching in the address bar much easier!</p><h3>Other fixes and improvements</h3><ul><li>Application size was decreased by several hundred KB</li><li>Shortcut for toggling the Table of Contents was changed to <code>ctrl</code>+<code>alt</code>+<code>h</code></li><li>New language option – Portugêse (Brazil) 🇧🇷</li><li>Copying a share link to clipboard no longer includes dark mode styles when pasting into another rich editor</li><li>Fixed alignment of items in &quot;New from template&quot; menu</li><li>Fixed an issue where two <code>Restore</code> options would appear on a deleted document that was previously archived</li><li>Fixed background color of select inputs in dark mode on non-Mac platforms</li><li>Improved the performance of loading share links for documents with many attachments</li></ul></div> ]]></description>
+    <pubDate>Mon, 14 Jun 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>public-sharing-improvements</guid>
     <title>Sharing Improvements</title>
