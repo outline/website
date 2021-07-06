@@ -8,7 +8,9 @@ const generateRSSItem = (post: any): string => `
     <guid>${post.slug}</guid>
     <title>${post.title}</title>
     <link>${domain + "/changelog/" + post.slug}</link>
-    <description><![CDATA[ ${ReactDOMServer.renderToString(<Markdown source={post.content} />).replace('src="/', 'src="' + domain + '/')} ]]></description>
+    <description><![CDATA[ ${ReactDOMServer.renderToString(
+      <Markdown source={post.content} />
+    ).replace('src="/', 'src="' + domain + "/")} ]]></description>
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
   </item>
 `;
@@ -22,7 +24,7 @@ export const generateRSS = (posts: any[]): string => `
       <language>en</language>
       <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
-      ${posts.map(generateRSSItem).join('')}
+      ${posts.map(generateRSSItem).join("")}
     </channel>
   </rss>
 `;

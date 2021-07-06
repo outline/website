@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "deploy": "/bin/sh deploy.sh",
-    "lint": "yarn eslint pages/*.tsx  components/*.tsx"
+    "lint": "yarn eslint \"{pages,components,lib}/**/*.{ts,tsx}\""
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -33,6 +33,7 @@
     "@types/react": "^16.9.35",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
+    "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^2.0.5",

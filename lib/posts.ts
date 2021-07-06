@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { sortBy } from "lodash"
+import { sortBy } from "lodash";
 
 export function getPost(fileName: string) {
   const { data, content } = matter(
@@ -26,5 +26,5 @@ export function getPosts() {
     posts.push(getPost(fileName));
   }
 
-  return sortBy(posts, post => post.date).reverse()
+  return sortBy(posts, (post) => post.date).reverse();
 }
