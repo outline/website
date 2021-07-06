@@ -329,7 +329,7 @@ export default function Home() {
                     &nbsp;In your language
                   </>
                 }
-                description="Outline is available in 9 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
+                description="Outline is available in 11 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
