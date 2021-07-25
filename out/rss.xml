@@ -5,9 +5,24 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 14 Jun 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 25 Jul 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>summer-2021</guid>
+    <title>Summer Release</title>
+    <link>https://www.getoutline.com/changelog/summer-2021</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p>Wow, another month has passed, here&#x27;s a quick update on what&#x27;s changed since June,
+as is often the case as well as the big stuff we&#x27;ve been working on a lot of &quot;little details&quot;<br/>that make the daily experience better but aren&#x27;t always immediately visible.</p><h3>Improved search abilities</h3><p>We&#x27;re now tracking all the previous titles that a document has had to improve search
+results and increase the liklihood of surfacing the right document, even if you can&#x27;t
+<em>quite</em> remember what it&#x27;s latest title is.</p><h3>Collapsible headings</h3><p>We brought back the ability to collapse sections of a document under headings – simply
+hover over any heading to see a new control to collapse the contents. Your preference is 
+stored locally and is not seen by other team members that view the document.</p><p><img alt="Collapsible headings" src="https://www.getoutline.com/images/collapsible-headings.gif"/></p><h3>Drag and drop to archive or delete</h3><p>You can now drag and drop documents from the sidebar directly into the archive or trash,
+similar to how you would move or reorder. There&#x27;s a cute animation included to let you
+know what will happen too.</p><p><img alt="Drag to archive" src="/images/drag-to-archive.png"/></p><h3>Other fixes and improvements</h3><ul><li>Lots more translation hooks were added, we&#x27;re very close to 100% coverage so that the entirety of the UI can appear in the language of your choice.</li><li>Added access to the Table of Contents on mobile</li><li>Fixed an issue where the star option would appear for templates</li><li>Fixed the &quot;publish&quot; button being disabled on drafts when not editing them</li><li>Added new language options – Persian and Japanese 🌏</li><li>Added support for <a href="https://datastudio.google.com/">Google DataStudio</a> embeds</li></ul></div> ]]></description>
+    <pubDate>Sun, 25 Jul 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>friendly-collections</guid>
     <title>Friendly Collection URLs</title>
