@@ -17,9 +17,6 @@ import Layout from "components/Layout";
 import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
 
-const isBrowser = typeof document !== "undefined";
-let isHydrating = true;
-
 resetIdCounter();
 
 export default function Home() {
@@ -30,15 +27,18 @@ export default function Home() {
           <h1 className="title">Your team’s knowledge base</h1>
 
           <p className="description">
-            A modern team knowledge base for your internal documentation,
-            product specs, support answers, meeting notes, onboarding, &amp;
-            more…
+            Lost in mess of Docs? Never quite sure who has access? Colleagues
+            requesting the same information repeatedly in chat? It’s time to get
+            your team’s knowledge organized.
           </p>
 
-          <p>
+          <p className="centered">
             <Button href={`//app.getoutline.com/create`}>
               Get Started for Free &rarr;
             </Button>
+            <small className="note">
+              No credit card required, easily export your docs
+            </small>
           </p>
 
           <p className="screenshot-wrapper">
@@ -416,6 +416,17 @@ export default function Home() {
       </main>
 
       <style jsx>{`
+        .centered {
+          text-align: center;
+        }
+
+        .note {
+          display: block;
+          font-size: 0.75em;
+          margin-top: 1em;
+          color: ${colors.textSecondary};
+        }
+
         .feature {
           width: 95vw;
           padding: ${spacing.large};
