@@ -2,8 +2,8 @@ export const spacing = {
   small: "8px",
   medium: "16px",
   large: "32px",
-  xlarge: "48px"
-}
+  xlarge: "48px",
+};
 
 export const colors = {
   primary: "#3141F5",
@@ -26,11 +26,12 @@ export const colors = {
     purple: "#9E5CF7",
     blue: "#3633FF",
     marine: "#2BC2FF",
-    green: "#42DED1"
-  }
-}
+    green: "#42DED1",
+  },
+};
 
 export const typography = {
-  fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
-  fontFamilyMono: "Roboto Mono, Menlo, monospace"
-}
+  fontFamily:
+    "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+  fontFamilyMono: "Roboto Mono, Menlo, monospace",
+};

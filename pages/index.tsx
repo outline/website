@@ -37,7 +37,7 @@ export default function Home() {
               Get Started for Free &rarr;
             </Button>
             <small className="note">
-              No credit card required, easily export your docs
+              30 day trial, no credit card required
             </small>
           </p>
 
@@ -412,6 +412,7 @@ export default function Home() {
           <Button href={`//app.getoutline.com/create`}>
             Get Started for Free &rarr;
           </Button>
+          <small className="note">30 day trial, no credit card required</small>
         </p>
       </main>
 
