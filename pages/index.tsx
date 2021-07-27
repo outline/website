@@ -329,7 +329,7 @@ export default function Home() {
                     &nbsp;In your language
                   </>
                 }
-                description="Outline is available in 11 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
+                description="Outline has RTL support and includes translations for 13 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
@@ -408,7 +408,7 @@ export default function Home() {
         <p className="description">
           On the same page as us? Sign up in just a couple of clicks…
         </p>
-        <p>
+        <p className="centered">
           <Button href={`//app.getoutline.com/create`}>
             Get Started for Free &rarr;
           </Button>
