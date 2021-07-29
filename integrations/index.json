@@ -129,6 +129,13 @@
         "description": "Sharable code snippets, hosted by GitHub"
     },
     {
+        "slug": "integromat",
+        "name": "Integromat",
+        "url": "https://www.integromat.com/en/integrations/outline?utm_source=outline&utm_medium=partner&utm_campaign=outline-partner-program",
+        "category": "Developers",
+        "description": "Integrate Outline with 850+ apps, and optimize workflows with Integromat's visual integration builder"
+    },
+    {
         "slug": "mode-analytics",
         "name": "Mode Analytics",
         "url": "https://modeanalytics.com",
