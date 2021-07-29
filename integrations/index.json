@@ -147,7 +147,36 @@
         "name": "Zapier",
         "url": "https://zapier.com",
         "category": "Developers",
-        "description": "Connect applications and automate workflows"
+        "description": "Connect applications and automate workflows",
+        "summary": "Integrate Outline with your business apps to automatically create and update documents"
+    },
+    {
+        "slug": "descript",
+        "name": "Descript",
+        "url": "https://descript.com",
+        "category": "Media",
+        "description": "All-in-one audio & video editing, as easy as a doc"
+    },
+    {
+        "slug": "spotify",
+        "name": "Spotify",
+        "url": "https://spotify.com",
+        "category": "Media",
+        "description": "Stream millions of songs and podcasts"
+    },
+    {
+        "slug": "youtube",
+        "name": "YouTube",
+        "url": "https://youtube.com",
+        "category": "Media",
+        "description": "Embed videos from around the web"
+    },
+    {
+        "slug": "vimeo",
+        "name": "Vimeo",
+        "url": "https://vimeo.com",
+        "category": "Media",
+        "description": "Embed videos from around the web"
     },
     {
         "slug": "alfred",
