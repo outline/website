@@ -80,7 +80,14 @@ export default function Integrations() {
         <>
           <h2>Featured</h2>
           <div className="pure-g cards">
-            {["slack", "google-docs", "alfred", "figma"].map((slug) => {
+            {[
+              "slack",
+              "google-docs",
+              "alfred",
+              "figma",
+              "zapier",
+              "airtable",
+            ].map((slug) => {
               const integration = find(content, { slug });
 
               return (
