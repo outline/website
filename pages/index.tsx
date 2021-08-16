@@ -28,7 +28,7 @@ export default function Home() {
           <h1 className="title">Your team’s knowledge base</h1>
 
           <p className="description">
-            Lost in mess of Docs? Never quite sure who has access? Colleagues
+            Lost in a mess of Docs? Never quite sure who has access? Colleagues
             requesting the same information repeatedly in chat? It’s time to get
             your team’s knowledge organized.
           </p>
