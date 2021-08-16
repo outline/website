@@ -3036,10 +3036,10 @@ os-tmpdir@~1.0.2:
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
 
-outline-icons@^1.25.0:
-  version "1.25.1"
-  resolved "https://registry.yarnpkg.com/outline-icons/-/outline-icons-1.25.1.tgz#9c935aeb2ff0c38ca02a007a18fc271c77a1185c"
-  integrity sha512-zmMgW5gnuf7ujkyiC4T4PF3cgb/x4LRGQcs9+MvXyHsuMFJfBgCyKKP8QcKfBRG/tXVeng3h2eMQr9EJcg0SNA==
+outline-icons@^1.31.0:
+  version "1.31.0"
+  resolved "https://registry.yarnpkg.com/outline-icons/-/outline-icons-1.31.0.tgz#c373667442300afdb1a9fd6059180833c6123fcb"
+  integrity sha512-pe2vSI1mR4bJaWpmTitniyNpu4oq8dVObOweh/H6EON+12w2QDRtJZ6A6Bkc2vjlb2ZRYcZasisJI9VBUuTnHQ==
 
 p-defer@^1.0.0:
   version "1.0.0"

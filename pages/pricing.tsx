@@ -2,7 +2,6 @@ import Link from "next/link";
 import Button from "components/Button";
 import { CloudIcon, TeamIcon, CheckmarkIcon } from "outline-icons";
 import Layout from "components/Layout";
-import Hero from "components/Hero";
 import { spacing, colors } from "theme";
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
 

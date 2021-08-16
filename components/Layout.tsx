@@ -13,13 +13,13 @@ import { useRouter } from "next/router";
 ReactGA.initialize("UA-109435745-1");
 
 type Props = {
-  title?: string;
+  title?: React.ReactNode;
   pageTitle?: string;
   background?: string;
   color?: string;
   header?: React.ReactNode;
   hero?: React.ReactNode;
-  illustration?: string;
+  illustration?: React.ReactNode;
   sidebar?: React.ReactNode;
   children: React.ReactNode;
 };
@@ -134,9 +134,7 @@ export default function Layout({
                 <h1>{title}</h1>
                 <Hero>{hero}</Hero>
               </div>
-              <div className="pure-u-1 pure-u-md-3-5">
-                {illustration && <img src={illustration} />}
-              </div>
+              <div className="pure-u-1 pure-u-md-3-5">{illustration}</div>
             </div>
           ) : (
             header
@@ -176,6 +174,7 @@ export default function Layout({
           .with-header {
             padding-bottom: 1em;
             margin-bottom: 2em;
+            overflow: hidden;
           }
 
           .page {
