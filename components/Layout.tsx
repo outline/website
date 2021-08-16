@@ -54,7 +54,7 @@ export default function Layout({
   }, [router.query]);
 
   const siteTitle = "Outline – Team knowledge base & wiki";
-  const resolvedTitle = pageTitle || title;
+  const resolvedTitle = pageTitle || (typeof title === "string" ? title : "");
   const fullTitle = `${resolvedTitle ? resolvedTitle + " – " : ""}${siteTitle}`;
 
   return (

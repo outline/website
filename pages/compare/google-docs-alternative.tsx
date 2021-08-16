@@ -16,16 +16,17 @@ export default function ConfluenceComparison() {
         <>
           <br />
           <br />
-          Finally, a Real Alternative to Confluence
+          Lost in a sea of individually shared Google Docs?
         </>
       }
-      pageTitle="Confluence Alternative"
+      pageTitle="Google Docs Alternative"
       background="#F4F7FA"
       hero={
         <>
           <p>
-            Outline is the fast, modern, alternative to Confluence that your
-            team has been looking for – on-premise or in the cloud.
+            Outline is the fast, modern, alternative to Google Docs built from
+            the ground up for knowledge bases and wikis – on-premise or in the
+            cloud.
           </p>
           <GetStarted centered={false} />
         </>
@@ -34,10 +35,10 @@ export default function ConfluenceComparison() {
     >
       <div className="pure-g container">
         <div className="pure-u-1 pure-u-md-2-5 feature">
-          <h2>Good lookin’ docs, without even trying.</h2>
+          <h2>Great looking docs, without the effort.</h2>
           <p>
-            An easy to use editor with markdown support, slash commands, and
-            rich embeds that looks great by default.
+            An intuitive editor built for the digital world instead of paper
+            letters. With support for markdown, slash commands, and rich embeds.
           </p>
         </div>
         <div className="pure-u-1 pure-u-md-3-5"></div>
@@ -54,8 +55,8 @@ export default function ConfluenceComparison() {
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Structured &amp; instantly searchable.</h2>
           <p>
-            Nest documents in a hierachy, automatically build a network of
-            backlinks and search across everything in ms.
+            Nest documents in a hierachy, automatically build a rich network of
+            backlinks and search across all the team's knowledge.
           </p>
         </div>
         <div className="pure-u-1 pure-u-md-3-5"></div>
@@ -64,8 +65,8 @@ export default function ConfluenceComparison() {
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Cloud hosted or on-premise.</h2>
           <p>
-            Outline is available as a cloud hosted service that’s always
-            up-to-date or as a self-hosted install on your own network.
+            Outline is available as a cloud hosted service that's always
+            up-to-date or as a self-hosted installation.
           </p>
         </div>
       </div>
@@ -75,7 +76,7 @@ export default function ConfluenceComparison() {
             <tr>
               <th></th>
               <th>Outline</th>
-              <th>Confluence</th>
+              <th>Google Docs</th>
             </tr>
           </thead>
           <tbody>
@@ -95,14 +96,14 @@ export default function ConfluenceComparison() {
               <td>{check}</td>
             </tr>
             <tr>
-              <td>Audit trail</td>
-              <td>{check}</td>
-              <td>Enterprise-only</td>
-            </tr>
-            <tr>
               <td>Single sign-on</td>
               <td>{check}</td>
-              <td>Enterprise-only</td>
+              <td>{check}</td>
+            </tr>
+            <tr>
+              <td>Nested structure</td>
+              <td>{check}</td>
+              <td>{nope}</td>
             </tr>
             <tr>
               <td>Fast, really fast</td>
@@ -118,8 +119,7 @@ export default function ConfluenceComparison() {
         </Table>
 
         <p className="description">
-          On the same page as us? Let’s take your team’s writing to the next
-          level…
+          Sign up with Google SSO in just a couple of clicks…
         </p>
         <GetStarted />
       </div>
