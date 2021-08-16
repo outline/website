@@ -36,13 +36,25 @@ export default function ConfluenceComparison() {
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Good lookin’ docs, without even trying.</h2>
           <p>
-            An easy to use editor with markdown support, slash commands, and
-            rich embeds that looks great by default.
+            An easy to use editor with markdown shortcuts, slash commands, and
+            media embeds that looks great by default.
           </p>
         </div>
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/good-lookin.png"
+            alt="Outline task lists"
+            className="feature-screenshot right"
+          />
+        </div>
 
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/permissions.png"
+            alt="Outline permissions"
+            className="feature-screenshot left"
+          />
+        </div>
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Access control &amp; permissions.</h2>
           <p>
@@ -58,9 +70,21 @@ export default function ConfluenceComparison() {
             backlinks and search across everything in ms.
           </p>
         </div>
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/search.png"
+            alt="Outline search"
+            className="feature-screenshot right"
+          />
+        </div>
 
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/self-hosted-domain.png"
+            alt="Custom domain"
+            className="feature-screenshot left"
+          />
+        </div>
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Cloud hosted or on-premise.</h2>
           <p>
@@ -130,6 +154,23 @@ export default function ConfluenceComparison() {
           text-align: center;
           font-size: 1.5rem;
           color: ${colors.textSecondary};
+        }
+
+        .feature-screenshot {
+          padding: 2em;
+          width: 100%;
+        }
+
+        .feature-screenshot.left {
+          margin-left: -4em;
+        }
+
+        .feature-screenshot.right {
+          margin-left: 4em;
+        }
+
+        .feature {
+          margin-bottom: 4em;
         }
 
         .feature h2 {

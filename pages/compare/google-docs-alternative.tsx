@@ -41,9 +41,21 @@ export default function ConfluenceComparison() {
             letters. With support for markdown, slash commands, and rich embeds.
           </p>
         </div>
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/good-lookin.png"
+            alt="Outline task lists"
+            className="feature-screenshot right"
+          />
+        </div>
 
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/permissions.png"
+            alt="Outline permissions"
+            className="feature-screenshot left"
+          />
+        </div>
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Access control &amp; permissions.</h2>
           <p>
@@ -59,9 +71,21 @@ export default function ConfluenceComparison() {
             backlinks and search across all the team's knowledge.
           </p>
         </div>
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/search.png"
+            alt="Outline search"
+            className="feature-screenshot right"
+          />
+        </div>
 
-        <div className="pure-u-1 pure-u-md-3-5"></div>
+        <div className="pure-u-1 pure-u-md-3-5">
+          <img
+            src="/images/self-hosted-domain.png"
+            alt="Custom domain"
+            className="feature-screenshot left"
+          />
+        </div>
         <div className="pure-u-1 pure-u-md-2-5 feature">
           <h2>Cloud hosted or on-premise.</h2>
           <p>
@@ -130,6 +154,23 @@ export default function ConfluenceComparison() {
           text-align: center;
           font-size: 1.5rem;
           color: ${colors.textSecondary};
+        }
+
+        .feature-screenshot {
+          padding: 2em;
+          width: 100%;
+        }
+
+        .feature-screenshot.left {
+          margin-left: -4em;
+        }
+
+        .feature-screenshot.right {
+          margin-left: 4em;
+        }
+
+        .feature {
+          margin-bottom: 4em;
         }
 
         .feature h2 {
