@@ -10,9 +10,10 @@ import {
   StarredIcon,
   EyeIcon,
 } from "outline-icons";
-import Button from "components/Button";
 import Card from "components/Card";
 import Hero from "components/Hero";
+import Screenshot from "components/Screenshot";
+import GetStarted from "components/GetStarted";
 import Layout from "components/Layout";
 import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
@@ -32,22 +33,9 @@ export default function Home() {
             your team’s knowledge organized.
           </p>
 
-          <p className="centered">
-            <Button href={`//app.getoutline.com/create`}>
-              Get Started for Free &rarr;
-            </Button>
-            <small className="note">
-              30 day trial, no credit card required
-            </small>
-          </p>
+          <GetStarted />
 
-          <p className="screenshot-wrapper">
-            <img
-              src="/images/screenshot.png"
-              alt="Outline screenshot"
-              className="screenshot"
-            />
-          </p>
+          <Screenshot />
         </div>
 
         <h1 className="subtitle">Why you’ll love using Outline</h1>
@@ -408,26 +396,10 @@ export default function Home() {
         <p className="description">
           On the same page as us? Sign up in just a couple of clicks…
         </p>
-        <p className="centered">
-          <Button href={`//app.getoutline.com/create`}>
-            Get Started for Free &rarr;
-          </Button>
-          <small className="note">30 day trial, no credit card required</small>
-        </p>
+        <GetStarted />
       </main>
 
       <style jsx>{`
-        .centered {
-          text-align: center;
-        }
-
-        .note {
-          display: block;
-          font-size: 0.75em;
-          margin-top: 1em;
-          color: ${colors.textSecondary};
-        }
-
         .feature {
           width: 95vw;
           padding: ${spacing.large};
@@ -479,21 +451,6 @@ export default function Home() {
 
         .lil-wrapper.slack {
           border-left: 30px solid ${colors.brand.marine};
-        }
-
-        .screenshot {
-          max-width: 1140px;
-          width: 90vw;
-          box-shadow: 0px 10px 26px 0px rgba(0, 0, 0, 0.25);
-          border-radius: 8px;
-        }
-
-        .screenshot-wrapper {
-          padding: 24px 24px 48px;
-          margin-bottom: 0;
-          border-radius: 12px;
-          overflow: hidden;
-          max-width: 100vw;
         }
 
         main {

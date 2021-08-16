@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="pure-g container">
-        <div className="pure-u-1 pure-u-md-2-5">
+        <div className="pure-u-1 pure-u-md-1-5">
           <Logo />
           <br />
         </div>
@@ -83,6 +83,21 @@ export default function Footer() {
             <li>
               <Link href="/terms">
                 <a>Terms of Use</a>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div role="navigation" className="pure-u-1-2 pure-u-md-1-5">
+          <h3>Compare</h3>
+          <ul>
+            <li>
+              <Link href="/compare/confluence-alternative">
+                <a>Confluence</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/compare/google-docs-alternative">
+                <a>Google Docs</a>
               </Link>
             </li>
           </ul>
