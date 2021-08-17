@@ -61,7 +61,7 @@ class MenuItem extends React.Component<{
             }
 
             a.launch {
-              width: 160px;
+              width: 122px;
             }
           `}
         </style>
@@ -233,7 +233,7 @@ export default function HeaderNavigation() {
                 onClick={setActiveNav("sessions")}
                 top
               >
-                Launch Outline <ExpandedIcon color="currentColor" />
+                Open App <ExpandedIcon color="currentColor" />
               </MenuItem>
               <ul className="sessions">
                 <Teams sessions={sessions} />
