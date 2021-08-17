@@ -6,7 +6,7 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
   return (
     <>
       <p className={centered !== false ? "centered" : ""}>
-        <Button href="//app.getoutline.com/create">
+        <Button href="https://app.getoutline.com/create">
           Get Started for Free &rarr;
         </Button>
         <small className="note">30 day trial, no credit card required</small>
