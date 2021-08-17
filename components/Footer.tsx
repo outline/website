@@ -85,6 +85,11 @@ export default function Footer() {
                 <a>Terms of Use</a>
               </Link>
             </li>
+            <li>
+              <a href="https://climate.stripe.com/x7Updz" target="_blank">
+                Climate Impact
+              </a>
+            </li>
           </ul>
         </div>
         <div role="navigation" className="pure-u-1-2 pure-u-md-1-5">
