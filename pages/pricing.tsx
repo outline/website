@@ -176,7 +176,7 @@ export default function Pricing() {
                       </p>
                     </td>
                     <td className="price">
-                      $4/user <span className="period">billed annually</span>
+                      $4/user/mo <span className="period">billed annually</span>
                       <p className="cta">
                         <Button href="/contact">Request Trial</Button>
                       </p>
