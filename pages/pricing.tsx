@@ -58,7 +58,7 @@ export default function Pricing() {
                     <td className="price">
                       $10 <span className="period">per month</span>
                       <p className="cta">
-                        <Button href="//app.getoutline.com/create?ref=starter">
+                        <Button href="https://app.getoutline.com/create?ref=starter">
                           Start Trial
                         </Button>
                       </p>
@@ -66,7 +66,7 @@ export default function Pricing() {
                     <td className="price">
                       $79 <span className="period">per month</span>
                       <p className="cta">
-                        <Button href="//app.getoutline.com/create?ref=team">
+                        <Button href="https://app.getoutline.com/create?ref=team">
                           Start Trial
                         </Button>
                       </p>
@@ -74,7 +74,7 @@ export default function Pricing() {
                     <td className="price">
                       $249 <span className="period">per month</span>
                       <p className="cta">
-                        <Button href="//app.getoutline.com/create?ref=business">
+                        <Button href="https://app.getoutline.com/create?ref=business">
                           Start Trial
                         </Button>
                       </p>
