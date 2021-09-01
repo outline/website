@@ -3,10 +3,19 @@ import Markdown from "components/Markdown";
 
 const domain = "https://www.getoutline.com";
 
+const escapeXMLContent = (unsafe: string): string => {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+};
+
 const generateRSSItem = (post: any): string => `
   <item>
     <guid>${post.slug}</guid>
-    <title>${post.title}</title>
+    <title>${escapeXMLContent(post.title)}</title>
     <link>${domain + "/changelog/" + post.slug}</link>
     <description><![CDATA[ ${ReactDOMServer.renderToString(
       <Markdown source={post.content} />
