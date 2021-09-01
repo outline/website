@@ -79,7 +79,7 @@ and accessing your Outline documents directly from chat too, just like Slack.</p
 
   <item>
     <guid>viewer-permissions</guid>
-    <title>Collection Permissions & Viewers</title>
+    <title>Collection Permissions &amp; Viewers</title>
     <link>https://www.getoutline.com/changelog/viewer-permissions</link>
     <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="viewer permissions" src="https://www.getoutline.com/images/viewer-permissions.png"/></p><p>In the last couple of weeks we&#x27;ve deployed two changes that together really improve
 the permissions story in Outline. It&#x27;s now possible to make a user a &quot;viewer&quot; at 
@@ -166,7 +166,7 @@ hassle of hosting your own Outline servers.</p><p>Custom domains are available a
 
   <item>
     <guid>something-brewing</guid>
-    <title>We've got something brewing…</title>
+    <title>We&#039;ve got something brewing…</title>
     <link>https://www.getoutline.com/changelog/something-brewing</link>
     <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Brewing" src="https://www.getoutline.com/images/multiplayer.png"/></p><h3>Other fixes and improvements</h3><ul><li>Spotify embeds have been improved and better handle the wide variety of possible link types</li><li>Fixed an issue that made it impossible to upload the same image twice without reloading the document</li><li>Improved toolbar behavior to prevent it appearing with an empty selection</li></ul></div> ]]></description>
     <pubDate>Tue, 13 Oct 2020 00:00:00 GMT</pubDate>
