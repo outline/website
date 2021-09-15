@@ -65,6 +65,13 @@
         "description": "Part spreadsheet, part database, and entirely flexible"
     },
     {
+        "slug": "diagrams",
+        "name": "Diagrams.net",
+        "url": "https://diagrams.net",
+        "category": "Collaboration",
+        "description": "Security-first diagramming for teams"
+    },
+    {
         "slug": "google-docs",
         "name": "Google Docs",
         "url": "https://docs.google.com",
