@@ -5,9 +5,20 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 25 Sep 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 23 Oct 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>emoji-picker</guid>
+    <title>A new integrated emoji picker</title>
+    <link>https://www.getoutline.com/changelog/emoji-picker</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline emoji picker" src="https://www.getoutline.com/images/emoji-picker.png"/></p><p>The editor gained a new emoji picker this month, just type &quot;:&quot; and a search term 
+to quickly find relevant emojis for your document!</p><p>It&#x27;s now also possible to set a &quot;default role&quot; for new users that join your knowledge
+base. For example, new signups can now have viewer priviledges by default. You can
+find this setting under Settings -&gt; Security.</p><h3>Fixes and improvements</h3><h4>Editor</h4><ul><li>Fixed home key/keycombo not working correctly in headers</li><li><code>mailto:</code> links are supported in the editor again</li><li>Fixed issue where documents beginning with an emoji would overlay the table of contents</li><li>Clicking outside the editor will now always close an open toolbar</li><li>Creating newlines from a collapsed heading now behaves more predictably</li><li>Performance improvements to the editor</li></ul><h4>Platform</h4><ul><li>Customers that have a custom domain no longer show a &quot;Back to website&quot; link on the login screen</li><li>It&#x27;s now possible to change the light/dark theme on publicly shared documents</li><li>You can now delete previous export data. By default these are still removed after 30 days.</li><li>Creating an API key no longer reloads the entire app</li><li>Context menus can no longer extend out of the available window space</li><li>The collection icon picker is now closable on mobile</li></ul></div> ]]></description>
+    <pubDate>Sat, 23 Oct 2021 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>polish-polish</guid>
     <title>Polish Language and Editor Improvements</title>
