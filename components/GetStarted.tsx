@@ -9,7 +9,7 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
         <Button href="https://app.getoutline.com/create">
           Get Started for Free &rarr;
         </Button>
-        <small className="note">30 day trial, no credit card required</small>
+        <small className="note">30-day trial, no credit card required</small>
       </p>
       <style jsx>
         {`
