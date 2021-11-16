@@ -210,7 +210,7 @@ export default function HeaderNavigation() {
               </MenuItem>
             </li>
             <li>
-              <MenuItem href="https://twitter.com/outlinewiki" target="_blank">
+              <MenuItem href="https://twitter.com/getoutline" target="_blank">
                 Twitter
               </MenuItem>
             </li>
@@ -339,7 +339,7 @@ export default function HeaderNavigation() {
               </MenuItem>
             </li>
             <li>
-              <MenuItem href="https://twitter.com/outlinewiki" target="_blank">
+              <MenuItem href="https://twitter.com/getoutline" target="_blank">
                 Twitter
               </MenuItem>
             </li>

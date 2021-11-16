@@ -34,8 +34,8 @@ export default function Privacy() {
           You can email us directly at{" "}
           <a href="mailto:hello@getoutline.com">hello@getoutline.com</a> from
           your favorite email client, or reach out on twitter{" "}
-          <a href="https://twitter.com/outlinewiki" target="_blank">
-            @outlinewiki
+          <a href="https://twitter.com/getoutline" target="_blank">
+            @getoutline
           </a>
           .
         </p>

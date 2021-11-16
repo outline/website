@@ -29,7 +29,7 @@ export const generateRSS = (posts: any[]): string => `
     <channel>
       <title>Outline Changelog</title>
       <link>https://www.getoutline.com/changelog</link>
-      <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
+      <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
       <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>

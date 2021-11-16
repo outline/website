@@ -61,7 +61,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/outlinewiki" target="_blank">
+              <a href="https://twitter.com/getoutline" target="_blank">
                 Twitter
               </a>
             </li>

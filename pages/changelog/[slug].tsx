@@ -15,7 +15,7 @@ export default function Changelog({ title, date, tag, content }) {
         <>
           New updates and improvements to Outline.
           <br />
-          <a href="https://twitter.com/outlinewiki">Follow us on twitter</a> to
+          <a href="https://twitter.com/getoutline">Follow us on twitter</a> to
           find out when features are released.
         </>
       }

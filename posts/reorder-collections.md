@@ -6,7 +6,7 @@ slug: reorder-collections
 
 ![Reordering collections in Outline](/images/reorder-collections.jpg)
 
-Building on our sidebar improvements from the start of the year, it's now possible to [reorder collections](https://twitter.com/outlinewiki/status/1372943061894930432) in the sidebar as a team admin – changes to the sidebar are synced to all team members. We also added reordering of list items in documents with a new drag and drop handle or the handy `ALT+Up/Down` shortcut. 
+Building on our sidebar improvements from the start of the year, it's now possible to [reorder collections](https://twitter.com/getoutline/status/1372943061894930432) in the sidebar as a team admin – changes to the sidebar are synced to all team members. We also added reordering of list items in documents with a new drag and drop handle or the handy `ALT+Up/Down` shortcut. 
 
 
 ### Other fixes and improvements
