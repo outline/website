@@ -5,7 +5,7 @@ import {
   PadlockIcon,
   CollectionIcon,
   BuildingBlocksIcon,
-  LightBulbIcon,
+  CloudIcon,
   GlobeIcon,
   StarredIcon,
   EyeIcon,
@@ -236,15 +236,15 @@ export default function Home() {
               <Card
                 title={
                   <>
-                    <LightBulbIcon
+                    <CloudIcon
                       size={32}
                       color="currentColor"
                       className="pull-icon"
                     />
-                    &nbsp;Intuitive
+                    &nbsp;Collaborative
                   </>
                 }
-                description="The Outline editor has been designed from the ground up to be easy to use, but powerful. Reading and writing docs should be enjoyable."
+                description="Outline has been designed from the ground up to be powerful, realtime, and easy to use. Reading and writing docs should be enjoyable."
               />
             </div>
             <div className="pure-u-1 pure-u-md-1-3">
