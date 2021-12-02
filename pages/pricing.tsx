@@ -99,6 +99,12 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>Realtime collaborative editing</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>Multi-language translation</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -111,7 +117,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>All integrations</td>
+                    <td>20+ integrations</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -165,7 +171,7 @@ export default function Pricing() {
                       <span className="note">(min purchase of 100 seats)</span>
                     </td>
                     <td className="price">
-                      $0 <span className="period">limited features</span>
+                      $0 <span className="period">community support</span>
                       <p className="cta">
                         <Button
                           href="https://hub.docker.com/r/outlinewiki/outline"
@@ -184,6 +190,11 @@ export default function Pricing() {
                   </tr>
                   <tr>
                     <td>Unlimited docs + version history</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>Realtime collaborative editing</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
