@@ -117,7 +117,7 @@ export default function Layout({
         <meta name="twitter:title" content={resolvedTitle || siteTitle} />
         <meta name="twitter:image" content="/images/screenshot.png" />
       </Head>
-      <header className={(header || hero) && "with-header"}>
+      <header>
         <div className="container">
           <div className="pure-g">
             <div className="pure-u-1-2 header-left">
@@ -127,7 +127,10 @@ export default function Layout({
               <HeaderNavigation />
             </div>
           </div>
-
+        </div>
+      </header>
+      <header className={(header || hero) && "with-header"}>
+        <div className="container">
           {hero ? (
             <div className="pure-g">
               <div className="pure-u-1 pure-u-md-2-5">
