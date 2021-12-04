@@ -160,7 +160,7 @@ export default function Pricing() {
                 <thead>
                   <tr>
                     <th></th>
-                    <th>Open Source</th>
+                    <th>Community Edition</th>
                     <th>Enterprise</th>
                   </tr>
                 </thead>
@@ -171,7 +171,10 @@ export default function Pricing() {
                       <span className="note">(min purchase of 100 seats)</span>
                     </td>
                     <td className="price">
-                      $0 <span className="period">community support</span>
+                      $0{" "}
+                      <span className="period">
+                        limited features and support
+                      </span>
                       <p className="cta">
                         <Button
                           href="https://hub.docker.com/r/outlinewiki/outline"
