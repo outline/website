@@ -1,0 +1,22 @@
+---
+title: Command Bar
+date: 2021-11-10T00:00:00Z
+slug: command-bar
+---
+
+![Outline command bar](/images/command-bar.png)
+
+This release also includes new `cmd`+`k` functionality which you might recognize from other productivity apps. Type `cmd`+`k` anywhere in the app to quickly move around your knowledge base! 
+
+We'll be building all of the possible actions into this menu over the next few months, but try searching for docs, collections, or changing the theme to see how fun and easy it is to use!
+
+### Fixes & Improvements
+
+- Added Perl language support in editor code blocks
+- Public share links now include an option to change light/dark theme
+- It is now possible to set a default role for new users in Settings -> Security
+- Warning when dragging doc between collections with different permissions
+- Zooming images now possible while editing
+- Several new icons for collections
+- It is now possible to delete previous exports in admin
+- 🇵🇱 Polish added as language option
