@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 10 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 26 Jan 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>pin-to-home</guid>
+    <title>Pin to Home</title>
+    <link>https://www.getoutline.com/changelog/pin-to-home</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Pin to home" src="https://www.getoutline.com/images/pin-to-home.png"/></p><p>This month pinned documents got some love – a visual refresh to help them stand out, the ability to reorder, and also you can now pin documents to the home screen for everyone in the team to see. This year we&#x27;ll be focusing more on improving the options to customize and theme Outline and so this is a first step in that direction.</p><h3>Fixes &amp; Improvements</h3><ul><li>Drafts are now displayed in the sidebar while viewing and editing</li><li>Added ability to &quot;follow&quot; another user in a document by clicking their avatar</li><li>Added &quot;full width&quot; option for documents display</li><li>Added recent searches to search screen</li><li>New icons for collections</li><li>It&#x27;s now possible to replace images in editor</li><li>You can now choose which events publish to Slack</li><li>🇻🇳 Vietnamese added as a language option</li><li>Lots of fixes in the editor and mobile support particularly</li></ul></div> ]]></description>
+    <pubDate>Wed, 26 Jan 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>command-bar</guid>
     <title>Command Bar</title>
