@@ -24,7 +24,7 @@ export default function TermsOfService() {
     >
       <p>
         By accessing the website at{" "}
-        <a href="http://www.getoutline.com">http://www.getoutline.com</a>, you
+        <a href="https://www.getoutline.com">https://www.getoutline.com</a>, you
         are agreeing to be bound by these terms of service, all applicable laws
         and regulations, and agree that you are responsible for compliance with
         any applicable local laws. If you do not agree with any of these terms,
