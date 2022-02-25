@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 26 Jan 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 24 Feb 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>fit-and-finish</guid>
+    <title>Fit and finish</title>
+    <link>https://www.getoutline.com/changelog/fit-and-finish</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Mosaic" src="https://www.getoutline.com/images/fit-and-finish.png"/></p><p>This months shipped improvements are lots of small details, alignments, bug fixes, and editor improvements. In the background we have been busy building long-awaited file attachments and search for publicly shared documents, both of which will be shipped in the next month.</p><h3>Fixes &amp; Improvements</h3><h4>Editor</h4><ul><li>Table of contents is now available on mobile</li><li>Improved positioning and editing around images in documents</li><li>We improved the default paragraph spacing</li><li>Pasted content from Dropbox Paper is now more accurately preserved</li><li>Document title no longer allows eronuously pasting rich text</li><li>Improved the behavior of links and link editing</li><li>External links now show an icon</li><li>Added support for domain-restricted Vimeo embeds</li><li>Fixed a bug that caused todo items to not show as checked in Firefox</li><li>Tabbing no longer escapes the editor</li></ul><h4>Platform</h4><ul><li>Collections can now be expanded and collapsed independently</li><li>It is now possible to move a nested document to the collection root by drag and dropping onto the collection</li><li>Fixed a number of bugs with import and exporting of documents</li><li>Fixed a bug where virus scanning software would scan magic links and make it impossible to sign-in</li><li>It&#x27;s now possible to choose a default &quot;Home&quot; collection for your team</li><li>Performance, design, and various &quot;fit and finish&quot; improvements</li><li>Fixed a bug where some buttons would display unstyled in Safari</li><li>Collections with only drafts no longer show as empty</li><li>It&#x27;s no longer possible to see &quot;Never viewed&quot; on a document you created</li><li>Dangerous menu items now display in a different color</li><li>Reduced code loading on publicly shared links</li></ul></div> ]]></description>
+    <pubDate>Thu, 24 Feb 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>pin-to-home</guid>
     <title>Pin to Home</title>
