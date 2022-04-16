@@ -115,11 +115,25 @@
         "description": "Data collection tool and surveys, for professionals"
     },
     {
+        "slug": "pitch",
+        "name": "Pitch",
+        "url": "https://pitch.com",
+        "category": "Collaboration",
+        "description": "Stunning presentations. Made together"
+    },
+    {
         "slug": "prezi",
         "name": "Prezi",
         "url": "https://prezi.com",
         "category": "Collaboration",
         "description": "Easy presentations for people who aren't designers"
+    },
+    {
+        "slug": "whimsical",
+        "name": "Whimsical",
+        "url": "https://whimsical.com",
+        "category": "Collaboration",
+        "description": "A unified workspace for thinking and collaboration"
     },
     {
         "slug": "codepen",
@@ -130,7 +144,7 @@
     },
     {
         "slug": "github-gist",
-        "name": "GitHub Gist",
+        "name": "GitHub",
         "url": "https://gist.github.com",
         "category": "Developers",
         "description": "Sharable code snippets, hosted by GitHub"
@@ -144,8 +158,8 @@
     },
     {
         "slug": "mode-analytics",
-        "name": "Mode Analytics",
-        "url": "https://modeanalytics.com",
+        "name": "Mode",
+        "url": "https://mode.com",
         "category": "Developers",
         "description": "Connect and analyze data from any data source"
     },
@@ -189,7 +203,7 @@
         "slug": "alfred",
         "name": "Alfred",
         "url": "https://github.com/outline/alfred-outline",
-        "category": "Tools",
+        "category": "Utilities",
         "description": "Search Outline from the comfort of your desktop",
         "summary": "Search your knowledge base from the comfort of your Mac desktop by using our Alfred Powerpack plugin – install in seconds"
     }
