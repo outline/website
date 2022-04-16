@@ -5,9 +5,74 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 24 Feb 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 07 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>shared-document-search</guid>
+    <title>Shared documents now include search</title>
+    <link>https://www.getoutline.com/changelog/shared-document-search</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Search input" src="https://www.getoutline.com/images/shared-document-search.png"/></p><p>If you publicly share a document with nested document sharing enabled we&#x27;ll now display a
+search input at the top of the sidebar to allow searching the contents of
+all of the nested documents.</p><p>This is particularly great when sharing documentation and other larger collections
+of docs.</p></div> ]]></description>
+    <pubDate>Thu, 07 Apr 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>date-time-commands</guid>
+    <title>New date slash commands</title>
+    <link>https://www.getoutline.com/changelog/date-time-commands</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline date time commands" src="https://www.getoutline.com/images/date-time-commands.gif"/></p><p>We added some new slash commands to insert the current date, time, or both into a document
+you&#x27;re editing – and importantly these commands also work in document titles and
+are locale-aware! These are the new handy shortcuts:</p><ul><li><code>/date</code> – Insert current date</li><li><code>/time</code> – Insert current time</li><li><code>/datetime</code> – Insert current date and time</li></ul></div> ]]></description>
+    <pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>star-collections</guid>
+    <title>Collections can now be starred</title>
+    <link>https://www.getoutline.com/changelog/star-collections</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline sidebar with starred collections" src="https://www.getoutline.com/images/star-collections.png"/></p><p>Just like documents, collections can now be starred – once starred you can also
+re-order all of your stars with drag and drop to create your own custom sidebar.
+Star the things that are important to <em>you</em> and have them available for one-click
+access.</p><p><strong>Tip:</strong> Did you know that adding an emoji in front of a document title will show it
+in the browser favicon and in the sidebar when starred?</p></div> ]]></description>
+    <pubDate>Thu, 24 Mar 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>disable-collection-create</guid>
+    <title>New option to disable collection creation</title>
+    <link>https://www.getoutline.com/changelog/disable-collection-create</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Disable collection setting" src="https://www.getoutline.com/images/disable-collection-creation.png"/></p><p>Admin&#x27;s now have a new option to disable creation of new collection by members,
+for more curated knowledge bases or larger teams this can help prevent documentation
+sprawling unchecked.</p></div> ]]></description>
+    <pubDate>Thu, 24 Mar 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>command-bar-settings</guid>
+    <title>Settings in command bar</title>
+    <link>https://www.getoutline.com/changelog/command-bar-settings</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline command bar settings" src="https://www.getoutline.com/images/command-bar-settings.png"/></p><p>It&#x27;s now possible to access all the settings screen directly from the command bar.
+You can access the command bar anywhere in the app using <code>Cmd</code> + <code>k</code>, or
+<code>Cmd</code> + <code>Shift</code> + <code>k</code> if you&#x27;re in the document editor.</p><p>If you&#x27;ve not used the command bar yet, it&#x27;s a fast way to access lots of
+functionality without taking your hands off the keyboard!</p></div> ]]></description>
+    <pubDate>Mon, 14 Mar 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>file-attachments</guid>
+    <title>File attachments</title>
+    <link>https://www.getoutline.com/changelog/file-attachments</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="Outline file attachments" src="https://www.getoutline.com/images/file-attachments.png"/></p><p>We&#x27;re excited to finally add one of our most requested features – file attachments
+in documents. You can now upload arbitrary files and embed them directly into
+a doc for your teammates to download, file attachments work on publicly
+shared links too.</p></div> ]]></description>
+    <pubDate>Thu, 10 Mar 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>fit-and-finish</guid>
     <title>Fit and finish</title>
