@@ -29,8 +29,10 @@ export default function Changelog({ posts }) {
         <>
           New updates and improvements to Outline.
           <br />
-          <a href="https://twitter.com/getoutline">Follow us on twitter</a> to
-          find out when features are released.
+          <a href="https://twitter.com/intent/follow?screen_name=getoutline">
+            Follow us on twitter
+          </a>{" "}
+          to find out when features are released.
         </>
       }
       sidebar={
