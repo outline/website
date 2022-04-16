@@ -22,8 +22,7 @@ export default function Integrations() {
       title="Integrations"
       background="#F4F7FA"
       hero="Outline is extensible and designed to integrate with your existing
-      workflow and tools. If you can’t find the integration you’re
-      after, reach out – we are adding new applications all the time."
+      workflows and tools."
       sidebar={<IntegrationsMenu />}
     >
       <input
