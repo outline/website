@@ -5,9 +5,18 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 07 Apr 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 18 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>april-new-embeds</guid>
+    <title>JSFiddle, Gliffy, and Otter.ai embeds</title>
+    <link>https://www.getoutline.com/changelog/april-new-embeds</link>
+    <description><![CDATA[ <div class="jsx-3287102884 md" data-reactroot=""><p><img alt="JSFiddle embed" src="https://www.getoutline.com/images/new-embeds.png"/></p><p>This week brings three new integrations – just paste a share link in any
+document to get a rich, interactive, embed.</p><ul><li><a href="https://jsfiddle.net/">JSFiddle</a> – an online IDE for writing and testing code snippets (&quot;fiddles&quot;) in the browser.</li><li><a href="https://www.gliffy.com/">Gliffy</a> – an enterprise diagramming tool for creating flow charts, database diagrams, and wireframes.</li><li><a href="https://otter.ai/">Otter.ai</a> – allows interactive annotated meeting notes to be embedded in documents.</li></ul></div> ]]></description>
+    <pubDate>Mon, 18 Apr 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>shared-document-search</guid>
     <title>Shared documents now include search</title>
