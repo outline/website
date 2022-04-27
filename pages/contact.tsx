@@ -24,7 +24,7 @@ export default function ContactUs() {
                 </p>
               ) : (
                 <form
-                  action="http://localhost:3000/api/contactMessage.create"
+                  action="https://app.getoutline.com/api/contactMessage.create"
                   method="POST"
                 >
                   <label>
