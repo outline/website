@@ -15,7 +15,7 @@
     "date-fns": "^2.14.0",
     "gray-matter": "^4.0.2",
     "isomorphic-fetch": "^3.0.0",
-    "mobx": "^4.2.0",
+    "mobx": "^6.0.0",
     "next": "^12.1.0",
     "outline-icons": "^1.31.0",
     "polished": "^3.6.4",
@@ -24,7 +24,7 @@
     "react-ga": "^3.1.2",
     "react-markdown": "^4.3.1",
     "react-tabs": "^3.1.1",
-    "redoc": "^2.0.0-rc.30",
+    "redoc": "^2.0.0-rc.40",
     "styled-components": "^5.2.2",
     "tiny-cookie": "^2.3.2"
   },
