@@ -34,14 +34,14 @@ export default function Changelog({ title, date, tag, image, content }) {
         {image && (
           <>
             <meta
-              key="og:image"
               name="image"
+              key="og:image"
               property="og:image"
               content={image}
             />
             <meta
-              key="twitter:image"
               name="image"
+              key="twitter:image"
               property="twitter:image"
               content={image}
             />
