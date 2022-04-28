@@ -110,12 +110,15 @@ export default function Layout({
         <meta
           name="image"
           property="og:image"
-          content="/images/screenshot.png"
+          content="https://www.getoutline.com/images/screenshot.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
         <meta name="twitter:title" content={resolvedTitle || siteTitle} />
-        <meta name="twitter:image" content="/images/screenshot.png" />
+        <meta
+          name="twitter:image"
+          content="https://www.getoutline.com/images/screenshot.png"
+        />
       </Head>
       <header>
         <div className="container">

@@ -14,7 +14,7 @@ export function getPost(fileName: string) {
   let image = imageMatches ? imageMatches[2] : "";
 
   if (image?.startsWith("/")) {
-    image = `https://app.getoutline.com${image}`;
+    image = `https://www.getoutline.com${image}`;
   }
 
   const title = data.title;
