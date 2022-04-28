@@ -1,0 +1,1 @@
+{"pageProps":{"title":"v0.43.1","slug":"v0.43.1","date":"2020-05-24T05:24:04.000Z","tag":"v0.43.1","content":"    \n### Fixes\r\n\r\n- Code blocks imported from other sources with unsupported languages no longer crash the editor\r\n- Overlay background when zooming into images now respects the theme","image":""},"__N_SSG":true}

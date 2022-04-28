@@ -5,9 +5,21 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 18 Apr 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 23 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>tldraw-embed</guid>
+    <title>Tldraw embed</title>
+    <link>https://www.getoutline.com/changelog/tldraw-embed</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img alt="tldraw embed" src="https://www.getoutline.com/images/tldraw-embed.png"/></p><p>Thanks to an open source contributor <a href="https://github.com/Limezy">Limezy</a>, we now
+have support for interactive tldraw embeds. These look really fantastic inside
+Outline and allow multiple people to draw together inside a document.</p><p>To get started head to <a href="https://www.tldraw.com">tldraw.com</a>, click on the
+cursors icon in the top left and select &quot;Create a Multiplayer Project&quot; – paste
+the url into an Outline doc.</p><p><img alt="How to enable tldraw" src="/images/tldraw-enable.png"/></p></div> ]]></description>
+    <pubDate>Sat, 23 Apr 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>april-new-embeds</guid>
     <title>JSFiddle, Gliffy, and Otter.ai embeds</title>

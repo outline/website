@@ -1,0 +1,1 @@
+{"pageProps":{"title":"v0.6.1","slug":"v0.6.1","date":"2018-05-20T18:09:28.000Z","tag":"v0.6.1","content":"    \n### Fixes\r\n\r\n- Unable to delete draft document when collection is previously deleted\r\n- Failure in documents API endpoint","image":""},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"title":"v0.40.2","slug":"v0.40.2","date":"2020-02-27T06:36:07.000Z","tag":"v0.40.2","content":"    \n### Fixes\r\n\r\n- Newly created documents should auto focus\r\n- Clicking in whitespace at end of document should focus on the last line\r\n- Alignment of document loading placeholder","image":""},"__N_SSG":true}

@@ -1,0 +1,1 @@
+{"pageProps":{"title":"v0.42.1","slug":"v0.42.1","date":"2020-04-06T05:50:24.000Z","tag":"v0.42.1","content":"    \n### Fixes\r\n\r\n- Crash on share links introduced in previous release\r\n- Crash on editing documents with image/embed as first node","image":""},"__N_SSG":true}
