@@ -4,8 +4,9 @@ import Layout from "components/Layout";
 import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Metadata from "components/PostMetadata";
+import Head from "next/head";
 
-export default function Changelog({ title, date, tag, content }) {
+export default function Changelog({ title, date, tag, image, content }) {
   return (
     <Layout
       title="Changelog"
@@ -29,6 +30,24 @@ export default function Changelog({ title, date, tag, content }) {
         </SidebarMenu>
       }
     >
+      <Head>
+        {image && (
+          <>
+            <meta
+              key="og:image"
+              name="image"
+              property="og:image"
+              content={image}
+            />
+            <meta
+              key="twitter:image"
+              name="image"
+              property="twitter:image"
+              content={image}
+            />
+          </>
+        )}
+      </Head>
       <h2>{title}</h2>
       <Metadata tag={tag} date={date} />
       <Markdown source={content} />
