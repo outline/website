@@ -103,29 +103,18 @@ export default function Layout({
         <meta name="site_name" property="og:site_name" content="Outline" />
         <meta name="type" property="og:type" content="website" />
         <meta
-          name="title"
           property="og:title"
           key="og:title"
           content={resolvedTitle || siteTitle}
         />
         <meta
-          name="image"
           property="og:image"
           key="og:image"
           content="https://www.getoutline.com/images/screenshot.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
         <meta name="twitter:domain" content="getoutline.com" />
-        <meta
-          name="twitter:title"
-          key="twitter:title"
-          content={resolvedTitle || siteTitle}
-        />
-        <meta
-          name="twitter:image"
-          key="twitter:image"
-          content="https://www.getoutline.com/images/screenshot.png"
-        />
+        <meta name="twitter:site" content="@getoutline" />
       </Head>
       <header>
         <div className="container">

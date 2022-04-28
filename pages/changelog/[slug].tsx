@@ -31,22 +31,7 @@ export default function Changelog({ title, date, tag, image, content }) {
       }
     >
       <Head>
-        {image && (
-          <>
-            <meta
-              name="image"
-              key="og:image"
-              property="og:image"
-              content={image}
-            />
-            <meta
-              name="image"
-              key="twitter:image"
-              property="twitter:image"
-              content={image}
-            />
-          </>
-        )}
+        {image && <meta key="og:image" property="og:image" content={image} />}
       </Head>
       <h2>{title}</h2>
       <Metadata tag={tag} date={date} />
