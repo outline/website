@@ -31,6 +31,10 @@ export default function ContactUs() {
                     <div>Your name</div>
                     <input type="text" name="name" required />
                   </label>
+                  <label className="website">
+                    <div>Website</div>
+                    <input type="text" name="url" />
+                  </label>
                   <label>
                     <div>Email address</div>
                     <input type="email" name="replyTo" required />
@@ -93,6 +97,10 @@ export default function ContactUs() {
           padding: 12px 32px 32px;
           border-radius: 8px;
           background: ${colors.lightGrey};
+        }
+
+        .website {
+          display: none;
         }
 
         textarea,
