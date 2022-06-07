@@ -89,7 +89,7 @@ export default function Pricing() {
                       <strong>11 – 100</strong>
                     </td>
                     <td>
-                      <strong>101 – 250</strong>
+                      <strong>101 – 200</strong>
                     </td>
                   </tr>
                   <tr>
