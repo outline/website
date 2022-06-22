@@ -5,9 +5,51 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 23 Apr 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 31 May 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>may-fixes</guid>
+    <title>May fixes and improvements</title>
+    <link>https://www.getoutline.com/changelog/may-fixes</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Another catchup of improvements and fixes from May that haven&#x27;t been covered in
+larger updates, we&#x27;re always working on making the app faster and more reliable…</p><ul><li>Lots of backend performance improvements to improve loading speeds, particularly for large collections</li><li>When importing a document a revision is now written immediately so that it can be restored to the imported state</li><li>Suspended users are no longer shown as collaborators on documents they&#x27;ve previously edited</li><li>The submit button is now focused by default in confirmation dialogs</li><li>We improved the user matching of searches from Slack</li><li>Links with in-page anchors are no longer broken when a document is renamed</li><li>Emoji&#x27;s and embeds are now copied to the clipboard correctly when copying document text</li><li>Formatting toolbar now appears only once the mouse is released</li><li>Improved search indexing for publicy shared documents</li><li>Secondary clicking a link in the editor no longer causes it to open</li></ul></div> ]]></description>
+    <pubDate>Tue, 31 May 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>team-domains</guid>
+    <title>Team domain restrictions</title>
+    <link>https://www.getoutline.com/changelog/team-domains</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img alt="team domain restrictions" src="https://www.getoutline.com/images/team-domains.png"/></p><p>This week brings two new security settings. It&#x27;s now possible to restrict all sign-ups
+to your team to a specific domain name through &quot;Allowed domains&quot;. This setting applies in <em>addition</em> to
+SSO and will disallow users from creating accounts that do not have a confirmed
+matching email domain.</p><p>We also added the ability to restrict sign-ups through SSO completely, so that
+users must first be invited by an admin. Both of these new settings can be found
+under <strong>Settings</strong> -&gt; <strong>Security</strong>.</p></div> ]]></description>
+    <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>april-fixes</guid>
+    <title>April fixes and improvements</title>
+    <link>https://www.getoutline.com/changelog/april-fixes</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Here we go – a big grab-bag of other improvements and fixes from April that we wanted to make sure
+the community is aware of…</p><ul><li>Dropping files into a document now works more reliably</li><li>It&#x27;s now possible to manually resend outstanding invites</li><li>Link previews and search now work inside collection descriptions</li><li><code>cmd</code>+<code>n</code> browser shortcut to open a new window no longer creates a new document</li><li>It&#x27;s now much easier to create inline code marks</li><li>Fixed an issue that meant you could not share a search results page</li><li>The disabled state of document embeds now persists between reloads</li><li>It&#x27;s now possible to fetch a document from the API without knowing its full slug</li><li>Fixed an issue where collection names with slashes would produce an invalid export</li></ul></div> ]]></description>
+    <pubDate>Sat, 30 Apr 2022 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>turkish-translations</guid>
+    <title>Turkish translations</title>
+    <link>https://www.getoutline.com/changelog/turkish-translations</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Thanks to a community member <a href="https://crowdin.com/profile/EmirDEV">Emir</a> this week
+brings application-wide Turkish translations 🇹🇷. If your system is set to this language
+we&#x27;ll automatically suggest switching Outline&#x27;s language to match, or you can go
+to Settings -&gt; Profile -&gt; Language to update.</p></div> ]]></description>
+    <pubDate>Tue, 26 Apr 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>tldraw-embed</guid>
     <title>Tldraw embed</title>
