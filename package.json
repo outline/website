@@ -24,7 +24,7 @@
     "react-ga": "^3.1.2",
     "react-markdown": "^4.3.1",
     "react-tabs": "^3.1.1",
-    "redoc": "^2.0.0-rc.40",
+    "redoc": "^2.0.0-rc.72",
     "styled-components": "^5.2.2",
     "tiny-cookie": "^2.3.2"
   },

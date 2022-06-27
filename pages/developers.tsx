@@ -22,8 +22,8 @@ export default function Developers({ spec }) {
             hideDownloadButton: true,
             hideLoading: true,
             menuToggle: true,
-            noAutoAuth: true,
             requiredPropsFirst: true,
+            hideSecuritySection: true,
             theme: {
               spacing: {
                 unit: 4,
