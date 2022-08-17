@@ -299,8 +299,8 @@ export default function Pricing() {
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               Yep, absolutely – a 30% discount is available for non-profit and
-              education. We’re also happy to sponsor accounts for teams working
-              on solving climate change. Please{" "}
+              education. We’re also happy to sponsor accounts for non-profts
+              working directly on solving climate change. Please{" "}
               <Link href="/contact">
                 <a>contact us</a>
               </Link>{" "}
