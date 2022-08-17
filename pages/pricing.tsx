@@ -135,7 +135,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Full API access</td>
+                    <td>API + Webhooks</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -227,12 +227,17 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Full API access</td>
+                    <td>API + Webhooks</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>SAML 2.0 (Okta, OneLogin)</td>
+                    <td></td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>Confluence importer</td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
@@ -273,11 +278,11 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>What about teams larger than 250 users?</h3>
+            <h3>What about teams larger than 200 users?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              We're happy to support enterprise teams larger than 250 users.
+              We're happy to support enterprise teams larger than 200 users.
               Please{" "}
               <Link href="/contact">
                 <a>contact us</a>
