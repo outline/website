@@ -393,6 +393,7 @@ export default function HeaderNavigation() {
           ) {
             ul li ul {
               background: rgba(255, 255, 255, 0.8);
+              -webkit-backdrop-filter: blur(20px);
               backdrop-filter: blur(20px);
             }
           }
