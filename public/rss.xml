@@ -5,9 +5,52 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Fri, 08 Jul 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 16 Oct 2022 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>multiple-workspaces</guid>
+    <title>Multiple workspaces</title>
+    <link>https://www.getoutline.com/changelog/multiple-workspaces</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;re excited to announce that you can now create multiple workspaces to support different departments, or organizations with the same SSO login methods.</p><p>Workspaces are currently billed and managed separately and are available in the workspace switcher in the top left of the app or through the command menu.</p><p><img alt="New Outline workspace" src="https://www.getoutline.com/images/new-workspace.png"/></p></div> ]]></description>
+    <pubDate>Sun, 16 Oct 2022 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>diff-view</guid>
+    <title>Visualizing document history</title>
+    <link>https://www.getoutline.com/changelog/diff-view</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>From today we&#x27;re now able to display a rich &quot;diff&quot; of what has changed in a document
+since it was last edited. You&#x27;ll see this view in email notifications <em>and</em> when navigating
+through the document history sidebar…</p><p><strong>Tip:</strong> You can quickly open the history sidebar by clicking on the last edited timestamp.</p><p><img alt="Outline email notification" src="https://www.getoutline.com/images/diff-view.jpeg"/></p></div> ]]></description>
+    <pubDate>Mon, 26 Sep 2022 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>upgradable-viewers</guid>
+    <title>Upgradable viewers</title>
+    <link>https://www.getoutline.com/changelog/upgradable-viewers</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Since the launch of <a href="/changelog/viewer-permissions">viewer permissions</a> we&#x27;ve heard requests for a need for increased flexibility.
+As of today it&#x27;s now possible to upgrade the permissions of workspace viewers in individual collections.</p><p>Simply add the viewer member to a collection and change their permission to &quot;View and edit&quot; the same as you might a regular member.</p></div> ]]></description>
+    <pubDate>Sun, 04 Sep 2022 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>document-subscriptions</guid>
+    <title>Document subscriptions</title>
+    <link>https://www.getoutline.com/changelog/document-subscriptions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Sometimes you want to keep an eye on a document without having to open it, or you want to be notified when a document is updated. You can now subscribe to documents to receive notifications when they are updated by other team members. To subscribe to any document, click the &quot;Subscribe&quot; button in any document menu or access through the command menu with <code>cmd</code>+<code>k</code> on macOS. (<code>ctrl</code>+<code>k</code> on Windows/Linux).</p><p><img alt="Document subscriptions" src="https://www.getoutline.com/images/document-subscriptions.png"/></p><p>You will automatically be subscribed to a document when you create or edit it, but you can unsubscribe at any time.</p></div> ]]></description>
+    <pubDate>Sun, 04 Sep 2022 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>personal-gmail-signin</guid>
+    <title>Sign-in with Gmail</title>
+    <link>https://www.getoutline.com/changelog/personal-gmail-signin</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve been working hard behind the scenes to make authentication more flexible for teams following on from <a href="/changelog/team-domains">team domain restrictions</a>.</p><p>It is now possible to sign-in to your Outline account with a personal Gmail account if you have already been invited to the matching email address.</p></div> ]]></description>
+    <pubDate>Mon, 18 Jul 2022 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>mermaid-diagrams</guid>
     <title>Mermaid diagrams</title>
