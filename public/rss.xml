@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 31 May 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 08 Jul 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>mermaid-diagrams</guid>
+    <title>Mermaid diagrams</title>
+    <link>https://www.getoutline.com/changelog/mermaid-diagrams</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;re excited to have full support for <a href="https://mermaid-js.github.io/">Mermaid</a> diagrams in Outline. Mermaid is a simple markdown-like syntax for generating diagrams and flowcharts from text. It&#x27;s a great way to add diagrams of all types directly in your documentation.</p><p>You can insert a Mermaid diagram directly into a document by using the /mermaid slash command or by setting the code block language to &quot;Mermaid Diagram&quot;.</p><p>Here&#x27;s an example of a flowchart:</p><p><img alt="Mermaid diagram" src="https://www.getoutline.com/images/mermaid-diagram-source.png"/></p><p>Which renders as:</p><p><img alt="Mermaid diagram" src="/images/mermaid-diagram.png"/></p><p>For full documentation on all the syntax and types of graphs that can be created be sure to check out the <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid documentation</a>.</p></div> ]]></description>
+    <pubDate>Fri, 08 Jul 2022 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>may-fixes</guid>
     <title>May fixes and improvements</title>
