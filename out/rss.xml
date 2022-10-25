@@ -5,9 +5,17 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 16 Oct 2022 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 24 Oct 2022 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>code-line-numbers</guid>
+    <title>Code block line numbers</title>
+    <link>https://www.getoutline.com/changelog/code-line-numbers</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Code blocks in documents are now displayed with dynamic line numbers by default, if you prefer they can be disabled through a new setting found in user preferences.</p><p>They look a little something like this:</p><p><img alt="Code block line numbers" src="https://www.getoutline.com/images/code-line-numbers.png"/></p></div> ]]></description>
+    <pubDate>Mon, 24 Oct 2022 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>multiple-workspaces</guid>
     <title>Multiple workspaces</title>
