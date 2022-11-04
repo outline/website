@@ -1,0 +1,1 @@
+{"pageProps":{"title":"v0.16.0","slug":"v0.16.0","date":"2018-11-04T19:48:35.000Z","tag":"0.16.0","content":"    \n### Enhancements\n\n- Upgrades the editor\n\n### Fixes\n\n- Fixed an issue with S3 uploads for self hosted configuration\n- Fixed issue when title of a document includes the word \"history\"\n- SSL is now enforced on subdomains","image":""},"__N_SSG":true}
