@@ -5,14 +5,25 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 24 Oct 2022 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 03 Nov 2022 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>image-resizing</guid>
+    <title>Resizable images</title>
+    <link>https://www.getoutline.com/changelog/image-resizing</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img alt="Resizing images in Outline" src="https://www.getoutline.com/images/resizing-images.gif"/></p><p>It is now possible to resize images in Outline. This is a feature that has been
+requested for a long time and we&#x27;re excited to finally ship another foundational
+feature.</p><p>When editing simply drag the handles on the image to change the size. Images snap to a
+grid to help in alignment.</p></div> ]]></description>
+    <pubDate>Thu, 03 Nov 2022 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>code-line-numbers</guid>
     <title>Code block line numbers</title>
     <link>https://www.getoutline.com/changelog/code-line-numbers</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Code blocks in documents are now displayed with dynamic line numbers by default, if you prefer they can be disabled through a new setting found in user preferences.</p><p>They look a little something like this:</p><p><img alt="Code block line numbers" src="https://www.getoutline.com/images/code-line-numbers.png"/></p></div> ]]></description>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img alt="Code block line numbers" src="https://www.getoutline.com/images/code-line-numbers.png"/></p><p>Code blocks in documents are now displayed with dynamic line numbers by default, if you prefer they can be disabled through a new setting found in user preferences.</p></div> ]]></description>
     <pubDate>Mon, 24 Oct 2022 12:00:00 GMT</pubDate>
   </item>
 
