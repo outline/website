@@ -5,6 +5,7 @@ import classnames from "classnames";
 import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
+import { isMac, isTouchDevice } from "lib/browser";
 
 const isBrowser = typeof document !== "undefined";
 let isHydrating = true;
@@ -155,6 +156,13 @@ export default function HeaderNavigation() {
             Product <ExpandedIcon color="currentColor" />
           </MenuItem>
           <ul>
+            {isMac() && (
+              <li>
+                <Link href="/download" passHref>
+                  <MenuItem>Download</MenuItem>
+                </Link>
+              </li>
+            )}
             <li>
               <Link href="/integrations" passHref>
                 <MenuItem>Integrations</MenuItem>
@@ -298,6 +306,13 @@ export default function HeaderNavigation() {
             )}
 
             <h3>Product</h3>
+            {isMac() && (
+              <li>
+                <Link href="/download" passHref>
+                  <MenuItem>Download</MenuItem>
+                </Link>
+              </li>
+            )}
             <li>
               <Link href="/integrations" passHref>
                 <MenuItem>Integrations</MenuItem>

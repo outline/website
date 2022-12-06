@@ -5,6 +5,7 @@ import { colors } from "theme";
 type Props = {
   children: React.ReactNode;
   onClick?: () => void;
+  disabled?: boolean;
   light?: boolean;
   href?: string;
 };
