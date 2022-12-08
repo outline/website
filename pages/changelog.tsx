@@ -65,7 +65,7 @@ export default function Changelog({ posts }) {
             </Link>
           </h2>
           <Metadata tag={post.tag} date={post.date} />
-          {index < 20 && <Markdown source={post.content} />}
+          {index < 20 && <Markdown children={post.content} />}
         </article>
       ))}
       <style jsx>

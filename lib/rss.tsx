@@ -18,7 +18,7 @@ const generateRSSItem = (post: any): string => `
     <title>${escapeXMLContent(post.title)}</title>
     <link>${domain + "/changelog/" + post.slug}</link>
     <description><![CDATA[ ${ReactDOMServer.renderToString(
-      <Markdown source={post.content} />
+      <Markdown children={post.content} />
     ).replace('src="/', 'src="' + domain + "/")} ]]></description>
     <pubDate>${new Date(post.date).toUTCString()}</pubDate>
   </item>

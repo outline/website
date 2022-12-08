@@ -14,7 +14,7 @@ export default function Integration({ name, body, description }) {
       hero={description}
       sidebar={<IntegrationsMenu />}
     >
-      <Markdown source={body} />
+      <Markdown children={body} />
     </Layout>
   );
 }

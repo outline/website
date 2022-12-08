@@ -35,7 +35,7 @@ export default function Changelog({ title, date, tag, image, content }) {
       </Head>
       <h2>{title}</h2>
       <Metadata tag={tag} date={date} />
-      <Markdown source={content} />
+      <Markdown children={content} />
     </Layout>
   );
 }
