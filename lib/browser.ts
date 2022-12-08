@@ -12,6 +12,9 @@ export function isTouchDevice(): boolean {
  * Returns true if the client is running on a Mac.
  */
 export function isMac(): boolean {
+  if (typeof window === "undefined") {
+    return false;
+  }
   return window.navigator.platform === "MacIntel";
 }
 
@@ -19,5 +22,8 @@ export function isMac(): boolean {
  * Returns true if the client is running on Windows.
  */
 export function isWindows(): boolean {
+  if (typeof window === "undefined") {
+    return false;
+  }
   return window.navigator.platform === "Win32";
 }

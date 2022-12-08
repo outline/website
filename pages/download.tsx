@@ -3,7 +3,6 @@ import Layout from "components/Layout";
 import Button from "components/Button";
 import { colors } from "theme";
 import { isWindows } from "lib/browser";
-import Image from "next/image";
 
 export default function Download() {
   return (
@@ -13,7 +12,7 @@ export default function Download() {
           <div className="pure-u-1 pure-u-md-1-3"></div>
           <div className="pure-u-1 pure-u-md-1-3 dl">
             <p className="icon">
-              <Image src="/images/icon-512.png" width={128} height={128} />
+              <img src="/images/icon-desktop.png" width={128} height={128} />
             </p>
             <Button href="https://desktop.getoutline.com">
               Download for macOS
