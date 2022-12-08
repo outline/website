@@ -5,9 +5,28 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 03 Nov 2022 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 06 Dec 2022 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>macos-desktop-app</guid>
+    <title>macOS Desktop App</title>
+    <link>https://www.getoutline.com/changelog/macos-desktop-app</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img alt="macOS Desktop App" src="https://www.getoutline.com/images/macos-desktop.png"/></p><p>The new desktop app is a macOS application that allows you to access your <a href="https://www.getoutline.com/">Outline</a> cloud workspaces from your Mac&#x27;s dock. It is a great way to quickly access documents in multiple windows without having to clutter up your browser tabs. Oh, and a Windows app is coming soon!</p><p><a href="https://desktop.getoutline.com/mac">Download Now</a></p></div> ]]></description>
+    <pubDate>Tue, 06 Dec 2022 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>search-improvements</guid>
+    <title>Search improvements</title>
+    <link>https://www.getoutline.com/changelog/search-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This week brings a number of improvements to search results in the app and
+Slack integration.</p><p>You can now use <code>&quot;phrase search&quot;</code> to find documents that contain an exact phrase,
+<code>-negative</code> keywords to exclude results, and partial matching with the <code>*wildcard</code>
+operators.</p></div> ]]></description>
+    <pubDate>Sat, 03 Dec 2022 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>image-resizing</guid>
     <title>Resizable images</title>
