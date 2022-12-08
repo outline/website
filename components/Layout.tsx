@@ -74,18 +74,6 @@ export default function Layout({
           sizes="32x32"
         />
         <link
-          rel="stylesheet"
-          href="https://unpkg.com/purecss@2.0.3/build/base-min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/purecss@2.0.3/build/grids-min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
-        />
-        <link
           rel="alternate"
           type="application/rss+xml"
           title="Changelog RSS"
