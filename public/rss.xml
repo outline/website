@@ -5,9 +5,49 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 06 Dec 2022 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 14 Jan 2023 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>google-analytics</guid>
+    <title>Google Analytics Integration</title>
+    <link>https://www.getoutline.com/changelog/google-analytics</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>All workspaces now have access to a new <a href="https://developers.google.com/analytics/devguides/collection/ga4">Google Analytics 4</a> integration, by adding
+your own Measurement ID
+it will be embedded in all public and team documents in your workspace allowing
+your team to measure views and activity across the knowledge base.</p>
+<p>To use the integration you will first need to create a new GA4 property in your
+Google Analytics account, then copy the <a href="https://support.google.com/analytics/answer/12270356">Measurement ID</a> to the settings page
+in Outline at <em>Integrations</em> -&gt; <em>Google Analytics</em>.</p></div> ]]></description>
+    <pubDate>Sat, 14 Jan 2023 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>edge-to-edge-images</guid>
+    <title>New Images Layout</title>
+    <link>https://www.getoutline.com/changelog/edge-to-edge-images</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/image-layout.png" alt="Outline full bleed image"/></p>
+<p>This week brings an additional layout option for images on Outline. You can now
+choose the &quot;full-width&quot; option to extend images to the edges of the page past
+the text content.</p>
+<p>This works particularly well for wide pictures and photos, such as banners and
+headings across a documnt and for larger images with a white background where
+they can fill up more of screen by default.</p>
+<p>The new layout is available by selecting an image and then choosing the &quot;full-width&quot;
+option in the toolbar that appears.</p></div> ]]></description>
+    <pubDate>Tue, 10 Jan 2023 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>pdf-html-export</guid>
+    <title>PDF &amp; HTML export</title>
+    <link>https://www.getoutline.com/changelog/pdf-html-export</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/pdf-download.png" alt="PDF export in Outline"/></p>
+<p>We are pleased to announce a new feature that allows you to export your documents in PDF and HTML format. This is a useful and much requested addition for anyone who needs to share their work with others but not publish documents on the public internet. PDFs are widely accepted and easily readable on any device.</p>
+<p>You can access the functionality from any document menu, then select <em>Download</em> -&gt; <em>PDF</em>, the file generation process will take a few seconds depending on the size of the doc and the number of embedded images.</p></div> ]]></description>
+    <pubDate>Sat, 07 Jan 2023 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>macos-desktop-app</guid>
     <title>macOS Desktop App</title>
