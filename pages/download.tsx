@@ -15,11 +15,11 @@ export default function Download() {
               <img src="/images/icon-desktop.png" width={128} height={128} />
             </p>
             <Button href="https://desktop.getoutline.com">
-              Download for macOS
+              Download for {isWindows() ? "Windows" : "macOS"}
             </Button>
             <p>
               {isWindows()
-                ? "Windows app coming soon"
+                ? "Compatible with Windows 10 and 11"
                 : "Compatible with Apple Silicon and Intel"}
             </p>
           </div>
