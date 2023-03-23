@@ -5,9 +5,50 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 14 Jan 2023 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 11 Feb 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>json-export</guid>
+    <title>JSON import / export</title>
+    <link>https://www.getoutline.com/changelog/json-export</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/json-export.png" alt="Outline export options"/></p>
+<p>Outline now supports importing and exporting documents in JSON format. This is useful for migrating data between Outline instances, or for backing up your data in a format
+that retains more information than a lossy Markdown export.</p>
+<p>We also recently added HTML export, which can be used for archiving your data in a format that can be viewed directly in a browser.</p>
+<h3>Other fixes and improvements</h3>
+<ul>
+<li>When we send an email for document changes that includes a modified table only
+the portion of the table that has changed is now included in the email</li>
+<li>Users with &quot;viewer&quot; permission can now subscribe to document changes</li>
+<li>Fixed an error that could prevent login with Microsoft if signed into multiple Microsoft accounts</li>
+<li>Drag and drop in the sidebar got a little smoother</li>
+<li>Links with strikethrough now work with the hover preview</li>
+<li>Added snytax highlighting for Visual Basic</li>
+</ul></div> ]]></description>
+    <pubDate>Sat, 11 Feb 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>publish-improvements</guid>
+    <title>A new publishing flow</title>
+    <link>https://www.getoutline.com/changelog/publish-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/publish-document.png" alt="Publish a document"/></p>
+<p>We&#x27;ve made some improvements to the publishing flow in Outline – you can now create
+a document without worrying about where to store it first.</p>
+<p>Before this update, you had to choose the location for a document before creating it, which could be frustrating for those who wanted to create a note quickly and worry about organizing it later. With the new publishing flow, you can create a document first and then choose where it will live in your knowledge base.</p>
+<h3>Other fixes and improvements</h3>
+<ul>
+<li>We no longer show a Print option in browsers without a printer</li>
+<li>Avatars will now fallback to showing colored initials when offline</li>
+<li>Full width images in the editor are now aligned correctly in RTL docs</li>
+<li>We improved pasting of tables from desktop software such as Office and Numbers</li>
+<li>Fixed a bug where text in revision history was unreadable in dark mode</li>
+<li>Fixed a bug where pipe characters inside tables were not rendered correctly</li>
+</ul></div> ]]></description>
+    <pubDate>Fri, 27 Jan 2023 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>google-analytics</guid>
     <title>Google Analytics Integration</title>
