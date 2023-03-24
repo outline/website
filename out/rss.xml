@@ -5,12 +5,55 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 11 Feb 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 20 Mar 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
   <item>
+    <guid>commenting</guid>
+    <title>Commenting</title>
+    <link>https://www.getoutline.com/changelog/commenting</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comments.png" alt="Outline comments"/></p>
+<p>It&#x27;s been a long time coming – commenting is finally available in Outline, opening up a whole new world of use cases and collaboration!
+While we iron out the kinks it&#x27;s disabled by default, but you can enable the feature for your team in <strong>Settings -&gt; Features -&gt; Commenting</strong>.</p>
+<p>Once enabled you&#x27;ll see a new comments sidebar become available. You can add comments to any document or to a specific
+text selection, we also support threaded replies, notifications, <strong>@mentions</strong>, basic formatting <em>and</em> images in comments.</p>
+<p>We&#x27;re eager to hear your feedback, please <a href="https://www.getoutline.com/contact">let us know</a> what you think.</p></div> ]]></description>
+    <pubDate>Mon, 20 Mar 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>theming</guid>
+    <title>Windows Desktop App</title>
+    <link>https://www.getoutline.com/changelog/theming</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/windows-app.png" alt="Outline for Windows"/></p>
+<p>The new desktop app is a Windows application that allows you to access your <a href="https://www.getoutline.com/">Outline</a> cloud workspaces from your desktop launcher. It is a great way to quickly access documents in multiple windows without having to clutter up your browser tabs.</p>
+<p>Mac user? We already have an app for you – check out the <a href="/changelog/macos-desktop-app">macOS app</a>.</p>
+<p><a href="https://desktop.getoutline.com/windows">Download Now</a></p></div> ]]></description>
+    <pubDate>Sun, 19 Feb 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>theming</guid>
+    <title>Custom Theming</title>
+    <link>https://www.getoutline.com/changelog/theming</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/theming.png" alt="Custom theming"/></p>
+<p>This week brings support for the beginnings of custom theming. You can now
+change the accent color for your team to match your own brand which will be
+reflected throughout the UI.</p>
+<h3>Other fixes and improvements</h3>
+<ul>
+<li><code>Escape</code> now defocuses the editor when typing</li>
+<li>When selecting text and opening the link menu matching documents will now immediately
+be shown.</li>
+<li>Fixed an issue where it was not possible to tab and scroll on images on mobile</li>
+<li>It&#x27;s now possible to upload multiple files at once from the block menu</li>
+</ul></div> ]]></description>
+    <pubDate>Sun, 19 Feb 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
     <guid>json-export</guid>
-    <title>JSON import / export</title>
+    <title>JSON Import / Export</title>
     <link>https://www.getoutline.com/changelog/json-export</link>
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/json-export.png" alt="Outline export options"/></p>
 <p>Outline now supports importing and exporting documents in JSON format. This is useful for migrating data between Outline instances, or for backing up your data in a format
