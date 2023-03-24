@@ -1,5 +1,5 @@
 ---
-title: JSON import / export
+title: JSON Import / Export
 date: 2023-02-11T00:00:00Z
 slug: json-export
 ---
