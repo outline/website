@@ -16,6 +16,7 @@ type Props = {
   title?: React.ReactNode;
   pageTitle?: string;
   background?: string;
+  description?: string;
   color?: string;
   header?: React.ReactNode;
   hero?: React.ReactNode;
@@ -27,6 +28,7 @@ type Props = {
 export default function Layout({
   title,
   pageTitle,
+  description,
   header,
   hero,
   illustration,
@@ -82,7 +84,11 @@ export default function Layout({
         <meta
           name="description"
           property="og:description"
-          content="A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"
+          content={
+            description
+              ? description
+              : "A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"
+          }
         />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -5,12 +5,24 @@ import SidebarMenu from "components/SidebarMenu";
 import SidebarMenuItem from "components/SidebarMenuItem";
 import Metadata from "components/PostMetadata";
 import Head from "next/head";
+import { remark } from "remark";
+import strip from "strip-markdown";
 
-export default function Changelog({ title, date, tag, image, content }) {
+export default function Changelog({
+  title,
+  date,
+  tag,
+  image,
+  content,
+  contentPlainText,
+}) {
+  const description = contentPlainText.trim().replace(/\n/, " ").slice(0, 160);
+
   return (
     <Layout
       title="Changelog"
       pageTitle={`${title} – Changelog`}
+      description={`${description}…`}
       background="#F4F7FA"
       hero={
         <>
@@ -50,9 +62,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const post = getPost(`${context.params.slug}.md`);
+  const output = await remark().use(strip).process(post.content);
 
   return {
     props: {
+      contentPlainText: String(output),
       ...post,
     },
   };
