@@ -22,9 +22,9 @@ text selection, we also support threaded replies, notifications, <strong>@mentio
   </item>
 
   <item>
-    <guid>theming</guid>
+    <guid>windows-app</guid>
     <title>Windows Desktop App</title>
-    <link>https://www.getoutline.com/changelog/theming</link>
+    <link>https://www.getoutline.com/changelog/windows-app</link>
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/windows-app.png" alt="Outline for Windows"/></p>
 <p>The new desktop app is a Windows application that allows you to access your <a href="https://www.getoutline.com/">Outline</a> cloud workspaces from your desktop launcher. It is a great way to quickly access documents in multiple windows without having to clutter up your browser tabs.</p>
 <p>Mac user? We already have an app for you – check out the <a href="/changelog/macos-desktop-app">macOS app</a>.</p>
