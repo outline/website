@@ -1,7 +1,7 @@
 ---
 title: Windows Desktop App
 date: 2023-02-19T00:00:00Z
-slug: theming
+slug: windows-app
 ---
 
 ![Outline for Windows](/images/windows-app.png)
