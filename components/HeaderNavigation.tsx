@@ -210,14 +210,6 @@ export default function HeaderNavigation() {
               </MenuItem>
             </li>
             <li>
-              <MenuItem
-                href="https://github.com/outline/outline/discussions"
-                target="_blank"
-              >
-                Discuss
-              </MenuItem>
-            </li>
-            <li>
               <MenuItem href="https://twitter.com/getoutline" target="_blank">
                 Twitter
               </MenuItem>
@@ -343,14 +335,6 @@ export default function HeaderNavigation() {
             <li>
               <MenuItem href="https://github.com/outline" target="_blank">
                 GitHub
-              </MenuItem>
-            </li>
-            <li>
-              <MenuItem
-                href="https://github.com/outline/outline/discussions"
-                target="_blank"
-              >
-                Discuss
               </MenuItem>
             </li>
             <li>

@@ -25,6 +25,11 @@ export default function Footer() {
               </Link>
             </li>
             <li>
+              <Link href="/download">
+                <a>Download</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/developers">
                 <a>Developers</a>
               </Link>

@@ -37,6 +37,7 @@ export default function Card({ title, description, href }: Props) {
           border-radius: 8px;
           transition: color 0.15s ease, border-color 0.15s ease;
           min-height: 250px;
+          background: #fff;
         }
 
         a.card:hover,
