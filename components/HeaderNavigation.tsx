@@ -5,7 +5,6 @@ import classnames from "classnames";
 import { ExpandedIcon } from "outline-icons";
 import { spacing, colors } from "theme";
 import useOnClickOutside from "lib/hooks/useOnClickOutside";
-import { isMac, isTouchDevice, isWindows } from "lib/browser";
 
 const isBrowser = typeof document !== "undefined";
 let isHydrating = true;
@@ -156,17 +155,15 @@ export default function HeaderNavigation() {
             Product <ExpandedIcon color="currentColor" />
           </MenuItem>
           <ul>
-            {(isMac() || isWindows()) && (
-              <li>
-                <Link href="/download" passHref>
-                  <MenuItem>Download</MenuItem>
-                </Link>
-              </li>
-            )}
             <li>
-              <a href="https://docs.getoutline.com/s/guide">
+              <Link href="/download" passHref>
+                <MenuItem>Download</MenuItem>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://docs.getoutline.com/s/guide" passHref>
                 <MenuItem>Guide</MenuItem>
-              </a>
+              </Link>
             </li>
             <li>
               <Link href="/integrations" passHref>
@@ -304,9 +301,9 @@ export default function HeaderNavigation() {
 
             <h3>Product</h3>
             <li>
-              <a href="https://docs.getoutline.com/s/guide">
+              <Link href="https://docs.getoutline.com/s/guide" passHref>
                 <MenuItem>Guide</MenuItem>
-              </a>
+              </Link>
             </li>
             <li>
               <Link href="/integrations" passHref>
