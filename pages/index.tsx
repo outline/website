@@ -55,6 +55,7 @@ export default function Home() {
                   src="/images/tasks.png"
                   style={{
                     maxHeight: 400,
+                    maxWidth: 546,
                   }}
                 />
               </div>
@@ -103,7 +104,8 @@ export default function Home() {
                 <img
                   src="/images/comments-home.png"
                   style={{
-                    maxHeight: 340,
+                    maxWidth: 403,
+                    maxHeight: 293,
                   }}
                 />
               </div>
