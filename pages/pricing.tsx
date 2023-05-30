@@ -105,6 +105,12 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>Commenting and mentions</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>Multi-language translation</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -123,7 +129,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Templates</td>
+                    <td>Templating</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
