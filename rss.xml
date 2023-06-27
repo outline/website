@@ -5,9 +5,26 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 20 Mar 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 20 May 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>in-app-notifications</guid>
+    <title>In app notifications</title>
+    <link>https://www.getoutline.com/changelog/in-app-notifications</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Building on last months release of comments, this month brings in-app notifications
+support so you can quickly catch up on what&#x27;s happening in your workspace and
+jump straight to the relevant document.</p>
+<h3>Collection admins</h3>
+<p>We also added the ability to make members admins in specific collections, this
+new role allows members to manage the collection details, including adding and
+removing other workspace members.</p>
+<p>Regular collection membership no longer allows members to manage the collection
+– see the documentation for more detail on permissions.</p>
+<p><a href="https://docs.getoutline.com/s/guide/doc/collections-l9o3LD22sV#h-permissions">Go to documentation →</a></p></div> ]]></description>
+    <pubDate>Sat, 20 May 2023 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>commenting</guid>
     <title>Commenting</title>
