@@ -5,9 +5,48 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 20 May 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 03 Aug 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>find-and-replace</guid>
+    <title>Find and replace</title>
+    <link>https://www.getoutline.com/changelog/find-and-replace</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/find-and-replace.png" alt="Outline find and replace"/></p>
+<p>It&#x27;s now possible to find and replace text in the document editor in both the
+web and desktop apps. You can access the find and replace dialog by using
+<code>Cmd</code> + <code>f</code>, or <code>Ctrl</code> + <code>f</code> on Windows.</p>
+<p>The find and replace dialog supports both regular expressions and case
+sensitivity as well.</p></div> ]]></description>
+    <pubDate>Thu, 03 Aug 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>link-previews</guid>
+    <title>Link hover previews</title>
+    <link>https://www.getoutline.com/changelog/link-previews</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/link-previews.png" alt="Outline link previews"/></p>
+<p>This week brings the addition of hover previews, you can now see the details
+of internal documents, mentioned users, and external links when hovering over
+them in the editor. We have built the system to be extensible previews of
+authenticated integrations can be added in the near future too.</p>
+<p>Hover over any link in a document or comment to see the new functionality.</p></div> ]]></description>
+    <pubDate>Sun, 30 Jul 2023 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>upgraded-code-and-mermaid</guid>
+    <title>Improved code blocks and Mermaid diagrams</title>
+    <link>https://www.getoutline.com/changelog/upgraded-code-and-mermaid</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/code-blocks.png" alt="Code block"/></p>
+<p>Code blocks have received a visual refresh and are now
+easier to use. Code highlighting was updated to look much better in dark mode
+and tons of extra languages were added in the last month.</p>
+<p>Mermaid diagrams are now rendered in realtime as you type and also received
+the same visual improvements as code blocks.</p></div> ]]></description>
+    <pubDate>Sat, 15 Jul 2023 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>in-app-notifications</guid>
     <title>In app notifications</title>
