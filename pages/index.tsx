@@ -332,9 +332,8 @@ export default function Home() {
                       >
                         source code is public
                       </a>
-                      , and the editor is open source so the community can help
-                      improve it too. Prefer to host on your own infrastructure?
-                      No problem.
+                      , and development is completed in the open. Prefer to host
+                      on your own infrastructure? No problem.
                     </>
                   }
                 />
