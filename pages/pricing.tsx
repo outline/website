@@ -263,7 +263,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Setup contract</td>
+                    <td>Support contract</td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
