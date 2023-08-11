@@ -213,6 +213,11 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>SSO authentication</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>Monthly improvements</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -238,12 +243,17 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>Advanced security controls</td>
+                    <td></td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>SAML 2.0 (Okta, OneLogin)</td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Confluence importer</td>
+                    <td>Confluence import</td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
@@ -253,7 +263,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Setup and maintenance support</td>
+                    <td>Setup contract</td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
