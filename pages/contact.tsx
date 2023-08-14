@@ -87,7 +87,7 @@ export default function ContactUs() {
             </p>
             <p>
               We aim to reply to all enquiries within 24 hours, but we often
-              reply much faster than that during PST waking hours.
+              reply much faster than that during EST waking hours.
             </p>
           </div>
         </div>
