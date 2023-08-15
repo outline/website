@@ -321,7 +321,7 @@ export default function Pricing() {
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              We're happy to support enterprise teams larger than 200 users.
+              We're happy to support cloud-hosted teams larger than 200 users.
               Please{" "}
               <Link href="/contact">
                 <a>contact us</a>
