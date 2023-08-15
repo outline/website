@@ -123,7 +123,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>20+ integrations</td>
+                    <td>20+ integrations (inc Zapier)</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -141,7 +141,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>API + Webhooks</td>
+                    <td>API &amp; Webhooks</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -167,19 +167,17 @@ export default function Pricing() {
                   <tr>
                     <th></th>
                     <th>Community Edition</th>
+                    <th>Business</th>
                     <th>Enterprise</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      Price
-                      <span className="note">(min purchase of 100 seats)</span>
-                    </td>
+                    <td>Price</td>
                     <td className="price">
                       $0{" "}
                       <span className="period">
-                        limited features and support
+                        limited features, no support
                       </span>
                       <p className="cta">
                         <Button
@@ -191,9 +189,19 @@ export default function Pricing() {
                       </p>
                     </td>
                     <td className="price">
-                      $4/user/mo <span className="period">billed annually</span>
+                      $4<span style={{ fontSize: "0.75em" }}>/user/mo</span>
+                      <span className="period">billed annually</span>
                       <p className="cta">
-                        <Button href="/contact">Request Trial</Button>
+                        <Button href="/contact?business=true">Purchase</Button>
+                      </p>
+                    </td>
+                    <td className="price">
+                      $5<span style={{ fontSize: "0.75em" }}>/user/mo</span>
+                      <span className="period">billed annually</span>
+                      <p className="cta">
+                        <Button href="/contact?trial=true">
+                          Request Trial
+                        </Button>
                       </p>
                     </td>
                   </tr>
@@ -201,9 +209,17 @@ export default function Pricing() {
                     <td>Unlimited docs + version history</td>
                     <td>{check}</td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Realtime collaborative editing</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>Commenting and mentions</td>
+                    <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
@@ -211,19 +227,17 @@ export default function Pricing() {
                     <td>Multi-language translation</td>
                     <td>{check}</td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
                     <td>SSO authentication</td>
                     <td>{check}</td>
                     <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Monthly improvements</td>
-                    <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>All integrations</td>
+                    <td>20+ integrations</td>
+                    <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
@@ -231,14 +245,17 @@ export default function Pricing() {
                     <td>Templates</td>
                     <td>{check}</td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Groups &amp; user permissions</td>
                     <td>{check}</td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>API + Webhooks</td>
+                    <td>API &amp; Webhooks</td>
+                    <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
@@ -246,29 +263,35 @@ export default function Pricing() {
                     <td>Advanced security controls</td>
                     <td></td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>SAML 2.0 (Okta, OneLogin)</td>
+                    <td>SAML 2.0 (e.g. Okta, OneLogin)</td>
                     <td></td>
+                    <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Confluence import</td>
                     <td></td>
                     <td>{check}</td>
+                    <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Audit trail</td>
+                    <td></td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Support contract</td>
                     <td></td>
+                    <td></td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Analytics and reporting</td>
+                    <td></td>
                     <td></td>
                     <td className="soon">coming soon</td>
                   </tr>

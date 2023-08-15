@@ -31,6 +31,10 @@ export default function ContactUs() {
                     <div>Your name</div>
                     <input type="text" name="name" required />
                   </label>
+                  <label>
+                    <div>Company name</div>
+                    <input type="text" name="companyName" />
+                  </label>
                   <label className="website">
                     <div>Website</div>
                     <input type="text" name="url" />
@@ -41,7 +45,17 @@ export default function ContactUs() {
                   </label>
                   <label>
                     <div>Contact reason</div>
-                    <select name="subject" required>
+                    <select
+                      name="subject"
+                      value={
+                        query.trial
+                          ? "Request an enterprise trial"
+                          : query.business
+                          ? "Purchase business license"
+                          : undefined
+                      }
+                      required
+                    >
                       <option disabled value="">
                         Contact reason…
                       </option>
@@ -51,29 +65,59 @@ export default function ContactUs() {
                       <option value="Feedback and product ideas">
                         Feedback and product ideas
                       </option>
+                      <option value="Purchase business license">
+                        Purchase business license
+                      </option>
                       <option value="Request an enterprise trial">
                         Request an enterprise trial
                       </option>
                       <option value="Something else">Something else</option>
                     </select>
                   </label>
-                  <label>
+                  <label style={{ display: query.business ? "none" : "block" }}>
                     <div>Deployment</div>
-                    <select name="deployment" required>
+                    <select
+                      name="deployment"
+                      value={
+                        query.trial
+                          ? "enterprise"
+                          : query.business
+                          ? "self-hosted"
+                          : undefined
+                      }
+                      required
+                    >
                       <option value="cloud">Cloud (getoutline.com)</option>
                       <option value="enterprise">Enterprise</option>
                       <option value="self-hosted">Self-Hosted</option>
                     </select>
                   </label>
-                  <label>
-                    <div>Your message</div>
-                    <textarea
-                      name="text"
-                      placeholder="What can we help with?"
-                      required
-                    />
-                  </label>
-                  <button type="submit">Send Message</button>
+                  {query.business ? (
+                    <>
+                      <label>
+                        <div>Number of seats</div>
+                        <input
+                          name="text"
+                          type="number"
+                          defaultValue="100"
+                          required
+                        />
+                      </label>
+                      <button type="submit">Send Request</button>
+                    </>
+                  ) : (
+                    <>
+                      <label>
+                        <div>Your message</div>
+                        <textarea
+                          name="text"
+                          placeholder="What can we help with?"
+                          required
+                        />
+                      </label>
+                      <button type="submit">Send Message</button>
+                    </>
+                  )}
                 </form>
               )}
             </div>
