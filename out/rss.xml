@@ -27,9 +27,10 @@ sensitivity as well.</p></div> ]]></description>
     <link>https://www.getoutline.com/changelog/link-previews</link>
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/link-previews.png" alt="Outline link previews"/></p>
 <p>This week brings the addition of hover previews, you can now see the details
-of internal documents, mentioned users, and external links when hovering over
-them in the editor. We have built the system to be extensible previews of
-authenticated integrations can be added in the near future too.</p>
+of internal documents, mentioned users, <em>and</em> external links when hovering over
+them in the editor. We have built the system to be extensible so that previews of
+authenticated integrations (think GitHub, Linear, etc) can be added in the near
+future too.</p>
 <p>Hover over any link in a document or comment to see the new functionality.</p></div> ]]></description>
     <pubDate>Sun, 30 Jul 2023 00:00:00 GMT</pubDate>
   </item>
