@@ -119,7 +119,7 @@ export default function ConfluenceComparison() {
               <td>{check}</td>
             </tr>
             <tr>
-              <td>Audit trail</td>
+              <td>Audit log</td>
               <td>{check}</td>
               <td>Enterprise-only</td>
             </tr>

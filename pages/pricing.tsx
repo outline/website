@@ -278,7 +278,13 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Audit trail</td>
+                    <td>Remove "Outline" branding</td>
+                    <td></td>
+                    <td></td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>Audit log</td>
                     <td></td>
                     <td></td>
                     <td>{check}</td>
