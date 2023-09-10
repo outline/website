@@ -260,7 +260,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Advanced security controls</td>
+                    <td>Additional security controls</td>
                     <td></td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -278,13 +278,24 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>
+                      <a href="https://www.glean.com" target="_blank">
+                        Glean
+                      </a>{" "}
+                      integration
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>Remove "Outline" branding</td>
                     <td></td>
                     <td></td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Audit log</td>
+                    <td>Security audit log</td>
                     <td></td>
                     <td></td>
                     <td>{check}</td>
