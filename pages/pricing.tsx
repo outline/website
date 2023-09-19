@@ -197,7 +197,9 @@ export default function Pricing() {
                     </td>
                     <td className="price">
                       $5<span style={{ fontSize: "0.75em" }}>/user/mo</span>
-                      <span className="period">billed annually</span>
+                      <span className="period">
+                        billed annually, 100 user min
+                      </span>
                       <p className="cta">
                         <Button href="/contact?trial=true">
                           Request Trial
