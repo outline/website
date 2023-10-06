@@ -5,9 +5,31 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 03 Aug 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 06 Oct 2023 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>code-commenting</guid>
+    <title>Commenting in code</title>
+    <link>https://www.getoutline.com/changelog/code-commenting</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comment-in-code.png" alt="Commenting in code blocks"/></p>
+<p>Outline now supports commenting on text inside of code blocks, this is particularly useful – as we all know that naming things
+is the hardest part of coding and now you can discuss the best name for that variable right inside of the code block.</p></div> ]]></description>
+    <pubDate>Fri, 06 Oct 2023 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>embedded-videos</guid>
+    <title>Embedded videos</title>
+    <link>https://www.getoutline.com/changelog/embedded-videos</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>You can now upload videos and embed a player directly into any Outline document. Just like images,
+we also added the ability to resize the video to fit and write a custom caption.</p>
+<p>To embed a video simply drag and drop into the document, or find the &quot;Video&quot; option in <a href="https://docs.getoutline.com/s/guide/doc/blocks-iwAQVA8kAf">the block menu</a>.
+For more information checkout <a href="https://docs.getoutline.com/s/guide/doc/blocks-iwAQVA8kAf">our guide</a> to inserting blocks on Outline.</p>
+<p><img src="https://www.getoutline.com/images/video-embed.png" alt="Embedded videos"/></p></div> ]]></description>
+    <pubDate>Sun, 01 Oct 2023 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>find-and-replace</guid>
     <title>Find and replace</title>
