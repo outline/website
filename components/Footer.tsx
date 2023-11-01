@@ -15,6 +15,11 @@ export default function Footer() {
           <h3>Product</h3>
           <ul>
             <li>
+              <Link href="https://docs.getoutline.com/s/guide">
+                <a>Guide</a>
+              </Link>
+            </li>
+            <li>
               <Link href="/changelog">
                 <a>Changelog</a>
               </Link>
@@ -27,11 +32,6 @@ export default function Footer() {
             <li>
               <Link href="/download">
                 <a>Download</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/developers">
-                <a>Developers</a>
               </Link>
             </li>
             <li>
@@ -88,6 +88,11 @@ export default function Footer() {
             <li>
               <Link href="/terms">
                 <a>Terms of Use</a>
+              </Link>
+            </li>
+            <li>
+              <Link href="https://docs.getoutline.com/s/dpa">
+                <a>DPA</a>
               </Link>
             </li>
             <li>
