@@ -319,7 +319,7 @@ export default function Home() {
                   title={
                     <>
                       <GithubLogo size={24} />
-                      &nbsp;Open source
+                      &nbsp;Ajar source
                     </>
                   }
                   description={
