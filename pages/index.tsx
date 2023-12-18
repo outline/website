@@ -40,30 +40,6 @@ export default function Home() {
         </p>
 
         <section className="feature">
-          <div className="pure-g container reverse">
-            <div className="pure-u-1 pure-u-md-2-5 feature-left">
-              <h2>
-                <em>Beautiful documents, without even trying.</em>
-                An intuitive editor with markdown support, slash commands, rich
-                embeds, and more…
-              </h2>
-            </div>
-            <div className="pure-u-1 pure-u-md-3-5 feature-right">
-              <div className="lil-wrapper">
-                <img
-                  className="task-list"
-                  src="/images/tasks.png"
-                  style={{
-                    maxHeight: 400,
-                    maxWidth: 546,
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="feature">
           <div className="pure-g container">
             <div className="pure-u-1 pure-u-md-3-5 feature-left">
               <div className="lil-wrapper editor-menus">
@@ -84,7 +60,7 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
                 <em>Intuitive editing experience.</em>A blazing fast editor with
-                markdown support, slash commands, embeds, and more…
+                markdown support, slash commands, interactive embeds, and more…
               </h2>
             </div>
           </div>
@@ -94,9 +70,12 @@ export default function Home() {
           <div className="pure-g container reverse">
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
               <h2>
-                <em>Collaborate &amp; comment</em>
-                Collaborate on documents in realtime. Comments and threads keep
-                conversations organized.
+                <em>
+                  Multiplayer collab
+                  <span className="realtime-cursor">Alex</span>oration
+                </em>
+                Collaborate with team mates on documents in realtime. Comments
+                &amp; threads keep conversations organized.
               </h2>
             </div>
             <div className="pure-u-1 pure-u-md-3-5 feature-right">
@@ -126,9 +105,9 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
-                <em>Structured &amp; instantly searchable</em>
+                <em>Instantly searchable</em>
                 Nest documents in a hierachy, automatically build a network of
-                backlinks, and search across everything in ms.
+                backlinks, and search across everything in milliseconds.
               </h2>
             </div>
           </div>
@@ -139,8 +118,9 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
               <h2>
                 <em>Integrated with Slack</em>
-                Search and share documents without leaving chat, automatically
-                post document updates.
+                Search, share, and ask questions from your documents without
+                leaving chat. Post notifications to channels when docs are
+                updated.
               </h2>
             </div>
             <div className="pure-u-1 pure-u-md-3-5 feature-right">
@@ -387,13 +367,15 @@ export default function Home() {
         }
 
         .feature h2 {
-          font-size: 2.2em;
+          position: relative;
+          font-size: 1.8em;
           letter-spacing: 0.01em;
           font-weight: 500;
           line-height: 1.2;
         }
 
         .feature h2 em {
+          font-size: 1.2em;
           font-weight: 600;
           font-style: normal;
           display: block;
@@ -411,6 +393,42 @@ export default function Home() {
         .highlight-cards {
           background: linear-gradient(180deg, ${colors.lightGrey}, #fff);
           width: 100%;
+        }
+
+        .realtime-cursor {
+          background: #f56c31;
+          color: white;
+          font-size: 18px;
+          padding: 2px 6px;
+          border-radius: 4px;
+          position: absolute;
+          top: -1em;
+        }
+
+        .realtime-cursor:after {
+          content: "";
+          display: block;
+          height: 1.4em;
+          width: 3px;
+
+          animation: blink 1s infinite;
+          position: absolute;
+          background: #f56c31;
+          position: absolute;
+          bottom: -100%;
+          left: 0;
+        }
+
+        @keyframes blink {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
         }
 
         img {
