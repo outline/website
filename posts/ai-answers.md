@@ -11,5 +11,4 @@ you need amongst hundreds or thousands of documents. Even with great search it c
 
 Now we've built a new feature that allows you to get direct answers to questions from your knowledge base simply by asking them in the search or command menu! Answers are dynamically generated based on the documents you have permission to access.
 
-To get started, any workspace admin can enable the feature under **Settings** -> **Features** -> **Ai Answers**. Let
-us know what you think!
+To get started, any workspace admin can enable the feature under **Settings** -> **Features** -> **Ai Answers**. Find out more information in [the documentation](https://docs.getoutline.com/s/guide/doc/search-NIKPvYrx06), and let us know what you think!
