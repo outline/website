@@ -5,9 +5,41 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Fri, 06 Oct 2023 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 03 Jan 2024 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>ai-answers</guid>
+    <title>AI answers</title>
+    <link>https://www.getoutline.com/changelog/ai-answers</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/ai-answers.png" alt="AI answers"/></p>
+<p>One of the biggest problems with a team knowledge base is that it can be difficult to find the information
+you need amongst hundreds or thousands of documents. Even with great search it can be hard to know the exact phrasing to use to find the right document.</p>
+<p>Now we&#x27;ve built a new feature that allows you to get direct answers to questions from your knowledge base simply by asking them in the search or command menu! Answers are dynamically generated based on the documents you have permission to access.</p>
+<p>To get started, any workspace admin can enable the feature under <strong>Settings</strong> -&gt; <strong>Features</strong> -&gt; <strong>Ai Answers</strong>. Let
+us know what you think!</p></div> ]]></description>
+    <pubDate>Wed, 03 Jan 2024 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>exporting-improvements</guid>
+    <title>Improved PDF exports</title>
+    <link>https://www.getoutline.com/changelog/exporting-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve made some great improvements to the way that document exports are constructed this week.
+These changes allow Mermaid diagrams and rich embeds to be rendered correctly in HTML and PDF exports
+going forward, other formatting was also improved to make these look even nicer.</p>
+<h3>Other fixes and improvements</h3>
+<ul>
+<li>Embedded videos now display correctly when viewing a documents history</li>
+<li>Emoji&#x27;s in templates are now applied correctly</li>
+<li>Mobile now has a &quot;Share&quot; option in the document menu</li>
+<li>Todo items in editor can now be toggled with <code>Cmd</code>+<code>Enter</code> (<code>Ctrl</code>+<code>Enter</code> on Windows)</li>
+<li>When copying a document you can now choose whether to include child documents</li>
+<li>Added support for Instagram and LinkedIn embeds</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 06 Dec 2023 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>code-commenting</guid>
     <title>Commenting in code</title>
