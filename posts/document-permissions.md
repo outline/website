@@ -13,4 +13,4 @@ This is great for sharing private notes or drafts with a small group of people.
 We also gave the sharing interface a new look and a lot more clarity over who has access to the
 document and what level of access they have.
 
-To get started, simply click the **Share** button in the document header.
+To get started, simply click the **Share** button in the document header or check out the [sharing documentation](https://docs.getoutline.com/s/guide/doc/sharing-LG2sGOLIpl) for more details.
