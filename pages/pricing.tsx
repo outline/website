@@ -238,7 +238,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>20+ integrations</td>
+                    <td>30+ integrations</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -250,14 +250,20 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
+                    <td>API &amp; Webhooks</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
                     <td>Groups &amp; user permissions</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>API &amp; Webhooks</td>
-                    <td>{check}</td>
+                    <td>Guest users</td>
+                    <td></td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
@@ -274,7 +280,7 @@ export default function Pricing() {
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Confluence import</td>
+                    <td>Confluence importer</td>
                     <td></td>
                     <td>{check}</td>
                     <td>{check}</td>
