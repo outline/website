@@ -5,9 +5,47 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 28 Feb 2024 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Apr 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>guest-role</guid>
+    <title>Guest user role</title>
+    <link>https://www.getoutline.com/changelog/guest-role</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/guest-role.png" alt="Guest role"/></p>
+<p>We&#x27;ve added a new <strong>Guest</strong> role to help you collaborate with external users on your documents.
+The Guest role allows you to share your documents with external users without giving them full
+access to your workspace.</p>
+<p>When you invite a user as a Guest, they can only view and comment on the documents and collections
+you explicitly share with them – no default access applies.</p></div> ]]></description>
+    <pubDate>Thu, 18 Apr 2024 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>collection-icons</guid>
+    <title>80+ New collection icons</title>
+    <link>https://www.getoutline.com/changelog/collection-icons</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/new-collection-icons.png" alt="New collection icons"/></p>
+<p>We&#x27;ve added over 80 new collection icons to help you better organize your documents. You can now
+choose from a wide range of new icons to represent your collections from DNA, to a tent – there&#x27;s
+a wider variety to choose from.</p>
+<p>To change the icon of a collection, head to <strong>Edit</strong> in the collection menu and then click on the
+current icon.</p></div> ]]></description>
+    <pubDate>Sun, 14 Apr 2024 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>github-integration</guid>
+    <title>GitHub integration</title>
+    <link>https://www.getoutline.com/changelog/github-integration</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/github-integration.png" alt="GitHub integration"/></p>
+<p>The new GitHub integration allows you to connect your GitHub repositories to your Outline workspace.
+Once connected, links to GitHub issues and pull requests will show detailed information on hover,
+in a future update we will also allow expanding these links to show more context inline.</p>
+<p>To setup simply head to <strong>Settings -&gt; Integrations -&gt; GitHub</strong> and connect one or more organizations.</p></div> ]]></description>
+    <pubDate>Tue, 02 Apr 2024 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>document-permissions</guid>
     <title>Document sharing and permissions</title>
