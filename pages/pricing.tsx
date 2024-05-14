@@ -144,6 +144,9 @@ export default function Pricing() {
                     >
                       AI question answering
                     </SimpleTooltip>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
                   </td>
                   <tr>
                     <td>
