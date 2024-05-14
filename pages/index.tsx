@@ -106,8 +106,8 @@ export default function Home() {
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
                 <em>Powerful search and question answering</em>
-                Search across your Outline workspace instantly, and ask about
-                questions of your documents to get direct AI answers.
+                Search across your workspace instantly, and ask questions about
+                your documents to get direct AI answers.
               </h2>
             </div>
           </div>
