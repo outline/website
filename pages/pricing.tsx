@@ -137,17 +137,19 @@ export default function Pricing() {
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
-                  <td>
-                    <SimpleTooltip
-                      className="feature"
-                      content="Ask questions and get direct answers from your workspace content"
-                    >
-                      AI question answering
-                    </SimpleTooltip>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Ask questions and get direct answers from your workspace content"
+                      >
+                        AI question answering
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
-                  </td>
+                  </tr>
                   <tr>
                     <td>
                       <SimpleTooltip
