@@ -122,7 +122,7 @@ export default function Footer() {
         <div className="container">
           <p>
             &copy; {new Date().getFullYear()} General Outline, Inc. &middot;
-            Built in California.
+            Built in NYC.
           </p>
         </div>
       </div>
