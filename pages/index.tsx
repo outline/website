@@ -96,7 +96,7 @@ export default function Home() {
           <div className="pure-g container">
             <div className="pure-u-1 pure-u-md-3-5 feature-left">
               <img
-                src="/images/search.png"
+                src="/images/rag.png"
                 style={{
                   maxWidth: "625px",
                   maxHeight: "615px",
@@ -105,9 +105,9 @@ export default function Home() {
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
               <h2>
-                <em>Instantly searchable</em>
-                Nest documents in a hierachy, automatically build a network of
-                backlinks, and search across everything in milliseconds.
+                <em>Powerful search and question answering</em>
+                Search across your Outline workspace instantly, and ask about
+                questions of your documents to get direct AI answers.
               </h2>
             </div>
           </div>
