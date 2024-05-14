@@ -4,6 +4,12 @@ import { CloudIcon, TeamIcon, CheckmarkIcon } from "outline-icons";
 import Layout from "components/Layout";
 import { spacing, colors } from "theme";
 import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
+import {
+  SimpleTooltip,
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "components/ui/Tooltip";
 
 export default function Pricing() {
   const check = <CheckmarkIcon className="icon" />;
@@ -93,67 +99,145 @@ export default function Pricing() {
                     </td>
                   </tr>
                   <tr>
-                    <td>Unlimited docs + version history</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="No limitations on the number of documents and revisions"
+                      >
+                        Unlimited docs + version history
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Realtime collaborative editing</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Multiple people can collaborate and edit documents at the same time"
+                      >
+                        Realtime collaborative editing
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Commenting and mentions</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Leave comments on documents and mention other users"
+                      >
+                        Commenting + @mentions
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <td>
+                    <SimpleTooltip
+                      className="feature"
+                      content="Ask questions and get direct answers from your workspace content"
+                    >
+                      AI question answering
+                    </SimpleTooltip>
+                  </td>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Outline is available in 17 different languages"
+                      >
+                        Multi-language translation
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Multi-language translation</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Enforce your company's security policies with SSO"
+                      >
+                        SSO authentication
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>SSO authentication</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Connect to other tools like Slack, GitHub, and more"
+                      >
+                        20+ integrations (inc Zapier)
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>20+ integrations (inc Zapier)</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Create document templates for your team to use"
+                      >
+                        Templating
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Templating</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Control who can access and edit documents through groups and individual permissions"
+                      >
+                        Groups + user permissions
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Groups &amp; user permissions</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Programmatically interact with every part of Outline using the API"
+                      >
+                        API + webhooks
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>API &amp; Webhooks</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Track and filter edits and user activity in the workspace"
+                      >
+                        Security audit log
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>Email support</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Event log</td>
                     <td>{check}</td>
                     <td>{check}</td>
                     <td>{check}</td>
@@ -208,102 +292,222 @@ export default function Pricing() {
                     </td>
                   </tr>
                   <tr>
-                    <td>Unlimited docs + version history</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="No limitations on the number of documents and revisions"
+                      >
+                        Unlimited docs + version history
+                      </SimpleTooltip>
+                    </td>
                     <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Realtime collaborative editing</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Commenting and mentions</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Multi-language translation</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>SSO authentication</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>30+ integrations</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Templates</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>API &amp; Webhooks</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Groups &amp; user permissions</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Guest users</td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Additional security controls</td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>SAML 2.0 (e.g. Okta, OneLogin)</td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Confluence importer</td>
-                    <td></td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="https://www.glean.com" target="_blank">
-                        Glean
-                      </a>{" "}
-                      integration
+                      <SimpleTooltip
+                        className="feature"
+                        content="Multiple people can collaborate and edit documents at the same time"
+                      >
+                        Realtime collaborative editing
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Leave comments on documents and mention other users"
+                      >
+                        Commenting + @mentions
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Outline is available in 17 different languages"
+                      >
+                        Multi-language translation
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Enforce your company's security policies with SSO"
+                      >
+                        SSO authentication
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Connect to other tools like Slack, GitHub, and more"
+                      >
+                        20+ integrations (inc Zapier)
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Create document templates for your team to use"
+                      >
+                        Templating
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Control who can access and edit documents through groups and individual permissions"
+                      >
+                        Groups + user permissions
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Programmatically interact with every part of Outline using the API"
+                      >
+                        API + webhooks
+                      </SimpleTooltip>
+                    </td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="OpenAI integration allows asking questions and getting direct answers from your workspace content"
+                      >
+                        AI question answering
+                      </SimpleTooltip>
                     </td>
                     <td></td>
                     <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Remove "Outline" branding</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Guest users have access only to content explicitly shared with them"
+                      >
+                        Guest users
+                      </SimpleTooltip>
+                    </td>
                     <td></td>
-                    <td></td>
+                    <td>{check}</td>
                     <td>{check}</td>
                   </tr>
                   <tr>
-                    <td>Security audit log</td>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Restrict sign-in to specific email domains and methods"
+                      >
+                        Additional security controls
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Authenticate users with any compatible SAML 2.0 provider"
+                      >
+                        SAML 2.0 (e.g. Okta, OneLogin)
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Import Confluence spaces into Outline"
+                      >
+                        Confluence importer
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Search across your Outline documents from within Glean"
+                      >
+                        Glean integration
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Track and filter edits and user activity in the workspace"
+                      >
+                        Security audit log
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Complete control over the branding of your Outline instance"
+                      >
+                        Remove "Outline" branding
+                      </SimpleTooltip>
+                    </td>
                     <td></td>
                     <td></td>
                     <td>{check}</td>
@@ -313,12 +517,6 @@ export default function Pricing() {
                     <td></td>
                     <td></td>
                     <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Analytics and reporting</td>
-                    <td></td>
-                    <td></td>
-                    <td className="soon">coming soon</td>
                   </tr>
                 </tbody>
               </table>
@@ -399,6 +597,20 @@ export default function Pricing() {
       </div>
       <style jsx global>
         {`
+          .feature {
+            border: 0;
+            margin: 0;
+            padding: 8px 0;
+            border-bottom: 1px transparent solid;
+            background: none;
+            font-weight: 500;
+            cursor: help;
+          }
+
+          .feature:hover {
+            border-bottom: 1px dashed ${colors.text};
+          }
+
           .tabs {
             padding: 0;
             margin: 0;
@@ -467,6 +679,7 @@ export default function Pricing() {
           table th,
           table td {
             text-align: center;
+            vertical-align: middle;
             padding: ${spacing.medium};
           }
 

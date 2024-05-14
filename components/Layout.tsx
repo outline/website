@@ -9,6 +9,7 @@ import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, colors, typography } from "theme";
 import { useRouter } from "next/router";
+import { TooltipProvider } from "./ui/Tooltip";
 
 ReactGA.initialize("UA-109435745-1");
 
@@ -60,7 +61,7 @@ export default function Layout({
   const fullTitle = `${resolvedTitle ? resolvedTitle + " – " : ""}${siteTitle}`;
 
   return (
-    <>
+    <TooltipProvider>
       <Head>
         <title>{fullTitle}</title>
         <link
@@ -296,6 +297,6 @@ export default function Layout({
           }
         `}
       </style>
-    </>
+    </TooltipProvider>
   );
 }
