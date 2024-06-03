@@ -453,7 +453,8 @@ export default function HeaderNavigation() {
           }
 
           .or {
-            padding: 0 4px;
+            padding: 0 6px;
+            color: ${colors.textSecondary};
           }
 
           @media (max-width: 48em) {

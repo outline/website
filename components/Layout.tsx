@@ -19,6 +19,7 @@ type Props = {
   background?: string;
   description?: string;
   color?: string;
+  fullWidth?: boolean;
   header?: React.ReactNode;
   hero?: React.ReactNode;
   illustration?: React.ReactNode;
@@ -29,6 +30,7 @@ type Props = {
 export default function Layout({
   title,
   pageTitle,
+  fullWidth,
   description,
   header,
   hero,
@@ -112,7 +114,7 @@ export default function Layout({
         <meta name="twitter:site" content="@getoutline" />
       </Head>
       <header>
-        <div className="container">
+        <div className={fullWidth ? "container fullWidth" : "container"}>
           <div className="pure-g">
             <div className="pure-u-1-2 header-left">
               <Logo />
@@ -156,12 +158,13 @@ export default function Layout({
           header {
             color: ${color};
             background: ${background};
+            border-bottom: 1px solid ${background};
           }
 
           .header-left,
           .header-right {
             display: flex;
-            padding: ${spacing.large} 0;
+            padding: ${spacing.medium} 0;
           }
 
           .header-right {
@@ -208,6 +211,18 @@ export default function Layout({
             max-width: 1140px;
             width: 90vw;
             margin: 0 auto;
+          }
+
+          .container.fullWidth {
+            max-width: calc(100% - 32px);
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 11;
+            background: ${colors.white};
+            height: 75px;
           }
 
           * {
