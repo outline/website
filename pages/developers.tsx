@@ -11,6 +11,13 @@ export default function Developers({ spec }) {
     withDefaultFonts: false,
   };
 
+  React.useEffect(() => {
+    return () => {
+      const body = document.querySelector("body");
+      body?.classList.remove("dark-mode");
+    };
+  }, []);
+
   return (
     <Layout title="API Documentation" fullWidth>
       <div className="documentation">

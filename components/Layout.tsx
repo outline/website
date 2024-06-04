@@ -167,8 +167,7 @@ export default function Layout({
             padding: ${spacing.medium} 0;
           }
 
-          :global(.dark-mode) .header-left,
-          :global(.dark-mode) .header-right {
+          :global(.dark-mode) .header-left {
             filter: invert(1);
           }
 

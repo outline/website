@@ -55,7 +55,12 @@ class MenuItem extends React.Component<{
               color: ${top ? colors.almostBlack : colors.white};
             }
 
-            a.open,
+            :global(.dark-mode) a,
+            :global(.dark-mode) a:hover {
+              color: ${colors.white};
+            }
+
+            s a.open,
             a.open:hover {
               background: none;
             }
@@ -394,6 +399,10 @@ export default function HeaderNavigation() {
               background: rgba(255, 255, 255, 0.8);
               -webkit-backdrop-filter: blur(20px);
               backdrop-filter: blur(20px);
+            }
+
+            :global(.dark-mode) ul li ul {
+              background: rgba(0, 0, 0, 0.8);
             }
           }
 
