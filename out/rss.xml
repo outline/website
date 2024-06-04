@@ -5,9 +5,27 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 18 Apr 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 31 May 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>table-improvements</guid>
+    <title>Table improvements</title>
+    <link>https://www.getoutline.com/changelog/table-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Guest role"/></p>
+<p>This week we&#x27;ve made some highly requested improvements to tables in Outline, this should be the
+one of many more improvements to the editor in the coming weeks and months. Here&#x27;s what&#x27;s new:</p>
+<ul>
+<li><strong>Column resizing</strong>: You can now resize columns by dragging the border between them</li>
+<li><strong>Full-width tables</strong>: Tables now expand to the full width of the editor</li>
+<li><strong>More content</strong>: Table cells now support embeds, code blocks, and all other content types</li>
+<li><strong>Toggleable headers</strong>: You can now toggle a header row and column</li>
+<li><strong>Improved overflow</strong>: Tables now scroll horizontally when they&#x27;re too wide for the editor</li>
+<li><strong>Improved row and column controls</strong>: We&#x27;ve made it one click to add rows and columns</li>
+</ul></div> ]]></description>
+    <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>guest-role</guid>
     <title>Guest user role</title>
