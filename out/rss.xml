@@ -13,8 +13,8 @@
     <title>Table improvements</title>
     <link>https://www.getoutline.com/changelog/table-improvements</link>
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Guest role"/></p>
-<p>This week we&#x27;ve made some highly requested improvements to tables in Outline, this should be the
-one of many more improvements to the editor in the coming weeks and months. Here&#x27;s what&#x27;s new:</p>
+<p>This week we&#x27;ve made some highly requested improvements to tables in Outline, this will be one of
+many improvements to the editor in the coming weeks and months. Here&#x27;s what&#x27;s new:</p>
 <ul>
 <li><strong>Column resizing</strong>: You can now resize columns by dragging the border between them</li>
 <li><strong>Full-width tables</strong>: Tables now expand to the full width of the editor</li>
