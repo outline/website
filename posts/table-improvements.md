@@ -6,8 +6,8 @@ slug: table-improvements
 
 ![Guest role](/images/table-improvements.png)
 
-This week we've made some highly requested improvements to tables in Outline, this should be the
-one of many more improvements to the editor in the coming weeks and months. Here's what's new:
+This week we've made some highly requested improvements to tables in Outline, this will be one of
+many improvements to the editor in the coming weeks and months. Here's what's new:
 
 - **Column resizing**: You can now resize columns by dragging the border between them
 - **Full-width tables**: Tables now expand to the full width of the editor
