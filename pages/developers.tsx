@@ -37,7 +37,7 @@ export default function Developers({ spec }) {
           content: "";
           top: 75px;
           position: absolute;
-          border-bottom: 1px solid ${colors.grey};
+          border-bottom: 1px solid var(--scalar-border-color);
           width: 100%;
         }
 

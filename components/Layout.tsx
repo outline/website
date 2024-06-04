@@ -167,6 +167,11 @@ export default function Layout({
             padding: ${spacing.medium} 0;
           }
 
+          :global(.dark-mode) .header-left,
+          :global(.dark-mode) .header-right {
+            filter: invert(1);
+          }
+
           .header-right {
             justify-content: flex-end;
           }
@@ -214,8 +219,9 @@ export default function Layout({
           }
 
           .container.fullWidth {
-            max-width: calc(100% - 32px);
+            max-width: 100%;
             width: 100%;
+            padding: 0 32px;
             position: absolute;
             top: 0;
             left: 0;
@@ -223,6 +229,10 @@ export default function Layout({
             z-index: 11;
             background: ${colors.white};
             height: 75px;
+          }
+
+          .dark-mode .container.fullWidth {
+            background: #0f0f0f;
           }
 
           * {
