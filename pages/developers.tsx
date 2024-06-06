@@ -11,10 +11,17 @@ export default function Developers({ spec }) {
     withDefaultFonts: false,
   };
 
+  // Clean up the effects of Scalar API Reference
   React.useEffect(() => {
     return () => {
       const body = document.querySelector("body");
       body?.classList.remove("dark-mode");
+
+      for (const style of Array.from(document.querySelectorAll("style"))) {
+        if (style.textContent.includes("scalar")) {
+          style.parentElement.removeChild(style);
+        }
+      }
     };
   }, []);
 
