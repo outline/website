@@ -5,9 +5,18 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Fri, 31 May 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 11 Jun 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>highlighters</guid>
+    <title>Highlighter colors</title>
+    <link>https://www.getoutline.com/changelog/highlighters</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This release adds the ability to highlight text in the editor in a variety of colors. This is a great way to draw attention to important parts of your document, or to categorize different sections. Use the upgraded highlighter tool in the selection toolbar to get started.</p>
+<p><img src="https://www.getoutline.com/images/highlighters.png" alt="Highlighters"/></p></div> ]]></description>
+    <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>table-improvements</guid>
     <title>Table improvements</title>
