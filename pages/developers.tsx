@@ -8,7 +8,6 @@ export default function Developers({ spec }) {
   const configuration = {
     layout: "modern",
     hideDownloadButton: true,
-    withDefaultFonts: false,
   };
 
   // Clean up the effects of Scalar API Reference
