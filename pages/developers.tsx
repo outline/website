@@ -49,7 +49,7 @@ export default function Developers({ spec }) {
         .documentation::after {
           content: "";
           top: 75px;
-          position: absolute;
+          position: fixed;
           border-bottom: 1px solid var(--scalar-border-color);
           width: 100%;
         }

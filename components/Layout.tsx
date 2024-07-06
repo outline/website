@@ -221,7 +221,7 @@ export default function Layout({
             max-width: 100%;
             width: 100%;
             padding: 0 32px;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
