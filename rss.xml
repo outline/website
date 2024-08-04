@@ -5,9 +5,31 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 11 Jun 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 04 Aug 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>comment-resolution</guid>
+    <title>Comment resolving</title>
+    <link>https://www.getoutline.com/changelog/comment-resolution</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comment-resolving.png" alt="Comment resolving"/></p>
+<p>It&#x27;s now possible to resolve comment threads on documents from the comment menu. You can always view and restore a document&#x27;s
+resolved comments by clicking the checkmark icon at the top right of the sidebar. This provides a way to keep discussions focused
+and organized.</p></div> ]]></description>
+    <pubDate>Sun, 04 Aug 2024 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>icon-and-emojis</guid>
+    <title>Icon and emojis</title>
+    <link>https://www.getoutline.com/changelog/icon-and-emojis</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/icon-and-emojis.png" alt="Comment resolving"/></p>
+<p>You can now select emoji and icons for both document and collection in one unified UI – this finally
+enables using emoji for collections and icons on documents. We also added even more new icons to choose
+from in this release.</p></div> ]]></description>
+    <pubDate>Fri, 19 Jul 2024 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>highlighters</guid>
     <title>Highlighter colors</title>
