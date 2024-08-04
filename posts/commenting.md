@@ -1,11 +1,15 @@
 ---
-title: Comment resolving
-date: 2024-08-04T00:00:00Z
-slug: comment-resolution
+title: Commenting
+date: 2023-03-20T00:00:00Z
+slug: commenting
 ---
 
-![Comment resolving](/images/comment-resolving.png)
+![Outline comments](/images/comments.png)
 
-It's now possible to resolve comment threads on documents from the comment menu. You can always view and restore a document's
-resolved comments by clicking the checkmark icon at the top right of the sidebar. This provides a way to keep discussions focused
-and organized.
+It's been a long time coming – commenting is finally available in Outline, opening up a whole new world of use cases and collaboration!
+While we iron out the kinks it's disabled by default, but you can enable the feature for your team in **Settings -> Features -> Commenting**.
+
+Once enabled you'll see a new comments sidebar become available. You can add comments to any document or to a specific
+text selection, we also support threaded replies, notifications, **@mentions**, basic formatting _and_ images in comments.
+
+We're eager to hear your feedback, please [let us know](https://www.getoutline.com/contact) what you think.
