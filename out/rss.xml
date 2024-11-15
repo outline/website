@@ -5,9 +5,62 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 04 Aug 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 11 Nov 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>emoji-reactions</guid>
+    <title>Emoji reactions</title>
+    <link>https://www.getoutline.com/changelog/emoji-reactions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/emoji-reactions.png" alt="Emoji reactions"/></p>
+<p>Introducing emoji reactions for comments – a much-requested way to respond to feedback and collaborate with team members.
+Every comment can now be reacted to with an emoji, and you can see who reacted to a comment and how many reactions it has received from the comment menu.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>There is now a <strong>Leave document</strong> menu item on documents that have been shared with you</li>
+<li>&quot;Smart text&quot; replacements can be disabled in preferences</li>
+<li>Mermaid diagrams now have syntax highlighting for their source code</li>
+<li>Publicly shared docs now have a button to toggle the sidebar</li>
+<li><code>cmd</code>+<code>f</code> search in page now supports diacritics</li>
+</ul></div> ]]></description>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>comment-sorting</guid>
+    <title>Comment sorting options</title>
+    <link>https://www.getoutline.com/changelog/comment-sorting</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>The comment sidebar can now be sorted by the comment&#x27;s position in the document. This is particularly nice for
+long documents where you want to see the comments in the order they appear rather than the order they were created.</p>
+<p>Look for the sort option in the top right of the comment sidebar.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>When mentioning a user you can now search by email</li>
+<li>Publicly shared docs now have the option to disable search engine indexing</li>
+<li>CSV files can now be imported, they will be converted to a table</li>
+<li>Collections now include reverse alphabetical sorting as an option</li>
+</ul></div> ]]></description>
+    <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>group-document-membership</guid>
+    <title>Group sharing for documents</title>
+    <link>https://www.getoutline.com/changelog/group-document-membership</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/group-document-permissions.png" alt="Group permissions"/></p>
+<p>It is now possible to add groups directly to documents, all members of the group will receive access to the document and all nested documents
+with the chosen permissions. Use this to share portions of a larger collection with a mix of stakeholders.</p>
+<p>Groups will appear as a new sharing option in the existing Share button. See the <a href="https://docs.getoutline.com/s/guide/doc/sharing-LG2sGOLIpl">guide to sharing</a> for more info.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>You can now embed any webpage with the <code>/embed</code> command</li>
+<li>Added <code>R</code> language highlighting in code blocks</li>
+<li>Templates can now be shared with the entire workspace</li>
+<li>The <code>e</code> shortcut now refocuses the editor if unfocused</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>comment-resolution</guid>
     <title>Comment resolving</title>
