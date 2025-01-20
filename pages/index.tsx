@@ -267,7 +267,7 @@ export default function Home() {
                       &nbsp;In your language
                     </>
                   }
-                  description="Outline has RTL support and includes translations for 17 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
+                  description="Outline has RTL support and includes translations for 20 languages including 🇫🇷 French, 🇪🇸 Spanish, 🇩🇪 German, 🇰🇷 Korean, and 🇨🇳 Chinese."
                 />
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
