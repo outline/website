@@ -15,7 +15,17 @@
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/document-mentions.png" alt="Outline find and replace"/></p>
 <p>This week brings the ability to mention documents using the <code>@</code> trigger. You&#x27;ll find documents
 available alongside team members. This allows you to link to other documents within your content
-and keep the title and icon automatically updated.</p></div> ]]></description>
+and keep the title and icon automatically updated. Keep typing to filter or create a new document inline.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Group management has been improved and now includes filtering and sorting</li>
+<li>@mentions are now included in find and replace</li>
+<li>Added the <code>Protobuf</code> language for code blocks</li>
+<li><code>HEIC</code> images are now supported for embeds</li>
+<li>Added an additional &quot;Neon&quot; highlighter color</li>
+<li>Triple clicking inline code now selects it</li>
+<li>Find and replace now includes a count of occurrences</li>
+</ul></div> ]]></description>
     <pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate>
   </item>
 
