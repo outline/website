@@ -4,7 +4,7 @@ date: 2025-01-20T00:00:00Z
 slug: document-mentions
 ---
 
-![Outline find and replace](/images/document-mentions.png)
+![Mentions in Outline](/images/document-mentions.png)
 
 This week brings the ability to mention documents using the `@` trigger. You'll find documents
 available alongside team members. This allows you to link to other documents within your content
