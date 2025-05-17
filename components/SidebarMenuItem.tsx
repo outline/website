@@ -5,8 +5,8 @@ export default function SidebarMenuItem({ children, href }) {
   return (
     <>
       <li className="integration">
-        <Link href={href}>
-          <a>{children}</a>
+        <Link href={href} className="sidebar-menu-item">
+          {children}
         </Link>
       </li>
 
@@ -18,7 +18,7 @@ export default function SidebarMenuItem({ children, href }) {
             margin: ${spacing.medium} 0;
           }
 
-          li a {
+          li :global(.sidebar-menu-item) {
             display: flex;
             align-items: center;
             color: inherit;

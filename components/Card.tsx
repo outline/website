@@ -18,8 +18,8 @@ export default function Card({ title, description, href }: Props) {
   return (
     <>
       {href ? (
-        <Link href={href}>
-          <a className="card">{content}</a>
+        <Link href={href} className="card">
+          {content}
         </Link>
       ) : (
         <div className="card">{content}</div>

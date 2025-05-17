@@ -31,6 +31,15 @@ export default function Privacy() {
         </SidebarMenu>
       }
     >
+      <style jsx global>{`
+        .privacy-link {
+          color: #0366d6;
+          text-decoration: none;
+        }
+        .privacy-link:hover {
+          text-decoration: underline;
+        }
+      `}</style>
       <p>
         Your privacy is critically important to us. At Outline we have a few
         fundamental principles:
@@ -53,8 +62,8 @@ export default function Privacy() {
       <p>
         If you have questions about deleting or correcting your personal data
         please{" "}
-        <Link href="/contact">
-          <a>contact support</a>
+        <Link href="/contact" className="privacy-link">
+          contact support
         </Link>
         .
       </p>

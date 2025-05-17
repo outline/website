@@ -19,10 +19,8 @@ export default function Button({
 }: Props) {
   return (
     <>
-      <Link href={href} {...rest}>
-        <a className="button" role="button" onClick={onClick}>
-          {children}
-        </a>
+      <Link href={href} className="button" role="button" onClick={onClick} {...rest}>
+        {children}
       </Link>
       <style jsx>{`
         .button {

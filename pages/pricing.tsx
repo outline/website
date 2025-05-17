@@ -551,8 +551,8 @@ export default function Pricing() {
             <p>
               We're happy to support cloud-hosted teams larger than 200 users.
               Please{" "}
-              <Link href="/contact">
-                <a>contact us</a>
+              <Link href="/contact" className="pricing-link">
+                contact us
               </Link>{" "}
               to discuss pricing.
             </p>
@@ -566,10 +566,10 @@ export default function Pricing() {
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
               Yep, absolutely – a 30% discount is available for non-profit and
-              education. We’re also happy to sponsor accounts for non-profits
+              education. We're also happy to sponsor accounts for non-profits
               working directly on solving climate change. Please{" "}
-              <Link href="/contact">
-                <a>contact us</a>
+              <Link href="/contact" className="pricing-link">
+                contact us
               </Link>{" "}
               for more details.
             </p>
@@ -587,12 +587,12 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>Wait, you didn’t answer my question?</h3>
+            <h3>Wait, you didn't answer my question?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              <Link href="/contact">
-                <a>Reach out</a>
+              <Link href="/contact" className="pricing-link">
+                Reach out
               </Link>{" "}
               with your question and we will be sure to answer within a working
               day.
@@ -614,6 +614,15 @@ export default function Pricing() {
 
           .feature:hover {
             border-bottom: 1px dashed ${colors.text};
+          }
+
+          .pricing-link {
+            color: ${colors.primary};
+            text-decoration: none;
+          }
+
+          .pricing-link:hover {
+            text-decoration: underline;
           }
 
           .tabs {

@@ -161,35 +161,35 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/download" passHref>
-                <MenuItem>Download</MenuItem>
+              <Link href="/download" className="menu-item">
+                Download
               </Link>
             </li>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" passHref>
-                <MenuItem>Guide</MenuItem>
+              <Link href="https://docs.getoutline.com/s/guide" className="menu-item">
+                Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" passHref>
-                <MenuItem>Integrations</MenuItem>
+              <Link href="/integrations" className="menu-item">
+                Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" passHref>
-                <MenuItem>Developers</MenuItem>
+              <Link href="/developers" className="menu-item">
+                Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" passHref>
-                <MenuItem>Changelog</MenuItem>
+              <Link href="/changelog" className="menu-item">
+                Changelog
               </Link>
             </li>
           </ul>
         </li>
         <li className="hidden-on-mobile">
-          <Link href="/pricing" passHref>
-            <MenuItem top>Pricing</MenuItem>
+          <Link href="/pricing" className="menu-item-top">
+            Pricing
           </Link>
         </li>
         <li className={openNav === "community" ? "open" : "hidden-on-mobile"}>
@@ -207,8 +207,8 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/contact" passHref>
-                <MenuItem>Contact Us</MenuItem>
+              <Link href="/contact" className="menu-item">
+                Contact Us
               </Link>
             </li>
             <li>
@@ -306,35 +306,35 @@ export default function HeaderNavigation() {
 
             <h3>Product</h3>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" passHref>
-                <MenuItem>Guide</MenuItem>
+              <Link href="https://docs.getoutline.com/s/guide" className="menu-item">
+                Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" passHref>
-                <MenuItem>Integrations</MenuItem>
+              <Link href="/integrations" className="menu-item">
+                Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" passHref>
-                <MenuItem>Developers</MenuItem>
+              <Link href="/developers" className="menu-item">
+                Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" passHref>
-                <MenuItem>Changelog</MenuItem>
+              <Link href="/changelog" className="menu-item">
+                Changelog
               </Link>
             </li>
             <li>
-              <Link href="/pricing" passHref>
-                <MenuItem>Pricing</MenuItem>
+              <Link href="/pricing" className="menu-item">
+                Pricing
               </Link>
             </li>
 
             <h3>Community</h3>
             <li>
-              <Link href="/contact" passHref>
-                <MenuItem>Contact Us</MenuItem>
+              <Link href="/contact" className="menu-item">
+                Contact Us
               </Link>
             </li>
             <li>
@@ -473,6 +473,53 @@ export default function HeaderNavigation() {
             li.hidden-on-mobile {
               display: none;
             }
+          }
+
+          :global(.menu-item) {
+            display: flex;
+            align-items: center;
+            padding: ${spacing.small} ${spacing.medium};
+            color: rgba(0, 0, 0, 0.75);
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 4px;
+            min-height: 40px;
+            font-weight: 500;
+            position: relative;
+            user-select: none;
+            overflow: hidden;
+          }
+
+          :global(.menu-item:hover) {
+            background: ${colors.primary};
+            color: ${colors.white};
+          }
+
+          :global(.menu-item-top) {
+            display: flex;
+            align-items: center;
+            padding: ${spacing.small} ${spacing.medium};
+            color: rgba(0, 0, 0, 0.75);
+            text-decoration: none;
+            white-space: nowrap;
+            border-radius: 4px;
+            min-height: 40px;
+            font-weight: 500;
+            position: relative;
+            user-select: none;
+            overflow: hidden;
+          }
+
+          :global(.menu-item-top:hover) {
+            background: rgba(0, 0, 0, 0.1);
+            color: ${colors.almostBlack};
+          }
+
+          :global(.dark-mode .menu-item),
+          :global(.dark-mode .menu-item:hover),
+          :global(.dark-mode .menu-item-top),
+          :global(.dark-mode .menu-item-top:hover) {
+            color: ${colors.white};
           }
         `}
       </style>

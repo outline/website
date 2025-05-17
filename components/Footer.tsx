@@ -15,28 +15,28 @@ export default function Footer() {
           <h3>Product</h3>
           <ul>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide">
-                <a>Guide</a>
+              <Link href="https://docs.getoutline.com/s/guide" className="footer-link">
+                Guide
               </Link>
             </li>
             <li>
-              <Link href="/changelog">
-                <a>Changelog</a>
+              <Link href="/changelog" className="footer-link">
+                Changelog
               </Link>
             </li>
             <li>
-              <Link href="/integrations">
-                <a>Integrations</a>
+              <Link href="/integrations" className="footer-link">
+                Integrations
               </Link>
             </li>
             <li>
-              <Link href="/download">
-                <a>Download</a>
+              <Link href="/download" className="footer-link">
+                Download
               </Link>
             </li>
             <li>
-              <Link href="/pricing">
-                <a>Pricing</a>
+              <Link href="/pricing" className="footer-link">
+                Pricing
               </Link>
             </li>
             <li>
@@ -48,8 +48,8 @@ export default function Footer() {
           <h3>Community</h3>
           <ul>
             <li>
-              <Link href="/contact">
-                <a>Contact Us</a>
+              <Link href="/contact" className="footer-link">
+                Contact Us
               </Link>
             </li>
             <li>
@@ -76,23 +76,23 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li>
-              <Link href="/about">
-                <a>About</a>
+              <Link href="/about" className="footer-link">
+                About
               </Link>
             </li>
             <li>
-              <Link href="/privacy">
-                <a>Privacy</a>
+              <Link href="/privacy" className="footer-link">
+                Privacy
               </Link>
             </li>
             <li>
-              <Link href="/terms">
-                <a>Terms of Use</a>
+              <Link href="/terms" className="footer-link">
+                Terms of Use
               </Link>
             </li>
             <li>
-              <Link href="https://docs.getoutline.com/s/dpa">
-                <a>DPA</a>
+              <Link href="https://docs.getoutline.com/s/dpa" className="footer-link">
+                DPA
               </Link>
             </li>
             <li>
@@ -106,13 +106,13 @@ export default function Footer() {
           <h3>Compare</h3>
           <ul>
             <li>
-              <Link href="/compare/confluence-alternative">
-                <a>Confluence</a>
+              <Link href="/compare/confluence-alternative" className="footer-link">
+                Confluence
               </Link>
             </li>
             <li>
-              <Link href="/compare/google-docs-alternative">
-                <a>Google Docs</a>
+              <Link href="/compare/google-docs-alternative" className="footer-link">
+                Google Docs
               </Link>
             </li>
           </ul>
@@ -170,6 +170,17 @@ export default function Footer() {
           }
 
           li a:hover {
+            padding-bottom: 1px;
+            border-bottom: 2px solid ${colors.textSecondary};
+          }
+
+          :global(.footer-link) {
+            color: ${colors.textSecondary};
+            text-decoration: none;
+            line-height: 1.4em;
+          }
+
+          :global(.footer-link:hover) {
             padding-bottom: 1px;
             border-bottom: 2px solid ${colors.textSecondary};
           }

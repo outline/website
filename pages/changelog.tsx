@@ -60,8 +60,8 @@ export default function Changelog({ posts }) {
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
           <a id={post.slug} />
           <h2>
-            <Link href={`/changelog/${post.slug}`}>
-              <a className="heading">{post.title}</a>
+            <Link href={`/changelog/${post.slug}`} className="heading">
+              {post.title}
             </Link>
           </h2>
           <Metadata tag={post.tag} date={post.date} />

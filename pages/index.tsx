@@ -241,14 +241,14 @@ export default function Home() {
                   description={
                     <>
                       Simple{" "}
-                      <Link href="/integrations">
-                        <a>integrations</a>
+                      <Link href="/integrations" className="card-link">
+                        integrations
                       </Link>{" "}
                       into tools you use every day like Slack, Figma, Loom and
-                      many more. Can’t find the integration you need? There is
+                      many more. Can't find the integration you need? There is
                       an{" "}
-                      <Link href="/developers">
-                        <a>open API</a>
+                      <Link href="/developers" className="card-link">
+                        open API
                       </Link>{" "}
                       too.
                     </>
@@ -286,8 +286,8 @@ export default function Home() {
                     <>
                       Outline is updated with new features and fixes regularly,
                       checkout our{" "}
-                      <Link href="/changelog">
-                        <a>public changelog</a>
+                      <Link href="/changelog" className="card-link">
+                        public changelog
                       </Link>{" "}
                       to see how things are progressing!
                     </>
@@ -393,6 +393,15 @@ export default function Home() {
         .highlight-cards {
           background: linear-gradient(180deg, ${colors.lightGrey}, #fff);
           width: 100%;
+        }
+
+        :global(.card-link) {
+          color: ${colors.primary};
+          text-decoration: none;
+        }
+
+        :global(.card-link:hover) {
+          text-decoration: underline;
         }
 
         .realtime-cursor {

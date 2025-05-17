@@ -18,11 +18,11 @@
     "gray-matter": "^4.0.2",
     "isomorphic-fetch": "^3.0.0",
     "mobx": "^6.0.0",
-    "next": "^12.1.0",
+    "next": "^14.2.26",
     "outline-icons": "^1.31.0",
     "polished": "^3.6.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-ga": "^3.1.2",
     "react-markdown": "^8.0.4",
     "react-tabs": "^3.1.1",
@@ -33,13 +33,14 @@
   },
   "devDependencies": {
     "@types/node": "^14.0.11",
-    "@types/react": "^16.9.35",
+    "@types/react": "^18.2.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0",
-    "eslint-config-next": "^11.0.1",
+    "eslint-config-next": "^14.2.26",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
     "prettier": "^2.0.5",
     "typescript": "^4.3.2"
-  }
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
 }
