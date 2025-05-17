@@ -44,7 +44,6 @@ export default function Privacy() {
         Your privacy is critically important to us. At Outline we have a few
         fundamental principles:
       </p>
-
       <ul>
         <li>
           We don’t ask you for personal information unless we truly need it.
@@ -58,22 +57,19 @@ export default function Privacy() {
           the on-going operation of the service.
         </li>
       </ul>
-
       <p>
         If you have questions about deleting or correcting your personal data
         please{" "}
-        <Link href="/contact" className="privacy-link">
+        <Link href="/contact" className="privacy-link" legacyBehavior>
           contact support
         </Link>
         .
       </p>
-
       <p>
         General Outline, Inc. operates the website getoutline.com – henceforth
         referred to as "Outline". It is Outline’s policy to respect your privacy
         regarding any information we may collect while operating our websites.
       </p>
-
       <h2 id="visitors">Website Visitors</h2>
       <p>
         Like most website operators, Outline collects non-personally-identifying
@@ -87,7 +83,6 @@ export default function Privacy() {
         website. Outline also collects potentially personally-identifying
         information like Internet Protocol (IP) addresses for logged in users.
       </p>
-
       <h2 id="pii">Gathering of Personally-Identifying Information</h2>
       <p>
         Certain visitors to Outline’s websites choose to interact with Outline
@@ -105,7 +100,6 @@ export default function Privacy() {
         personally-identifying information, with the caveat that it may prevent
         them from engaging in certain website-related activities.
       </p>
-
       <h2 id="statistics">Aggregated Statistics</h2>
       <p>
         Outline may collect statistics about the behavior of visitors to its
@@ -115,7 +109,6 @@ export default function Privacy() {
         disclose personally-identifying information other than as described
         below.
       </p>
-
       <h2 id="pii2">
         Protection of Certain Personally-Identifying Information
       </h2>
@@ -151,7 +144,6 @@ export default function Privacy() {
         unauthorized access, use, alteration or destruction of potentially
         personally-identifying and personally-identifying information.
       </p>
-
       <h2 id="cookies">Cookies</h2>
       <p>
         A cookie is a string of information that a website stores on a visitor’s
@@ -164,7 +156,6 @@ export default function Privacy() {
         of Outline’s websites may not function properly without the aid of
         cookies.
       </p>
-
       <h2 id="transfers">Business Transfers</h2>
       <p>
         If Outline, or substantially all of its assets, were acquired, or in the
@@ -174,7 +165,6 @@ export default function Privacy() {
         occur, and that any acquirer of Outline may continue to use your
         personal information as set forth in this policy.
       </p>
-
       <h2 id="changes">Privacy Policy Changes</h2>
       <p>
         Although most changes are likely to be minor, Outline may change its
@@ -184,7 +174,6 @@ export default function Privacy() {
         change in this Privacy Policy will constitute your acceptance of such
         change.
       </p>
-
       <p>
         CC BY-SA 2.5. Originally forked from{" "}
         <a href="http://www.automattic.com/privacy">Automattic</a> Privacy

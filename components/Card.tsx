@@ -18,7 +18,7 @@ export default function Card({ title, description, href }: Props) {
   return (
     <>
       {href ? (
-        <Link href={href} className="card">
+        <Link href={href} className="card" legacyBehavior>
           {content}
         </Link>
       ) : (

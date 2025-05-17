@@ -60,7 +60,7 @@ export default function Changelog({ posts }) {
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
           <a id={post.slug} />
           <h2>
-            <Link href={`/changelog/${post.slug}`} className="heading">
+            <Link href={`/changelog/${post.slug}`} className="heading" legacyBehavior>
               {post.title}
             </Link>
           </h2>

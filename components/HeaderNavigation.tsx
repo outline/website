@@ -161,34 +161,37 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/download" className="menu-item">
+              <Link href="/download" className="menu-item" legacyBehavior>
                 Download
               </Link>
             </li>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" className="menu-item">
+              <Link
+                href="https://docs.getoutline.com/s/guide"
+                className="menu-item"
+                legacyBehavior>
                 Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" className="menu-item">
+              <Link href="/integrations" className="menu-item" legacyBehavior>
                 Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" className="menu-item">
+              <Link href="/developers" className="menu-item" legacyBehavior>
                 Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" className="menu-item">
+              <Link href="/changelog" className="menu-item" legacyBehavior>
                 Changelog
               </Link>
             </li>
           </ul>
         </li>
         <li className="hidden-on-mobile">
-          <Link href="/pricing" className="menu-item-top">
+          <Link href="/pricing" className="menu-item-top" legacyBehavior>
             Pricing
           </Link>
         </li>
@@ -207,7 +210,7 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/contact" className="menu-item">
+              <Link href="/contact" className="menu-item" legacyBehavior>
                 Contact Us
               </Link>
             </li>
@@ -306,34 +309,37 @@ export default function HeaderNavigation() {
 
             <h3>Product</h3>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" className="menu-item">
+              <Link
+                href="https://docs.getoutline.com/s/guide"
+                className="menu-item"
+                legacyBehavior>
                 Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" className="menu-item">
+              <Link href="/integrations" className="menu-item" legacyBehavior>
                 Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" className="menu-item">
+              <Link href="/developers" className="menu-item" legacyBehavior>
                 Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" className="menu-item">
+              <Link href="/changelog" className="menu-item" legacyBehavior>
                 Changelog
               </Link>
             </li>
             <li>
-              <Link href="/pricing" className="menu-item">
+              <Link href="/pricing" className="menu-item" legacyBehavior>
                 Pricing
               </Link>
             </li>
 
             <h3>Community</h3>
             <li>
-              <Link href="/contact" className="menu-item">
+              <Link href="/contact" className="menu-item" legacyBehavior>
                 Contact Us
               </Link>
             </li>

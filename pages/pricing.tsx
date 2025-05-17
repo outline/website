@@ -551,7 +551,7 @@ export default function Pricing() {
             <p>
               We're happy to support cloud-hosted teams larger than 200 users.
               Please{" "}
-              <Link href="/contact" className="pricing-link">
+              <Link href="/contact" className="pricing-link" legacyBehavior>
                 contact us
               </Link>{" "}
               to discuss pricing.
@@ -568,7 +568,7 @@ export default function Pricing() {
               Yep, absolutely – a 30% discount is available for non-profit and
               education. We're also happy to sponsor accounts for non-profits
               working directly on solving climate change. Please{" "}
-              <Link href="/contact" className="pricing-link">
+              <Link href="/contact" className="pricing-link" legacyBehavior>
                 contact us
               </Link>{" "}
               for more details.
@@ -591,7 +591,7 @@ export default function Pricing() {
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              <Link href="/contact" className="pricing-link">
+              <Link href="/contact" className="pricing-link" legacyBehavior>
                 Reach out
               </Link>{" "}
               with your question and we will be sure to answer within a working
