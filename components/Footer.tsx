@@ -15,27 +15,27 @@ export default function Footer() {
           <h3>Product</h3>
           <ul>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide">
+              <Link href="https://docs.getoutline.com/s/guide" legacyBehavior>
                 <a>Guide</a>
               </Link>
             </li>
             <li>
-              <Link href="/changelog">
+              <Link href="/changelog" legacyBehavior>
                 <a>Changelog</a>
               </Link>
             </li>
             <li>
-              <Link href="/integrations">
+              <Link href="/integrations" legacyBehavior>
                 <a>Integrations</a>
               </Link>
             </li>
             <li>
-              <Link href="/download">
+              <Link href="/download" legacyBehavior>
                 <a>Download</a>
               </Link>
             </li>
             <li>
-              <Link href="/pricing">
+              <Link href="/pricing" legacyBehavior>
                 <a>Pricing</a>
               </Link>
             </li>
@@ -48,7 +48,7 @@ export default function Footer() {
           <h3>Community</h3>
           <ul>
             <li>
-              <Link href="/contact">
+              <Link href="/contact" legacyBehavior>
                 <a>Contact Us</a>
               </Link>
             </li>
@@ -76,22 +76,22 @@ export default function Footer() {
           <h3>Company</h3>
           <ul>
             <li>
-              <Link href="/about">
+              <Link href="/about" legacyBehavior>
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="/privacy">
+              <Link href="/privacy" legacyBehavior>
                 <a>Privacy</a>
               </Link>
             </li>
             <li>
-              <Link href="/terms">
+              <Link href="/terms" legacyBehavior>
                 <a>Terms of Use</a>
               </Link>
             </li>
             <li>
-              <Link href="https://docs.getoutline.com/s/dpa">
+              <Link href="https://docs.getoutline.com/s/dpa" legacyBehavior>
                 <a>DPA</a>
               </Link>
             </li>
@@ -106,12 +106,12 @@ export default function Footer() {
           <h3>Compare</h3>
           <ul>
             <li>
-              <Link href="/compare/confluence-alternative">
+              <Link href="/compare/confluence-alternative" legacyBehavior>
                 <a>Confluence</a>
               </Link>
             </li>
             <li>
-              <Link href="/compare/google-docs-alternative">
+              <Link href="/compare/google-docs-alternative" legacyBehavior>
                 <a>Google Docs</a>
               </Link>
             </li>

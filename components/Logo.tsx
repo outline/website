@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Logo() {
   return (
     <>
-      <Link href="/">
+      <Link href="/" legacyBehavior>
         <a className="logo">
           <img src="/images/logo.svg" alt="Outline Logo" /> outline
         </a>

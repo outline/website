@@ -5,11 +5,10 @@ export default function SidebarMenuItem({ children, href }) {
   return (
     <>
       <li className="integration">
-        <Link href={href}>
+        <Link href={href} legacyBehavior>
           <a>{children}</a>
         </Link>
       </li>
-
       <style jsx>
         {`
           li {
