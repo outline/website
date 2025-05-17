@@ -166,7 +166,11 @@ export default function HeaderNavigation() {
               </Link>
             </li>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" passHref legacyBehavior>
+              <Link
+                href="https://docs.getoutline.com/s/guide"
+                passHref
+                legacyBehavior
+              >
                 <MenuItem>Guide</MenuItem>
               </Link>
             </li>
@@ -306,7 +310,11 @@ export default function HeaderNavigation() {
 
             <h3>Product</h3>
             <li>
-              <Link href="https://docs.getoutline.com/s/guide" passHref legacyBehavior>
+              <Link
+                href="https://docs.getoutline.com/s/guide"
+                passHref
+                legacyBehavior
+              >
                 <MenuItem>Guide</MenuItem>
               </Link>
             </li>

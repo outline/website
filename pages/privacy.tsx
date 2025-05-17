@@ -50,11 +50,7 @@ export default function Privacy() {
       </ul>
       <p>
         If you have questions about deleting or correcting your personal data
-        please{" "}
-        <Link href="/contact">
-          contact support
-        </Link>
-        .
+        please <Link href="/contact">contact support</Link>.
       </p>
       <p>
         General Outline, Inc. operates the website getoutline.com – henceforth
