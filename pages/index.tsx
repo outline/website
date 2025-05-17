@@ -241,13 +241,13 @@ export default function Home() {
                   description={
                     <>
                       Simple{" "}
-                      <Link href="/integrations">
+                      <Link href="/integrations" legacyBehavior>
                         <a>integrations</a>
                       </Link>{" "}
                       into tools you use every day like Slack, Figma, Loom and
                       many more. Can’t find the integration you need? There is
                       an{" "}
-                      <Link href="/developers">
+                      <Link href="/developers" legacyBehavior>
                         <a>open API</a>
                       </Link>{" "}
                       too.
@@ -286,7 +286,7 @@ export default function Home() {
                     <>
                       Outline is updated with new features and fixes regularly,
                       checkout our{" "}
-                      <Link href="/changelog">
+                      <Link href="/changelog" legacyBehavior>
                         <a>public changelog</a>
                       </Link>{" "}
                       to see how things are progressing!
@@ -348,7 +348,6 @@ export default function Home() {
         </p>
         <GetStarted />
       </main>
-
       <style jsx>{`
         .feature {
           width: 95vw;

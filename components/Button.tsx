@@ -19,7 +19,7 @@ export default function Button({
 }: Props) {
   return (
     <>
-      <Link href={href} {...rest}>
+      <Link href={href} {...rest} legacyBehavior>
         <a className="button" role="button" onClick={onClick}>
           {children}
         </a>
