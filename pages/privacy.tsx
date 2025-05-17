@@ -60,7 +60,7 @@ export default function Privacy() {
       <p>
         If you have questions about deleting or correcting your personal data
         please{" "}
-        <Link href="/contact" className="privacy-link" legacyBehavior>
+        <Link href="/contact" className="privacy-link">
           contact support
         </Link>
         .

@@ -25,7 +25,7 @@ export default function Button({
         role="button"
         onClick={onClick}
         {...rest}
-        legacyBehavior>
+       >
         {children}
       </Link>
       <style jsx>{`

@@ -161,7 +161,7 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/download" className="menu-item" legacyBehavior>
+              <Link href="/download" className="menu-item">
                 Download
               </Link>
             </li>
@@ -169,29 +169,29 @@ export default function HeaderNavigation() {
               <Link
                 href="https://docs.getoutline.com/s/guide"
                 className="menu-item"
-                legacyBehavior>
+               >
                 Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" className="menu-item" legacyBehavior>
+              <Link href="/integrations" className="menu-item">
                 Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" className="menu-item" legacyBehavior>
+              <Link href="/developers" className="menu-item">
                 Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" className="menu-item" legacyBehavior>
+              <Link href="/changelog" className="menu-item">
                 Changelog
               </Link>
             </li>
           </ul>
         </li>
         <li className="hidden-on-mobile">
-          <Link href="/pricing" className="menu-item-top" legacyBehavior>
+          <Link href="/pricing" className="menu-item-top">
             Pricing
           </Link>
         </li>
@@ -210,7 +210,7 @@ export default function HeaderNavigation() {
           </MenuItem>
           <ul>
             <li>
-              <Link href="/contact" className="menu-item" legacyBehavior>
+              <Link href="/contact" className="menu-item">
                 Contact Us
               </Link>
             </li>
@@ -312,34 +312,34 @@ export default function HeaderNavigation() {
               <Link
                 href="https://docs.getoutline.com/s/guide"
                 className="menu-item"
-                legacyBehavior>
+               >
                 Guide
               </Link>
             </li>
             <li>
-              <Link href="/integrations" className="menu-item" legacyBehavior>
+              <Link href="/integrations" className="menu-item">
                 Integrations
               </Link>
             </li>
             <li>
-              <Link href="/developers" className="menu-item" legacyBehavior>
+              <Link href="/developers" className="menu-item">
                 Developers
               </Link>
             </li>
             <li>
-              <Link href="/changelog" className="menu-item" legacyBehavior>
+              <Link href="/changelog" className="menu-item">
                 Changelog
               </Link>
             </li>
             <li>
-              <Link href="/pricing" className="menu-item" legacyBehavior>
+              <Link href="/pricing" className="menu-item">
                 Pricing
               </Link>
             </li>
 
             <h3>Community</h3>
             <li>
-              <Link href="/contact" className="menu-item" legacyBehavior>
+              <Link href="/contact" className="menu-item">
                 Contact Us
               </Link>
             </li>

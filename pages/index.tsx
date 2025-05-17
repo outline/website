@@ -241,13 +241,13 @@ export default function Home() {
                   description={
                     <>
                       Simple{" "}
-                      <Link href="/integrations" className="card-link" legacyBehavior>
+                      <Link href="/integrations" className="card-link">
                         integrations
                       </Link>{" "}
                       into tools you use every day like Slack, Figma, Loom and
                       many more. Can't find the integration you need? There is
                       an{" "}
-                      <Link href="/developers" className="card-link" legacyBehavior>
+                      <Link href="/developers" className="card-link">
                         open API
                       </Link>{" "}
                       too.
@@ -286,7 +286,7 @@ export default function Home() {
                     <>
                       Outline is updated with new features and fixes regularly,
                       checkout our{" "}
-                      <Link href="/changelog" className="card-link" legacyBehavior>
+                      <Link href="/changelog" className="card-link">
                         public changelog
                       </Link>{" "}
                       to see how things are progressing!
