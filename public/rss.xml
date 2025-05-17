@@ -12,7 +12,7 @@
     <guid>issue-integrations</guid>
     <title>GitHub and Linear integrations</title>
     <link>https://www.getoutline.com/changelog/issue-integrations</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/github-linear.png" alt="GitHub and Linear integrations"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/github-linear.png" alt="GitHub and Linear integrations"/></p>
 <p>We have rolled out an improved <a href="https://github.com">GitHub</a> integration that allows embedding rich issue and pull request information directly
 into an Outline document. Not only that, but we&#x27;ve also added the same support for <a href="https://linear.app?ref=outline">Linear</a>, allowing seamless integration of Linear issues, GitHub PR&#x27;s, and Outline documents.</p>
 <p>These new mentions will, of course, stay automatically up-to-date. To get started connect your GitHub and Linear accounts in <strong>Settings -&gt; Integrations</strong>
@@ -24,7 +24,7 @@ and then paste an issue or pull request URL from GitHub or Linear into the edito
     <guid>collection-subscriptions</guid>
     <title>Collection subscriptions</title>
     <link>https://www.getoutline.com/changelog/collection-subscriptions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We added the ability to subscribe directly to a collection. Get notified when a document any document
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We added the ability to subscribe directly to a collection. Get notified when a document any document
 is added or updated without having to subscribe to each document individually.</p>
 <h3>Other improvements</h3>
 <ul>
@@ -43,7 +43,7 @@ is added or updated without having to subscribe to each document individually.</
     <guid>document-mentions</guid>
     <title>Document mentions</title>
     <link>https://www.getoutline.com/changelog/document-mentions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/document-mentions.png" alt="Mentions in Outline"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/document-mentions.png" alt="Mentions in Outline"/></p>
 <p>This week brings the ability to mention documents using the <code>@</code> trigger. You&#x27;ll find documents
 available alongside team members. This allows you to link to other documents within your content
 and keep the title and icon automatically updated. Keep typing to filter or create a new document inline.</p>
@@ -64,7 +64,7 @@ and keep the title and icon automatically updated. Keep typing to filter or crea
     <guid>emoji-reactions</guid>
     <title>Emoji reactions</title>
     <link>https://www.getoutline.com/changelog/emoji-reactions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/emoji-reactions.png" alt="Emoji reactions"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/emoji-reactions.png" alt="Emoji reactions"/></p>
 <p>Introducing emoji reactions for comments – a much-requested way to respond to feedback and collaborate with team members.
 Every comment can now be reacted to with an emoji, and you can see who reacted to a comment and how many reactions it has received from the comment menu.</p>
 <h3>Other improvements</h3>
@@ -82,7 +82,7 @@ Every comment can now be reacted to with an emoji, and you can see who reacted t
     <guid>comment-sorting</guid>
     <title>Comment sorting options</title>
     <link>https://www.getoutline.com/changelog/comment-sorting</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>The comment sidebar can now be sorted by the comment&#x27;s position in the document. This is particularly nice for
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>The comment sidebar can now be sorted by the comment&#x27;s position in the document. This is particularly nice for
 long documents where you want to see the comments in the order they appear rather than the order they were created.</p>
 <p>Look for the sort option in the top right of the comment sidebar.</p>
 <h3>Other improvements</h3>
@@ -99,7 +99,7 @@ long documents where you want to see the comments in the order they appear rathe
     <guid>group-document-membership</guid>
     <title>Group sharing for documents</title>
     <link>https://www.getoutline.com/changelog/group-document-membership</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/group-document-permissions.png" alt="Group permissions"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/group-document-permissions.png" alt="Group permissions"/></p>
 <p>It is now possible to add groups directly to documents, all members of the group will receive access to the document and all nested documents
 with the chosen permissions. Use this to share portions of a larger collection with a mix of stakeholders.</p>
 <p>Groups will appear as a new sharing option in the existing Share button. See the <a href="https://docs.getoutline.com/s/guide/doc/sharing-LG2sGOLIpl">guide to sharing</a> for more info.</p>
@@ -117,7 +117,7 @@ with the chosen permissions. Use this to share portions of a larger collection w
     <guid>comment-resolution</guid>
     <title>Comment resolving</title>
     <link>https://www.getoutline.com/changelog/comment-resolution</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comment-resolving.png" alt="Comment resolving"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/comment-resolving.png" alt="Comment resolving"/></p>
 <p>It&#x27;s now possible to resolve comment threads on documents from the comment menu. You can always view and restore a document&#x27;s
 resolved comments by clicking the checkmark icon at the top right of the sidebar. This provides a way to keep discussions focused
 and organized.</p></div> ]]></description>
@@ -128,7 +128,7 @@ and organized.</p></div> ]]></description>
     <guid>icon-and-emojis</guid>
     <title>Icon and emojis</title>
     <link>https://www.getoutline.com/changelog/icon-and-emojis</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/icon-and-emojis.png" alt="Comment resolving"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/icon-and-emojis.png" alt="Comment resolving"/></p>
 <p>You can now select emoji and icons for both document and collection in one unified UI – this finally
 enables using emoji for collections and icons on documents. We also added even more new icons to choose
 from in this release.</p></div> ]]></description>
@@ -139,7 +139,7 @@ from in this release.</p></div> ]]></description>
     <guid>highlighters</guid>
     <title>Highlighter colors</title>
     <link>https://www.getoutline.com/changelog/highlighters</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This release adds the ability to highlight text in the editor in a variety of colors. This is a great way to draw attention to important parts of your document, or to categorize different sections. Use the upgraded highlighter tool in the selection toolbar to get started.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This release adds the ability to highlight text in the editor in a variety of colors. This is a great way to draw attention to important parts of your document, or to categorize different sections. Use the upgraded highlighter tool in the selection toolbar to get started.</p>
 <p><img src="https://www.getoutline.com/images/highlighters.png" alt="Highlighters"/></p></div> ]]></description>
     <pubDate>Tue, 11 Jun 2024 00:00:00 GMT</pubDate>
   </item>
@@ -148,7 +148,7 @@ from in this release.</p></div> ]]></description>
     <guid>table-improvements</guid>
     <title>Table improvements</title>
     <link>https://www.getoutline.com/changelog/table-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Guest role"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Guest role"/></p>
 <p>This week we&#x27;ve made some highly requested improvements to tables in Outline, this will be one of
 many improvements to the editor in the coming weeks and months. Here&#x27;s what&#x27;s new:</p>
 <ul>
@@ -166,7 +166,7 @@ many improvements to the editor in the coming weeks and months. Here&#x27;s what
     <guid>guest-role</guid>
     <title>Guest user role</title>
     <link>https://www.getoutline.com/changelog/guest-role</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/guest-role.png" alt="Guest role"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/guest-role.png" alt="Guest role"/></p>
 <p>We&#x27;ve added a new <strong>Guest</strong> role to help you collaborate with external users on your documents.
 The Guest role allows you to share your documents with external users without giving them full
 access to your workspace.</p>
@@ -179,7 +179,7 @@ you explicitly share with them – no default access applies.</p></div> ]]></des
     <guid>collection-icons</guid>
     <title>80+ New collection icons</title>
     <link>https://www.getoutline.com/changelog/collection-icons</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/new-collection-icons.png" alt="New collection icons"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/new-collection-icons.png" alt="New collection icons"/></p>
 <p>We&#x27;ve added over 80 new collection icons to help you better organize your documents. You can now
 choose from a wide range of new icons to represent your collections from DNA, to a tent – there&#x27;s
 a wider variety to choose from.</p>
@@ -192,7 +192,7 @@ current icon.</p></div> ]]></description>
     <guid>github-integration</guid>
     <title>GitHub integration</title>
     <link>https://www.getoutline.com/changelog/github-integration</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/github-integration.png" alt="GitHub integration"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/github-integration.png" alt="GitHub integration"/></p>
 <p>The new GitHub integration allows you to connect your GitHub repositories to your Outline workspace.
 Once connected, links to GitHub issues and pull requests will show detailed information on hover,
 in a future update we will also allow expanding these links to show more context inline.</p>
@@ -204,7 +204,7 @@ in a future update we will also allow expanding these links to show more context
     <guid>document-permissions</guid>
     <title>Document sharing and permissions</title>
     <link>https://www.getoutline.com/changelog/document-permissions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/document-permissions.png" alt="Document permissions"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/document-permissions.png" alt="Document permissions"/></p>
 <p>This week brings user management to the document level. Previously all permissions were managed on
 Collections, but now you are able to share individual documents with specific people to view or edit.
 This is great for sharing private notes or drafts with a small group of people.</p>
@@ -218,7 +218,7 @@ document and what level of access they have.</p>
     <guid>ai-answers</guid>
     <title>AI answers</title>
     <link>https://www.getoutline.com/changelog/ai-answers</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/ai-answers.png" alt="AI answers"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/ai-answers.png" alt="AI answers"/></p>
 <p>One of the biggest problems with a team knowledge base is that it can be difficult to find the information
 you need amongst hundreds or thousands of documents. Even with great search it can be hard to know the exact phrasing to use to find the right document.</p>
 <p>Now we&#x27;ve built a new feature that allows you to get direct answers to questions from your knowledge base simply by asking them in the search or command menu! Answers are dynamically generated based on the documents you have permission to access.</p>
@@ -230,7 +230,7 @@ you need amongst hundreds or thousands of documents. Even with great search it c
     <guid>exporting-improvements</guid>
     <title>Improved PDF exports</title>
     <link>https://www.getoutline.com/changelog/exporting-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve made some great improvements to the way that document exports are constructed this week.
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve made some great improvements to the way that document exports are constructed this week.
 These changes allow Mermaid diagrams and rich embeds to be rendered correctly in HTML and PDF exports
 going forward, other formatting was also improved to make these look even nicer.</p>
 <h3>Other fixes and improvements</h3>
@@ -249,7 +249,7 @@ going forward, other formatting was also improved to make these look even nicer.
     <guid>code-commenting</guid>
     <title>Commenting in code</title>
     <link>https://www.getoutline.com/changelog/code-commenting</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comment-in-code.png" alt="Commenting in code blocks"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/comment-in-code.png" alt="Commenting in code blocks"/></p>
 <p>Outline now supports commenting on text inside of code blocks, this is particularly useful – as we all know that naming things
 is the hardest part of coding and now you can discuss the best name for that variable right inside of the code block.</p></div> ]]></description>
     <pubDate>Fri, 06 Oct 2023 12:00:00 GMT</pubDate>
@@ -259,7 +259,7 @@ is the hardest part of coding and now you can discuss the best name for that var
     <guid>embedded-videos</guid>
     <title>Embedded videos</title>
     <link>https://www.getoutline.com/changelog/embedded-videos</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>You can now upload videos and embed a player directly into any Outline document. Just like images,
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>You can now upload videos and embed a player directly into any Outline document. Just like images,
 we also added the ability to resize the video to fit and write a custom caption.</p>
 <p>To embed a video simply drag and drop into the document, or find the &quot;Video&quot; option in <a href="https://docs.getoutline.com/s/guide/doc/blocks-iwAQVA8kAf">the block menu</a>.
 For more information checkout <a href="https://docs.getoutline.com/s/guide/doc/blocks-iwAQVA8kAf">our guide</a> to inserting blocks on Outline.</p>
@@ -271,7 +271,7 @@ For more information checkout <a href="https://docs.getoutline.com/s/guide/doc/b
     <guid>find-and-replace</guid>
     <title>Find and replace</title>
     <link>https://www.getoutline.com/changelog/find-and-replace</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/find-and-replace.png" alt="Outline find and replace"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/find-and-replace.png" alt="Outline find and replace"/></p>
 <p>It&#x27;s now possible to find and replace text in the document editor in both the
 web and desktop apps. You can access the find and replace dialog by using
 <code>Cmd</code> + <code>f</code>, or <code>Ctrl</code> + <code>f</code> on Windows.</p>
@@ -284,7 +284,7 @@ sensitivity as well.</p></div> ]]></description>
     <guid>link-previews</guid>
     <title>Link hover previews</title>
     <link>https://www.getoutline.com/changelog/link-previews</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/link-previews.png" alt="Outline link previews"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/link-previews.png" alt="Outline link previews"/></p>
 <p>This week brings the addition of hover previews, you can now see the details
 of internal documents, mentioned users, <em>and</em> external links when hovering over
 them in the editor. We have built the system to be extensible so that previews of
@@ -298,7 +298,7 @@ future too.</p>
     <guid>upgraded-code-and-mermaid</guid>
     <title>Improved code blocks and Mermaid diagrams</title>
     <link>https://www.getoutline.com/changelog/upgraded-code-and-mermaid</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/code-blocks.png" alt="Code block"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/code-blocks.png" alt="Code block"/></p>
 <p>Code blocks have received a visual refresh and are now
 easier to use. Code highlighting was updated to look much better in dark mode
 and tons of extra languages were added in the last month.</p>
@@ -311,7 +311,7 @@ the same visual improvements as code blocks.</p></div> ]]></description>
     <guid>in-app-notifications</guid>
     <title>In app notifications</title>
     <link>https://www.getoutline.com/changelog/in-app-notifications</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Building on last months release of comments, this month brings in-app notifications
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Building on last months release of comments, this month brings in-app notifications
 support so you can quickly catch up on what&#x27;s happening in your workspace and
 jump straight to the relevant document.</p>
 <h3>Collection admins</h3>
@@ -328,7 +328,7 @@ removing other workspace members.</p>
     <guid>commenting</guid>
     <title>Commenting</title>
     <link>https://www.getoutline.com/changelog/commenting</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/comments.png" alt="Outline comments"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/comments.png" alt="Outline comments"/></p>
 <p>It&#x27;s been a long time coming – commenting is finally available in Outline, opening up a whole new world of use cases and collaboration!
 While we iron out the kinks it&#x27;s disabled by default, but you can enable the feature for your team in <strong>Settings -&gt; Features -&gt; Commenting</strong>.</p>
 <p>Once enabled you&#x27;ll see a new comments sidebar become available. You can add comments to any document or to a specific
@@ -341,7 +341,7 @@ text selection, we also support threaded replies, notifications, <strong>@mentio
     <guid>windows-app</guid>
     <title>Windows Desktop App</title>
     <link>https://www.getoutline.com/changelog/windows-app</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/windows-app.png" alt="Outline for Windows"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/windows-app.png" alt="Outline for Windows"/></p>
 <p>The new desktop app is a Windows application that allows you to access your <a href="https://www.getoutline.com/">Outline</a> cloud workspaces from your desktop launcher. It is a great way to quickly access documents in multiple windows without having to clutter up your browser tabs.</p>
 <p>Mac user? We already have an app for you – check out the <a href="/changelog/macos-desktop-app">macOS app</a>.</p>
 <p><a href="https://desktop.getoutline.com/windows">Download Now</a></p></div> ]]></description>
@@ -352,7 +352,7 @@ text selection, we also support threaded replies, notifications, <strong>@mentio
     <guid>theming</guid>
     <title>Custom Theming</title>
     <link>https://www.getoutline.com/changelog/theming</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/theming.png" alt="Custom theming"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/theming.png" alt="Custom theming"/></p>
 <p>This week brings support for the beginnings of custom theming. You can now
 change the accent color for your team to match your own brand which will be
 reflected throughout the UI.</p>
@@ -371,7 +371,7 @@ be shown.</li>
     <guid>json-export</guid>
     <title>JSON Import / Export</title>
     <link>https://www.getoutline.com/changelog/json-export</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/json-export.png" alt="Outline export options"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/json-export.png" alt="Outline export options"/></p>
 <p>Outline now supports importing and exporting documents in JSON format. This is useful for migrating data between Outline instances, or for backing up your data in a format
 that retains more information than a lossy Markdown export.</p>
 <p>We also recently added HTML export, which can be used for archiving your data in a format that can be viewed directly in a browser.</p>
@@ -392,7 +392,7 @@ the portion of the table that has changed is now included in the email</li>
     <guid>publish-improvements</guid>
     <title>A new publishing flow</title>
     <link>https://www.getoutline.com/changelog/publish-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/publish-document.png" alt="Publish a document"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/publish-document.png" alt="Publish a document"/></p>
 <p>We&#x27;ve made some improvements to the publishing flow in Outline – you can now create
 a document without worrying about where to store it first.</p>
 <p>Before this update, you had to choose the location for a document before creating it, which could be frustrating for those who wanted to create a note quickly and worry about organizing it later. With the new publishing flow, you can create a document first and then choose where it will live in your knowledge base.</p>
@@ -412,7 +412,7 @@ a document without worrying about where to store it first.</p>
     <guid>google-analytics</guid>
     <title>Google Analytics Integration</title>
     <link>https://www.getoutline.com/changelog/google-analytics</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>All workspaces now have access to a new <a href="https://developers.google.com/analytics/devguides/collection/ga4">Google Analytics 4</a> integration, by adding
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>All workspaces now have access to a new <a href="https://developers.google.com/analytics/devguides/collection/ga4">Google Analytics 4</a> integration, by adding
 your own Measurement ID
 it will be embedded in all public and team documents in your workspace allowing
 your team to measure views and activity across the knowledge base.</p>
@@ -426,7 +426,7 @@ in Outline at <em>Integrations</em> -&gt; <em>Google Analytics</em>.</p></div> ]
     <guid>edge-to-edge-images</guid>
     <title>New Images Layout</title>
     <link>https://www.getoutline.com/changelog/edge-to-edge-images</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/image-layout.png" alt="Outline full bleed image"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/image-layout.png" alt="Outline full bleed image"/></p>
 <p>This week brings an additional layout option for images on Outline. You can now
 choose the &quot;full-width&quot; option to extend images to the edges of the page past
 the text content.</p>
@@ -442,7 +442,7 @@ option in the toolbar that appears.</p></div> ]]></description>
     <guid>pdf-html-export</guid>
     <title>PDF &amp; HTML export</title>
     <link>https://www.getoutline.com/changelog/pdf-html-export</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/pdf-download.png" alt="PDF export in Outline"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/pdf-download.png" alt="PDF export in Outline"/></p>
 <p>We are pleased to announce a new feature that allows you to export your documents in PDF and HTML format. This is a useful and much requested addition for anyone who needs to share their work with others but not publish documents on the public internet. PDFs are widely accepted and easily readable on any device.</p>
 <p>You can access the functionality from any document menu, then select <em>Download</em> -&gt; <em>PDF</em>, the file generation process will take a few seconds depending on the size of the doc and the number of embedded images.</p></div> ]]></description>
     <pubDate>Sat, 07 Jan 2023 12:00:00 GMT</pubDate>
@@ -452,7 +452,7 @@ option in the toolbar that appears.</p></div> ]]></description>
     <guid>macos-desktop-app</guid>
     <title>macOS Desktop App</title>
     <link>https://www.getoutline.com/changelog/macos-desktop-app</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/macos-desktop.png" alt="macOS Desktop App"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/macos-desktop.png" alt="macOS Desktop App"/></p>
 <p>The new desktop app is a macOS application that allows you to access your <a href="https://www.getoutline.com/">Outline</a> cloud workspaces from your Mac&#x27;s dock. It is a great way to quickly access documents in multiple windows without having to clutter up your browser tabs. Oh, and a Windows app is coming soon!</p>
 <p><a href="https://desktop.getoutline.com/mac">Download Now</a></p></div> ]]></description>
     <pubDate>Tue, 06 Dec 2022 12:00:00 GMT</pubDate>
@@ -462,7 +462,7 @@ option in the toolbar that appears.</p></div> ]]></description>
     <guid>search-improvements</guid>
     <title>Search improvements</title>
     <link>https://www.getoutline.com/changelog/search-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This week brings a number of improvements to search results in the app and
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This week brings a number of improvements to search results in the app and
 Slack integration.</p>
 <p>You can now use <code>&quot;phrase search&quot;</code> to find documents that contain an exact phrase,
 <code>-negative</code> keywords to exclude results, and partial matching with the <code>*wildcard</code>
@@ -474,7 +474,7 @@ operators.</p></div> ]]></description>
     <guid>image-resizing</guid>
     <title>Resizable images</title>
     <link>https://www.getoutline.com/changelog/image-resizing</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/resizing-images.gif" alt="Resizing images in Outline"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/resizing-images.gif" alt="Resizing images in Outline"/></p>
 <p>It is now possible to resize images in Outline. This is a feature that has been
 requested for a long time and we&#x27;re excited to finally ship another foundational
 feature.</p>
@@ -487,7 +487,7 @@ grid to help in alignment.</p></div> ]]></description>
     <guid>code-line-numbers</guid>
     <title>Code block line numbers</title>
     <link>https://www.getoutline.com/changelog/code-line-numbers</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/code-line-numbers.png" alt="Code block line numbers"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/code-line-numbers.png" alt="Code block line numbers"/></p>
 <p>Code blocks in documents are now displayed with dynamic line numbers by default, if you prefer they can be disabled through a new setting found in user preferences.</p></div> ]]></description>
     <pubDate>Mon, 24 Oct 2022 12:00:00 GMT</pubDate>
   </item>
@@ -496,7 +496,7 @@ grid to help in alignment.</p></div> ]]></description>
     <guid>multiple-workspaces</guid>
     <title>Multiple workspaces</title>
     <link>https://www.getoutline.com/changelog/multiple-workspaces</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;re excited to announce that you can now create multiple workspaces to support different departments, or organizations with the same SSO login methods.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;re excited to announce that you can now create multiple workspaces to support different departments, or organizations with the same SSO login methods.</p>
 <p>Workspaces are currently billed and managed separately and are available in the workspace switcher in the top left of the app or through the command menu.</p>
 <p><img src="https://www.getoutline.com/images/new-workspace.png" alt="New Outline workspace"/></p></div> ]]></description>
     <pubDate>Sun, 16 Oct 2022 12:00:00 GMT</pubDate>
@@ -506,7 +506,7 @@ grid to help in alignment.</p></div> ]]></description>
     <guid>diff-view</guid>
     <title>Visualizing document history</title>
     <link>https://www.getoutline.com/changelog/diff-view</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>From today we&#x27;re now able to display a rich &quot;diff&quot; of what has changed in a document
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>From today we&#x27;re now able to display a rich &quot;diff&quot; of what has changed in a document
 since it was last edited. You&#x27;ll see this view in email notifications <em>and</em> when navigating
 through the document history sidebar…</p>
 <p><strong>Tip:</strong> You can quickly open the history sidebar by clicking on the last edited timestamp.</p>
@@ -518,7 +518,7 @@ through the document history sidebar…</p>
     <guid>upgradable-viewers</guid>
     <title>Upgradable viewers</title>
     <link>https://www.getoutline.com/changelog/upgradable-viewers</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Since the launch of <a href="/changelog/viewer-permissions">viewer permissions</a> we&#x27;ve heard requests for a need for increased flexibility.
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Since the launch of <a href="/changelog/viewer-permissions">viewer permissions</a> we&#x27;ve heard requests for a need for increased flexibility.
 As of today it&#x27;s now possible to upgrade the permissions of workspace viewers in individual collections.</p>
 <p>Simply add the viewer member to a collection and change their permission to &quot;View and edit&quot; the same as you might a regular member.</p></div> ]]></description>
     <pubDate>Sun, 04 Sep 2022 12:00:00 GMT</pubDate>
@@ -528,7 +528,7 @@ As of today it&#x27;s now possible to upgrade the permissions of workspace viewe
     <guid>document-subscriptions</guid>
     <title>Document subscriptions</title>
     <link>https://www.getoutline.com/changelog/document-subscriptions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Sometimes you want to keep an eye on a document without having to open it, or you want to be notified when a document is updated. You can now subscribe to documents to receive notifications when they are updated by other team members. To subscribe to any document, click the &quot;Subscribe&quot; button in any document menu or access through the command menu with <code>cmd</code>+<code>k</code> on macOS. (<code>ctrl</code>+<code>k</code> on Windows/Linux).</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Sometimes you want to keep an eye on a document without having to open it, or you want to be notified when a document is updated. You can now subscribe to documents to receive notifications when they are updated by other team members. To subscribe to any document, click the &quot;Subscribe&quot; button in any document menu or access through the command menu with <code>cmd</code>+<code>k</code> on macOS. (<code>ctrl</code>+<code>k</code> on Windows/Linux).</p>
 <p><img src="https://www.getoutline.com/images/document-subscriptions.png" alt="Document subscriptions"/></p>
 <p>You will automatically be subscribed to a document when you create or edit it, but you can unsubscribe at any time.</p></div> ]]></description>
     <pubDate>Sun, 04 Sep 2022 12:00:00 GMT</pubDate>
@@ -538,7 +538,7 @@ As of today it&#x27;s now possible to upgrade the permissions of workspace viewe
     <guid>personal-gmail-signin</guid>
     <title>Sign-in with Gmail</title>
     <link>https://www.getoutline.com/changelog/personal-gmail-signin</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve been working hard behind the scenes to make authentication more flexible for teams following on from <a href="/changelog/team-domains">team domain restrictions</a>.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve been working hard behind the scenes to make authentication more flexible for teams following on from <a href="/changelog/team-domains">team domain restrictions</a>.</p>
 <p>It is now possible to sign-in to your Outline account with a personal Gmail account if you have already been invited to the matching email address.</p></div> ]]></description>
     <pubDate>Mon, 18 Jul 2022 12:00:00 GMT</pubDate>
   </item>
@@ -547,7 +547,7 @@ As of today it&#x27;s now possible to upgrade the permissions of workspace viewe
     <guid>mermaid-diagrams</guid>
     <title>Mermaid diagrams</title>
     <link>https://www.getoutline.com/changelog/mermaid-diagrams</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;re excited to have full support for <a href="https://mermaid-js.github.io/">Mermaid</a> diagrams in Outline. Mermaid is a simple markdown-like syntax for generating diagrams and flowcharts from text. It&#x27;s a great way to add diagrams of all types directly in your documentation.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;re excited to have full support for <a href="https://mermaid-js.github.io/">Mermaid</a> diagrams in Outline. Mermaid is a simple markdown-like syntax for generating diagrams and flowcharts from text. It&#x27;s a great way to add diagrams of all types directly in your documentation.</p>
 <p>You can insert a Mermaid diagram directly into a document by using the /mermaid slash command or by setting the code block language to &quot;Mermaid Diagram&quot;.</p>
 <p>Here&#x27;s an example of a flowchart:</p>
 <p><img src="https://www.getoutline.com/images/mermaid-diagram-source.png" alt="Mermaid diagram"/></p>
@@ -561,7 +561,7 @@ As of today it&#x27;s now possible to upgrade the permissions of workspace viewe
     <guid>may-fixes</guid>
     <title>May fixes and improvements</title>
     <link>https://www.getoutline.com/changelog/may-fixes</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Another catchup of improvements and fixes from May that haven&#x27;t been covered in
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Another catchup of improvements and fixes from May that haven&#x27;t been covered in
 larger updates, we&#x27;re always working on making the app faster and more reliable…</p>
 <ul>
 <li>Lots of backend performance improvements to improve loading speeds, particularly for large collections</li>
@@ -582,7 +582,7 @@ larger updates, we&#x27;re always working on making the app faster and more reli
     <guid>team-domains</guid>
     <title>Team domain restrictions</title>
     <link>https://www.getoutline.com/changelog/team-domains</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/team-domains.png" alt="team domain restrictions"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/team-domains.png" alt="team domain restrictions"/></p>
 <p>This week brings two new security settings. It&#x27;s now possible to restrict all sign-ups
 to your team to a specific domain name through &quot;Allowed domains&quot;. This setting applies in <em>addition</em> to
 SSO and will disallow users from creating accounts that do not have a confirmed
@@ -597,7 +597,7 @@ under <strong>Settings</strong> -&gt; <strong>Security</strong>.</p></div> ]]></
     <guid>april-fixes</guid>
     <title>April fixes and improvements</title>
     <link>https://www.getoutline.com/changelog/april-fixes</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Here we go – a big grab-bag of other improvements and fixes from April that we wanted to make sure
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Here we go – a big grab-bag of other improvements and fixes from April that we wanted to make sure
 the community is aware of…</p>
 <ul>
 <li>Dropping files into a document now works more reliably</li>
@@ -617,7 +617,7 @@ the community is aware of…</p>
     <guid>turkish-translations</guid>
     <title>Turkish translations</title>
     <link>https://www.getoutline.com/changelog/turkish-translations</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Thanks to a community member <a href="https://crowdin.com/profile/EmirDEV">Emir</a> this week
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Thanks to a community member <a href="https://crowdin.com/profile/EmirDEV">Emir</a> this week
 brings application-wide Turkish translations 🇹🇷. If your system is set to this language
 we&#x27;ll automatically suggest switching Outline&#x27;s language to match, or you can go
 to Settings -&gt; Profile -&gt; Language to update.</p></div> ]]></description>
@@ -628,7 +628,7 @@ to Settings -&gt; Profile -&gt; Language to update.</p></div> ]]></description>
     <guid>tldraw-embed</guid>
     <title>Tldraw embed</title>
     <link>https://www.getoutline.com/changelog/tldraw-embed</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/tldraw-embed.png" alt="tldraw embed"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/tldraw-embed.png" alt="tldraw embed"/></p>
 <p>Thanks to an open source contributor <a href="https://github.com/Limezy">Limezy</a>, we now
 have support for interactive tldraw embeds. These look really fantastic inside
 Outline and allow multiple people to draw together inside a document.</p>
@@ -643,7 +643,7 @@ the url into an Outline doc.</p>
     <guid>april-new-embeds</guid>
     <title>JSFiddle, Gliffy, and Otter.ai embeds</title>
     <link>https://www.getoutline.com/changelog/april-new-embeds</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/new-embeds.png" alt="JSFiddle embed"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/new-embeds.png" alt="JSFiddle embed"/></p>
 <p>This week brings three new integrations – just paste a share link in any
 document to get a rich, interactive, embed.</p>
 <ul>
@@ -658,7 +658,7 @@ document to get a rich, interactive, embed.</p>
     <guid>shared-document-search</guid>
     <title>Shared documents now include search</title>
     <link>https://www.getoutline.com/changelog/shared-document-search</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/shared-document-search.png" alt="Search input"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/shared-document-search.png" alt="Search input"/></p>
 <p>If you publicly share a document with nested document sharing enabled we&#x27;ll now display a
 search input at the top of the sidebar to allow searching the contents of
 all of the nested documents.</p>
@@ -671,7 +671,7 @@ of docs.</p></div> ]]></description>
     <guid>date-time-commands</guid>
     <title>New date slash commands</title>
     <link>https://www.getoutline.com/changelog/date-time-commands</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/date-time-commands.gif" alt="Outline date time commands"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/date-time-commands.gif" alt="Outline date time commands"/></p>
 <p>We added some new slash commands to insert the current date, time, or both into a document
 you&#x27;re editing – and importantly these commands also work in document titles and
 are locale-aware! These are the new handy shortcuts:</p>
@@ -687,7 +687,7 @@ are locale-aware! These are the new handy shortcuts:</p>
     <guid>star-collections</guid>
     <title>Collections can now be starred</title>
     <link>https://www.getoutline.com/changelog/star-collections</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/star-collections.png" alt="Outline sidebar with starred collections"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/star-collections.png" alt="Outline sidebar with starred collections"/></p>
 <p>Just like documents, collections can now be starred – once starred you can also
 re-order all of your stars with drag and drop to create your own custom sidebar.
 Star the things that are important to <em>you</em> and have them available for one-click
@@ -701,7 +701,7 @@ in the browser favicon and in the sidebar when starred?</p></div> ]]></descripti
     <guid>disable-collection-create</guid>
     <title>New option to disable collection creation</title>
     <link>https://www.getoutline.com/changelog/disable-collection-create</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/disable-collection-creation.png" alt="Disable collection setting"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/disable-collection-creation.png" alt="Disable collection setting"/></p>
 <p>Admin&#x27;s now have a new option to disable creation of new collection by members,
 for more curated knowledge bases or larger teams this can help prevent documentation
 sprawling unchecked.</p></div> ]]></description>
@@ -712,7 +712,7 @@ sprawling unchecked.</p></div> ]]></description>
     <guid>command-bar-settings</guid>
     <title>Settings in command bar</title>
     <link>https://www.getoutline.com/changelog/command-bar-settings</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/command-bar-settings.png" alt="Outline command bar settings"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/command-bar-settings.png" alt="Outline command bar settings"/></p>
 <p>It&#x27;s now possible to access all the settings screen directly from the command bar.
 You can access the command bar anywhere in the app using <code>Cmd</code> + <code>k</code>, or
 <code>Cmd</code> + <code>Shift</code> + <code>k</code> if you&#x27;re in the document editor.</p>
@@ -725,7 +725,7 @@ functionality without taking your hands off the keyboard!</p></div> ]]></descrip
     <guid>file-attachments</guid>
     <title>File attachments</title>
     <link>https://www.getoutline.com/changelog/file-attachments</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/file-attachments.png" alt="Outline file attachments"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/file-attachments.png" alt="Outline file attachments"/></p>
 <p>We&#x27;re excited to finally add one of our most requested features – file attachments
 in documents. You can now upload arbitrary files and embed them directly into
 a doc for your teammates to download, file attachments work on publicly
@@ -737,7 +737,7 @@ shared links too.</p></div> ]]></description>
     <guid>fit-and-finish</guid>
     <title>Fit and finish</title>
     <link>https://www.getoutline.com/changelog/fit-and-finish</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/fit-and-finish.png" alt="Mosaic"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/fit-and-finish.png" alt="Mosaic"/></p>
 <p>This months shipped improvements are lots of small details, alignments, bug fixes, and editor improvements. In the background we have been busy building long-awaited file attachments and search for publicly shared documents, both of which will be shipped in the next month.</p>
 <h3>Fixes &amp; Improvements</h3>
 <h4>Editor</h4>
@@ -774,7 +774,7 @@ shared links too.</p></div> ]]></description>
     <guid>pin-to-home</guid>
     <title>Pin to Home</title>
     <link>https://www.getoutline.com/changelog/pin-to-home</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/pin-to-home.png" alt="Pin to home"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/pin-to-home.png" alt="Pin to home"/></p>
 <p>This month pinned documents got some love – a visual refresh to help them stand out, the ability to reorder, and also you can now pin documents to the home screen for everyone in the team to see. This year we&#x27;ll be focusing more on improving the options to customize and theme Outline and so this is a first step in that direction.</p>
 <h3>Fixes &amp; Improvements</h3>
 <ul>
@@ -795,7 +795,7 @@ shared links too.</p></div> ]]></description>
     <guid>command-bar</guid>
     <title>Command Bar</title>
     <link>https://www.getoutline.com/changelog/command-bar</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/command-bar.png" alt="Outline command bar"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/command-bar.png" alt="Outline command bar"/></p>
 <p>This release also includes new <code>cmd</code>+<code>k</code> functionality which you might recognize from other productivity apps. Type <code>cmd</code>+<code>k</code> anywhere in the app to quickly move around your knowledge base!</p>
 <p>We&#x27;ll be building all of the possible actions into this menu over the next few months, but try searching for docs, collections, or changing the theme to see how fun and easy it is to use!</p>
 <h3>Fixes &amp; Improvements</h3>
@@ -816,7 +816,7 @@ shared links too.</p></div> ]]></description>
     <guid>emoji-picker</guid>
     <title>A new integrated emoji picker</title>
     <link>https://www.getoutline.com/changelog/emoji-picker</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/emoji-picker.png" alt="Outline emoji picker"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/emoji-picker.png" alt="Outline emoji picker"/></p>
 <p>The editor gained a new emoji picker this month, just type &quot;:&quot; and a search term
 to quickly find relevant emojis for your document!</p>
 <p>It&#x27;s now also possible to set a &quot;default role&quot; for new users that join your knowledge
@@ -848,7 +848,7 @@ find this setting under Settings -&gt; Security.</p>
     <guid>polish-polish</guid>
     <title>Polish Language and Editor Improvements</title>
     <link>https://www.getoutline.com/changelog/polish-polish</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>The collaborative editing beta has been progressing well and we continue to let
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>The collaborative editing beta has been progressing well and we continue to let
 it new teams. The last few weeks have largely been spent fixing and improving
 this functionality for a broader launch, but some other things snuck in too…</p>
 <h3>Fixes and improvements</h3>
@@ -870,7 +870,7 @@ this functionality for a broader launch, but some other things snuck in too…</
     <guid>collaborative-editing</guid>
     <title>Collaborative Editing Beta</title>
     <link>https://www.getoutline.com/changelog/collaborative-editing</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/collaborative-editing.png" alt="collaborative editing"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/collaborative-editing.png" alt="collaborative editing"/></p>
 <p>This week we’re beginning to accept teams into the beta of collaborative editing,
 this feature will allow multiple team members to edit the same document at the same
 time, opening much wider range of use cases! It also lays the foundation for all
@@ -899,7 +899,7 @@ sorts of new features such as commenting.</p>
     <guid>tasks-and-history</guid>
     <title>Task lists and improved history</title>
     <link>https://www.getoutline.com/changelog/tasks-and-history</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/task-list.png" alt="task list"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/task-list.png" alt="task list"/></p>
 <h3>Task lists</h3>
 <p>You&#x27;ve been able to create a task list or a checkbox list in Outline for a while,
 but this week brings a nice improvement - we added task summaries so you can see
@@ -927,7 +927,7 @@ document menu.</p>
     <guid>summer-2021</guid>
     <title>Summer Release</title>
     <link>https://www.getoutline.com/changelog/summer-2021</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Wow, another month has passed, here&#x27;s a quick update on what&#x27;s changed since June,
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Wow, another month has passed, here&#x27;s a quick update on what&#x27;s changed since June,
 as is often the case as well as the big stuff we&#x27;ve been working on a lot of &quot;little details&quot;<br/>
 <!-- -->that make the daily experience better but aren&#x27;t always immediately visible.</p>
 <h3>Improved search abilities</h3>
@@ -960,7 +960,7 @@ know what will happen too.</p>
     <guid>friendly-collections</guid>
     <title>Friendly Collection URLs</title>
     <link>https://www.getoutline.com/changelog/friendly-collections</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/friendly-url.png" alt="Friendly collection url"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/friendly-url.png" alt="Friendly collection url"/></p>
 <p>This week we&#x27;ve shipped lots of little improvements, one thing you might notice is that collections in Outline no longer have a long <code>UUID</code> in the address bar, instead you&#x27;ll see a shortened id and a friendly
 version of the collection name. Not only is this nicer to look at, but it also makes quickly returning to
 collections via searching in the address bar much easier!</p>
@@ -982,7 +982,7 @@ collections via searching in the address bar much easier!</p>
     <guid>public-sharing-improvements</guid>
     <title>Sharing Improvements</title>
     <link>https://www.getoutline.com/changelog/public-sharing-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/public-sharing-improvements.png" alt="Outline Public Sharing"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/public-sharing-improvements.png" alt="Outline Public Sharing"/></p>
 <p>Last week brings some great improvements to public document sharing. We recently simplified the sharing dialog to a popover and now added the ability to share an entire tree of nested documents too. This much-requested feature is great for sharing structured help docs or several related documents with a single link!</p>
 <p>As an additional security measure the Share button will also display a globe icon if a document is shared publicly because one of it&#x27;s parents has been shared.</p>
 <h3>Other fixes and improvements</h3>
@@ -1000,7 +1000,7 @@ collections via searching in the address bar much easier!</p>
     <guid>viewer-details</guid>
     <title>Document Insights</title>
     <link>https://www.getoutline.com/changelog/viewer-details</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/viewer-popover.png" alt="viewer details"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/viewer-popover.png" alt="viewer details"/></p>
 <p>We&#x27;ve rolled out a number of UI improvements in the past couple of weeks within documents. It&#x27;s now possible
 to see who on your team has viewed a document, simply click on the <strong>&quot;Viewed by X people&quot;</strong> text beneath the
 title for a detailed flyover of everyone that has viewed and when.</p>
@@ -1033,7 +1033,7 @@ We&#x27;ll be adding more detailed team-level insights soon!</p>
     <guid>microsoft-sso</guid>
     <title>Microsoft SSO</title>
     <link>https://www.getoutline.com/changelog/microsoft-sso</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/microsoft-sso.png" alt="Microsoft Sign In"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/microsoft-sso.png" alt="Microsoft Sign In"/></p>
 <p>We’re excited to finally add a new sign-in method, Microsoft! Whether you’re using
 MS Teams, Education, or Office 365, you can now use your organization’s Microsoft
 account to sign-in to Outline and build a knowledge base.</p>
@@ -1057,7 +1057,7 @@ and accessing your Outline documents directly from chat too, just like Slack.</p
     <guid>viewer-permissions</guid>
     <title>Collection Permissions &amp; Viewers</title>
     <link>https://www.getoutline.com/changelog/viewer-permissions</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/viewer-permissions.png" alt="viewer permissions"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/viewer-permissions.png" alt="viewer permissions"/></p>
 <p>In the last couple of weeks we&#x27;ve deployed two changes that together really improve
 the permissions story in Outline. It&#x27;s now possible to make a user a &quot;viewer&quot; at
 the team level, meaning they will not be able to edit any collections or documents
@@ -1088,7 +1088,7 @@ you can then select just a couple of team members to have edit permissions.</p>
     <guid>reorder-collections</guid>
     <title>Reordering Collections</title>
     <link>https://www.getoutline.com/changelog/reorder-collections</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/reorder-collections.jpg" alt="Reordering collections in Outline"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/reorder-collections.jpg" alt="Reordering collections in Outline"/></p>
 <p>Building on our sidebar improvements from the start of the year, it&#x27;s now possible to <a href="https://twitter.com/getoutline/status/1372943061894930432">reorder collections</a> in the sidebar as a team admin – changes to the sidebar are synced to all team members. We also added reordering of list items in documents with a new drag and drop handle or the handy <code>ALT+Up/Down</code> shortcut.</p>
 <h3>Other fixes and improvements</h3>
 <h4>Platform</h4>
@@ -1117,7 +1117,7 @@ you can then select just a couple of team members to have edit permissions.</p>
     <guid>progressive-web-app</guid>
     <title>Progressive Web App</title>
     <link>https://www.getoutline.com/changelog/progressive-web-app</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/pwa.png" alt="Outline on macOS"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/pwa.png" alt="Outline on macOS"/></p>
 <p>This week brings PWA support to Outline, allowing you to install the app to your
 desktop and dock in just a couple of seconds. We&#x27;ve been enjoying how lightweight
 this install is while keeping the two best parts of a native app experience – an
@@ -1152,7 +1152,7 @@ icon in the dock and a dedicated window. To try it out, head over to <a href="ht
     <guid>sidebar-improvements</guid>
     <title>New year, new sidebar</title>
     <link>https://www.getoutline.com/changelog/sidebar-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Last week we deployed a new version of the Outline sidebar – it looks very
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Last week we deployed a new version of the Outline sidebar – it looks very
 similar to before – but make no mistake it&#x27;s rebuilt from the ground up! With
 this new foundation comes the ability to reorder and move documents with drag
 and drop…</p>
@@ -1179,7 +1179,7 @@ for this one).</p>
     <guid>2020-in-review</guid>
     <title>2020 in Review</title>
     <link>https://www.getoutline.com/changelog/2020-in-review</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>2020 wasn’t without its challenges for many of us and I personally feel lucky to have gotten through the year with health and happiness intact. For Outline it was the biggest year ever for new features, fixes, and the growing community. Whether you’ve been following intently or this is the first time you’ve come across Outline here are some highlights from the past year:</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>2020 wasn’t without its challenges for many of us and I personally feel lucky to have gotten through the year with health and happiness intact. For Outline it was the biggest year ever for new features, fixes, and the growing community. Whether you’ve been following intently or this is the first time you’ve come across Outline here are some highlights from the past year:</p>
 <h3>📝 A new editor</h3>
 <p>We started the year with a new editor, completely rewritten from the ground up on the <a href="https://prosemirror.net">Prosemirror</a> framework. It’s now several orders of magnitude faster than the previous version at rendering both large and small documents, mobile compatible and a really solid base for the future. The editor is <a href="https://github.com/outline/rich-markdown-editor">open sourced</a> under a BSD license so you can play around with it in your projects too.</p>
 <h3>⚡️ Performance</h3>
@@ -1212,7 +1212,7 @@ for this one).</p>
     <guid>spanish-french-korean</guid>
     <title>Community Translations</title>
     <link>https://www.getoutline.com/changelog/spanish-french-korean</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>The last few weeks has seen a surge of support in the community for <a href="https://translate.getoutline.com">translating Outline</a>. We&#x27;re proud to now have initial support for the following languages in the product - head over to settings to choose your native language if you haven&#x27;t already.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>The last few weeks has seen a surge of support in the community for <a href="https://translate.getoutline.com">translating Outline</a>. We&#x27;re proud to now have initial support for the following languages in the product - head over to settings to choose your native language if you haven&#x27;t already.</p>
 <ul>
 <li>🇩🇪 German</li>
 <li>🇪🇸 Spanish</li>
@@ -1240,7 +1240,7 @@ for this one).</p>
     <guid>community-translation</guid>
     <title>👋 Hallo, 你好, こんにちは</title>
     <link>https://www.getoutline.com/changelog/community-translation</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/translations.png" alt="Outline translations"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/translations.png" alt="Outline translations"/></p>
 <p>This week we&#x27;re really excited to kick-off a community translation project. Over the last month there has been a lot of work to hook up the framework and processes for accepting translations and it&#x27;s now finally ready to use. A special thanks
 goes out to <a href="https://github.com/glaand">André Glatzl</a> for pushing this forward.</p>
 <p>If you&#x27;d like to see Outline translated into your native language and can offer a little time to help out, it&#x27;s easy to contribute – simply head to <a href="https://translate.getoutline.com">translate.getoutline.com</a> and sign up for a free CrowdIn account. Accepted translations are automatically merged back into the codebase and will be available in the following release.</p>
@@ -1252,7 +1252,7 @@ goes out to <a href="https://github.com/glaand">André Glatzl</a> for pushing th
     <guid>custom-domains</guid>
     <title>Custom domains</title>
     <link>https://www.getoutline.com/changelog/custom-domains</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/custom-domains.png" alt="Outline custom domain"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/custom-domains.png" alt="Outline custom domain"/></p>
 <p>This week brings support for custom domains to the cloud hosted version of Outline.
 Now you can easily have <code>wiki.myteam.com</code> or <code>kb.yourcompany.com</code> without the
 hassle of hosting your own Outline servers.</p>
@@ -1264,7 +1264,7 @@ hassle of hosting your own Outline servers.</p>
     <guid>confluence-import</guid>
     <title>Import from Confluence</title>
     <link>https://www.getoutline.com/changelog/confluence-import</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve made further improvements to importing, in particular it&#x27;s now possible to import <code>.doc</code> files that are exported from Confluence, this is now the recommended format to get content from Confluence into Outline as it supports the greatest range of formatting – including tables.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve made further improvements to importing, in particular it&#x27;s now possible to import <code>.doc</code> files that are exported from Confluence, this is now the recommended format to get content from Confluence into Outline as it supports the greatest range of formatting – including tables.</p>
 <p>We plan on releasing a CLI tool soon to allow bulk import for Confluence, Notion, GitHub and other services – watch this space!</p>
 <h3>Other fixes and improvements</h3>
 <h4>Platform</h4>
@@ -1285,7 +1285,7 @@ hassle of hosting your own Outline servers.</p>
     <guid>something-brewing</guid>
     <title>We&#039;ve got something brewing…</title>
     <link>https://www.getoutline.com/changelog/something-brewing</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/multiplayer.png" alt="Brewing"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/multiplayer.png" alt="Brewing"/></p>
 <h3>Other fixes and improvements</h3>
 <ul>
 <li>Spotify embeds have been improved and better handle the wide variety of possible link types</li>
@@ -1299,7 +1299,7 @@ hassle of hosting your own Outline servers.</p>
     <guid>import-from-word</guid>
     <title>Import from Microsoft Word</title>
     <link>https://www.getoutline.com/changelog/import-from-word</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Much like last months update our focus continues to be on little details, performance, and bug fixing rather than new features – but some solid new functionality did sneak in with the help of open source contributors…</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Much like last months update our focus continues to be on little details, performance, and bug fixing rather than new features – but some solid new functionality did sneak in with the help of open source contributors…</p>
 <h3>HTML + Word Import</h3>
 <p>You can now import HTML and Microsoft Word documents simply by dragging them onto a collection, or from the collection context menu. We also improved the look and feel of GSuite embeds.</p>
 <h3>New + Unread badges</h3>
@@ -1354,7 +1354,7 @@ hassle of hosting your own Outline servers.</p>
     <guid>the-one-with-all-the-fixes</guid>
     <title>The one with all the fixes</title>
     <link>https://www.getoutline.com/changelog/the-one-with-all-the-fixes</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>The last two weeks we&#x27;ve been focused on bug fixing, performance and reliability. We&#x27;ve always taken pride in the speed of Outline and keeping the app fast requires constant ongoing attention and maintenance. One place that hadn&#x27;t been optimized in a while was the initial javascript bundle download size, which has now dropped from <code>2.8Mb</code> to just <code>700Kb</code>.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>The last two weeks we&#x27;ve been focused on bug fixing, performance and reliability. We&#x27;ve always taken pride in the speed of Outline and keeping the app fast requires constant ongoing attention and maintenance. One place that hadn&#x27;t been optimized in a while was the initial javascript bundle download size, which has now dropped from <code>2.8Mb</code> to just <code>700Kb</code>.</p>
 <p>Some of this updates improvements (Marked with a [os]) are brought to you by open source contributions, for this we&#x27;re very thankful!</p>
 <h3>Enhancements</h3>
 <ul>
@@ -1384,7 +1384,7 @@ hassle of hosting your own Outline servers.</p>
     <guid>document-templates</guid>
     <title>Document templates are here</title>
     <link>https://www.getoutline.com/changelog/document-templates</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Today we’re adding the much-requested ability to create team document templates in Outline.
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Today we’re adding the much-requested ability to create team document templates in Outline.
 Templates are a simple, but powerful way to keep your docs consistent and reliable. In
 the near future we’ll also publish recommended templates and make them easy to use from
 within your team.</p>
@@ -1421,7 +1421,7 @@ document is first saved.</p>
     <guid>notice-panels</guid>
     <title>New notice panels</title>
     <link>https://www.getoutline.com/changelog/notice-panels</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p><img src="https://www.getoutline.com/images/notice-panels.png" alt="Outline notice panels"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/notice-panels.png" alt="Outline notice panels"/></p>
 <p>This week we added a new content type for your documents called &quot;notices&quot;. You
 can use them to highlight information for readers such as important information, or to add additional context around the main content.</p>
 <p>There are three types of notices available today – &quot;info&quot;, &quot;warning&quot;, and &quot;tip&quot;.</p>
@@ -1441,7 +1441,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.45.0</guid>
     <title>v0.45.0</title>
     <link>https://www.getoutline.com/changelog/v0.45.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Hovering over internal links to other documents now shows detailed &quot;preview cards&quot; so you can get an idea of the document without clicking through.</li>
 </ul>
@@ -1463,7 +1463,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.44.0</guid>
     <title>v0.44.0</title>
     <link>https://www.getoutline.com/changelog/v0.44.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>The slash menu now has the option to create a link</li>
 <li>You can now make collections easier to discover and pick out in the sidebar by setting an icon and color.</li>
@@ -1483,7 +1483,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.43.3</guid>
     <title>v0.43.3</title>
     <link>https://www.getoutline.com/changelog/v0.43.3</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>It&#x27;s now possible to create documents directly from the link editor, or hit <code>CMD+K</code> and type a document title</li>
 <li>Improved loading state for the sidebar</li>
@@ -1505,7 +1505,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.43.2</guid>
     <title>v0.43.2</title>
     <link>https://www.getoutline.com/changelog/v0.43.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Exported markdown files are now cleaner than ever before</li>
 </ul>
@@ -1530,7 +1530,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.43.1</guid>
     <title>v0.43.1</title>
     <link>https://www.getoutline.com/changelog/v0.43.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Code blocks imported from other sources with unsupported languages no longer crash the editor</li>
 <li>Overlay background when zooming into images now respects the theme</li>
@@ -1542,7 +1542,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.43.0</guid>
     <title>v0.43.0</title>
     <link>https://www.getoutline.com/changelog/v0.43.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This is the biggest release of Outline since we first published the source code. The <a href="https://github.com/outline/rich-markdown-editor">editor</a> is entirely rebuilt from the ground up for extensibility and speed, allowing us to move faster than ever before and is the culmination of more than 4 months of planning and work.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This is the biggest release of Outline since we first published the source code. The <a href="https://github.com/outline/rich-markdown-editor">editor</a> is entirely rebuilt from the ground up for extensibility and speed, allowing us to move faster than ever before and is the culmination of more than 4 months of planning and work.</p>
 <p>The improvements and fixes are almost too numerous to count, but the most important are listed below:</p>
 <h3>Enhancements</h3>
 <ul>
@@ -1578,7 +1578,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.42.2</guid>
     <title>v0.42.2</title>
     <link>https://www.getoutline.com/changelog/v0.42.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Buttons now stand out better in dark mode</li>
 <li>If the editor fails to load because a deploy happened the app will now auto-recover</li>
@@ -1596,7 +1596,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.42.1</guid>
     <title>v0.42.1</title>
     <link>https://www.getoutline.com/changelog/v0.42.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Crash on share links introduced in previous release</li>
 <li>Crash on editing documents with image/embed as first node</li>
@@ -1608,7 +1608,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.42.0</guid>
     <title>v0.42.0</title>
     <link>https://www.getoutline.com/changelog/v0.42.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>
 <p>The table of contents moved from being hidden on the edge of the screen to optionally toggleable inline with the document content. It follows your scroll position, highlights the active section and is just generally much more usable now. Toggle on the new contents with the icon at the end of the breadcrumb in the document header.</p>
@@ -1635,7 +1635,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.41.0</guid>
     <title>v0.41.0</title>
     <link>https://www.getoutline.com/changelog/v0.41.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <p>Groups! It&#x27;s now possible to organize your team into groups and assign groups with read or write permissions to collections. You can use this to give part of your team read-only access and retain write access for others.</p>
 <p>You can manage groups from <strong>Settings -&gt; Groups</strong> or directly from any <strong>Collection -&gt; Permissions…</strong></p>
 <p><img src="https://user-images.githubusercontent.com/380914/76828453-33f02c00-67de-11ea-8a41-4cc7eef6e34e.png" alt="image"/></p>
@@ -1654,7 +1654,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.40.2</guid>
     <title>v0.40.2</title>
     <link>https://www.getoutline.com/changelog/v0.40.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Newly created documents should auto focus</li>
 <li>Clicking in whitespace at end of document should focus on the last line</li>
@@ -1667,7 +1667,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.40.1</guid>
     <title>v0.40.1</title>
     <link>https://www.getoutline.com/changelog/v0.40.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>The people management screens now include pagination to support larger teams</li>
 <li>When a modal opens from a modal it now visually &quot;stacks&quot; to provide a navigational clue</li>
@@ -1686,7 +1686,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.40.0</guid>
     <title>v0.40.0</title>
     <link>https://www.getoutline.com/changelog/v0.40.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;re continuing to make great headway with two big features in February; rewriting the editor to be more stable and performant (think 10x faster!) and bringing group permissions to the app. In the meantime, some important fixes have also been made in the last few weeks…</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;re continuing to make great headway with two big features in February; rewriting the editor to be more stable and performant (think 10x faster!) and bringing group permissions to the app. In the meantime, some important fixes have also been made in the last few weeks…</p>
 <h3>Fixes</h3>
 <ul>
 <li>It&#x27;s now possible to access documents with _ or ~ characters in the title, previously links would break</li>
@@ -1701,7 +1701,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.39.0</guid>
     <title>v0.39.0</title>
     <link>https://www.getoutline.com/changelog/v0.39.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Other team members presence is now shown on documents – you can see when others are viewing or editing!</li>
 <li>We added easily accessible search inputs at the top of the &quot;Home&quot; page and collection screens</li>
@@ -1723,7 +1723,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.38.1</guid>
     <title>v0.38.1</title>
     <link>https://www.getoutline.com/changelog/v0.38.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Documents with nested sub-documents now display an index view more prominently</li>
 <li>Clicking into a document will preload it&#x27;s nested documents for faster navigation</li>
@@ -1742,7 +1742,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.38.0</guid>
     <title>v0.38.0</title>
     <link>https://www.getoutline.com/changelog/v0.38.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>It&#x27;s now possible to invite guests to your wiki that can sign-in with their email address.</li>
 <li>We added the &quot;Trash&quot; menu item in the sidebar which shows recently deleted documents and gives you an opportunity to restore them for 30 days.</li>
@@ -1770,7 +1770,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.37.0</guid>
     <title>v0.37.0</title>
     <link>https://www.getoutline.com/changelog/v0.37.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>It is now possible to set a collection membership to be <code>read-only</code>, this is currently only an option in private collections but will soon be extended to all collections.</li>
 <li>&quot;Child documents&quot; are now automatically listed at the bottom of a document</li>
@@ -1802,7 +1802,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.36.1</guid>
     <title>v0.36.1</title>
     <link>https://www.getoutline.com/changelog/v0.36.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Document title size</li>
 </ul></div> ]]></description>
@@ -1813,7 +1813,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.36.0</guid>
     <title>v0.36.0</title>
     <link>https://www.getoutline.com/changelog/v0.36.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Documents in private collections now show a little padlock next to the collection name in feeds such as Home, Starred, and Drafts.</li>
 <li>The color picker for collections got an upgrade it&#x27;s now a little less <strong>in your face</strong> when creating a new collection</li>
@@ -1838,7 +1838,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.35.0</guid>
     <title>v0.35.0</title>
     <link>https://www.getoutline.com/changelog/v0.35.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Added <a href="http://www.opensearch.org/Home">Open Search</a> support</li>
 <li>The document menu now includes an &quot;Edit&quot; option</li>
@@ -1863,7 +1863,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.34.0</guid>
     <title>v0.34.0</title>
     <link>https://www.getoutline.com/changelog/v0.34.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Audit log. Actions taken by team members in your wiki are now recorded in an audit log accessible to admins.</li>
 </ul>
@@ -1888,7 +1888,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.33.0</guid>
     <title>v0.33.0</title>
     <link>https://www.getoutline.com/changelog/v0.33.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <p>This release includes references (or <a href="https://en.wikipedia.org/wiki/Backlink">backlinks</a>) – these are automated links that are shown at the bottom of a document telling you which other documents it was linked from. Backlinks have been a feature of wiki software for many years and it&#x27;s great to have first class support in Outline.</p>
 <p><img src="https://user-images.githubusercontent.com/380914/61175979-3aeade80-a56d-11e9-9341-c19efc10bc35.png" alt="Backlinks in Outline"/></p>
 <p>To create a reference you only need to link to another document in your knowledgebase.</p>
@@ -1916,7 +1916,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.32.0</guid>
     <title>v0.32.0</title>
     <link>https://www.getoutline.com/changelog/v0.32.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>We&#x27;ve added the ability to send team members invites directly from within the app</li>
 </ul>
@@ -1944,7 +1944,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.31.0</guid>
     <title>v0.31.0</title>
     <link>https://www.getoutline.com/changelog/v0.31.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>It&#x27;s now possible to disable highlighting in code blocks to just display plain, pre-formatted text</li>
 </ul>
@@ -1960,7 +1960,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.30.0</guid>
     <title>v0.30.0</title>
     <link>https://www.getoutline.com/changelog/v0.30.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <p>This release brings support for creating and editing simple Tables in all your documents.</p>
 <p><img src="https://user-images.githubusercontent.com/380914/58373984-081c5680-7eeb-11e9-8605-5159812f7b55.png" alt="image"/></p>
 <h3>Enhancements</h3>
@@ -1979,7 +1979,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.29.0</guid>
     <title>v0.29.0</title>
     <link>https://www.getoutline.com/changelog/v0.29.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Added support for embedding <a href="https://abstract.com/blog/public-sharing/">Abstract public share links</a></li>
 <li>Added <code>Bash</code> and <code>Powershell</code> formatting options in code blocks</li>
@@ -1999,7 +1999,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.28.0</guid>
     <title>v0.28.0</title>
     <link>https://www.getoutline.com/changelog/v0.28.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Outline now utilizes websockets to keep everything in sync without refreshing the tab</li>
 <li>New <strong>filtering options</strong> when searching. Refine results by collection, author, or date to get to the information you&#x27;re looking for faster!</li>
@@ -2023,7 +2023,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.27.0</guid>
     <title>v0.27.0</title>
     <link>https://www.getoutline.com/changelog/v0.27.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>The full path to nested documents is now shown in search results</li>
 <li>It&#x27;s now possible to move documents between collections and to any level of nesting</li>
@@ -2044,7 +2044,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.26.0</guid>
     <title>v0.26.0</title>
     <link>https://www.getoutline.com/changelog/v0.26.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Document archive, you can now choose to store documents outside of a collection without deleting them.</li>
 <li>A little thing called <strong>night mode</strong>! Toggle in the settings menu whether you prefer Outline to be daylight white 🌞 or midnight black 🌚.</li>
@@ -2073,7 +2073,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.25.0</guid>
     <title>v0.25.0</title>
     <link>https://www.getoutline.com/changelog/v0.25.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Added support for <a href="https://www.mindmeister.com">Mindmeister</a> embeds</li>
 <li>When searching from Slack a &quot;Post to Channel&quot; option is now available so you can share the best search results with your team directly</li>
@@ -2093,7 +2093,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.24.0</guid>
     <title>v0.24.0</title>
     <link>https://www.getoutline.com/changelog/v0.24.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Headings can now be collapsed</li>
 </ul>
@@ -2118,7 +2118,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.23.0</guid>
     <title>v0.23.0</title>
     <link>https://www.getoutline.com/changelog/v0.23.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Added user profiles! Click on any avatar to see a brief profile of the user and the documents they&#x27;ve been editing.</li>
 </ul>
@@ -2141,7 +2141,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.22.0</guid>
     <title>v0.22.0</title>
     <link>https://www.getoutline.com/changelog/v0.22.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Added the ability to see which team members have viewed a document, and when</li>
 </ul>
@@ -2158,7 +2158,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.21.0</guid>
     <title>v0.21.0</title>
     <link>https://www.getoutline.com/changelog/v0.21.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>Welcome to the first release of 2019! We&#x27;re kicking the year off right with a big new feature – private collections. It&#x27;s now possible to create a hidden collection that is only visible to team members that you invite, a much requested addition.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Welcome to the first release of 2019! We&#x27;re kicking the year off right with a big new feature – private collections. It&#x27;s now possible to create a hidden collection that is only visible to team members that you invite, a much requested addition.</p>
 <h3>New Features</h3>
 <ul>
 <li>Private collections</li>
@@ -2184,7 +2184,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.20.0</guid>
     <title>v0.20.0</title>
     <link>https://www.getoutline.com/changelog/v0.20.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>The public content pages got a bit of a facelift, we made the API reference easier to browse, added a sidebar in this here changelog and added pages for all of the <a href="https://www.getoutline.com/integrations">integrations that Outline supports</a>.</li>
 </ul></div> ]]></description>
@@ -2195,7 +2195,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.19.1</guid>
     <title>v0.19.1</title>
     <link>https://www.getoutline.com/changelog/v0.19.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Errors when authenticating Slack commands from a team subdomain</li>
 <li>The block toolbar now hides automatically when clicking to focus the document</li>
@@ -2210,7 +2210,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.19.0</guid>
     <title>v0.19.0</title>
     <link>https://www.getoutline.com/changelog/v0.19.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>
 <p>This release introduces <strong>rich document embeds</strong>. Pasting share links from supported services will now show an interactive embed inside the document. The following services are support at this time:</p>
@@ -2247,7 +2247,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.18.0</guid>
     <title>v0.18.0</title>
     <link>https://www.getoutline.com/changelog/v0.18.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Secure subdomains are now available for your team! Head to the <a href="https://app.getoutline.com/settings/details">team settings</a> to choose or update your subdomain. Once a subdomain is set new logins will automatically be redirected.</li>
 </ul>
@@ -2268,7 +2268,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.16.3</guid>
     <title>v0.16.3</title>
     <link>https://www.getoutline.com/changelog/v0.16.3</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>It is now possible to choose the language for highlighting in code blocks 🙌</li>
 </ul>
@@ -2290,7 +2290,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.17.0</guid>
     <title>v0.17.0</title>
     <link>https://www.getoutline.com/changelog/v0.17.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <p>We added a rich text area to the top of collections so you can add more details than just a name. This is great for when a collection represents an area of your company and makes it easy to add links to other company resources.</p>
 <hr/>
 <p><img src="https://user-images.githubusercontent.com/380914/48729101-9b4a9b80-ebeb-11e8-919c-f12144012351.png" alt="image"/></p></div> ]]></description>
@@ -2301,7 +2301,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.16.2</guid>
     <title>v0.16.2</title>
     <link>https://www.getoutline.com/changelog/v0.16.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Added filtering options to the admin &quot;People&quot; listing</li>
 <li>Profile picture is now saved once uploaded</li>
@@ -2321,7 +2321,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.16.1</guid>
     <title>v0.16.1</title>
     <link>https://www.getoutline.com/changelog/v0.16.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Document history menu can now be opened again</li>
 <li>It is now possible to underline text in the editor and have that persist</li>
@@ -2337,7 +2337,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.16.0</guid>
     <title>v0.16.0</title>
     <link>https://www.getoutline.com/changelog/v0.16.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Upgrades the editor</li>
 </ul>
@@ -2354,7 +2354,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.15.1</guid>
     <title>v0.15.1</title>
     <link>https://www.getoutline.com/changelog/v0.15.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Visual feedback when avatars and logos are uploading</li>
 <li>Fixed a couple of server side issues when deleting documents</li>
@@ -2367,7 +2367,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.15.0</guid>
     <title>v0.15.0</title>
     <link>https://www.getoutline.com/changelog/v0.15.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>It is now possible to see a documents version history from the &quot;...&quot; menu select &quot;Document history&quot;. You can also restore a previous version, creating a new one if you need to easily go back to how things were.</li>
 </ul>
@@ -2388,7 +2388,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.14.0</guid>
     <title>v0.14.0</title>
     <link>https://www.getoutline.com/changelog/v0.14.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We&#x27;ve been working on a <a href="https://zapier.com">Zapier</a> integration. If you&#x27;re interested in hooking Outline events up to other aspects of your teams workflow, give it a look! React to documents being created or automatically create documents in specific collections from external events. <a href="https://github.com/outline/outline-zapier">Find more information on the Zapier integation here</a>.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve been working on a <a href="https://zapier.com">Zapier</a> integration. If you&#x27;re interested in hooking Outline events up to other aspects of your teams workflow, give it a look! React to documents being created or automatically create documents in specific collections from external events. <a href="https://github.com/outline/outline-zapier">Find more information on the Zapier integation here</a>.</p>
 <h3>New Features</h3>
 <ul>
 <li>The dashboard now features three tabs &quot;Recently viewed&quot;, &quot;Recently updated&quot;, and &quot;Created by me&quot; to allow easier discovery. We also added infinite pagination to these dashboard tabs</li>
@@ -2410,7 +2410,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.5</guid>
     <title>v0.13.5</title>
     <link>https://www.getoutline.com/changelog/v0.13.5</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Search results now show a snippet of where in the document the term was found</li>
 <li>Slack slash command results also show this snippet! ^</li>
@@ -2435,7 +2435,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.4</guid>
     <title>v0.13.4</title>
     <link>https://www.getoutline.com/changelog/v0.13.4</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Slack integrations can now be set up by users that are authenticated through Google OAuth. Previously If you signed in with Google and then tried to setup an integration it would fail. <a href="https://github.com/outline/outline/issues/730">#730</a></li>
 <li>Fixed an issue where once a share link had been revoked the same document could not be shared by the same user again. <a href="https://github.com/outline/outline/issues/733">#733</a></li>
@@ -2449,7 +2449,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.3</guid>
     <title>v0.13.3</title>
     <link>https://www.getoutline.com/changelog/v0.13.3</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This update fixes an important issue where Slack integrations would be associated with the first user in the database. On the hosted version of Outline all of these integrations ended up associated with an inactive test user and have since been purged from the db.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This update fixes an important issue where Slack integrations would be associated with the first user in the database. On the hosted version of Outline all of these integrations ended up associated with an inactive test user and have since been purged from the db.</p>
 <p><strong>If you connected Slack since June 3rd 2018 you&#x27;ll need to do so again.</strong></p>
 <h3>Fixes</h3>
 <ul>
@@ -2464,7 +2464,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.2</guid>
     <title>v0.13.2</title>
     <link>https://www.getoutline.com/changelog/v0.13.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>After duplicating a document you&#x27;ll now be forwarded to the document. <a href="https://github.com/outline/outline/issues/673">#673</a></li>
 </ul>
@@ -2482,7 +2482,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.1</guid>
     <title>v0.13.1</title>
     <link>https://www.getoutline.com/changelog/v0.13.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Fixes an issue with the text parsing that could cause paragraphs immediately following an image to be lost upon save.</li>
 <li>Fixes several other parsing issues</li>
@@ -2498,7 +2498,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.13.0</guid>
     <title>v0.13.0</title>
     <link>https://www.getoutline.com/changelog/v0.13.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>We added the ability to purge your own user account. <a href="https://github.com/outline/outline/pull/716">#716</a></li>
 </ul>
@@ -2519,7 +2519,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.12.0</guid>
     <title>v0.12.0</title>
     <link>https://www.getoutline.com/changelog/v0.12.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Documents now display the collection and parent in a new header area. The title also remains on screen as you scroll providing a quick way to jump back to the top of a document.</li>
 </ul>
@@ -2541,7 +2541,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.11.2</guid>
     <title>v0.11.2</title>
     <link>https://www.getoutline.com/changelog/v0.11.2</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>The editor will now warn you when leaving while images are still pending upload.</li>
 <li>Scroll position is now maintained when entering / leaving editing a document. <a href="https://github.com/outline/outline/issues/697">#697</a></li>
@@ -2560,7 +2560,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.11.1</guid>
     <title>v0.11.1</title>
     <link>https://www.getoutline.com/changelog/v0.11.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li><code>CMD+S</code>, <code>CMD+Enter</code>, <code>Esc</code> keyboard shortcuts now work whether the editor is focused or not instead of triggering the default browser actions</li>
 <li>Improved the styling of inline code blocks</li>
@@ -2575,7 +2575,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.11.0</guid>
     <title>v0.11.0</title>
     <link>https://www.getoutline.com/changelog/v0.11.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>We added the ability to export all your data out of Outline. There&#x27;s a new tab under settings &quot;Export Data&quot; and a new option to export all documents for a collection in the overflow menu. <a href="https://github.com/outline/outline/pull/684">#684</a></li>
 </ul>
@@ -2595,7 +2595,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.10.0</guid>
     <title>v0.10.0</title>
     <link>https://www.getoutline.com/changelog/v0.10.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Self-hosted installations can now specify a set of allowed google domains for signin. Account creation outside of this set of domains is disallowed. To setup see the <code>GOOGLE_ALLOWED_DOMAINS</code> env variable <a href="https://github.com/outline/outline/blob/master/.env.sample#L23-L25">documentation</a> – thanks to new contributor <a href="https://github.com/satyadeepk">Satyadeep</a> 🎉 <a href="https://github.com/outline/outline/issues/681">#681</a></li>
 <li>Share links are now soft deleted, to maintain a record of who created and revoked them.</li>
@@ -2614,7 +2614,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.9.0</guid>
     <title>v0.9.0</title>
     <link>https://www.getoutline.com/changelog/v0.9.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>Added the option to duplicate any document from the overflow (...) menu. <a href="https://github.com/outline/outline/pull/672">#672</a></li>
 <li>Outline now tracks signin and active times and ip addresses for security and analytics purposes.</li>
@@ -2632,7 +2632,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.8.1</guid>
     <title>v0.8.1</title>
     <link>https://www.getoutline.com/changelog/v0.8.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>It&#x27;s now possible to paste markdown into the editor from elsewhere and it will be correctly parsed and displayed instead of pasting in text format. <a href="https://github.com/outline/rich-markdown-editor/issues/4">RME #4</a></li>
 <li>Improved spacing on popover menus <a href="https://github.com/outline/outline/issues/662">#661</a></li>
@@ -2649,7 +2649,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.8.0</guid>
     <title>v0.8.0</title>
     <link>https://www.getoutline.com/changelog/v0.8.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>We added the ability to sign in to Outline with a Google account, a much requested feature for non-Slack users!</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We added the ability to sign in to Outline with a Google account, a much requested feature for non-Slack users!</p>
 <p><strong>Note:</strong> If you already sign in with Slack you should continue to do so as the two accounts won&#x27;t be automatically merged. If you&#x27;d like to enable both Google and Slack auth for your team please get in touch at hello@getoutline.com</p>
 <h3>Enhancements</h3>
 <ul>
@@ -2670,7 +2670,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.7.0</guid>
     <title>v0.7.0</title>
     <link>https://www.getoutline.com/changelog/v0.7.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>It&#x27;s now possible to create a public share link to documents in your Outline</li>
 <li>We added management in settings to revoke those links</li>
@@ -2692,7 +2692,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.6.1</guid>
     <title>v0.6.1</title>
     <link>https://www.getoutline.com/changelog/v0.6.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Fixes</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Fixes</h3>
 <ul>
 <li>Unable to delete draft document when collection is previously deleted</li>
 <li>Failure in documents API endpoint</li>
@@ -2704,7 +2704,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.6.0</guid>
     <title>v0.6.0</title>
     <link>https://www.getoutline.com/changelog/v0.6.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <ul>
 <li>Added autosave while typing</li>
 </ul>
@@ -2719,7 +2719,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.5.0</guid>
     <title>v0.5.0</title>
     <link>https://www.getoutline.com/changelog/v0.5.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>New Features</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>New Features</h3>
 <p>This release adds the ability to post messages to specific Slack channels when a document is published or updated. We plan that this is the first integration of many to come!</p></div> ]]></description>
     <pubDate>Wed, 04 Apr 2018 04:24:04 GMT</pubDate>
   </item>
@@ -2728,7 +2728,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.4.0</guid>
     <title>v0.4.0</title>
     <link>https://www.getoutline.com/changelog/v0.4.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This release updates our paragraph handling to be more inline with other text editors that you&#x27;re used to. Previously there was &quot;padded&quot; area between paragraphs that could not be edited – this is no longer the case.</p></div> ]]></description>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This release updates our paragraph handling to be more inline with other text editors that you&#x27;re used to. Previously there was &quot;padded&quot; area between paragraphs that could not be edited – this is no longer the case.</p></div> ]]></description>
     <pubDate>Tue, 27 Mar 2018 06:18:49 GMT</pubDate>
   </item>
 
@@ -2736,7 +2736,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.3.1</guid>
     <title>v0.3.1</title>
     <link>https://www.getoutline.com/changelog/v0.3.1</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><ul>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><ul>
 <li>Fixed link toolbar behavior</li>
 <li>Fixed deprecated warnings</li>
 </ul></div> ]]></description>
@@ -2747,7 +2747,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.3.0</guid>
     <title>v0.3.0</title>
     <link>https://www.getoutline.com/changelog/v0.3.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><h3>Enhancements</h3>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><h3>Enhancements</h3>
 <ul>
 <li>We added the ability to &quot;Pin&quot; a document to a collection. You can use this to welcome team members, make sure they see the most important documents first, or something else wonderful we haven&#x27;t yet thought of.</li>
 <li>Documents and collections now sort in a more natural order</li>
@@ -2763,7 +2763,7 @@ can use them to highlight information for readers such as important information,
     <guid>v0.2.0</guid>
     <title>v0.2.0</title>
     <link>https://www.getoutline.com/changelog/v0.2.0</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md" data-reactroot=""><p>This release adds the ability to create and list drafts.</p></div> ]]></description>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>This release adds the ability to create and list drafts.</p></div> ]]></description>
     <pubDate>Wed, 28 Feb 2018 08:01:53 GMT</pubDate>
   </item>
 
