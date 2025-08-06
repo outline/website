@@ -5,9 +5,36 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 29 Apr 2025 14:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 03 Aug 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>collection-sharing</guid>
+    <title>Public collection sharing</title>
+    <link>https://www.getoutline.com/changelog/collection-sharing</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/collection-sharing.png" alt="Collection sharing"/></p>
+<p>This week brings some great improvements to public sharing. You can now share an entire collection to the public internet – this much-requested feature is great for sharing structured help docs or several related documents with a single link, and works exactly the same as sharing a single document.</p>
+<p>As an additional security measure the Share button will also display a globe icon if a collection is shared publicly.</p></div> ]]></description>
+    <pubDate>Sun, 03 Aug 2025 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>table-improvements-2</guid>
+    <title>Table improvements</title>
+    <link>https://www.getoutline.com/changelog/table-improvements-2</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Tables now have the ability to merge and split cells across rows and columns, use this to create more complex data layouts. You can merge cells by selecting multiple cells and using the merge option in the toolbar. To split a merged cell, select it and choose the split option.</p>
+<p>We also added a new shortcut to create a table, just type <code>|--</code> on a new line to insert a table.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Editor blocks can now also be moved up and down with <code>Cmd</code>+<code>Alt</code>+<code>Arrow</code> keys.</li>
+<li>Hungarian language support</li>
+<li>English (UK) language support</li>
+<li>There is now an option to disable commenting per-collection</li>
+<li>Added a new option on shares to show the last modified timestamp on publicly shared docs</li>
+</ul></div> ]]></description>
+    <pubDate>Fri, 04 Jul 2025 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>issue-integrations</guid>
     <title>GitHub and Linear integrations</title>
