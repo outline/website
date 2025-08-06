@@ -443,7 +443,7 @@ export default function Pricing() {
                     <td>
                       <SimpleTooltip
                         className="feature"
-                        content="Restrict sign-in to specific email domains and methods"
+                        content="Restrict sign-in, API keys, and more…"
                       >
                         Additional security controls
                       </SimpleTooltip>
@@ -469,9 +469,48 @@ export default function Pricing() {
                     <td>
                       <SimpleTooltip
                         className="feature"
-                        content="Import Confluence spaces into Outline"
+                        content="Store data properties against documents"
+                      >
+                        Structured data attributes
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Authenticate users with any compatible SAML 2.0 provider"
+                      >
+                        SAML 2.0 (e.g. Okta, OneLogin)
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Import Confluence spaces directly into Outline"
                       >
                         Confluence importer
+                      </SimpleTooltip>
+                    </td>
+                    <td></td>
+                    <td>{check}</td>
+                    <td>{check}</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <SimpleTooltip
+                        className="feature"
+                        content="Track and filter edits and activity in the workspace"
+                      >
+                        Security audit log
                       </SimpleTooltip>
                     </td>
                     <td></td>
@@ -485,19 +524,6 @@ export default function Pricing() {
                         content="Search across your Outline documents from within Glean"
                       >
                         Glean integration
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Track and filter edits and user activity in the workspace"
-                      >
-                        Security audit log
                       </SimpleTooltip>
                     </td>
                     <td></td>
