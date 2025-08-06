@@ -8,6 +8,7 @@ type Props = {
   disabled?: boolean;
   light?: boolean;
   href?: string;
+  target?: string;
 };
 
 export default function Button({
@@ -15,12 +16,13 @@ export default function Button({
   onClick,
   light = false,
   href,
+  target,
   ...rest
 }: Props) {
   return (
     <>
       <Link href={href} {...rest} legacyBehavior>
-        <a className="button" role="button" onClick={onClick}>
+        <a className="button" role="button" onClick={onClick} target={target}>
           {children}
         </a>
       </Link>
@@ -46,11 +48,11 @@ export default function Button({
 
         .button:hover {
           background-color: ${darken(
-            0.1,
+            0.05,
             light ? colors.white : colors.primary
           )};
-          border-color: ${darken(0.1, light ? colors.white : colors.primary)};
-          box-shadow: 0 1px 3px 0 rgba(3, 6, 26, 0.15);
+          border-color: ${darken(0.05, light ? colors.white : colors.primary)};
+          box-shadow: 0 1px 3px 0 rgba(3, 6, 26, 0.25);
         }
       `}</style>
     </>

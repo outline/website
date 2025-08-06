@@ -6,15 +6,29 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
   return (
     <>
       <p className={centered !== false ? "centered" : ""}>
-        <Button href="https://app.getoutline.com/create">
-          Get Started for Free &rarr;
-        </Button>
-        <small className="note">30-day trial, no credit card required</small>
+        <span>
+          <Button href="https://app.getoutline.com/create">
+            Get Started for Free &rarr;
+          </Button>
+          <small className="note">Cloud hosted, 30-day free trial</small>
+        </span>
+        <span>
+          <Button
+            href="https://docs.getoutline.com/s/hosting"
+            target="_blank"
+            light
+          >
+            Deploy on-premise
+          </Button>
+          <small className="note">Self-hosted on your own server</small>
+        </span>
       </p>
       <style jsx>
         {`
           .centered {
             text-align: center;
+            display: flex;
+            gap: 16px;
           }
 
           .note {
