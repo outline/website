@@ -5,9 +5,34 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 03 Aug 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 11 Oct 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>link-mentions</guid>
+    <title>Link mentions</title>
+    <link>https://www.getoutline.com/changelog/link-mentions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/link-mentions.png" alt="Link mention formatting"/></p>
+<p>We added an additional display option for links in Outline. When a link is pasted into a document or collection, it can now be displayed as a &quot;link mention&quot; which shows the title and icon of the linked page.</p>
+<p>Simply paste a link to try it out.</p></div> ]]></description>
+    <pubDate>Sat, 11 Oct 2025 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>new-lightbox</guid>
+    <title>New lightbox</title>
+    <link>https://www.getoutline.com/changelog/new-lightbox</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/new-lightbox.png" alt="Link mention formatting"/></p>
+<p>We&#x27;ve completely rebuilt the lightbox that appears when you click into an image. It now supports navigating between all the images and diagrams in a document, as well as zooming in and out, panning large images, and full keyboard and touch navigation.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Typed URLs will now automatically convert to links when you press space or enter</li>
+<li>It is now possible to format text across cells in a table</li>
+<li>You can now right click on documents and collections to access the context menu</li>
+</ul></div> ]]></description>
+    <pubDate>Tue, 30 Sep 2025 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>collection-sharing</guid>
     <title>Public collection sharing</title>
