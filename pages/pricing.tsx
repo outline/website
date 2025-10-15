@@ -1,18 +1,35 @@
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Button from "components/Button";
 import { CloudIcon, TeamIcon, CheckmarkIcon } from "outline-icons";
 import Layout from "components/Layout";
 import { spacing, colors } from "theme";
-import { Tab, Tabs, TabList, TabPanel, resetIdCounter } from "react-tabs";
-import {
-  SimpleTooltip,
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "components/ui/Tooltip";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { SimpleTooltip } from "components/ui/Tooltip";
 
 export default function Pricing() {
+  const router = useRouter();
   const check = <CheckmarkIcon className="icon" />;
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  // Get the defaultIndex from query param on client side
+  useEffect(() => {
+    const plan = router.query.plan;
+    if (plan === "on-premise") {
+      setSelectedIndex(1);
+    } else {
+      setSelectedIndex(0);
+    }
+  }, [router.query.plan]);
+
+  const updateQueryString = (index: number) => {
+    const plan = index === 0 ? "cloud" : "on-premise";
+    router.replace({ pathname: router.pathname, query: { plan } }, undefined, {
+      shallow: true,
+    });
+    setSelectedIndex(index);
+  };
 
   return (
     <Layout
@@ -27,7 +44,7 @@ export default function Pricing() {
       }
     >
       <div className="container">
-        <Tabs>
+        <Tabs selectedIndex={selectedIndex} onSelect={updateQueryString}>
           <div className="container">
             <TabList className="tabs pure-g">
               <div className="pure-u-1 pure-u-md-1-4" />
@@ -39,7 +56,7 @@ export default function Pricing() {
               </Tab>
               <Tab className="pure-u-1 pure-u-md-1-4">
                 <h2>
-                  <TeamIcon size={32} color="currentColor" /> Self-Managed
+                  <TeamIcon size={32} color="currentColor" /> On-Premise
                 </h2>
                 <p>Self-hosted on your own infrastructure</p>
               </Tab>
@@ -279,7 +296,9 @@ export default function Pricing() {
                     </td>
                     <td className="price">
                       $4<span style={{ fontSize: "0.75em" }}>/user/mo</span>
-                      <span className="period">billed annually</span>
+                      <span className="period">
+                        billed annually, 10 user min
+                      </span>
                       <p className="cta">
                         <Button href="/contact?business=true">Purchase</Button>
                       </p>
