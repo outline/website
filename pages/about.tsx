@@ -30,8 +30,7 @@ export default function Privacy() {
       <p>
         With Outline we genuinely want to make a difference, this means comped
         accounts for teams working on the things our world needs the most. Right
-        now we’re sponsoring teams directly working on COVID-19 and Climate
-        Change.
+        now we’re sponsoring teams directly working on Climate Change.
       </p>
       <p>
         We also offer discounts for other non-profits – if your company is in
