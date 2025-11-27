@@ -5,9 +5,42 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sat, 11 Oct 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>popular-documents</guid>
+    <title>Popular documents</title>
+    <link>https://www.getoutline.com/changelog/popular-documents</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Outline now tracks document popularity based on views and interactions. This allows you to easily identify which documents are most relevant and frequently accessed by your team, these are surfaced in the new &quot;Popular&quot; tab and are given more prominance in search results.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>The sidebar was considerably cleaned up to improve the clarity of nesting</li>
+<li>The icon color picker now has a full spectrum selector</li>
+<li>We overhauled syntax highlighting for code blocks</li>
+<li>Double clicking on image and video resize handles now fills the media to document width</li>
+<li>Line height now auto adjusts for scripts with many ascenders and descenders such as Thai</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>group-mentions</guid>
+    <title>Group mentions</title>
+    <link>https://www.getoutline.com/changelog/group-mentions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/group-mentions.png" alt="Group mentions"/></p>
+<p>You can now mention groups in documents and comments, making it easier to notify entire teams or departments at once. To mention a group, simply type &quot;@&quot; followed by the group name, just like you would with individual users.</p>
+<p>When a group is mentioned, all members of that group will receive a notification, so use sparingly! Of course, this feature can also be disabled on a per-group basis.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Groups can now have a description</li>
+<li>You can now comment directly on images within documents.</li>
+<li>Documents and collections in the sidebar now have context menus</li>
+<li>Typed urls are now automatically converted into clickable links</li>
+</ul></div> ]]></description>
+    <pubDate>Sun, 26 Oct 2025 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>link-mentions</guid>
     <title>Link mentions</title>
