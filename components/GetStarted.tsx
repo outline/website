@@ -5,7 +5,7 @@ import { colors } from "theme";
 export default function GetStarted({ centered }: { centered?: boolean }) {
   return (
     <>
-      <p className={centered ? "centered" : ""}>
+      <p className={centered !== false ? "centered" : ""}>
         <span>
           <Button href="https://app.getoutline.com/create">
             Get started for free &rarr;
