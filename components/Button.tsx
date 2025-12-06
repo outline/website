@@ -9,6 +9,7 @@ type Props = {
   light?: boolean;
   href?: string;
   target?: string;
+  className?: string;
 };
 
 export default function Button({
@@ -17,12 +18,18 @@ export default function Button({
   light = false,
   href,
   target,
+  className,
   ...rest
 }: Props) {
   return (
     <>
       <Link href={href} {...rest} legacyBehavior>
-        <a className="button" role="button" onClick={onClick} target={target}>
+        <a
+          className={["button", className].join(" ")}
+          role="button"
+          onClick={onClick}
+          target={target}
+        >
           {children}
         </a>
       </Link>
