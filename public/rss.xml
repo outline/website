@@ -5,9 +5,26 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 26 Nov 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 19 Dec 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>pdf-embeds</guid>
+    <title>PDF embeds</title>
+    <link>https://www.getoutline.com/changelog/pdf-embeds</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>You can now embed PDF documents directly into your Outline document. This feature allows you to display PDF content seamlessly within your posts rather than uploading them as attachments.</p>
+<p>To embed a PDF, search for &quot;PDF&quot; in the slash command menu (<code>/pdf</code>) and select the &quot;Embed PDF&quot; option.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Table controls are no longer broken when columns and rows are merged</li>
+<li>Fixed an issue where copying and pasting from Google Docs would fail due to embedded images not uploading correctly</li>
+<li>Edit permission on a single document now allows moving sub-documents</li>
+<li>Lots of performance improvements to database queries</li>
+<li>Fixed invisible buttons in emails viewed in dark mode</li>
+</ul></div> ]]></description>
+    <pubDate>Fri, 19 Dec 2025 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>popular-documents</guid>
     <title>Popular documents</title>
