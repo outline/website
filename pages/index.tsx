@@ -15,8 +15,15 @@ import GetStarted from "components/GetStarted";
 import Layout from "components/Layout";
 import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
+import { isTouchDevice } from "lib/browser";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsMobile(isTouchDevice());
+  }, []);
+
   return (
     <Layout>
       <main>
@@ -344,7 +351,8 @@ export default function Home() {
         </div>
 
         <p className="description">
-          On the same page as us? Sign up in just a couple of clicks…
+          On the same page as us? Sign up in just a couple of{" "}
+          {isMobile ? "taps" : "clicks"}…
         </p>
         <GetStarted />
       </main>
