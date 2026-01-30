@@ -18,7 +18,7 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
             target="_blank"
             light
           >
-            Deploy on-premise
+            Deploy on-premises
           </Button>
           <small className="note">Self-hosted on your own server</small>
         </span>

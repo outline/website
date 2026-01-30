@@ -25,7 +25,7 @@ export default function ConfluenceComparison() {
         <>
           <p>
             Outline is the fast, modern, alternative to Google Docs built from
-            the ground up for knowledge bases and wikis – on-premise or in the
+            the ground up for knowledge bases and wikis – on-premises or in the
             cloud.
           </p>
           <GetStarted centered={false} />
@@ -87,7 +87,7 @@ export default function ConfluenceComparison() {
           />
         </div>
         <div className="pure-u-1 pure-u-md-2-5 feature">
-          <h2>Cloud hosted or on-premise.</h2>
+          <h2>Cloud hosted or on-premises.</h2>
           <p>
             Outline is available as a cloud hosted service that's always
             up-to-date or as a self-hosted installation.
@@ -135,7 +135,7 @@ export default function ConfluenceComparison() {
               <td>{nope}</td>
             </tr>
             <tr>
-              <td>Install on-premise</td>
+              <td>Install on-premises</td>
               <td>{check}</td>
               <td>{nope}</td>
             </tr>
