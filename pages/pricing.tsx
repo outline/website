@@ -16,7 +16,7 @@ export default function Pricing() {
   // Get the defaultIndex from query param on client side
   useEffect(() => {
     const plan = router.query.plan;
-    if (plan === "on-premise") {
+    if (plan === "on-premises") {
       setSelectedIndex(1);
     } else {
       setSelectedIndex(0);
@@ -24,7 +24,7 @@ export default function Pricing() {
   }, [router.query.plan]);
 
   const updateQueryString = (index: number) => {
-    const plan = index === 0 ? "cloud" : "on-premise";
+    const plan = index === 0 ? "cloud" : "on-premises";
     router.replace({ pathname: router.pathname, query: { plan } }, undefined, {
       shallow: true,
     });
@@ -56,7 +56,7 @@ export default function Pricing() {
               </Tab>
               <Tab className="pure-u-1 pure-u-md-1-4">
                 <h2>
-                  <TeamIcon size={32} color="currentColor" /> On-Premise
+                  <TeamIcon size={32} color="currentColor" /> On-Premises
                 </h2>
                 <p>Self-hosted on your own infrastructure</p>
               </Tab>
