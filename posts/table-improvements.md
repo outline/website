@@ -4,7 +4,7 @@ date: 2024-05-31T00:00:00Z
 slug: table-improvements
 ---
 
-![Guest role](/images/table-improvements.png)
+![Table](/images/table-improvements.png)
 
 This week we've made some highly requested improvements to tables in Outline, this will be one of
 many improvements to the editor in the coming weeks and months. Here's what's new:

@@ -20,6 +20,7 @@ export default function Changelog({ posts }) {
   );
 
   const sortedYears = Object.keys(years).reverse();
+  const compactBreakpoint = 15;
 
   return (
     <Layout
@@ -56,7 +57,10 @@ export default function Changelog({ posts }) {
       }
     >
       {posts.map((post, index) => (
-        <article key={post.slug} className={index < 20 ? "" : "compact"}>
+        <article
+          key={post.slug}
+          className={index < compactBreakpoint ? "" : "compact"}
+        >
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
           <a id={post.slug} />
           <h2>
@@ -65,7 +69,7 @@ export default function Changelog({ posts }) {
             </Link>
           </h2>
           <Metadata tag={post.tag} date={post.date} />
-          {index < 24 && <Markdown children={post.content} />}
+          {index < compactBreakpoint && <Markdown children={post.content} />}
         </article>
       ))}
       <style jsx>
