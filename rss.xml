@@ -5,9 +5,65 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Fri, 19 Dec 2025 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 27 Jan 2026 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>toggle-blocks</guid>
+    <title>Toggle blocks</title>
+    <link>https://www.getoutline.com/changelog/toggle-blocks</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><a href="https://docs.getoutline.com/s/guide/doc/toggles-LNZgXe0o2b">Toggle blocks</a> are a new block type that allows you to hide and show content with a click. This is useful for creating collapsible sections in your documents, such as FAQs, step-by-step instructions, or any content that you want to keep hidden until the reader chooses to reveal it.</p>
+<p>To create a toggle block, simply type <code>/toggle</code> and select the &quot;Toggle&quot; block from the menu. You can then add a title for the toggle and any content you want to include inside it. When the document is published, readers will see the toggle title and can click on it to expand or collapse the content.</p>
+<h3>Other improvements</h3>
+<ul>
+<li>Search results are now highlighted in the document when navigating from search</li>
+<li>We added a new Figma integration which allows unfurling information about Figma links in documents</li>
+</ul></div> ]]></description>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>table-improvements-3</guid>
+    <title>Table improvements</title>
+    <link>https://www.getoutline.com/changelog/table-improvements-3</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/table-improvements-3.png" alt="Table"/></p>
+<p>Part 3 in our recurring series of improvements to tables in Outline. This release includes the following updates:</p>
+<ul>
+<li>Table columns and rows can now be reordered by dragging the column or row header to a new position</li>
+<li>Table cells can now have a custom colored background, use the new &quot;Cell background&quot; option in the toolbar to choose a color</li>
+<li>Sorting of table data is more natural for currencies, dates, and numbers</li>
+<li>Lists inside tables no longer break Markdown output</li>
+<li>Tables with merged cells now behave correctly when sorting</li>
+</ul>
+<h3>Other improvements</h3>
+<ul>
+<li>Added the ability to choose custom color highlights for text</li>
+<li>Clicking on a group in the share dialog now shows it&#x27;s members</li>
+<li>Added a hide/show completed items control for checkbox lists</li>
+<li>Added Alt-click to recursively expand or collapse sidebar documents and collections</li>
+<li>Added a preference for desktop notification badge with off, count, and indicator options</li>
+</ul></div> ]]></description>
+    <pubDate>Tue, 27 Jan 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>custom-emoji</guid>
+    <title>Passkeys &amp; Custom emoji</title>
+    <link>https://www.getoutline.com/changelog/custom-emoji</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Passkey support has been added as an optional login method. You can now sign in with biometric authentication (TouchId, Windows Hello) or security keys instead of a password. Existing workspaces will need to enable this on the authentication providers screen.</p>
+<p>Also in this release – custom emoji. Upload your own custom icons and emoji in the admin settings and use them in your documents, comments, and reactions. Custom emoji can also be embedded in documents as small icons.</p></div> ]]></description>
+    <pubDate>Tue, 06 Jan 2026 12:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>diagrams-net</guid>
+    <title>Draw.io integration</title>
+    <link>https://www.getoutline.com/changelog/diagrams-net</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><a href="https://www.drawio.com/">Draw.io</a> (Diagrams.net) diagrams are now fully supported, insert new diagrams through the block menu or by uploading an existing SVG or PNG that was created in <a href="https://www.drawio.com/">Draw.io</a>.</p>
+<p>The original diagram data will be preserved and can be edited by clicking the &quot;Edit&quot; button that appears in the image toolbar. This will open the diagram in Diagrams.net where you can make changes and save, the updated diagram will then be reflected in your document.</p></div> ]]></description>
+    <pubDate>Thu, 01 Jan 2026 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>pdf-embeds</guid>
     <title>PDF embeds</title>
@@ -250,7 +306,7 @@ from in this release.</p></div> ]]></description>
     <guid>table-improvements</guid>
     <title>Table improvements</title>
     <link>https://www.getoutline.com/changelog/table-improvements</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Guest role"/></p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/table-improvements.png" alt="Table"/></p>
 <p>This week we&#x27;ve made some highly requested improvements to tables in Outline, this will be one of
 many improvements to the editor in the coming weeks and months. Here&#x27;s what&#x27;s new:</p>
 <ul>
