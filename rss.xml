@@ -5,9 +5,24 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Tue, 27 Jan 2026 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 18 Feb 2026 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>mcp</guid>
+    <title>MCP</title>
+    <link>https://www.getoutline.com/changelog/mcp</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>MCP (Model Context Protocol) is an open standard that lets AI assistants like Claude, Cursor, ChatGPT, and others directly search, read, create, and edit documents in your Outline workspace. Once connected, your AI tools become an extension of your knowledgebase — able to find information, draft new docs, and update existing ones on your behalf.</p>
+<p>Using the MCP you can:</p>
+<ul>
+<li>Search for information across your entire workspace</li>
+<li>Use your AI assistant to help you write and edit content in Outline</li>
+<li>Find, create, and resolve comments</li>
+</ul>
+<p>Each Outline workspace now comes with an MCP server built-in, so you can connect your AI assistants in just a minute of setup. Check out <a href="https://docs.getoutline.com/s/guide/doc/mcp-6j9jtENNKL">the docs to get started</a>.</p></div> ]]></description>
+    <pubDate>Wed, 18 Feb 2026 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>toggle-blocks</guid>
     <title>Toggle blocks</title>
