@@ -5,9 +5,19 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 18 Feb 2026 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 22 Feb 2026 12:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>gitlab</guid>
+    <title>GitLab integration</title>
+    <link>https://www.getoutline.com/changelog/gitlab</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/gitlab.png" alt="GitLab integrations"/></p>
+<p>We have rolled out a new <a href="https://gitlab.com">GitLab</a> integration that allows embedding rich issue and merge request information directly into an Outline document. The integration works with both GitLab.com and self-hosted GitLab instances.</p>
+<p>These new mentions will, of course, stay automatically up-to-date. To get started, connect your GitLab installation in <strong>Settings -&gt; Integrations</strong> and then paste an issue or merge request URL from GitLab into the editor and selection &quot;mention&quot;.</p></div> ]]></description>
+    <pubDate>Sun, 22 Feb 2026 12:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>mcp</guid>
     <title>MCP</title>
