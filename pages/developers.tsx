@@ -16,11 +16,11 @@ export default function Developers({ spec }) {
       const body = document.querySelector("body");
       body?.classList.remove("dark-mode");
 
-      for (const style of Array.from(document.querySelectorAll("style"))) {
-        if (style.textContent.includes("scalar")) {
-          style.parentElement.removeChild(style);
-        }
-      }
+      // for (const style of Array.from(document.querySelectorAll("style"))) {
+      //   if (style.textContent.includes("scalar")) {
+      //     style.parentElement.removeChild(style);
+      //   }
+      // }
     };
   }, []);
 
@@ -39,7 +39,7 @@ export default function Developers({ spec }) {
           type="application/json"
           data-configuration={JSON.stringify(configuration)}
         ></script>
-        <Script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference" />
+        <Script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.40.0/dist/browser/standalone.js" />
       </div>
       <style jsx>{`
         .documentation {
