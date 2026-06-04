@@ -42,6 +42,10 @@ export default function Developers({ spec }) {
         <Script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.40.0/dist/browser/standalone.js" />
       </div>
       <style jsx>{`
+        aside.scalar-app.hidden {
+          display: flex !important;
+        }
+
         .documentation {
           --scalar-header-height: 75px;
         }
