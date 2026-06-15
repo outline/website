@@ -5,9 +5,36 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 22 Feb 2026 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 01 Jun 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>request-access-flow</guid>
+    <title>Request access to documents</title>
+    <link>https://www.getoutline.com/changelog/request-access-flow</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Members can now request access to documents they don’t yet have permission to view. When someone follows a link they can’t open, they’ll see a simple “request access” option that notifies the right people to approve.</p>
+<p>This helps reduce “who owns this doc?” back‑and‑forth and keeps your workspace more discoverable without sacrificing access controls.</p></div> ]]></description>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>public-document-subscriptions</guid>
+    <title>Public document subscriptions</title>
+    <link>https://www.getoutline.com/changelog/public-document-subscriptions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Readers can now subscribe to publicly shared documents by email. When a subscribed document changes, we’ll send a notification that includes a summary of what’s new so followers can stay up‑to‑date without constantly checking back.</p>
+<p>Public shares also gained quality‑of‑life improvements like better search highlights, the ability to customize the logo and title, and a command menu on shared pages, making public docs feel more like a lightweight knowledge portal.</p></div> ]]></description>
+    <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>mcp-improvements</guid>
+    <title>MCP Improvements</title>
+    <link>https://www.getoutline.com/changelog/mcp-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We’ve significantly expanded Outline’s built‑in MCP (Model Context Protocol) support. AI assistants can now work with richer tools, including patching documents, moving and deleting documents and collections, working with attachments, and creating and resolving inline comments.</p>
+<p>Responses from MCP now include more context, such as document breadcrumbs, summaries, and suggested titles, so AI integrations can feel more aware of your workspace structure.</p></div> ]]></description>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>gitlab</guid>
     <title>GitLab integration</title>
