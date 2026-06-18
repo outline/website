@@ -5,9 +5,32 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Mon, 01 Jun 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 18 Jun 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>date-mentions</guid>
+    <title>Date mentions</title>
+    <link>https://www.getoutline.com/changelog/date-mentions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/date-mentions.png" alt="Outline date mentions"/></p>
+<p>You can now type <code>@</code> in any document to insert an inline date mention. Just like mentioning a teammate or linking to another document, type <code>@</code> and start typing a date to place it right in the flow of your text. Date mentions are a natural way to reference deadlines, meetings, or milestones without breaking into a separate calendar app.</p>
+<p>You can use natural language like <code>@Today</code>, <code>@Yesterday</code>, relative dates like <code>@2 days ago</code>, or more formal formats like <code>@25-12-26</code>.</p></div> ]]></description>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>task-list-improvements</guid>
+    <title>Task list improvements</title>
+    <link>https://www.getoutline.com/changelog/task-list-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve shipped a round of improvements to task lists and checkboxes in the editor so they&#x27;re easier to use and more natural to interact with.</p>
+<ul>
+<li><strong>Quick conversion</strong> – type <code>[ ]</code> at the start of any bullet list item to instantly convert it into a task list. Converting via the menu will now act more predictably</li>
+<li><strong>Completion animation</strong> – a stroke animation plays when you check off a task, giving a satisfying sense of progress</li>
+<li><strong>Better &quot;Hide completed&quot;</strong> – the option to hide completed tasks now applies correctly to the current list, rather than affecting parent list items</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>request-access-flow</guid>
     <title>Request access to documents</title>
