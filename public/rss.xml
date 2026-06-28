@@ -5,9 +5,31 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Thu, 18 Jun 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>toggle-headings</guid>
+    <title>Toggle headings</title>
+    <link>https://www.getoutline.com/changelog/toggle-headings</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/toggle-headings.png" alt="Toggle headings"/></p>
+<p>You can now insert a collapsible toggle section pre-filled with a heading in one step. Open the slash menu (<code>/</code>) and choose <strong>Big toggle heading</strong>, <strong>Medium toggle heading</strong>, or <strong>Small toggle heading</strong> to drop in a heading nested inside a toggle block — no manual wrapping required.</p>
+<p>This makes it easy to build structured, scannable documents where readers can expand just the sections they care about - toggle headings are closed by default.</p></div> ]]></description>
+    <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>desktop-improvements</guid>
+    <title>Desktop app improvements</title>
+    <link>https://www.getoutline.com/changelog/desktop-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Two improvements have landed in the desktop app this week.</p>
+<ul>
+<li><strong>Passkey login</strong> – you can now sign in to the desktop app using a passkey. The app opens your system browser to complete the authentication flow, then returns you straight to the app — no password needed.</li>
+<li><strong>Installation switcher</strong> – a new switcher on the login screen lets you move between different Outline installations, making the desktop app compatible with on-premise deployments.</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>date-mentions</guid>
     <title>Date mentions</title>
