@@ -5,9 +5,36 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 11 Jul 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
-      
+
+  <item>
+    <guid>section-link-previews</guid>
+    <title>Section-aware link previews</title>
+    <link>https://www.getoutline.com/changelog/section-link-previews</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Hover previews for document links just got smarter. When a link points to a specific heading rather than the top of a document, the preview card now shows the content of that section instead of the document&#x27;s opening paragraph — so you can see exactly what you&#x27;re about to click through to.</p>
+<p>This works for both internal links and public share links, and applies wherever previews already show up, including document mentions.</p></div> ]]></description>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>comments-in-gutter</guid>
+    <title>Comment marks in the gutter</title>
+    <link>https://www.getoutline.com/changelog/comments-in-gutter</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Comments are now easier to spot at a glance. Enable <strong>Comments in gutter</strong> from your preferences and a small icon with a count will appear alongside any line that has a comment thread attached — hover or click it just like you would the highlighted text itself.</p>
+<p>It&#x27;s a small change, but it makes it much easier to see where discussion is happening in a document without having to scan through the text for highlights.</p></div> ]]></description>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>slab-importer</guid>
+    <title>Import from Slab</title>
+    <link>https://www.getoutline.com/changelog/slab-importer</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>You can now bring your content over from <a href="https://slab.com">Slab</a> directly into Outline. Export your workspace as a Markdown zip from Slab and upload it in <strong>Settings → Import</strong> — titles, images, and folder structure are carried across automatically, with each workspace area mapping neatly to its own collection.</p>
+<p>This joins our existing importers for Notion, Confluence, and Word, making it easier to move your team&#x27;s knowledge base into Outline without losing formatting along the way.</p></div> ]]></description>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>toggle-headings</guid>
     <title>Toggle headings</title>
