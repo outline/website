@@ -5,9 +5,81 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 22 Feb 2026 12:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>toggle-headings</guid>
+    <title>Toggle headings</title>
+    <link>https://www.getoutline.com/changelog/toggle-headings</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/toggle-headings.png" alt="Toggle headings"/></p>
+<p>You can now insert a collapsible toggle section pre-filled with a heading in one step. Open the slash menu (<code>/</code>) and choose <strong>Big toggle heading</strong>, <strong>Medium toggle heading</strong>, or <strong>Small toggle heading</strong> to drop in a heading nested inside a toggle block — no manual wrapping required.</p>
+<p>This makes it easy to build structured, scannable documents where readers can expand just the sections they care about - toggle headings are closed by default.</p></div> ]]></description>
+    <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>desktop-improvements</guid>
+    <title>Desktop app improvements</title>
+    <link>https://www.getoutline.com/changelog/desktop-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Two improvements have landed in the desktop app this week.</p>
+<ul>
+<li><strong>Passkey login</strong> – you can now sign in to the desktop app using a passkey. The app opens your system browser to complete the authentication flow, then returns you straight to the app — no password needed.</li>
+<li><strong>Installation switcher</strong> – a new switcher on the login screen lets you move between different Outline installations, making the desktop app compatible with on-premise deployments.</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>date-mentions</guid>
+    <title>Date mentions</title>
+    <link>https://www.getoutline.com/changelog/date-mentions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/date-mentions.png" alt="Outline date mentions"/></p>
+<p>You can now type <code>@</code> in any document to insert an inline date mention. Just like mentioning a teammate or linking to another document, type <code>@</code> and start typing a date to place it right in the flow of your text. Date mentions are a natural way to reference deadlines, meetings, or milestones without breaking into a separate calendar app.</p>
+<p>You can use natural language like <code>@Today</code>, <code>@Yesterday</code>, relative dates like <code>@2 days ago</code>, or more formal formats like <code>@25-12-26</code>.</p></div> ]]></description>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>task-list-improvements</guid>
+    <title>Task list improvements</title>
+    <link>https://www.getoutline.com/changelog/task-list-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We&#x27;ve shipped a round of improvements to task lists and checkboxes in the editor so they&#x27;re easier to use and more natural to interact with.</p>
+<ul>
+<li><strong>Quick conversion</strong> – type <code>[ ]</code> at the start of any bullet list item to instantly convert it into a task list. Converting via the menu will now act more predictably</li>
+<li><strong>Completion animation</strong> – a stroke animation plays when you check off a task, giving a satisfying sense of progress</li>
+<li><strong>Better &quot;Hide completed&quot;</strong> – the option to hide completed tasks now applies correctly to the current list, rather than affecting parent list items</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>request-access-flow</guid>
+    <title>Request access to documents</title>
+    <link>https://www.getoutline.com/changelog/request-access-flow</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Members can now request access to documents they don’t yet have permission to view. When someone follows a link they can’t open, they’ll see a simple “request access” option that notifies the right people to approve.</p>
+<p>This helps reduce “who owns this doc?” back‑and‑forth and keeps your workspace more discoverable without sacrificing access controls.</p></div> ]]></description>
+    <pubDate>Mon, 01 Jun 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>public-document-subscriptions</guid>
+    <title>Public document subscriptions</title>
+    <link>https://www.getoutline.com/changelog/public-document-subscriptions</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Readers can now subscribe to publicly shared documents by email. When a subscribed document changes, we’ll send a notification that includes a summary of what’s new so followers can stay up‑to‑date without constantly checking back.</p>
+<p>Public shares also gained quality‑of‑life improvements like better search highlights, the ability to customize the logo and title, and a command menu on shared pages, making public docs feel more like a lightweight knowledge portal.</p></div> ]]></description>
+    <pubDate>Sun, 03 May 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>mcp-improvements</guid>
+    <title>MCP Improvements</title>
+    <link>https://www.getoutline.com/changelog/mcp-improvements</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We’ve significantly expanded Outline’s built‑in MCP (Model Context Protocol) support. AI assistants can now work with richer tools, including patching documents, moving and deleting documents and collections, working with attachments, and creating and resolving inline comments.</p>
+<p>Responses from MCP now include more context, such as document breadcrumbs, summaries, and suggested titles, so AI integrations can feel more aware of your workspace structure.</p></div> ]]></description>
+    <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>gitlab</guid>
     <title>GitLab integration</title>
