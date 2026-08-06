@@ -4,6 +4,8 @@ date: 2026-08-04T00:00:00Z
 slug: multi-select
 ---
 
+![Multiselect](/images/multi-select.png)
+
 You can now select multiple items at once across Outline and act on them together, instead of repeating the same action one row at a time.
 
 - **Documents** – select multiple documents from search results or any document list to star, pin, archive, or otherwise batch-update them in a single action.
