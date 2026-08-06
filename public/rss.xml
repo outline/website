@@ -5,9 +5,48 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Sun, 28 Jun 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Wed, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>new-import-formats</guid>
+    <title>Import web pages, emails, PDFs, and TextBundle archives</title>
+    <link>https://www.getoutline.com/changelog/new-import-formats</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/import-documents.png" alt="Import documents"/></p>
+<p>Outline can now import content from a few more sources, making it easier to bring existing notes and archives into your workspace.</p>
+<ul>
+<li><strong>Web pages</strong> – import a page saved as MHTML (<code>.mhtml</code>/<code>.mht</code>) straight from your browser, images and all.</li>
+<li><strong>Emails</strong> – import an <code>.eml</code> message and Outline will convert it to a document, using the email subject as the title.</li>
+<li><strong>PDFs</strong> – import a text-based PDF and Outline will recover headings, lists, and tables from the layout, converting it to a fully editable document.</li>
+<li><strong>TextPack</strong> – import <code>.textpack</code> archives, the zipped format used by apps like Bear, Ulysses, and iA Writer, including any embedded images.</li>
+<li></li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>multi-select</guid>
+    <title>Multi-select</title>
+    <link>https://www.getoutline.com/changelog/multi-select</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/multi-select.png" alt="Multiselect"/></p>
+<p>You can now select multiple items at once across Outline and act on them together, instead of repeating the same action one row at a time.</p>
+<ul>
+<li><strong>Documents</strong> – select multiple documents from search results or any document list to star, pin, archive, or otherwise batch-update them in a single action.</li>
+<li><strong>Users, groups, and group members</strong> – the same selection model is now available in workspace settings, so admins can resend invites, activate, suspend, revoke, or remove several people or groups at once.</li>
+</ul>
+<p>Selection works the way you&#x27;d expect: click to toggle a row, shift-click to select a range, or use &quot;select all&quot;. A toolbar appears with the relevant bulk actions as soon as something is selected, and selected rows are highlighted so it&#x27;s always clear what you&#x27;re about to change.</p></div> ]]></description>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>profile-cards</guid>
+    <title>Profile cards on hover</title>
+    <link>https://www.getoutline.com/changelog/profile-cards</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Hovering over a person&#x27;s avatar anywhere in Outline now shows a small profile card, so you can get context on who they are without leaving the page you&#x27;re on.</p>
+<p>The card shows their name, avatar, status (such as invited, suspended, admin, or guest), and their local time — handy for knowing whether a teammate is likely to be online before you <strong>@mention</strong> them.</p></div> ]]></description>
+    <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>toggle-headings</guid>
     <title>Toggle headings</title>
