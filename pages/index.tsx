@@ -12,6 +12,7 @@ import {
 import Card from "components/Card";
 import Screenshot from "components/Screenshot";
 import GetStarted from "components/GetStarted";
+import SocialProof from "components/SocialProof";
 import Layout from "components/Layout";
 import GithubLogo from "components/GithubLogo";
 import { spacing, colors, typography } from "theme";
@@ -40,6 +41,8 @@ export default function Home() {
 
           <Screenshot />
         </div>
+
+        <SocialProof />
 
         <h1 className="subtitle">Why you’ll love using Outline</h1>
         <p className="description">
