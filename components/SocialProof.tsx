@@ -7,8 +7,8 @@ export default function SocialProof() {
       <section className="social-proof" aria-label="Social proof">
         <div className="stats">
           <div className="stat">
-            <span className="value">10,000+</span>
-            <span className="label">companies</span>
+            <span className="value">2,000+</span>
+            <span className="label">customers</span>
           </div>
           <div className="divider" aria-hidden="true" />
           <div className="stat">
