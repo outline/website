@@ -11,6 +11,11 @@ export default function SocialProof() {
             <span className="label">companies</span>
           </div>
           <div className="divider" aria-hidden="true" />
+          <div className="stat">
+            <span className="value">10 years</span>
+            <span className="label">open source</span>
+          </div>
+          <div className="divider" aria-hidden="true" />
           <a
             className="stat link"
             href="https://github.com/outline/outline"
@@ -27,8 +32,7 @@ export default function SocialProof() {
           width: 100%;
           display: flex;
           justify-content: center;
-          padding: ${spacing.large} ${spacing.medium}
-            ${spacing.xlarge};
+          padding: ${spacing.large} ${spacing.medium} ${spacing.xlarge};
         }
 
         .stats {
