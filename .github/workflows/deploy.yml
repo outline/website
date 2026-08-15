@@ -3,6 +3,10 @@ name: deploy
 on:
   push:
     branches: [ main ]
+  schedule:
+    # Daily at 09:00 UTC. Only deploys if the OpenAPI spec has changed since
+    # the last successful deployment, see the check job below.
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 # Allow only one concurrent deployment, skipping runs queued between the run
@@ -14,11 +18,98 @@ concurrency:
 
 permissions:
   contents: read
+  deployments: read
   pages: write
   id-token: write
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    outputs:
+      should-deploy: ${{ steps.check.outputs.should-deploy }}
+
+    steps:
+      - name: Check for OpenAPI spec changes since last deployment
+        id: check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Keep in sync with the spec URL fetched in pages/developers.tsx
+            const SPEC = {
+              owner: 'outline',
+              repo: 'openapi',
+              sha: 'main',
+              path: 'spec3.json',
+            };
+
+            // Pushes and manual runs always deploy. Scheduled runs exist only
+            // to pick up spec changes, which happen upstream with no commit
+            // here to trigger a build.
+            if (context.eventName !== 'schedule') {
+              core.setOutput('should-deploy', 'true');
+              return;
+            }
+
+            // Most recent first, so this is normally satisfied by the first
+            // one. Only a run of failed deployments needs more.
+            const deployments = await github.rest.repos.listDeployments({
+              ...context.repo,
+              environment: 'github-pages',
+              per_page: 10,
+            });
+
+            let deployedAt;
+            for (const deployment of deployments.data) {
+              const statuses = await github.rest.repos.listDeploymentStatuses({
+                ...context.repo,
+                deployment_id: deployment.id,
+                per_page: 10,
+              });
+
+              // Superseded deployments pick up an "inactive" status on top of
+              // their "success" one, so check every state rather than the last.
+              if (statuses.data.some((status) => status.state === 'success')) {
+                deployedAt = new Date(deployment.created_at);
+                break;
+              }
+            }
+
+            if (!deployedAt) {
+              core.info('No previous successful deployment found, deploying');
+              core.setOutput('should-deploy', 'true');
+              return;
+            }
+
+            const commits = await github.rest.repos.listCommits({
+              ...SPEC,
+              per_page: 1,
+            });
+
+            if (!commits.data.length) {
+              core.warning(`No commits found for ${SPEC.path}, skipping`);
+              core.setOutput('should-deploy', 'false');
+              return;
+            }
+
+            const commit = commits.data[0];
+            const committedAt = new Date(commit.commit.committer.date);
+
+            // The spec is fetched near the start of the build, a few minutes
+            // before the deployment is recorded, so compare against a slightly
+            // earlier time. A commit landing mid-build then costs one spare
+            // deploy rather than being missed until the spec next changes.
+            const margin = 15 * 60 * 1000;
+            const changed = committedAt.getTime() > deployedAt.getTime() - margin;
+
+            core.info(`Spec last changed ${committedAt.toISOString()} (${commit.sha})`);
+            core.info(`Site last deployed ${deployedAt.toISOString()}`);
+            core.info(changed ? 'Spec has changed, deploying' : 'No spec changes, skipping');
+            core.setOutput('should-deploy', changed ? 'true' : 'false');
+
   build:
+    needs: check
+    if: needs.check.outputs.should-deploy == 'true'
     runs-on: ubuntu-latest
 
     steps:

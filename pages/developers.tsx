@@ -187,7 +187,7 @@ export default function Developers({ spec }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    "https://raw.githubusercontent.com/outline/openapi/develop/spec3.json"
+    "https://raw.githubusercontent.com/outline/openapi/main/spec3.json"
   );
   const spec = await res.json();
 
