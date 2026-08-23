@@ -14,8 +14,10 @@
 # production
 /build
 
-# downloaded at build time by scripts/fetch-openapi.js
+# generated at build time, see the "generate" script in package.json
 /public/openapi.json
+/public/sitemap.xml
+/public/llms.txt
 
 # misc
 .DS_Store
