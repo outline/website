@@ -1,52 +1,111 @@
 import * as React from "react";
 import fs from "fs";
 import path from "path";
+import Head from "next/head";
 import Layout from "components/Layout";
-import { colors } from "../theme";
 import Script from "next/script";
+import scalarConfiguration from "lib/scalarConfiguration";
 
-export default function Developers({ spec }) {
-  const configuration = {
-    layout: "modern",
-    hideDownloadButton: true,
-  };
+// Must match the @scalar/api-reference version bundled by the
+// @scalar/server-side-rendering package that prerendered the markup, or
+// hydration may mismatch. See scripts/render-scalar.mjs.
+const SCALAR_VERSION = "1.66.1";
 
-  // Clean up the effects of Scalar API Reference
-  React.useEffect(() => {
-    return () => {
-      const body = document.querySelector("body");
-      body?.classList.remove("dark-mode");
+export default function Developers({ html, colorModeScript }) {
+  const instance = React.useRef(null);
+  const initialized = React.useRef(false);
+  const abortController = React.useRef(null);
 
-      // for (const style of Array.from(document.querySelectorAll("style"))) {
-      //   if (style.textContent.includes("scalar")) {
-      //     style.parentElement.removeChild(style);
-      //   }
-      // }
-    };
+  const initialize = React.useCallback(() => {
+    if (initialized.current || !window["Scalar"]) {
+      return;
+    }
+    initialized.current = true;
+
+    // The spec is fetched rather than passed through page props to avoid
+    // embedding another copy of it in __NEXT_DATA__ — it is already published
+    // at /openapi.json, and the prerendered markup is shown in the meantime.
+    fetch("/openapi.json", { signal: abortController.current?.signal })
+      .then((res) => res.json())
+      .then((content) => {
+        if (!document.getElementById("scalar-api-reference")) {
+          return;
+        }
+
+        // The container already holds the prerendered markup, which switches
+        // Scalar into hydration mode rather than rendering from scratch.
+        instance.current = window["Scalar"].createApiReference(
+          "#scalar-api-reference",
+          {
+            ...scalarConfiguration,
+            content,
+          }
+        );
+      })
+      .catch((err) => {
+        if (err.name !== "AbortError") {
+          throw err;
+        }
+      });
   }, []);
+
+  React.useEffect(() => {
+    abortController.current = new AbortController();
+
+    // Handles client-side navigations back to this page, when the standalone
+    // bundle is already loaded and Script's onLoad will not fire again.
+    initialize();
+
+    // Clean up the effects of Scalar API Reference
+    return () => {
+      abortController.current?.abort();
+      instance.current?.destroy?.();
+      instance.current = null;
+      initialized.current = false;
+      document.body.classList.remove("dark-mode", "light-mode");
+    };
+  }, [initialize]);
 
   return (
     <Layout title="API Documentation" fullWidth>
-      <div className="documentation">
-        <script
-          id="api-reference"
-          type="application/json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(spec),
-          }}
-        />
-        <script
-          id="api-reference"
-          type="application/json"
-          data-configuration={JSON.stringify(configuration)}
-        ></script>
-        <Script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference@1.40.0/dist/browser/standalone.js" />
-      </div>
-      <style jsx>{`
-        aside.scalar-app.hidden {
-          display: flex !important;
+      <Head>
+        <link rel="stylesheet" href="/scalar.css" />
+      </Head>
+      <script dangerouslySetInnerHTML={{ __html: colorModeScript }} />
+      <div
+        id="scalar-api-reference"
+        className="documentation"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+      <Script
+        src={`https://cdn.jsdelivr.net/npm/@scalar/api-reference@${SCALAR_VERSION}/dist/browser/standalone.js`}
+        onLoad={initialize}
+      />
+      <style jsx global>{`
+        /* Layout's global "h1 { font-size: 3em }" and "h2 { font-size: 2em }"
+           override Scalar's heading reset, which lives in a CSS @layer and so
+           always loses to the site's unlayered rules. Mirror the reset here at
+           minimal specificity (:where) so Scalar's own sizing rules still win. */
+        .documentation :where(.scalar-app) :where(h1, h2) {
+          font-size: inherit;
         }
 
+        /* PureCSS (loaded by Layout) has ".hidden { display: none !important }"
+           which clobbers Scalar's Tailwind responsive display utilities such as
+           the sidebar's "hidden lg:flex". Restore them, scoped to this page.
+           Breakpoints must match scalar.css: lg = 1000px, xl = 1200px. */
+        @media (min-width: 1000px) {
+          .documentation .scalar-app [class~="lg:flex"] {
+            display: flex !important;
+          }
+        }
+        @media (min-width: 1200px) {
+          .documentation .scalar-app [class~="xl:flex"] {
+            display: flex !important;
+          }
+        }
+      `}</style>
+      <style jsx>{`
         .documentation {
           --scalar-header-height: 75px;
         }
@@ -197,11 +256,28 @@ export async function getStaticProps() {
     );
   }
 
-  const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
+  // The API reference is prerendered to HTML at build time so the content is
+  // served statically, then hydrated by Scalar's standalone bundle.
+  const prerenderedPath = path.join(
+    process.cwd(),
+    ".generated",
+    "developers.json"
+  );
+
+  if (!fs.existsSync(prerenderedPath)) {
+    throw new Error(
+      ".generated/developers.json is missing, run `yarn scalar` to render it"
+    );
+  }
+
+  const { html, colorModeScript } = JSON.parse(
+    fs.readFileSync(prerenderedPath, "utf8")
+  );
 
   return {
     props: {
-      spec,
+      html,
+      colorModeScript,
     },
   };
 }
