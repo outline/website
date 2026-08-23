@@ -1,6 +1,6 @@
 set -e
 rm -rf node_modules/.cache
-next build
+yarn build
 touch out/.nojekyll
 echo www.getoutline.com >> out/CNAME
 git add out/

@@ -1,5 +1,6 @@
 import * as React from "react";
-import fetch from "isomorphic-fetch";
+import fs from "fs";
+import path from "path";
 import Layout from "components/Layout";
 import { colors } from "../theme";
 import Script from "next/script";
@@ -186,10 +187,17 @@ export default function Developers({ spec }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://raw.githubusercontent.com/outline/openapi/main/spec3.json"
-  );
-  const spec = await res.json();
+  // The spec is downloaded to public/openapi.json before the build so that it
+  // is also published at /openapi.json for API clients and agents to consume.
+  const specPath = path.join(process.cwd(), "public", "openapi.json");
+
+  if (!fs.existsSync(specPath)) {
+    throw new Error(
+      "public/openapi.json is missing, run `yarn openapi` to download it"
+    );
+  }
+
+  const spec = JSON.parse(fs.readFileSync(specPath, "utf8"));
 
   return {
     props: {
