@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "openapi": "node scripts/fetch-openapi.js",
+    "predev": "yarn openapi",
     "dev": "next dev --port=4000",
+    "prebuild": "yarn openapi",
     "build": "next build",
     "start": "next start",
     "deploy": "/bin/sh deploy.sh",

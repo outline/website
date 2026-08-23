@@ -14,6 +14,9 @@
 # production
 /build
 
+# downloaded at build time by scripts/fetch-openapi.js
+/public/openapi.json
+
 # misc
 .DS_Store
 

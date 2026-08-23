@@ -35,7 +35,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // Keep in sync with the spec URL fetched in pages/developers.tsx
+            // Keep in sync with the spec URL in scripts/fetch-openapi.js
             const SPEC = {
               owner: 'outline',
               repo: 'openapi',
