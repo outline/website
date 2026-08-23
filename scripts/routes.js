@@ -48,7 +48,7 @@ function getStaticRoutes() {
   return routes.sort();
 }
 
-/** Changelog entries, most recently published first. */
+/** Changelog entries and their markdown bodies, most recently published first. */
 function getChangelogPosts() {
   const dir = path.join(ROOT, "posts");
 
@@ -56,22 +56,37 @@ function getChangelogPosts() {
     .readdirSync(dir)
     .filter((fileName) => fileName.endsWith(".md"))
     .map((fileName) => {
-      const { data } = matter(
+      const { data, content } = matter(
         fs.readFileSync(path.join(dir, fileName), "utf8")
       );
 
       return {
         slug: data.slug,
         title: data.title,
+        tag: data.tag || "",
         date: new Date(data.date).toISOString(),
+        content: content.trim(),
       };
     })
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
-/** Integration pages, in the order they're listed on /integrations. */
+/**
+ * Integration pages with their markdown bodies, in the order they're listed on
+ * /integrations. Their metadata lives in index.json rather than in frontmatter.
+ */
 function getIntegrations() {
-  return require(path.join(ROOT, "integrations", "index.json"));
+  const index = require(path.join(ROOT, "integrations", "index.json"));
+
+  return index.map((integration) => ({
+    ...integration,
+    content: fs
+      .readFileSync(
+        path.join(ROOT, "integrations", `${integration.slug}.md`),
+        "utf8"
+      )
+      .trim(),
+  }));
 }
 
 module.exports = {

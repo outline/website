@@ -1,12 +1,13 @@
 import fs from "fs";
 import path from "path";
+import Head from "next/head";
 import { find } from "lodash";
 import content from "integrations/index.json";
 import Markdown from "components/Markdown";
 import IntegrationsMenu from "components/IntegrationsMenu";
 import Layout from "components/Layout";
 
-export default function Integration({ name, body, description }) {
+export default function Integration({ slug, name, body, description }) {
   return (
     <Layout
       title={`${name} Integration`}
@@ -14,6 +15,13 @@ export default function Integration({ name, body, description }) {
       hero={description}
       sidebar={<IntegrationsMenu />}
     >
+      <Head>
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href={`/integrations/${slug}.md`}
+        />
+      </Head>
       <Markdown children={body} />
     </Layout>
   );

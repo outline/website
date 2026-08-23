@@ -141,6 +141,11 @@ function main() {
           `${DOMAIN}/developers`,
           PAGES["/developers"][1]
         ),
+        link(
+          "MCP server setup",
+          "https://docs.getoutline.com/s/guide/doc/mcp-6j9jtENNKL",
+          "Every workspace has a built in MCP server at its own URL with /mcp appended, over Streamable HTTP, authenticated with OAuth or an API key"
+        ),
       ],
     },
     {
@@ -215,6 +220,7 @@ ${sections
 ## Notes
 
 - The full list of pages, including all ${posts.length} changelog entries, is in [sitemap.xml](${DOMAIN}/sitemap.xml).
+- Changelog and integration pages are also published as markdown at the same URL with a .md suffix, for example [${DOMAIN}/changelog/${posts[0].slug}.md](${DOMAIN}/changelog/${posts[0].slug}.md).
 `;
 
   fs.writeFileSync(OUTPUT_PATH, llms);
