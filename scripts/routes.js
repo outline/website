@@ -1,6 +1,7 @@
 /**
- * Inventory of the site's public URLs, shared by the sitemap.xml and llms.txt
- * generators so that the two can't drift apart.
+ * Inventory of the site's public URLs and the markdown they're authored from,
+ * shared by the sitemap.xml, llms.txt and .md generators so that they can't
+ * drift apart.
  */
 
 const fs = require("fs");
@@ -56,7 +57,7 @@ function getChangelogPosts() {
     .readdirSync(dir)
     .filter((fileName) => fileName.endsWith(".md"))
     .map((fileName) => {
-      const { data } = matter(
+      const { data, content } = matter(
         fs.readFileSync(path.join(dir, fileName), "utf8")
       );
 
@@ -64,6 +65,7 @@ function getChangelogPosts() {
         slug: data.slug,
         title: data.title,
         date: new Date(data.date).toISOString(),
+        content: content.trim(),
       };
     })
     .sort((a, b) => b.date.localeCompare(a.date));
@@ -71,7 +73,17 @@ function getChangelogPosts() {
 
 /** Integration pages, in the order they're listed on /integrations. */
 function getIntegrations() {
-  return require(path.join(ROOT, "integrations", "index.json"));
+  return require(path.join(ROOT, "integrations", "index.json")).map(
+    (integration) => ({
+      ...integration,
+      content: fs
+        .readFileSync(
+          path.join(ROOT, "integrations", `${integration.slug}.md`),
+          "utf8"
+        )
+        .trim(),
+    })
+  );
 }
 
 module.exports = {

@@ -12,4 +12,3 @@ Outline can now import content from a few more sources, making it easier to brin
 - **Emails** – import an `.eml` message and Outline will convert it to a document, using the email subject as the title.
 - **PDFs** – import a text-based PDF and Outline will recover headings, lists, and tables from the layout, converting it to a fully editable document.
 - **TextPack** – import `.textpack` archives, the zipped format used by apps like Bear, Ulysses, and iA Writer, including any embedded images.
--
