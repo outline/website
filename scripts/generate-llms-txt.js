@@ -215,6 +215,7 @@ ${sections
 ## Notes
 
 - The full list of pages, including all ${posts.length} changelog entries, is in [sitemap.xml](${DOMAIN}/sitemap.xml).
+- Changelog entries and integration pages are written in markdown. Appending \`.md\` to either kind of URL returns that source, without the surrounding page, for example [${DOMAIN}/changelog/${posts[0].slug}.md](${DOMAIN}/changelog/${posts[0].slug}.md).
 `;
 
   fs.writeFileSync(OUTPUT_PATH, llms);

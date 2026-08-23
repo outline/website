@@ -9,6 +9,7 @@ import { remark } from "remark";
 import strip from "strip-markdown";
 
 export default function Changelog({
+  slug,
   title,
   date,
   tag,
@@ -44,6 +45,12 @@ export default function Changelog({
     >
       <Head>
         {image && <meta key="og:image" property="og:image" content={image} />}
+        <link
+          rel="alternate"
+          type="text/markdown"
+          title={`${title} as markdown`}
+          href={`/changelog/${slug}.md`}
+        />
       </Head>
       <h2>{title}</h2>
       <Metadata tag={tag} date={date} />
