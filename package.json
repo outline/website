@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "openapi": "node scripts/fetch-openapi.js",
+    "scalar": "node scripts/render-scalar.mjs",
     "sitemap": "node scripts/generate-sitemap.js",
     "llms": "node scripts/generate-llms-txt.js",
-    "generate": "yarn openapi && yarn sitemap && yarn llms",
+    "generate": "yarn openapi && yarn scalar && yarn sitemap && yarn llms",
     "predev": "yarn generate",
     "dev": "next dev --port=4000",
     "prebuild": "yarn generate",
@@ -17,7 +18,6 @@
   },
   "dependencies": {
     "@radix-ui/react-tooltip": "^1.0.7",
-    "@scalar/api-reference-react": "^0.2.5",
     "classnames": "^2.2.6",
     "core-js": "^3.9.1",
     "date-fns": "^2.14.0",
@@ -38,6 +38,7 @@
     "tiny-cookie": "^2.3.2"
   },
   "devDependencies": {
+    "@scalar/server-side-rendering": "0.1.44",
     "@types/node": "^14.0.11",
     "@types/react": "^18.2.0",
     "babel-eslint": "^10.1.0",

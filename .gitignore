@@ -18,6 +18,8 @@
 /public/openapi.json
 /public/sitemap.xml
 /public/llms.txt
+/public/scalar.css
+/.generated
 
 # misc
 .DS_Store
