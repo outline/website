@@ -12,21 +12,6 @@ If you have more than one GitLab organization it can be connected in the same wa
 
 > Note: GitLab is linked once for the entire Outline workspace, other team members will be able to see issue and merge request details from repositories that are linked in this way.
 
-### Self-hosted GitLab
-
-For self-hosted deployments of GitLab you must first register an Application in GitLab with the following scopes:
-
-- `read_api` – Read API
-- `read_user` – Read your personal information
-
-Use the following format for the callback URL:
-
-```
-https://<yourdomain.com>/api/gitlab.callback
-```
-
-When registration is complete you will be given a "Client ID" and "Client secret" that can be entered into the setup in Outline to complete the installation.
-
 ### Usage
 
 Once the integration is connected, paste an issue, merge request, or project link from gitlab.com or your self-hosted instance into an Outline document and you will see the option to "mention" it, which displays detailed information inside the document. You can also hover over any linked issue or merge request to see more details.
