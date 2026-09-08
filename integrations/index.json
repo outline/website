@@ -150,6 +150,14 @@
         "description": "Sharable code snippets, hosted by GitHub"
     },
     {
+        "slug": "linear",
+        "name": "Linear",
+        "url": "https://linear.app",
+        "category": "Developers",
+        "description": "Purpose-built tool for planning and building products",
+        "summary": "Paste a Linear issue or project link into a document to see a live preview with status, labels, and description"
+    },
+    {
         "slug": "make",
         "name": "Make",
         "url": "https://www.make.com/en/integrations/outline?utm_source=outline&utm_medium=partner&utm_campaign=outline-partner-program",
