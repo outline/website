@@ -15,5 +15,3 @@ If you have more than one GitHub organization it can be connected in the same wa
 Once the integration is connected, paste a github.com issue or pull request link into an Outline document and you will see the option to "mention" it, which displays detailed information inside the document. You can also hover over any linked issue or pull request to see more details.
 
 Mentions stay automatically up-to-date as the issue or pull request changes on GitHub.
-
-> Looking to embed code snippets? See the [GitHub Gist](/integrations/github-gist) integration.
