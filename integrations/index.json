@@ -143,11 +143,20 @@
         "description": "A social development environment and editor"
     },
     {
-        "slug": "github-gist",
+        "slug": "github",
         "name": "GitHub",
-        "url": "https://gist.github.com",
+        "url": "https://github.com",
         "category": "Developers",
-        "description": "Sharable code snippets, hosted by GitHub"
+        "description": "Where the world builds software",
+        "summary": "Paste a GitHub issue or pull request link into a document to see a live preview with status, labels, and description"
+    },
+    {
+        "slug": "gitlab",
+        "name": "GitLab",
+        "url": "https://gitlab.com",
+        "category": "Developers",
+        "description": "The most comprehensive AI-powered DevSecOps platform",
+        "summary": "Paste a GitLab issue or merge request link into a document to see a live preview with status, labels, and description"
     },
     {
         "slug": "linear",
