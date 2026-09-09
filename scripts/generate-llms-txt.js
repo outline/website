@@ -170,13 +170,27 @@ function main() {
     },
     {
       title: "Integrations",
-      links: integrations.map((integration) =>
-        link(
-          integration.name,
-          `${DOMAIN}/integrations/${integration.slug}`,
-          integration.description
-        )
-      ),
+      links: integrations
+        .filter((integration) => integration.type === "integration")
+        .map((integration) =>
+          link(
+            integration.name,
+            `${DOMAIN}/integrations/${integration.slug}`,
+            integration.description
+          )
+        ),
+    },
+    {
+      title: "Embeds",
+      links: integrations
+        .filter((integration) => integration.type === "embed")
+        .map((integration) =>
+          link(
+            integration.name,
+            `${DOMAIN}/integrations/${integration.slug}`,
+            integration.description
+          )
+        ),
     },
     {
       title: "Changelog",

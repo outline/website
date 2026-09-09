@@ -1,227 +1,604 @@
 [
-    {
-        "slug": "google",
-        "name": "Google",
-        "url": "https://google.com",
-        "category": "Authentication",
-        "description": "Sign in to Outline using Google SSO"
-    },
-    {
-        "slug": "microsoft",
-        "name": "Microsoft",
-        "url": "https://microsoft.com",
-        "category": "Authentication",
-        "description": "Sign in to Outline using Microsoft SSO"
-    },
-    {
-        "slug": "slack",
-        "name": "Slack",
-        "url": "https://slack.com",
-        "category": "Authentication",
-        "description": "Chat, collaboration, and file sharing for teams",
-        "summary": "Use /slash commands to search for documentation in Outline without leaving chat, and post document updates into your Slack channels"
-    },
-    {
-        "slug": "abstract",
-        "name": "Abstract",
-        "url": "https://abstract.com",
-        "category": "Design",
-        "description": "One place to version, manage, and collaborate"
-    },
-    {
-        "slug": "figma",
-        "name": "Figma",
-        "url": "https://figma.com",
-        "category": "Design",
-        "description": "Figma is a collaborative interface design tool",
-        "summary": "Whether it's product specs, or your brand design system, you can embed interactive Figma artboards into Outline documents"
-    },
-    {
-        "slug": "framer",
-        "name": "Framer",
-        "url": "https://framer.com",
-        "category": "Design",
-        "description": "Framer is an interactive design and prototyping tool"
-    },
-    {
-        "slug": "invision",
-        "name": "InVision",
-        "url": "https://invision.com",
-        "category": "Design",
-        "description": "InVision is an online design and prototyping tool"
-    },
-    {
-        "slug": "marvel",
-        "name": "Marvel",
-        "url": "https://marvelapp.com",
-        "category": "Design",
-        "description": "The all-in-one platform powering design"
-    },
-    {
-        "slug": "airtable",
-        "name": "Airtable",
-        "url": "https://airtable.com",
-        "category": "Collaboration",
-        "description": "Part spreadsheet, part database, and entirely flexible"
-    },
-    {
-        "slug": "diagrams",
-        "name": "Diagrams.net",
-        "url": "https://diagrams.net",
-        "category": "Collaboration",
-        "description": "Security-first diagramming for teams"
-    },
-    {
-        "slug": "google-docs",
-        "name": "Google Docs",
-        "url": "https://docs.google.com",
-        "category": "Collaboration",
-        "description": "Create documents, spreadsheets, and presentations",
-        "summary": "Embed published spreadsheets, presentations, and documents from Google Docs directly into an Outline document"
-    },
-    {
-        "slug": "lucidchart",
-        "name": "Lucidchart",
-        "url": "https://lucidchart.com",
-        "category": "Collaboration",
-        "description": "Create flowcharts and technical diagrams with ease"
-    },
-    {
-        "slug": "mindmeister",
-        "name": "Mindmeister",
-        "url": "https://mindmeister.com",
-        "category": "Collaboration",
-        "description": "Interactive and embeddable mind maps"
-    },
-    {
-        "slug": "miro",
-        "name": "Miro",
-        "url": "https://miro.com",
-        "category": "Collaboration",
-        "description": "Simple whiteboarding for cross-functional team collaboration"
-    },
-    {
-        "slug": "trello",
-        "name": "Trello",
-        "url": "https://trello.com",
-        "category": "Collaboration",
-        "description": "Boards, lists, and cards to organize your projects"
-    },
-    {
-        "slug": "typeform",
-        "name": "Typeform",
-        "url": "https://typeform.com",
-        "category": "Collaboration",
-        "description": "Data collection tool and surveys, for professionals"
-    },
-    {
-        "slug": "pitch",
-        "name": "Pitch",
-        "url": "https://pitch.com",
-        "category": "Collaboration",
-        "description": "Stunning presentations. Made together"
-    },
-    {
-        "slug": "prezi",
-        "name": "Prezi",
-        "url": "https://prezi.com",
-        "category": "Collaboration",
-        "description": "Easy presentations for people who aren't designers"
-    },
-    {
-        "slug": "whimsical",
-        "name": "Whimsical",
-        "url": "https://whimsical.com",
-        "category": "Collaboration",
-        "description": "A unified workspace for thinking and collaboration"
-    },
-    {
-        "slug": "codepen",
-        "name": "Codepen",
-        "url": "https://codepen.io",
-        "category": "Developers",
-        "description": "A social development environment and editor"
-    },
-    {
-        "slug": "github",
-        "name": "GitHub",
-        "url": "https://github.com",
-        "category": "Developers",
-        "description": "Where the world builds software",
-        "summary": "Paste a GitHub issue or pull request link into a document to see a live preview with status, labels, and description"
-    },
-    {
-        "slug": "gitlab",
-        "name": "GitLab",
-        "url": "https://gitlab.com",
-        "category": "Developers",
-        "description": "The most comprehensive AI-powered DevSecOps platform",
-        "summary": "Paste a GitLab issue or merge request link into a document to see a live preview with status, labels, and description"
-    },
-    {
-        "slug": "linear",
-        "name": "Linear",
-        "url": "https://linear.app",
-        "category": "Developers",
-        "description": "Purpose-built tool for planning and building products",
-        "summary": "Paste a Linear issue or project link into a document to see a live preview with status, labels, and description"
-    },
-    {
-        "slug": "make",
-        "name": "Make",
-        "url": "https://www.make.com/en/integrations/outline?utm_source=outline&utm_medium=partner&utm_campaign=outline-partner-program",
-        "category": "Developers",
-        "description": "Integrate Outline with 850+ apps, and optimize workflows with Make's visual integration builder"
-    },
-    {
-        "slug": "mode-analytics",
-        "name": "Mode",
-        "url": "https://mode.com",
-        "category": "Developers",
-        "description": "Connect and analyze data from any data source"
-    },
-    {
-        "slug": "zapier",
-        "name": "Zapier",
-        "url": "https://zapier.com",
-        "category": "Developers",
-        "description": "Connect applications and automate workflows",
-        "summary": "Integrate Outline with your business apps to automatically create and update documents"
-    },
-    {
-        "slug": "descript",
-        "name": "Descript",
-        "url": "https://descript.com",
-        "category": "Media",
-        "description": "All-in-one audio & video editing, as easy as a doc"
-    },
-    {
-        "slug": "spotify",
-        "name": "Spotify",
-        "url": "https://spotify.com",
-        "category": "Media",
-        "description": "Stream millions of songs and podcasts"
-    },
-    {
-        "slug": "youtube",
-        "name": "YouTube",
-        "url": "https://youtube.com",
-        "category": "Media",
-        "description": "Embed videos from around the web"
-    },
-    {
-        "slug": "vimeo",
-        "name": "Vimeo",
-        "url": "https://vimeo.com",
-        "category": "Media",
-        "description": "Embed videos from around the web"
-    },
-    {
-        "slug": "alfred",
-        "name": "Alfred",
-        "url": "https://github.com/outline/alfred-outline",
-        "category": "Utilities",
-        "description": "Search Outline from the comfort of your desktop",
-        "summary": "Search your knowledge base from the comfort of your Mac desktop by using our Alfred Powerpack plugin – install in seconds"
-    }
+  {
+    "slug": "google",
+    "name": "Google",
+    "url": "https://workspace.google.com",
+    "type": "integration",
+    "category": "Authentication",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/google-yChSBv0NWA",
+    "description": "Let everyone in your Google Workspace sign in to Outline with their existing account, no invites or passwords to manage."
+  },
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "url": "https://www.microsoft.com/microsoft-365",
+    "type": "integration",
+    "category": "Authentication",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/microsoft-entra-UVz6jsIOcv",
+    "description": "Sign in with Microsoft Entra ID so your Microsoft 365 organization can access Outline with the accounts they already use."
+  },
+  {
+    "slug": "discord",
+    "name": "Discord",
+    "url": "https://discord.com",
+    "type": "integration",
+    "category": "Authentication",
+    "deployments": [
+      "self-hosted"
+    ],
+    "icon": "discord.svg",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/discord-g4JdWFFub6",
+    "description": "Let members of your Discord server sign in to Outline, optionally restricted to specific roles."
+  },
+  {
+    "slug": "oidc",
+    "name": "OpenID Connect",
+    "url": "https://openid.net/connect/",
+    "type": "integration",
+    "category": "Authentication",
+    "deployments": [
+      "self-hosted"
+    ],
+    "icon": "oidc.svg",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/oidc-8CPBm6uC0I",
+    "description": "Single sign-on with any OpenID Connect identity provider including Okta, Auth0, Keycloak, and Authentik."
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "url": "https://slack.com",
+    "type": "integration",
+    "category": "Collaboration",
+    "settings": "/settings/integrations/slack",
+    "description": "Search your knowledge base directly in Slack, get /outline search, rich link previews, and notifications on new or updated docs."
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "url": "https://figma.com",
+    "type": "integration",
+    "category": "Collaboration",
+    "settings": "/settings/integrations/figma",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/figma-IbzdsdEIaT",
+    "description": "Embed live Figma files in documents, and connect your account to unfurl links to private designs with a rich preview."
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "url": "https://github.com",
+    "type": "integration",
+    "category": "Developers",
+    "settings": "/settings/integrations/github",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/github-GchT3NNxI9",
+    "description": "Connect your GitHub account to enable rich, realtime, issue and pull request previews inside documents."
+  },
+  {
+    "slug": "gitlab",
+    "name": "GitLab",
+    "url": "https://gitlab.com",
+    "type": "integration",
+    "category": "Developers",
+    "settings": "/settings/integrations/gitlab",
+    "description": "Connect your GitLab account to enable rich, realtime, issue and merge request previews inside documents."
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "url": "https://linear.app",
+    "type": "integration",
+    "category": "Developers",
+    "settings": "/settings/integrations/linear",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/linear-g8N2riMweL",
+    "description": "Connect your Linear workspace to enable rich, realtime, issue previews that stay up to date inside documents."
+  },
+  {
+    "slug": "webhooks",
+    "name": "Webhooks",
+    "url": "https://www.getoutline.com/developers",
+    "icon": "webhooks.svg",
+    "type": "integration",
+    "category": "Developers",
+    "settings": "/settings/webhooks",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/webhooks-0KLn8fFYfP",
+    "description": "Automate downstream workflows with real-time JSON POSTs, subscribe to events in Outline so external systems can react instantly."
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "url": "https://zapier.com/apps/outline",
+    "type": "integration",
+    "category": "Developers",
+    "deployments": [
+      "cloud"
+    ],
+    "settings": "/settings/integrations/zapier",
+    "description": "Connect your Outline workspace to Zapier to automate workflows and integrate with thousands of other tools."
+  },
+  {
+    "slug": "make",
+    "name": "Make",
+    "url": "https://www.make.com/en/integrations/outline?utm_source=outline&utm_medium=partner&utm_campaign=outline-partner-program",
+    "type": "integration",
+    "category": "Developers",
+    "description": "Integrate Outline with 850+ apps and build automated workflows using Make's visual integration builder."
+  },
+  {
+    "slug": "google-analytics",
+    "name": "Google Analytics",
+    "url": "https://analytics.google.com",
+    "type": "integration",
+    "category": "Analytics",
+    "icon": "google-analytics.svg",
+    "settings": "/settings/integrations/google-analytics",
+    "description": "Measure adoption and engagement by sending view and event analytics directly to your GA4 dashboard."
+  },
+  {
+    "slug": "matomo",
+    "name": "Matomo",
+    "url": "https://matomo.org",
+    "type": "integration",
+    "category": "Analytics",
+    "deployments": [
+      "self-hosted"
+    ],
+    "icon": "matomo.svg",
+    "description": "Track your docs with a self-hosted, open-source analytics platform for 100% data ownership and GDPR compliance."
+  },
+  {
+    "slug": "umami",
+    "name": "Umami",
+    "url": "https://umami.is",
+    "type": "integration",
+    "category": "Analytics",
+    "deployments": [
+      "self-hosted"
+    ],
+    "icon": "umami.svg",
+    "description": "Gain privacy-first insights into how your team consumes docs with your self-hosted Umami instance."
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "url": "https://notion.so",
+    "type": "integration",
+    "category": "Import",
+    "settings": "/settings/import",
+    "docs": "https://docs.getoutline.com/s/hosting/doc/notion-2v6g7WY3l3",
+    "description": "Connect your Notion account and import pages, images, and attachments into Outline in a few clicks."
+  },
+  {
+    "slug": "slab",
+    "name": "Slab",
+    "url": "https://slab.com",
+    "type": "integration",
+    "category": "Import",
+    "settings": "/settings/import",
+    "description": "Import a Markdown export from Slab and bring your existing knowledge base across in one step."
+  },
+  {
+    "slug": "alfred",
+    "name": "Alfred",
+    "url": "https://github.com/outline/alfred-outline",
+    "type": "integration",
+    "category": "Utilities",
+    "description": "Search your knowledge base from the comfort of your Mac desktop with our Alfred Powerpack workflow."
+  },
+  {
+    "slug": "abstract",
+    "name": "Abstract",
+    "url": "https://abstract.com",
+    "type": "embed",
+    "category": "Design",
+    "description": "Embed versioned design files and collections."
+  },
+  {
+    "slug": "canva",
+    "name": "Canva",
+    "url": "https://canva.com",
+    "type": "embed",
+    "category": "Design",
+    "description": "Embed Canva designs, presentations, and social graphics."
+  },
+  {
+    "slug": "framer",
+    "name": "Framer",
+    "url": "https://framer.com",
+    "type": "embed",
+    "category": "Design",
+    "description": "Embed interactive Framer prototypes and sites."
+  },
+  {
+    "slug": "invision",
+    "name": "InVision",
+    "url": "https://invisionapp.com",
+    "type": "embed",
+    "category": "Design",
+    "description": "Embed InVision prototypes and design boards."
+  },
+  {
+    "slug": "marvel",
+    "name": "Marvel",
+    "url": "https://marvelapp.com",
+    "type": "embed",
+    "category": "Design",
+    "description": "Embed clickable Marvel prototypes."
+  },
+  {
+    "slug": "diagrams",
+    "name": "Diagrams.net",
+    "url": "https://diagrams.net",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed diagrams from diagrams.net, or a self-hosted draw.io."
+  },
+  {
+    "slug": "dbdiagram",
+    "name": "DBDiagram",
+    "url": "https://dbdiagram.io",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed database entity relationship diagrams."
+  },
+  {
+    "slug": "gliffy",
+    "name": "Gliffy",
+    "url": "https://www.gliffy.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed Gliffy flowcharts and diagrams."
+  },
+  {
+    "slug": "lucidchart",
+    "name": "Lucidchart",
+    "url": "https://lucidchart.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed flowcharts and technical diagrams."
+  },
+  {
+    "slug": "mindmeister",
+    "name": "MindMeister",
+    "url": "https://mindmeister.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed interactive mind maps."
+  },
+  {
+    "slug": "miro",
+    "name": "Miro",
+    "url": "https://miro.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed collaborative Miro whiteboards."
+  },
+  {
+    "slug": "tldraw",
+    "name": "tldraw",
+    "url": "https://tldraw.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed tldraw sketches and diagrams."
+  },
+  {
+    "slug": "whimsical",
+    "name": "Whimsical",
+    "url": "https://whimsical.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed Whimsical boards, flowcharts, and wireframes."
+  },
+  {
+    "slug": "google-drawings",
+    "name": "Google Drawings",
+    "url": "https://docs.google.com/drawings",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed drawings from Google Drawings."
+  },
+  {
+    "slug": "camunda",
+    "name": "Camunda Modeler",
+    "url": "https://camunda.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed BPMN process diagrams from Camunda."
+  },
+  {
+    "slug": "cawemo",
+    "name": "Cawemo",
+    "url": "https://cawemo.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed collaborative BPMN diagrams from Cawemo."
+  },
+  {
+    "slug": "plantuml",
+    "name": "PlantUML",
+    "url": "https://plantuml.com",
+    "type": "embed",
+    "category": "Diagrams & whiteboards",
+    "description": "Embed UML diagrams rendered by PlantUML."
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "url": "https://airtable.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed shared Airtable bases, views, and forms."
+  },
+  {
+    "slug": "google-docs",
+    "name": "Google Docs",
+    "url": "https://docs.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed published documents from Google Docs."
+  },
+  {
+    "slug": "google-sheets",
+    "name": "Google Sheets",
+    "url": "https://sheets.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed published spreadsheets from Google Sheets."
+  },
+  {
+    "slug": "google-drive",
+    "name": "Google Drive",
+    "url": "https://drive.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed files shared from Google Drive."
+  },
+  {
+    "slug": "google-forms",
+    "name": "Google Forms",
+    "url": "https://forms.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed forms and surveys from Google Forms."
+  },
+  {
+    "slug": "google-calendar",
+    "name": "Google Calendar",
+    "url": "https://calendar.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed shared calendars from Google Calendar."
+  },
+  {
+    "slug": "google-looker-studio",
+    "name": "Google Looker Studio",
+    "url": "https://lookerstudio.google.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "icon": "google-lookerstudio.png",
+    "description": "Embed business intelligence reports and dashboards."
+  },
+  {
+    "slug": "grist",
+    "name": "Grist",
+    "url": "https://getgrist.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed Grist spreadsheets and data views."
+  },
+  {
+    "slug": "smartsuite",
+    "name": "SmartSuite",
+    "url": "https://smartsuite.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed SmartSuite work management views."
+  },
+  {
+    "slug": "typeform",
+    "name": "Typeform",
+    "url": "https://typeform.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed Typeform surveys and forms."
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "url": "https://clickup.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed ClickUp lists, boards, and docs."
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "url": "https://trello.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed Trello boards and cards."
+  },
+  {
+    "slug": "mode-analytics",
+    "name": "Mode",
+    "url": "https://mode.com",
+    "type": "embed",
+    "category": "Documents & data",
+    "description": "Embed reports and charts from Mode Analytics."
+  },
+  {
+    "slug": "google-slides",
+    "name": "Google Slides",
+    "url": "https://slides.google.com",
+    "type": "embed",
+    "category": "Presentations",
+    "description": "Embed published presentations from Google Slides."
+  },
+  {
+    "slug": "pitch",
+    "name": "Pitch",
+    "url": "https://pitch.com",
+    "type": "embed",
+    "category": "Presentations",
+    "description": "Embed presentations made in Pitch."
+  },
+  {
+    "slug": "prezi",
+    "name": "Prezi",
+    "url": "https://prezi.com",
+    "type": "embed",
+    "category": "Presentations",
+    "description": "Embed animated presentations from Prezi."
+  },
+  {
+    "slug": "youtube",
+    "name": "YouTube",
+    "url": "https://youtube.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed YouTube videos and playlists."
+  },
+  {
+    "slug": "vimeo",
+    "name": "Vimeo",
+    "url": "https://vimeo.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed videos hosted on Vimeo."
+  },
+  {
+    "slug": "loom",
+    "name": "Loom",
+    "url": "https://loom.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed Loom screen recordings and walkthroughs."
+  },
+  {
+    "slug": "berrycast",
+    "name": "Berrycast",
+    "url": "https://berrycast.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed Berrycast screen recordings."
+  },
+  {
+    "slug": "bilibili",
+    "name": "Bilibili",
+    "url": "https://bilibili.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed videos from Bilibili."
+  },
+  {
+    "slug": "descript",
+    "name": "Descript",
+    "url": "https://descript.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed audio and video edited in Descript."
+  },
+  {
+    "slug": "spotify",
+    "name": "Spotify",
+    "url": "https://spotify.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed Spotify tracks, albums, playlists, and podcasts."
+  },
+  {
+    "slug": "otter",
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed meeting recordings and transcripts from Otter."
+  },
+  {
+    "slug": "scribe",
+    "name": "Scribe",
+    "url": "https://scribehow.com",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed step-by-step guides captured with Scribe."
+  },
+  {
+    "slug": "tella",
+    "name": "Tella",
+    "url": "https://tella.tv",
+    "type": "embed",
+    "category": "Video & audio",
+    "description": "Embed screen recordings from Tella."
+  },
+  {
+    "slug": "codepen",
+    "name": "CodePen",
+    "url": "https://codepen.io",
+    "type": "embed",
+    "category": "Code",
+    "description": "Embed live CodePen demos and snippets."
+  },
+  {
+    "slug": "github-gist",
+    "name": "GitHub Gist",
+    "url": "https://gist.github.com",
+    "type": "embed",
+    "category": "Code",
+    "description": "Embed code snippets from GitHub Gists."
+  },
+  {
+    "slug": "gitlab-snippet",
+    "name": "GitLab Snippet",
+    "url": "https://gitlab.com",
+    "type": "embed",
+    "category": "Code",
+    "icon": "gitlab.png",
+    "description": "Embed code snippets from GitLab."
+  },
+  {
+    "slug": "jsfiddle",
+    "name": "JSFiddle",
+    "url": "https://jsfiddle.net",
+    "type": "embed",
+    "category": "Code",
+    "description": "Embed runnable JSFiddle examples."
+  },
+  {
+    "slug": "valtown",
+    "name": "Val Town",
+    "url": "https://val.town",
+    "type": "embed",
+    "category": "Code",
+    "description": "Embed vals and scripts from Val Town."
+  },
+  {
+    "slug": "instagram",
+    "name": "Instagram",
+    "url": "https://instagram.com",
+    "type": "embed",
+    "category": "Social & maps",
+    "description": "Embed Instagram posts and reels."
+  },
+  {
+    "slug": "linkedin",
+    "name": "LinkedIn",
+    "url": "https://linkedin.com",
+    "type": "embed",
+    "category": "Social & maps",
+    "description": "Embed LinkedIn posts."
+  },
+  {
+    "slug": "pinterest",
+    "name": "Pinterest",
+    "url": "https://pinterest.com",
+    "type": "embed",
+    "category": "Social & maps",
+    "description": "Embed Pinterest pins and boards."
+  },
+  {
+    "slug": "google-maps",
+    "name": "Google Maps",
+    "url": "https://maps.google.com",
+    "type": "embed",
+    "category": "Social & maps",
+    "description": "Embed interactive maps from Google Maps."
+  }
 ]

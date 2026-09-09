@@ -71,19 +71,22 @@ function getChangelogPosts() {
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
-/** Integration pages, in the order they're listed on /integrations. */
+/**
+ * Integration and embed pages, in the order they're listed on /integrations.
+ * Entries in index.json without a markdown file of their own are listed on the
+ * directory but have no page, so they're skipped here.
+ */
 function getIntegrations() {
-  return require(path.join(ROOT, "integrations", "index.json")).map(
-    (integration) => ({
+  return require(path.join(ROOT, "integrations", "index.json"))
+    .map((integration) => ({
       ...integration,
-      content: fs
-        .readFileSync(
-          path.join(ROOT, "integrations", `${integration.slug}.md`),
-          "utf8"
-        )
-        .trim(),
-    })
-  );
+      file: path.join(ROOT, "integrations", `${integration.slug}.md`),
+    }))
+    .filter((integration) => fs.existsSync(integration.file))
+    .map(({ file, ...integration }) => ({
+      ...integration,
+      content: fs.readFileSync(file, "utf8").trim(),
+    }));
 }
 
 module.exports = {

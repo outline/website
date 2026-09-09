@@ -4,4 +4,8 @@ Because Figma is an online design tool you can see design work happening in real
 
 ![Figma Outline Integration](/images/integrations/screenshots/figma.png)
 
-> This integration works without any additional settings or authentication.
+> Embedding public Figma files works without any additional settings or authentication.
+
+### Connect your account
+
+For files that are not public, connect your Figma account at [Settings → Integrations → Figma](https://app.getoutline.com/settings/integrations/figma). Once connected, links to designs your team has access to are unfurled with a rich preview and can be turned into mentions inside documents.
