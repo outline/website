@@ -7,8 +7,18 @@ import { CheckmarkIcon, CrossIcon } from "outline-icons";
 import { colors } from "theme";
 
 export default function ConfluenceComparison() {
-  const check = <CheckmarkIcon color={colors.text} />;
-  const nope = <CrossIcon color={colors.brand.red} />;
+  const check = (
+    <>
+      <CheckmarkIcon color={colors.text} />
+      <span className="visually-hidden">Yes</span>
+    </>
+  );
+  const nope = (
+    <>
+      <CrossIcon color={colors.brand.red} />
+      <span className="visually-hidden">No</span>
+    </>
+  );
 
   return (
     <Layout

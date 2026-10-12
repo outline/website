@@ -8,6 +8,9 @@ export default function Download() {
   return (
     <Layout pageTitle="Download App">
       <div className="container">
+        <h1 className="visually-hidden">
+          Download the Outline desktop app for macOS and Windows
+        </h1>
         <div className="pure-g">
           <div className="pure-u-1 pure-u-md-1-3"></div>
           <div className="pure-u-1 pure-u-md-1-3 dl">

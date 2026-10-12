@@ -67,7 +67,12 @@ export default function Developers({ html, colorModeScript }) {
   }, [initialize]);
 
   return (
-    <Layout title="API Documentation" fullWidth>
+    <Layout
+      title="API Documentation"
+      fullWidth
+      // Scalar renders its own <main>, and only one is allowed per page.
+      main={false}
+    >
       <Head>
         <link rel="stylesheet" href="/scalar.css" />
       </Head>

@@ -9,9 +9,9 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
         <span>
           <Button href="https://app.getoutline.com/create">
             Get started for free &rarr;
-          </Button>
+          </Button>{" "}
           <small className="note">Cloud hosted, 30-day free trial</small>
-        </span>
+        </span>{" "}
         <span>
           <Button
             href="https://docs.getoutline.com/s/hosting"
@@ -19,7 +19,7 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
             light
           >
             Deploy on-premises
-          </Button>
+          </Button>{" "}
           <small className="note">Self-hosted on your own server</small>
         </span>
       </p>

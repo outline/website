@@ -7,12 +7,12 @@ export default function SocialProof() {
       <section className="social-proof" aria-label="Social proof">
         <div className="stats">
           <div className="stat">
-            <span className="value">2,000+</span>
+            <span className="value">2,000+</span>{" "}
             <span className="label">customers</span>
           </div>
           <div className="divider" aria-hidden="true" />
           <div className="stat">
-            <span className="value">10 years</span>
+            <span className="value">10 years</span>{" "}
             <span className="label">open source</span>
           </div>
           <div className="divider" aria-hidden="true" />
@@ -22,7 +22,7 @@ export default function SocialProof() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="value">40k</span>
+            <span className="value">40k</span>{" "}
             <span className="label">GitHub stars</span>
           </a>
         </div>

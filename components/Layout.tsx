@@ -24,8 +24,18 @@ type Props = {
   hero?: React.ReactNode;
   illustration?: React.ReactNode;
   sidebar?: React.ReactNode;
+  /**
+   * Whether to wrap the page in a <main> landmark. Disable for pages that
+   * render their own, as only one is allowed.
+   */
+  main?: boolean;
   children: React.ReactNode;
 };
+
+const DOMAIN = "https://www.getoutline.com";
+
+const DEFAULT_DESCRIPTION =
+  "A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, & more…";
 
 export default function Layout({
   title,
@@ -36,6 +46,7 @@ export default function Layout({
   hero,
   illustration,
   sidebar,
+  main = true,
   background = "transparent",
   color = "inherit",
   children,
@@ -61,6 +72,13 @@ export default function Layout({
   const siteTitle = "Outline – Team knowledge base & wiki";
   const resolvedTitle = pageTitle || (typeof title === "string" ? title : "");
   const fullTitle = `${resolvedTitle ? resolvedTitle + " – " : ""}${siteTitle}`;
+  const resolvedDescription = description || DEFAULT_DESCRIPTION;
+
+  // asPath is the requested path, including any query string or hash, which
+  // shouldn't be part of the canonical URL.
+  const path = router.asPath.split(/[?#]/)[0];
+  const canonicalURL = DOMAIN + (path === "/" ? "/" : path.replace(/\/$/, ""));
+  const Main = main ? "main" : React.Fragment;
 
   return (
     <TooltipProvider>
@@ -84,15 +102,10 @@ export default function Layout({
           title="Changelog RSS"
           href="/rss.xml"
         />
-        <meta
-          name="description"
-          property="og:description"
-          content={
-            description
-              ? description
-              : "A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, &amp; more…"
-          }
-        />
+        <link rel="canonical" href={canonicalURL} />
+        <meta name="description" content={resolvedDescription} />
+        <meta property="og:description" content={resolvedDescription} />
+        <meta property="og:url" content={canonicalURL} />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
@@ -125,33 +138,35 @@ export default function Layout({
           </div>
         </div>
       </header>
-      <header className={(header || hero) && "with-header"}>
-        <div className="container">
-          {hero ? (
-            <div className="pure-g">
-              <div className="pure-u-1 pure-u-md-2-5">
-                <h1>{title}</h1>
-                <Hero>{hero}</Hero>
+      <Main>
+        <header className={(header || hero) && "with-header"}>
+          <div className="container">
+            {hero ? (
+              <div className="pure-g">
+                <div className="pure-u-1 pure-u-md-2-5">
+                  <h1>{title}</h1>
+                  <Hero>{hero}</Hero>
+                </div>
+                <div className="pure-u-1 pure-u-md-3-5">{illustration}</div>
               </div>
-              <div className="pure-u-1 pure-u-md-3-5">{illustration}</div>
+            ) : (
+              header
+            )}
+          </div>
+        </header>
+        <div className="page">
+          {sidebar ? (
+            <div className="pure-g container">
+              <div className="pure-u-1 pure-u-md-1-5 sidebar">{sidebar}</div>
+              <div className="pure-u-1 pure-u-md-4-5">
+                <div className="content">{children}</div>
+              </div>
             </div>
           ) : (
-            header
+            children
           )}
         </div>
-      </header>
-      <div className="page">
-        {sidebar ? (
-          <div className="pure-g container">
-            <div className="pure-u-1 pure-u-md-1-5 sidebar">{sidebar}</div>
-            <div className="pure-u-1 pure-u-md-4-5">
-              <div className="content">{children}</div>
-            </div>
-          </div>
-        ) : (
-          children
-        )}
-      </div>
+      </Main>
       <Footer />
       <style jsx>
         {`
@@ -236,6 +251,20 @@ export default function Layout({
 
           * {
             box-sizing: border-box;
+          }
+
+          /* Hidden visually but still read by screen readers, and present in
+             the HTML for agents that read the page as text. */
+          .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
           }
 
           html,

@@ -7,10 +7,14 @@ import Layout from "components/Layout";
 import { spacing, colors } from "theme";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { SimpleTooltip } from "components/ui/Tooltip";
+import pricing from "lib/pricing.json";
+
+type Plan = typeof pricing.cloud | typeof pricing.selfHosted;
+
+const { cloud, selfHosted } = pricing;
 
 export default function Pricing() {
   const router = useRouter();
-  const check = <CheckmarkIcon className="icon" />;
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Get the defaultIndex from query param on client side
@@ -44,520 +48,36 @@ export default function Pricing() {
       }
     >
       <div className="container">
-        <Tabs selectedIndex={selectedIndex} onSelect={updateQueryString}>
+        <Tabs
+          selectedIndex={selectedIndex}
+          onSelect={updateQueryString}
+          // Both plans are rendered into the static HTML, rather than only the
+          // selected one, so that self-hosted pricing can be read without
+          // running JavaScript or clicking the tab.
+          forceRenderTabPanel
+        >
           <div className="container">
             <TabList className="tabs pure-g">
               <div className="pure-u-1 pure-u-md-1-4" />
               <Tab className="pure-u-1 pure-u-md-1-4">
                 <h2>
-                  <CloudIcon size={32} color="currentColor" /> Cloud
+                  <CloudIcon size={32} color="currentColor" /> {cloud.name}
                 </h2>
-                <p>Secure and always up-to-date, hosted by Outline</p>
+                <p>{cloud.summary}</p>
               </Tab>
               <Tab className="pure-u-1 pure-u-md-1-4">
                 <h2>
-                  <TeamIcon size={32} color="currentColor" /> On-Premises
+                  <TeamIcon size={32} color="currentColor" /> {selfHosted.name}
                 </h2>
-                <p>Self-hosted on your own infrastructure</p>
+                <p>{selfHosted.summary}</p>
               </Tab>
               <div className="pure-u-1 pure-u-md-1-4" />
             </TabList>
-            <TabPanel>
-              <table>
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      Price tier
-                      <span className="note">(annual pricing available)</span>
-                    </td>
-                    <td className="price">
-                      $10 <span className="period">per month</span>
-                      <p className="cta">
-                        <Button href="https://app.getoutline.com/create?ref=starter">
-                          Start Trial
-                        </Button>
-                      </p>
-                    </td>
-                    <td className="price">
-                      $79 <span className="period">per month</span>
-                      <p className="cta">
-                        <Button href="https://app.getoutline.com/create?ref=team">
-                          Start Trial
-                        </Button>
-                      </p>
-                    </td>
-                    <td className="price">
-                      $249 <span className="period">per month</span>
-                      <p className="cta">
-                        <Button href="https://app.getoutline.com/create?ref=business">
-                          Start Trial
-                        </Button>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>No. team members</td>
-                    <td>
-                      <strong>1 – 10</strong>
-                    </td>
-                    <td>
-                      <strong>11 – 100</strong>
-                    </td>
-                    <td>
-                      <strong>101 – 200</strong>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="No limitations on the number of documents and revisions"
-                      >
-                        Unlimited docs + version history
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Multiple people can collaborate and edit documents at the same time"
-                      >
-                        Realtime collaborative editing
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Leave comments on documents and mention other users"
-                      >
-                        Commenting + @mentions
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Ask questions and get direct answers from your workspace content"
-                      >
-                        AI question answering
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Outline is available in 17 different languages"
-                      >
-                        Multi-language translation
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Enforce your company's security policies with SSO"
-                      >
-                        SSO authentication
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Connect to other tools like Slack, GitHub, and more"
-                      >
-                        20+ integrations (inc Zapier)
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Create document templates for your team to use"
-                      >
-                        Templating
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Control who can access and edit documents through groups and individual permissions"
-                      >
-                        Groups + user permissions
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Programmatically interact with every part of Outline using the API"
-                      >
-                        API + webhooks
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Track and filter edits and user activity in the workspace"
-                      >
-                        Security audit log
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Email support</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </TabPanel>
-            <TabPanel>
-              <table>
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Community Edition</th>
-                    <th>Business</th>
-                    <th>Enterprise</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Price</td>
-                    <td className="price">
-                      $0{" "}
-                      <span className="period">
-                        limited features, no support
-                      </span>
-                      <p className="cta">
-                        <Button
-                          href="https://hub.docker.com/r/outlinewiki/outline"
-                          light
-                        >
-                          Download
-                        </Button>
-                      </p>
-                    </td>
-                    <td className="price">
-                      $4<span style={{ fontSize: "0.75em" }}>/user/mo</span>
-                      <span className="period">
-                        billed annually, 10 user min
-                      </span>
-                      <p className="cta">
-                        <Button href="/contact?business=true">Purchase</Button>
-                      </p>
-                    </td>
-                    <td className="price">
-                      $5<span style={{ fontSize: "0.75em" }}>/user/mo</span>
-                      <span className="period">
-                        billed annually, 100 user min
-                      </span>
-                      <p className="cta">
-                        <Button href="/contact?trial=true">
-                          Request Trial
-                        </Button>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="No limitations on the number of documents and revisions"
-                      >
-                        Unlimited docs + version history
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Multiple people can collaborate and edit documents at the same time"
-                      >
-                        Realtime collaborative editing
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Leave comments on documents and mention other users"
-                      >
-                        Commenting + @mentions
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Outline is available in 17 different languages"
-                      >
-                        Multi-language translation
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Enforce your company's security policies with SSO"
-                      >
-                        SSO authentication
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Connect to other tools like Slack, GitHub, and more"
-                      >
-                        20+ integrations (inc Zapier)
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Create document templates for your team to use"
-                      >
-                        Templating
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Control who can access and edit documents through groups and individual permissions"
-                      >
-                        Groups + user permissions
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Programmatically interact with every part of Outline using the API"
-                      >
-                        API + webhooks
-                      </SimpleTooltip>
-                    </td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="OpenAI integration allows asking questions and getting direct answers from your workspace content"
-                      >
-                        AI question answering
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Guest users have access only to content explicitly shared with them"
-                      >
-                        Guest users
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Restrict sign-in, API keys, and more…"
-                      >
-                        Additional security controls
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Authenticate users with any compatible SAML 2.0 provider"
-                      >
-                        SAML 2.0 (e.g. Okta, OneLogin)
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Store data properties against documents"
-                      >
-                        Structured data attributes
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Import Confluence spaces directly into Outline"
-                      >
-                        Confluence importer
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Track and filter edits and activity in the workspace"
-                      >
-                        Security audit log
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Search across your Outline documents from within Glean"
-                      >
-                        Glean integration
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td>{check}</td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <SimpleTooltip
-                        className="feature"
-                        content="Complete control over the branding of your Outline instance"
-                      >
-                        Remove "Outline" branding
-                      </SimpleTooltip>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td>{check}</td>
-                  </tr>
-                  <tr>
-                    <td>Support contract</td>
-                    <td></td>
-                    <td></td>
-                    <td>{check}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </TabPanel>
+            {[cloud, selfHosted].map((plan) => (
+              <TabPanel key={plan.id}>
+                <PlanTable plan={plan} />
+              </TabPanel>
+            ))}
           </div>
         </Tabs>
 
@@ -681,20 +201,130 @@ export default function Pricing() {
           .tabs li[aria-selected="true"] {
             border-color: ${colors.primary};
           }
+
+          .react-tabs__tab-panel:not(.react-tabs__tab-panel--selected) {
+            display: none;
+          }
         `}
       </style>
+      <style jsx>
+        {`
+          dl {
+            margin-bottom: ${spacing.large};
+          }
+
+          dl dt {
+            padding-right: 2em;
+          }
+
+          dl dt h3 {
+            line-height: 1.4;
+          }
+
+          dl dd {
+            margin: 0 0 2em;
+            line-height: 1.4;
+          }
+        `}
+      </style>
+    </Layout>
+  );
+}
+
+function PlanTable({ plan }: { plan: Plan }) {
+  return (
+    <>
+      <h3 className="visually-hidden">
+        {plan.name} plans – {plan.summary}
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <span className="visually-hidden">Plan</span>
+            </th>
+            {plan.tiers.map((tier) => (
+              <th key={tier.id}>{tier.name}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              {plan.priceLabel}{" "}
+              {"priceNote" in plan && (
+                <span className="note">({plan.priceNote})</span>
+              )}
+            </td>
+            {plan.tiers.map((tier) => (
+              <td key={tier.id} className="price">
+                {tier.price}
+                {"unit" in tier && (
+                  <span style={{ fontSize: "0.75em" }}>{tier.unit}</span>
+                )}{" "}
+                <span className="period">{tier.period}</span>
+                <p className="cta">
+                  <Button
+                    href={tier.cta.href}
+                    light={"light" in tier.cta && tier.cta.light}
+                  >
+                    {tier.cta.label}
+                  </Button>
+                </p>
+              </td>
+            ))}
+          </tr>
+          {plan.tiers.some((tier) => "members" in tier) && (
+            <tr>
+              <td>No. team members</td>
+              {plan.tiers.map((tier) => (
+                <td key={tier.id}>
+                  <strong>{"members" in tier && tier.members}</strong>
+                </td>
+              ))}
+            </tr>
+          )}
+          {plan.features.map((feature) => (
+            <tr key={feature.name}>
+              <td>
+                {"description" in feature ? (
+                  <SimpleTooltip
+                    className="feature"
+                    content={feature.description}
+                  >
+                    {feature.name}
+                    {/* Tooltips only exist on hover, so the description is
+                        repeated for screen readers and agents. */}
+                    <span className="visually-hidden">
+                      {" "}
+                      – {feature.description}
+                    </span>
+                  </SimpleTooltip>
+                ) : (
+                  feature.name
+                )}
+              </td>
+              {plan.tiers.map((tier) => (
+                <td key={tier.id}>
+                  {feature.tiers.includes(tier.id) ? (
+                    <>
+                      <CheckmarkIcon className="icon" />
+                      <span className="visually-hidden">Included</span>
+                    </>
+                  ) : (
+                    <span className="visually-hidden">Not included</span>
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <style jsx>
         {`
           .cta {
             margin: 0.5em;
             font-size: 0.75em;
-          }
-
-          .get-started {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 220px;
           }
 
           table {
@@ -736,10 +366,6 @@ export default function Pricing() {
             background: ${colors.lightGrey};
           }
 
-          .soon {
-            color: ${colors.textSecondary};
-          }
-
           .price {
             font-size: 2em;
           }
@@ -754,25 +380,8 @@ export default function Pricing() {
             font-size: 0.75em;
             margin-top: ${spacing.small};
           }
-
-          dl {
-            margin-bottom: ${spacing.large};
-          }
-
-          dl dt {
-            padding-right: 2em;
-          }
-
-          dl dt h3 {
-            line-height: 1.4;
-          }
-
-          dl dd {
-            margin: 0 0 2em;
-            line-height: 1.4;
-          }
         `}
       </style>
-    </Layout>
+    </>
   );
 }
