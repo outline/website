@@ -1,0 +1,239 @@
+{
+  "cloud": {
+    "id": "cloud",
+    "name": "Cloud",
+    "summary": "Secure and always up-to-date, hosted by Outline",
+    "priceLabel": "Price tier",
+    "priceNote": "annual pricing available",
+    "tiers": [
+      {
+        "id": "starter",
+        "price": "$10",
+        "period": "per month",
+        "members": "1 – 10",
+        "cta": {
+          "label": "Start Trial",
+          "href": "https://app.getoutline.com/create?ref=starter"
+        }
+      },
+      {
+        "id": "team",
+        "price": "$79",
+        "period": "per month",
+        "members": "11 – 100",
+        "cta": {
+          "label": "Start Trial",
+          "href": "https://app.getoutline.com/create?ref=team"
+        }
+      },
+      {
+        "id": "business",
+        "price": "$249",
+        "period": "per month",
+        "members": "101 – 200",
+        "cta": {
+          "label": "Start Trial",
+          "href": "https://app.getoutline.com/create?ref=business"
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Unlimited docs + version history",
+        "description": "No limitations on the number of documents and revisions",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Realtime collaborative editing",
+        "description": "Multiple people can collaborate and edit documents at the same time",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Commenting + @mentions",
+        "description": "Leave comments on documents and mention other users",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "AI question answering",
+        "description": "Ask questions and get direct answers from your workspace content",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Multi-language translation",
+        "description": "Outline is available in 17 different languages",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "SSO authentication",
+        "description": "Enforce your company's security policies with SSO",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "20+ integrations (inc Zapier)",
+        "description": "Connect to other tools like Slack, GitHub, and more",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Templating",
+        "description": "Create document templates for your team to use",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Groups + user permissions",
+        "description": "Control who can access and edit documents through groups and individual permissions",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "API + webhooks",
+        "description": "Programmatically interact with every part of Outline using the API",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Security audit log",
+        "description": "Track and filter edits and user activity in the workspace",
+        "tiers": ["starter", "team", "business"]
+      },
+      {
+        "name": "Email support",
+        "tiers": ["starter", "team", "business"]
+      }
+    ]
+  },
+  "selfHosted": {
+    "id": "on-premises",
+    "name": "On-Premises",
+    "summary": "Self-hosted on your own infrastructure",
+    "priceLabel": "Price",
+    "tiers": [
+      {
+        "id": "community",
+        "name": "Community Edition",
+        "price": "$0",
+        "period": "limited features, no support",
+        "cta": {
+          "label": "Download",
+          "href": "https://hub.docker.com/r/outlinewiki/outline",
+          "light": true
+        }
+      },
+      {
+        "id": "business",
+        "name": "Business",
+        "price": "$4",
+        "unit": "/user/mo",
+        "period": "billed annually, 10 user min",
+        "cta": {
+          "label": "Purchase",
+          "href": "/contact?business=true"
+        }
+      },
+      {
+        "id": "enterprise",
+        "name": "Enterprise",
+        "price": "$5",
+        "unit": "/user/mo",
+        "period": "billed annually, 100 user min",
+        "cta": {
+          "label": "Request Trial",
+          "href": "/contact?trial=true"
+        }
+      }
+    ],
+    "features": [
+      {
+        "name": "Unlimited docs + version history",
+        "description": "No limitations on the number of documents and revisions",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "Realtime collaborative editing",
+        "description": "Multiple people can collaborate and edit documents at the same time",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "Commenting + @mentions",
+        "description": "Leave comments on documents and mention other users",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "Multi-language translation",
+        "description": "Outline is available in 17 different languages",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "SSO authentication",
+        "description": "Enforce your company's security policies with SSO",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "20+ integrations (inc Zapier)",
+        "description": "Connect to other tools like Slack, GitHub, and more",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "Templating",
+        "description": "Create document templates for your team to use",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "Groups + user permissions",
+        "description": "Control who can access and edit documents through groups and individual permissions",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "API + webhooks",
+        "description": "Programmatically interact with every part of Outline using the API",
+        "tiers": ["community", "business", "enterprise"]
+      },
+      {
+        "name": "AI question answering",
+        "description": "OpenAI integration allows asking questions and getting direct answers from your workspace content",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Guest users",
+        "description": "Guest users have access only to content explicitly shared with them",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Additional security controls",
+        "description": "Restrict sign-in, API keys, and more…",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "SAML 2.0 (e.g. Okta, OneLogin)",
+        "description": "Authenticate users with any compatible SAML 2.0 provider",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Structured data attributes",
+        "description": "Store data properties against documents",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Confluence importer",
+        "description": "Import Confluence spaces directly into Outline",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Security audit log",
+        "description": "Track and filter edits and activity in the workspace",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Glean integration",
+        "description": "Search across your Outline documents from within Glean",
+        "tiers": ["business", "enterprise"]
+      },
+      {
+        "name": "Remove \"Outline\" branding",
+        "description": "Complete control over the branding of your Outline instance",
+        "tiers": ["enterprise"]
+      },
+      {
+        "name": "Support contract",
+        "tiers": ["enterprise"]
+      }
+    ]
+  }
+}

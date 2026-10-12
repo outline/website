@@ -144,7 +144,7 @@ export default function HeaderNavigation() {
   };
 
   return (
-    <nav role="navigation" ref={ref}>
+    <nav aria-label="Main" ref={ref}>
       <ul>
         <li className={openNav === "product" ? "open" : "hidden-on-mobile"}>
           <MenuItem

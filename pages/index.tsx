@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <main>
+      <div className="home">
         <div className="hero">
           <h1 className="title">Your team’s knowledge base</h1>
 
@@ -68,10 +68,13 @@ export default function Home() {
               </div>
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
-              <h2>
-                <em>Intuitive editing experience.</em>A blazing fast editor with
-                markdown support, slash commands, interactive embeds, and more…
-              </h2>
+              <div className="feature-copy">
+                <h2>Intuitive editing experience.</h2>
+                <p>
+                  A blazing fast editor with markdown support, slash commands,
+                  interactive embeds, and more…
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -79,14 +82,23 @@ export default function Home() {
         <section className="feature">
           <div className="pure-g container reverse">
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
-              <h2>
-                <em>
+              <div className="feature-copy">
+                <h2>
                   Multiplayer collab
-                  <span className="realtime-cursor">Alex</span>oration
-                </em>
-                Collaborate with team mates on documents in realtime. Comments
-                &amp; threads keep conversations organized.
-              </h2>
+                  {/* The name is drawn by CSS so it isn't read as part of the
+                      word by screen readers, search engines, and agents. */}
+                  <span
+                    className="realtime-cursor"
+                    data-name="Alex"
+                    aria-hidden="true"
+                  />
+                  oration
+                </h2>
+                <p>
+                  Collaborate with team mates on documents in realtime. Comments
+                  &amp; threads keep conversations organized.
+                </p>
+              </div>
             </div>
             <div className="pure-u-1 pure-u-md-3-5 feature-right">
               <div className="lil-wrapper">
@@ -114,11 +126,13 @@ export default function Home() {
               />
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
-              <h2>
-                <em>Powerful search and question answering</em>
-                Search across your workspace instantly, and ask questions about
-                your documents to get direct AI answers.
-              </h2>
+              <div className="feature-copy">
+                <h2>Powerful search and question answering</h2>
+                <p>
+                  Search across your workspace instantly, and ask questions
+                  about your documents to get direct AI answers.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -126,12 +140,14 @@ export default function Home() {
         <section className="feature">
           <div className="pure-g container reverse">
             <div className="pure-u-1 pure-u-md-2-5 feature-left">
-              <h2>
-                <em>Integrated with Slack</em>
-                Search, share, and ask questions from your documents without
-                leaving chat. Post notifications to channels when docs are
-                updated.
-              </h2>
+              <div className="feature-copy">
+                <h2>Integrated with Slack</h2>
+                <p>
+                  Search, share, and ask questions from your documents without
+                  leaving chat. Post notifications to channels when docs are
+                  updated.
+                </p>
+              </div>
             </div>
             <div className="pure-u-1 pure-u-md-3-5 feature-right">
               <div className="lil-wrapper slack">
@@ -164,11 +180,13 @@ export default function Home() {
               />
             </div>
             <div className="pure-u-1 pure-u-md-2-5 feature-right">
-              <h2>
-                <em>Public sharing</em>
-                Share documents publicly with a link, or privately with a team.
-                Use your own brand colors, logos, and domain.
-              </h2>
+              <div className="feature-copy">
+                <h2>Public sharing</h2>
+                <p>
+                  Share documents publicly with a link, or privately with a
+                  team. Use your own brand colors, logos, and domain.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -358,7 +376,7 @@ export default function Home() {
           {isMobile ? "taps" : "clicks"}…
         </p>
         <GetStarted />
-      </main>
+      </div>
       <style jsx>{`
         .feature {
           width: 95vw;
@@ -376,20 +394,26 @@ export default function Home() {
           justify-content: flex-end;
         }
 
-        .feature h2 {
+        .feature-copy {
           position: relative;
+          margin: 0.83em 0;
+          font-family: "HK Grotesk";
           font-size: 1.8em;
           letter-spacing: 0.01em;
           font-weight: 500;
           line-height: 1.2;
         }
 
-        .feature h2 em {
+        .feature-copy h2 {
           font-size: 1.2em;
           font-weight: 600;
-          font-style: normal;
-          display: block;
-          margin-bottom: 0.25em;
+          line-height: 1.2;
+          margin: 0 0 0.25em;
+        }
+
+        .feature-copy p {
+          margin: 0;
+          line-height: 1.2;
         }
 
         .lil-wrapper {
@@ -413,6 +437,10 @@ export default function Home() {
           border-radius: 4px;
           position: absolute;
           top: -1em;
+        }
+
+        .realtime-cursor:before {
+          content: attr(data-name);
         }
 
         .realtime-cursor:after {
@@ -483,7 +511,7 @@ export default function Home() {
             rgba(0, 0, 0, 0.08) 0px 4px 8px, rgba(0, 0, 0, 0.08) 0px 2px 4px;
         }
 
-        main {
+        .home {
           padding: 5rem 0;
           flex: 1;
           display: flex;
