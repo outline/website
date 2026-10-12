@@ -244,7 +244,7 @@ function PlanTable({ plan }: { plan: Plan }) {
               <span className="visually-hidden">Plan</span>
             </th>
             {plan.tiers.map((tier) => (
-              <th key={tier.id}>{tier.name}</th>
+              <th key={tier.id}>{"name" in tier && tier.name}</th>
             ))}
           </tr>
         </thead>

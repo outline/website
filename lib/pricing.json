@@ -8,7 +8,6 @@
     "tiers": [
       {
         "id": "starter",
-        "name": "Starter",
         "price": "$10",
         "period": "per month",
         "members": "1 – 10",
@@ -19,7 +18,6 @@
       },
       {
         "id": "team",
-        "name": "Team",
         "price": "$79",
         "period": "per month",
         "members": "11 – 100",
@@ -30,7 +28,6 @@
       },
       {
         "id": "business",
-        "name": "Business",
         "price": "$249",
         "period": "per month",
         "members": "101 – 200",
