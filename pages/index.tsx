@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import {
   PadlockIcon,
-  MoonIcon,
+  LightBulbIcon,
   BuildingBlocksIcon,
   CloudIcon,
   GlobeIcon,
@@ -228,15 +228,28 @@ export default function Home() {
                 <Card
                   title={
                     <>
-                      <MoonIcon
+                      <LightBulbIcon
                         size={32}
                         color="currentColor"
                         className="pull-icon"
                       />
-                      &nbsp;Dark mode
+                      &nbsp;Built-in MCP
                     </>
                   }
-                  description="For the night owls, we’ve got you covered. Outline has a beautiful dark mode that’s easy on the eyes and looks great."
+                  description={
+                    <>
+                      Connect Claude, ChatGPT, Cursor and other AI assistants to
+                      search, read, and edit your docs with the built-in{" "}
+                      <a
+                        href="https://docs.getoutline.com/s/guide/doc/mcp-6j9jtENNKL"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        MCP server
+                      </a>
+                      .
+                    </>
+                  }
                 />
               </div>
               <div className="pure-u-1 pure-u-md-1-3">
