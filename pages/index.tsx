@@ -238,8 +238,8 @@ export default function Home() {
                   }
                   description={
                     <>
-                      Connect Claude, ChatGPT, Cursor and other AI assistants
-                      to search, read, and edit your docs with the built-in{" "}
+                      Connect Claude, ChatGPT, Cursor and other AI assistants to
+                      search, read, and edit your docs with the built-in{" "}
                       <a
                         href="https://docs.getoutline.com/s/guide/doc/mcp-6j9jtENNKL"
                         target="_blank"
