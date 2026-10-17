@@ -20,6 +20,7 @@ export const colors = {
   greyDark: "#DAE1E9",
   text: "#181A1B",
   textSecondary: "#5E6573",
+  textTertiary: "#9BA3AE",
   brand: {
     red: "#FF5C80",
     pink: "#FF4DFA",
