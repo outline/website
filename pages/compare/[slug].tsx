@@ -82,33 +82,25 @@ export default function ComparisonPage({ comparison }: Props) {
       )}
 
       {features?.length > 0 && (
-        <div className="pure-g container features">
-          {features.map((feature, index) => {
-            const text = (
+        <div className="container">
+          {features.map((feature, index) => (
+            <div
+              key={feature.title}
+              className={`pure-g feature-row ${index % 2 ? "reversed" : ""}`}
+            >
               <div className="pure-u-1 pure-u-md-2-5 feature">
                 <h2>{feature.title}</h2>
                 <p>{feature.description}</p>
               </div>
-            );
-            const image = (
               <div className="pure-u-1 pure-u-md-3-5">
                 <img
                   src={feature.image}
                   alt={feature.alt}
-                  className={`feature-screenshot ${
-                    index % 2 ? "left" : "right"
-                  }`}
+                  className="feature-screenshot"
                 />
               </div>
-            );
-
-            return (
-              <Fragment key={feature.title}>
-                {index % 2 ? image : text}
-                {index % 2 ? text : image}
-              </Fragment>
-            );
-          })}
+            </div>
+          ))}
         </div>
       )}
 
@@ -252,30 +244,23 @@ export default function ComparisonPage({ comparison }: Props) {
         }
 
         .updated {
+          margin-top: 5em;
           text-align: center;
-          font-size: 0.9em;
-          color: ${colors.textSecondary};
+          font-size: 0.85em;
+          color: ${colors.textTertiary};
+        }
+
+        .feature-row {
+          align-items: center;
+          margin-bottom: 4em;
         }
 
         .feature-screenshot {
-          padding: 2em;
           width: 100%;
         }
 
-        .feature-screenshot.left {
-          margin-left: -4em;
-        }
-
-        .feature-screenshot.right {
-          margin-left: 4em;
-        }
-
-        .features {
-          align-items: center;
-        }
-
         .feature {
-          margin: 2em 0;
+          margin: 2em 0 0.5em;
         }
 
         .feature h2 {
@@ -292,6 +277,29 @@ export default function ComparisonPage({ comparison }: Props) {
           margin-top: 0.5em;
           font-weight: 500;
           line-height: 1.2;
+        }
+
+        @media (min-width: 48em) {
+          .feature-row {
+            margin-bottom: 0;
+          }
+
+          .feature-row.reversed {
+            flex-direction: row-reverse;
+          }
+
+          .feature {
+            margin: 2em 0;
+          }
+
+          .feature-screenshot {
+            padding: 2em;
+            margin-left: 4em;
+          }
+
+          .reversed .feature-screenshot {
+            margin-left: -4em;
+          }
         }
       `}</style>
     </Layout>
