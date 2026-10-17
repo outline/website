@@ -1,0 +1,78 @@
+{
+  "pageTitle": "Confluence Alternative",
+  "title": "Finally, a Real Alternative to Confluence",
+  "intro": "Outline is the fast, modern, alternative to Confluence that your team has been looking for – on-premises or in the cloud.",
+  "features": [
+    {
+      "title": "Great looking docs, without even trying.",
+      "description": "An easy to use editor with markdown shortcuts, slash commands, and media embeds that looks great by default.",
+      "image": "/images/good-lookin.png",
+      "alt": "Outline task lists"
+    },
+    {
+      "title": "Access control & permissions.",
+      "description": "Manage access to your knowledge base with read & write permissions, user groups, guest users, public sharing, and more…",
+      "image": "/images/permissions.png",
+      "alt": "Outline permissions"
+    },
+    {
+      "title": "Structured & instantly searchable.",
+      "description": "Nest documents in a hierachy, automatically build a network of backlinks and search across everything in ms.",
+      "image": "/images/search.png",
+      "alt": "Outline search"
+    },
+    {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers-search.png",
+      "alt": "Outline AI answers"
+    },
+    {
+      "title": "Cloud hosted or on-premises.",
+      "description": "Outline is available as a cloud hosted service that’s always up-to-date or as a self-hosted install on your own network.",
+      "image": "/images/self-hosted-domain.png",
+      "alt": "Custom domain"
+    }
+  ],
+  "table": [
+    {
+      "rows": [
+        {
+          "feature": "Unlimited documents",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Multiplayer collaboration",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Full version history",
+          "outline": true,
+          "competitor": true
+        },
+        { "feature": "Team templates", "outline": true, "competitor": true },
+        { "feature": "MCP server", "outline": true, "competitor": true },
+        { "feature": "Audit log", "outline": true, "competitor": true },
+        {
+          "feature": "SAML single sign-on",
+          "outline": true,
+          "competitor": "Paid add-on"
+        },
+        {
+          "feature": "Install on-premises",
+          "outline": true,
+          "competitor": "Being retired (2029)"
+        },
+        {
+          "feature": "Fast, really fast",
+          "outline": true,
+          "competitor": false
+        },
+        { "feature": "Open source", "outline": true, "competitor": false }
+      ]
+    }
+  ],
+  "closing": "On the same page as us? Let’s take your team’s writing to the next level…"
+}

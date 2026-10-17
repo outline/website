@@ -1,0 +1,71 @@
+{
+  "pageTitle": "Google Docs Alternative",
+  "title": "Lost in a sea of individually shared Google Docs?",
+  "intro": "Outline is the fast, modern, alternative to Google Docs built from the ground up for knowledge bases and wikis – on-premises or in the cloud.",
+  "features": [
+    {
+      "title": "Great looking docs, without the effort.",
+      "description": "An intuitive editor built for the digital world instead of paper letters. With support for markdown, slash commands, and rich embeds.",
+      "image": "/images/good-lookin.png",
+      "alt": "Outline task lists"
+    },
+    {
+      "title": "Access control & permissions.",
+      "description": "Manage access to your knowledge base with read & write permissions, user groups, guest users, public sharing, and more…",
+      "image": "/images/permissions.png",
+      "alt": "Outline permissions"
+    },
+    {
+      "title": "Structured & instantly searchable.",
+      "description": "Nest documents in a hierachy, automatically build a rich network of backlinks and search across all the team's knowledge.",
+      "image": "/images/search.png",
+      "alt": "Outline search"
+    },
+    {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers-search.png",
+      "alt": "Outline AI answers"
+    },
+    {
+      "title": "Cloud hosted or on-premises.",
+      "description": "Outline is available as a cloud hosted service that's always up-to-date or as a self-hosted installation.",
+      "image": "/images/self-hosted-domain.png",
+      "alt": "Custom domain"
+    }
+  ],
+  "table": [
+    {
+      "rows": [
+        {
+          "feature": "Unlimited documents",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Full version history",
+          "outline": true,
+          "competitor": true
+        },
+        { "feature": "Team templates", "outline": true, "competitor": true },
+        { "feature": "Single sign-on", "outline": true, "competitor": true },
+        {
+          "feature": "Nested structure",
+          "outline": true,
+          "competitor": false
+        },
+        {
+          "feature": "Fast, really fast",
+          "outline": true,
+          "competitor": false
+        },
+        {
+          "feature": "Install on-premises",
+          "outline": true,
+          "competitor": false
+        }
+      ]
+    }
+  ],
+  "closing": "Sign up with Google SSO in just a couple of clicks…"
+}

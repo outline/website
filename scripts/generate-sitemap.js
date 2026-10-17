@@ -15,6 +15,7 @@ const {
   getStaticRoutes,
   getChangelogPosts,
   getIntegrations,
+  getComparisons,
 } = require("./routes");
 
 const OUTPUT_PATH = path.join(__dirname, "..", "public", "sitemap.xml");
@@ -44,6 +45,7 @@ function main() {
 
   const urls = [
     ...getStaticRoutes().map((loc) => ({ loc })),
+    ...getComparisons().map(({ route }) => ({ loc: route })),
     ...integrations.map(({ slug }) => ({ loc: `/integrations/${slug}` })),
     ...posts.map(({ slug, date }) => ({
       loc: `/changelog/${slug}`,

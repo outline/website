@@ -5,7 +5,7 @@ import { colors } from "theme";
 export default function GetStarted({ centered }: { centered?: boolean }) {
   return (
     <>
-      <p className={centered !== false ? "centered" : ""}>
+      <p className={centered !== false ? "buttons centered" : "buttons"}>
         <span>
           <Button href="https://app.getoutline.com/create">
             Get started for free &rarr;
@@ -25,10 +25,15 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
       </p>
       <style jsx>
         {`
+          .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+          }
+
           .centered {
             text-align: center;
-            display: flex;
-            gap: 16px;
+            justify-content: center;
           }
 
           @media (max-width: 48em) {

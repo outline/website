@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Logo from "components/Logo";
+import comparisons from "comparisons/index.json";
+import { pageHref } from "lib/comparisons";
 import { darken } from "polished";
 import { spacing, typography, colors } from "theme";
 
@@ -100,16 +102,13 @@ export default function Footer() {
         <div role="navigation" className="pure-u-1-2 pure-u-md-1-5">
           <h3>Compare</h3>
           <ul>
-            <li>
-              <Link href="/compare/confluence-alternative" legacyBehavior>
-                <a>Confluence</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/compare/google-docs-alternative" legacyBehavior>
-                <a>Google Docs</a>
-              </Link>
-            </li>
+            {comparisons.map((comparison) => (
+              <li key={comparison.slug}>
+                <Link href={pageHref(comparison)} legacyBehavior>
+                  <a>{comparison.competitor}</a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
