@@ -275,13 +275,13 @@ export default function ComparisonPage({ comparison }: Props) {
         }
 
         .feature h2 {
-          font-size: 1.5em;
+          font-size: 1.8em;
           line-height: 1.2;
           margin-bottom: 0;
         }
 
         .feature p {
-          font-size: 1.5em;
+          font-size: 1.8em;
           letter-spacing: 0.01em;
           font-family: "HK Grotesk";
 
