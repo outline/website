@@ -82,7 +82,7 @@ export default function ComparisonPage({ comparison }: Props) {
       )}
 
       {features?.length > 0 && (
-        <div className="pure-g container">
+        <div className="pure-g container features">
           {features.map((feature, index) => {
             const text = (
               <div className="pure-u-1 pure-u-md-2-5 feature">
@@ -270,8 +270,12 @@ export default function ComparisonPage({ comparison }: Props) {
           margin-left: 4em;
         }
 
+        .features {
+          align-items: center;
+        }
+
         .feature {
-          margin-bottom: 4em;
+          margin: 2em 0;
         }
 
         .feature h2 {
