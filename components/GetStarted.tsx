@@ -28,6 +28,7 @@ export default function GetStarted({ centered }: { centered?: boolean }) {
           .centered {
             text-align: center;
             display: flex;
+            justify-content: center;
             gap: 16px;
           }
 
