@@ -89,9 +89,20 @@ function getIntegrations() {
     }));
 }
 
+/** Competitor comparison pages, in the order they're listed in the footer. */
+function getComparisons() {
+  return require(path.join(ROOT, "comparisons", "index.json")).map(
+    (comparison) => ({
+      ...comparison,
+      route: `/compare/${comparison.slug}`,
+    })
+  );
+}
+
 module.exports = {
   DOMAIN,
   getStaticRoutes,
   getChangelogPosts,
   getIntegrations,
+  getComparisons,
 };

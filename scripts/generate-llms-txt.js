@@ -16,6 +16,7 @@ const {
   getStaticRoutes,
   getChangelogPosts,
   getIntegrations,
+  getComparisons,
 } = require("./routes");
 
 const OUTPUT_PATH = path.join(__dirname, "..", "public", "llms.txt");
@@ -37,14 +38,6 @@ const PAGES = {
   "/integrations": [
     "Integrations",
     "Directory of services that embed in or connect to Outline",
-  ],
-  "/compare/confluence-alternative": [
-    "Outline vs Confluence",
-    "How Outline compares to Confluence",
-  ],
-  "/compare/google-docs-alternative": [
-    "Outline vs Google Docs",
-    "How Outline compares to Google Docs",
   ],
   "/about": [
     "About",
@@ -72,8 +65,6 @@ const SECTIONS = [
       "/pricing",
       "/download",
       "/integrations",
-      "/compare/confluence-alternative",
-      "/compare/google-docs-alternative",
       "/about",
       "/contact",
     ],
@@ -106,6 +97,7 @@ function getSpecDescription() {
 function main() {
   const posts = getChangelogPosts();
   const integrations = getIntegrations();
+  const comparisons = getComparisons();
   const routes = getStaticRoutes();
 
   const described = new Set([
@@ -128,6 +120,16 @@ function main() {
         .filter((route) => routes.includes(route))
         .map((route) => link(PAGES[route][0], DOMAIN + route, PAGES[route][1])),
     })),
+    {
+      title: "Comparisons",
+      links: comparisons.map((comparison) =>
+        link(
+          `Outline vs ${comparison.competitor}`,
+          DOMAIN + comparison.route,
+          comparison.description
+        )
+      ),
+    },
     {
       title: "API",
       links: [
