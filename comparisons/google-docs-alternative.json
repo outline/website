@@ -22,6 +22,12 @@
       "alt": "Outline search"
     },
     {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers.png",
+      "alt": "Outline AI answers"
+    },
+    {
       "title": "Cloud hosted or on-premises.",
       "description": "Outline is available as a cloud hosted service that's always up-to-date or as a self-hosted installation.",
       "image": "/images/self-hosted-domain.png",

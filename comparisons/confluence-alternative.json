@@ -4,7 +4,7 @@
   "intro": "Outline is the fast, modern, alternative to Confluence that your team has been looking for – on-premises or in the cloud.",
   "features": [
     {
-      "title": "Good lookin’ docs, without even trying.",
+      "title": "Great looking docs, without even trying.",
       "description": "An easy to use editor with markdown shortcuts, slash commands, and media embeds that looks great by default.",
       "image": "/images/good-lookin.png",
       "alt": "Outline task lists"
@@ -20,6 +20,12 @@
       "description": "Nest documents in a hierachy, automatically build a network of backlinks and search across everything in ms.",
       "image": "/images/search.png",
       "alt": "Outline search"
+    },
+    {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers.png",
+      "alt": "Outline AI answers"
     },
     {
       "title": "Cloud hosted or on-premises.",
