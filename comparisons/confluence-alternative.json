@@ -24,7 +24,7 @@
     {
       "title": "AI answers & built-in MCP.",
       "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
-      "image": "/images/ai-answers.png",
+      "image": "/images/ai-answers-search.png",
       "alt": "Outline AI answers"
     },
     {
