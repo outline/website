@@ -48,15 +48,12 @@
           "competitor": true
         },
         { "feature": "Team templates", "outline": true, "competitor": true },
+        { "feature": "MCP server", "outline": true, "competitor": true },
+        { "feature": "Audit log", "outline": true, "competitor": true },
         {
-          "feature": "Audit log",
+          "feature": "SAML single sign-on",
           "outline": true,
-          "competitor": "Enterprise-only"
-        },
-        {
-          "feature": "Single sign-on",
-          "outline": true,
-          "competitor": "Enterprise-only"
+          "competitor": "Paid add-on"
         },
         {
           "feature": "Fast, really fast",
@@ -66,7 +63,7 @@
         {
           "feature": "Install on-premises",
           "outline": true,
-          "competitor": false
+          "competitor": "Being retired (2029)"
         }
       ]
     }
