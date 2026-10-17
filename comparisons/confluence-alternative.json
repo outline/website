@@ -43,6 +43,11 @@
           "competitor": true
         },
         {
+          "feature": "Multiplayer collaboration",
+          "outline": true,
+          "competitor": true
+        },
+        {
           "feature": "Full version history",
           "outline": true,
           "competitor": true
@@ -64,7 +69,8 @@
           "feature": "Install on-premises",
           "outline": true,
           "competitor": "Being retired (2029)"
-        }
+        },
+        { "feature": "Open source", "outline": true, "competitor": false }
       ]
     }
   ],
