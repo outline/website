@@ -1,0 +1,130 @@
+{
+  "pageTitle": "Notion Alternative",
+  "title": "Need a team knowledge base more than an all-in-one workspace?",
+  "intro": "Outline is a fast, focused alternative to Notion for team knowledge bases and documentation – on-premises or in the cloud.",
+  "features": [
+    {
+      "title": "Built for documentation.",
+      "description": "Write with markdown shortcuts, slash commands, and media embeds. Outline focuses on documents and their structure rather than databases and custom views.",
+      "image": "/images/good-lookin.png",
+      "alt": "Outline task lists"
+    },
+    {
+      "title": "Access control & permissions.",
+      "description": "Manage access with read & write permissions, user groups, guest users, public sharing, and more…",
+      "image": "/images/permissions.png",
+      "alt": "Outline permissions"
+    },
+    {
+      "title": "Structured & instantly searchable.",
+      "description": "Nest documents in a hierarchy, automatically build a network of backlinks and search across everything in ms.",
+      "image": "/images/search.png",
+      "alt": "Outline search"
+    },
+    {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers-search.png",
+      "alt": "Outline AI answers"
+    },
+    {
+      "title": "Cloud hosted or on-premises.",
+      "description": "Outline is available as a cloud hosted service that’s always up-to-date or as a self-hosted install on your own network. Notion is available only in the cloud.",
+      "image": "/images/self-hosted-domain.png",
+      "alt": "Custom domain"
+    }
+  ],
+  "table": [
+    {
+      "title": "Content & collaboration",
+      "rows": [
+        {
+          "feature": "Multiplayer collaboration",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Nested pages",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Team templates",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Version history",
+          "outline": "Unlimited",
+          "competitor": "7–90 days"
+        },
+        {
+          "feature": "Databases & custom views",
+          "outline": false,
+          "competitor": true
+        }
+      ]
+    },
+    {
+      "title": "Security & admin",
+      "rows": [
+        {
+          "feature": "SAML single sign-on",
+          "outline": true,
+          "competitor": "Business plan"
+        },
+        {
+          "feature": "Audit log",
+          "outline": true,
+          "competitor": "Enterprise only"
+        },
+        {
+          "feature": "Install on-premises",
+          "outline": true,
+          "competitor": false
+        },
+        {
+          "feature": "Open source",
+          "outline": true,
+          "competitor": false
+        }
+      ]
+    },
+    {
+      "title": "AI & integrations",
+      "rows": [
+        {
+          "feature": "MCP server",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "AI answers",
+          "outline": true,
+          "competitor": "Business plan"
+        },
+        {
+          "feature": "Built-in agents",
+          "outline": false,
+          "competitor": true
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is Notion better than Outline?",
+      "answer": "It depends on what your team needs. Notion is a flexible all-in-one workspace with databases, project tracking, and custom AI agents. Outline is a focused knowledge base for documents, with a fast user-friendly editor, and it can run on your own infrastructure. If you need databases or many custom workflows, Notion is a strong fit."
+    },
+    {
+      "question": "Can I move my content from Notion?",
+      "answer": "Yes. Outline’s Notion import brings across pages, images, and attachments while keeping your structure."
+    },
+    {
+      "question": "Can I self-host Outline instead?",
+      "answer": "Yes. Outline can be installed on your own network. Notion is only available as a cloud service."
+    }
+  ],
+  "closing": "Ready to move from Notion? Get started in minutes…",
+  "updatedAt": "2026-10-17"
+}

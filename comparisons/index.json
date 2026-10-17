@@ -8,5 +8,10 @@
     "slug": "google-docs-alternative",
     "competitor": "Google Docs",
     "description": "How Outline compares to Google Docs"
+  },
+  {
+    "slug": "notion-alternative",
+    "competitor": "Notion",
+    "description": "How Outline compares to Notion"
   }
 ]
