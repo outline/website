@@ -4,6 +4,8 @@ date: 2026-10-16T00:00:00Z
 slug: personal-documents
 ---
 
+![Personal documents](/images/personal-documents.png)
+
 Every member of your workspace now has a private space for their own documents. Personal documents appear in a new "Personal" section of the sidebar, a place for drafts, notes, and work-in-progress that only you can see – not even admins have access.
 
 - **Truly private** – only the owner can see their personal documents, admins can't list, export, or manage them
