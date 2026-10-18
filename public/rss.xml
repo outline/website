@@ -5,9 +5,45 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Wed, 05 Aug 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 16 Oct 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>personal-documents</guid>
+    <title>Personal documents</title>
+    <link>https://www.getoutline.com/changelog/personal-documents</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Every member of your workspace now has a private space for their own documents. Personal documents appear in a new &quot;Personal&quot; section of the sidebar, a place for drafts, notes, and work-in-progress that only you can see – not even admins have access.</p>
+<ul>
+<li><strong>Truly private</strong> – only the owner can see their personal documents, admins can&#x27;t list, export, or manage them</li>
+<li><strong>Share when ready</strong> – individual documents can still be shared with teammates or published to the web, and moved into a collection when they&#x27;re ready for a wider audience</li>
+<li><strong>API and MCP support</strong> – integrations can create documents in your personal space using the collection id <code>personal</code></li>
+<li><strong>Admin control</strong> – personal documents are enabled by default and can be turned off from workspace security settings, which makes existing personal documents read-only</li>
+</ul></div> ]]></description>
+    <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>webmcp-support</guid>
+    <title>WebMCP support</title>
+    <link>https://www.getoutline.com/changelog/webmcp-support</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Outline now has support for WebMCP, a browser standard that lets in-page AI agents discover and call structured tools directly through <code>document.modelContext</code>. This means agents in Chrome and ChatGPT can programmatically control Outline through the browser itself, no separate server connection required.</p>
+<ul>
+<li><strong>Action mirroring</strong> – existing command bar actions are automatically registered as WebMCP tools, complete with the same visibility rules and context you already get in the UI</li>
+<li><strong>Safety controls</strong> – destructive actions like deletes are excluded from what agents can call</li>
+<li><strong>Team preference gating</strong> – WebMCP sits behind your workspace&#x27;s existing MCP settings, so it&#x27;s off unless MCP is enabled for your team</li>
+</ul></div> ]]></description>
+    <pubDate>Wed, 09 Sep 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>okf-export</guid>
+    <title>Open Knowledge Format export</title>
+    <link>https://www.getoutline.com/changelog/okf-export</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Collections and workspaces can now be exported in the <a href="https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing">Open Knowledge Format</a> (OKF), an open, portable bundle of markdown files designed to keep your content and its metadata readable outside of Outline.</p>
+<p>Each document is exported as markdown with YAML frontmatter describing its title, type, description, and when it was generated, and every bundle includes a root <code>index.md</code> that declares the OKF version and lists its top-level entries. It&#x27;s available anywhere you can already export to markdown — just pick &quot;OKF&quot; as the format from the export dialog.</p></div> ]]></description>
+    <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>new-import-formats</guid>
     <title>Import web pages, emails, PDFs, and TextBundle archives</title>
@@ -19,7 +55,6 @@
 <li><strong>Emails</strong> – import an <code>.eml</code> message and Outline will convert it to a document, using the email subject as the title.</li>
 <li><strong>PDFs</strong> – import a text-based PDF and Outline will recover headings, lists, and tables from the layout, converting it to a fully editable document.</li>
 <li><strong>TextPack</strong> – import <code>.textpack</code> archives, the zipped format used by apps like Bear, Ulysses, and iA Writer, including any embedded images.</li>
-<li></li>
 </ul></div> ]]></description>
     <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
   </item>
@@ -45,6 +80,20 @@
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>Hovering over a person&#x27;s avatar anywhere in Outline now shows a small profile card, so you can get context on who they are without leaving the page you&#x27;re on.</p>
 <p>The card shows their name, avatar, status (such as invited, suspended, admin, or guest), and their local time — handy for knowing whether a teammate is likely to be online before you <strong>@mention</strong> them.</p></div> ]]></description>
     <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>split-view</guid>
+    <title>Split view</title>
+    <link>https://www.getoutline.com/changelog/split-view</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>You can now open two documents side by side with the new split view, making it easy to reference one document while working in another.</p>
+<ul>
+<li><strong>Open a second pane</strong> – choose &quot;Open in split view&quot; from a document or collection&#x27;s menu, or from the command bar</li>
+<li><strong>Quick shortcuts</strong> – modifier-click any link in the sidebar or editor (in the desktop app), or press <code>Cmd+Enter</code>/<code>Ctrl+Enter</code> from the command menu, to open it in the split pane instead of navigating away</li>
+<li><strong>Resizable panes</strong> – drag the divider between panes to adjust their widths, or double-click it to reset to an even split</li>
+</ul>
+<p>Each pane keeps its own navigation history, so links you click inside a pane open within that pane rather than replacing what you&#x27;re viewing elsewhere. Comments and history panels also work independently per pane.</p></div> ]]></description>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
   </item>
 
   <item>
@@ -117,6 +166,20 @@
     <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>We’ve significantly expanded Outline’s built‑in MCP (Model Context Protocol) support. AI assistants can now work with richer tools, including patching documents, moving and deleting documents and collections, working with attachments, and creating and resolving inline comments.</p>
 <p>Responses from MCP now include more context, such as document breadcrumbs, summaries, and suggested titles, so AI integrations can feel more aware of your workspace structure.</p></div> ]]></description>
     <pubDate>Sun, 26 Apr 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>present-mode</guid>
+    <title>Present mode</title>
+    <link>https://www.getoutline.com/changelog/present-mode</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/present-mode.png" alt="Present mode"/></p>
+<p>Any document can now be presented as a slideshow, straight from Outline – no need to copy your content into a separate presentation tool. Choose &quot;Present&quot; from the document menu, or press <code>⌘+Option+P</code>, and the document is automatically split into slides at its headings and dividers.</p>
+<ul>
+<li><strong>Keyboard navigation</strong> – move between slides with the arrow keys, space, or page up/down, jump to the start or end with home and end, and press escape to exit</li>
+<li><strong>Fullscreen</strong> – press <code>F</code> to go fullscreen, controls fade away when the mouse is idle so nothing distracts from your content</li>
+<li><strong>Interactive</strong> – links and mentions still work while presenting, so you can jump to related documents mid-presentation</li>
+</ul></div> ]]></description>
+    <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
   </item>
 
   <item>
