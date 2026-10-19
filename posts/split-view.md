@@ -4,6 +4,8 @@ date: 2026-07-22T00:00:00Z
 slug: split-view
 ---
 
+![Split view](/images/split-view.png)
+
 You can now open two documents side by side with the new split view, making it easy to reference one document while working in another.
 
 - **Open a second pane** – choose "Open in split view" from a document or collection's menu, or from the command bar

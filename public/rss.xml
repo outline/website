@@ -86,7 +86,8 @@
     <guid>split-view</guid>
     <title>Split view</title>
     <link>https://www.getoutline.com/changelog/split-view</link>
-    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p>You can now open two documents side by side with the new split view, making it easy to reference one document while working in another.</p>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/split-view.png" alt="Split view"/></p>
+<p>You can now open two documents side by side with the new split view, making it easy to reference one document while working in another.</p>
 <ul>
 <li><strong>Open a second pane</strong> – choose &quot;Open in split view&quot; from a document or collection&#x27;s menu, or from the command bar</li>
 <li><strong>Quick shortcuts</strong> – modifier-click any link in the sidebar or editor (in the desktop app), or press <code>Cmd+Enter</code>/<code>Ctrl+Enter</code> from the command menu, to open it in the split pane instead of navigating away</li>
