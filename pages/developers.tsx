@@ -109,6 +109,17 @@ export default function Developers({ html, colorModeScript }) {
             display: flex !important;
           }
         }
+
+        /* Keep the mobile menu footer clear of the browser toolbar and home
+           indicator, and enlarge the color mode switch for touch. */
+        @media (width < 1000px) {
+          .documentation .scalar-app .darklight-reference {
+            padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 32px);
+          }
+          .documentation .scalar-app .darklight-reference button[aria-pressed] {
+            zoom: 1.5;
+          }
+        }
       `}</style>
       <style jsx>{`
         .documentation {
