@@ -13,5 +13,10 @@
     "slug": "notion-alternative",
     "competitor": "Notion",
     "description": "How Outline compares to Notion"
+  },
+  {
+    "slug": "slab-alternative",
+    "competitor": "Slab",
+    "description": "How Outline compares to Slab"
   }
 ]

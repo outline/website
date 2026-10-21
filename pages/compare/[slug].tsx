@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import Link from "next/link";
 import ComparisonTable from "components/ComparisonTable";
 import GetStarted from "components/GetStarted";
 import Layout from "components/Layout";
@@ -25,7 +24,6 @@ export default function ComparisonPage({ comparison }: Props) {
     features,
     table,
     migration,
-    pricing,
     testimonial,
     faq,
     closing,
@@ -122,18 +120,6 @@ export default function ComparisonPage({ comparison }: Props) {
               </a>
             </p>
           )}
-        </section>
-      )}
-
-      {pricing && (
-        <section className="container section narrow">
-          <h2>{pricing.title}</h2>
-          <p>{pricing.description}</p>
-          <p>
-            <Link href="/pricing" legacyBehavior>
-              <a>See Outline pricing &rarr;</a>
-            </Link>
-          </p>
         </section>
       )}
 

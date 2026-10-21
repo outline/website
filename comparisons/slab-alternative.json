@@ -1,0 +1,150 @@
+{
+  "pageTitle": "Slab Alternative",
+  "title": "Still waiting for Slab’s next update?",
+  "intro": "Outline is the open source alternative to Slab with new features every month, so your team’s knowledge base keeps getting better – on-premises or in the cloud.",
+  "highlights": [
+    {
+      "title": "Shipping every month.",
+      "description": "Since Slab’s last product update in July 2025, Outline has shipped split view, present mode, toggle blocks, PDF embeds, a built-in MCP server and more."
+    },
+    {
+      "title": "Built in public.",
+      "description": "Outline’s code is on GitHub with hundreds of contributors, so you can see exactly what’s being worked on and where it’s heading."
+    },
+    {
+      "title": "Your data, your choice.",
+      "description": "Run Outline in our cloud or on your own servers, and export everything as Markdown, HTML, or JSON at any time."
+    }
+  ],
+  "features": [
+    {
+      "title": "Great looking docs, without even trying.",
+      "description": "An easy to use editor with markdown shortcuts, slash commands, and media embeds that looks great by default.",
+      "image": "/images/good-lookin.png",
+      "alt": "Outline task lists"
+    },
+    {
+      "title": "Access control & permissions.",
+      "description": "Manage access with read & write permissions, user groups, guest users, public sharing, and more – on every plan.",
+      "image": "/images/permissions.png",
+      "alt": "Outline permissions"
+    },
+    {
+      "title": "Structured & instantly searchable.",
+      "description": "Nest documents in a hierarchy, automatically build a network of backlinks and search across everything in ms.",
+      "image": "/images/search.png",
+      "alt": "Outline search"
+    },
+    {
+      "title": "AI answers & built-in MCP.",
+      "description": "Get instant answers from your knowledge base, or connect Claude, ChatGPT, Cursor and other AI assistants to search, read, and edit docs with the built-in MCP server.",
+      "image": "/images/ai-answers-search.png",
+      "alt": "Outline AI answers"
+    },
+    {
+      "title": "Cloud hosted or on-premises.",
+      "description": "Outline is available as a cloud hosted service that’s always up-to-date or as a self-hosted install on your own network. Slab is available only in the cloud.",
+      "image": "/images/self-hosted-domain.png",
+      "alt": "Custom domain"
+    }
+  ],
+  "table": [
+    {
+      "title": "Content & collaboration",
+      "rows": [
+        {
+          "feature": "Multiplayer collaboration",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Hierarchical structure",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Team templates",
+          "outline": true,
+          "competitor": true
+        },
+        {
+          "feature": "Version history",
+          "outline": "Unlimited",
+          "competitor": "90 days–Unlimited"
+        },
+        {
+          "feature": "Google Drive search sync",
+          "outline": false,
+          "competitor": true
+        }
+      ]
+    },
+    {
+      "title": "Security & admin",
+      "rows": [
+        {
+          "feature": "SAML single sign-on",
+          "outline": true,
+          "competitor": "Business plan"
+        },
+        {
+          "feature": "Audit log",
+          "outline": true,
+          "competitor": "Enterprise only"
+        },
+        {
+          "feature": "Install on-premises",
+          "outline": true,
+          "competitor": false
+        },
+        {
+          "feature": "Open source",
+          "outline": true,
+          "competitor": false
+        }
+      ]
+    },
+    {
+      "title": "AI & integrations",
+      "rows": [
+        {
+          "feature": "MCP server",
+          "outline": true,
+          "competitor": false
+        },
+        {
+          "feature": "AI answers",
+          "outline": true,
+          "competitor": "Business plan"
+        },
+        {
+          "feature": "API & webhooks",
+          "outline": true,
+          "competitor": "Business plan"
+        }
+      ]
+    }
+  ],
+  "migration": {
+    "title": "Bring your Slab content with you",
+    "description": "Export your Slab workspace and import it into Outline in a single step. Formatting, images, and links between documents are preserved, and the folder structure is recreated as collections.",
+    "href": "/integrations/slab",
+    "linkText": "Import from Slab"
+  },
+  "faq": [
+    {
+      "question": "Is Slab still being updated?",
+      "answer": "Slab’s most recent product announcement was in July 2025. Outline has shipped new features every month since then, and every change is visible in the public changelog and on GitHub."
+    },
+    {
+      "question": "Can I move my content from Slab?",
+      "answer": "Yes. Export your Slab workspace and import it from Outline’s settings. Formatting, images, and links between documents come across, and the folder structure is recreated as collections."
+    },
+    {
+      "question": "Can I self-host Outline instead?",
+      "answer": "Yes. Outline can be installed on your own network. Slab is only available as a cloud service."
+    }
+  ],
+  "closing": "Ready to move from Slab? Get started in minutes…",
+  "updatedAt": "2026-10-20"
+}
