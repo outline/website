@@ -61,10 +61,6 @@ export type Comparison = ComparisonSummary & {
     href?: string;
     linkText?: string;
   };
-  pricing?: {
-    title: string;
-    description: string;
-  };
   testimonial?: {
     quote: string;
     author: string;
