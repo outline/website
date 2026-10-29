@@ -17,13 +17,18 @@ export default function Changelog({
   content,
   contentPlainText,
 }) {
-  const description = contentPlainText.trim().replace(/\n/, " ").slice(0, 160);
+  const description = contentPlainText
+    .trim()
+    .replace(/\s+/g, " ")
+    .slice(0, 160);
 
   return (
     <Layout
       title="Changelog"
       pageTitle={`${title} – Changelog`}
       description={`${description}…`}
+      image={image}
+      publishedTime={date}
       background="#F4F7FA"
       hero={
         <>
@@ -44,7 +49,6 @@ export default function Changelog({
       }
     >
       <Head>
-        {image && <meta key="og:image" property="og:image" content={image} />}
         <link
           rel="alternate"
           type="text/markdown"
