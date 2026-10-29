@@ -18,6 +18,12 @@ type Props = {
   pageTitle?: string;
   background?: string;
   description?: string;
+  /** Absolute URL of the image to use when the page is shared. */
+  image?: string;
+  /** Alternative text for the share image. */
+  imageAlt?: string;
+  /** ISO date the page was published, marks the page as an article. */
+  publishedTime?: string;
   color?: string;
   fullWidth?: boolean;
   header?: React.ReactNode;
@@ -34,6 +40,8 @@ type Props = {
 
 const DOMAIN = "https://www.getoutline.com";
 
+const DEFAULT_IMAGE = `${DOMAIN}/images/screenshot.png`;
+
 const DEFAULT_DESCRIPTION =
   "A modern team knowledge base for your internal documentation, product specs, support answers, meeting notes, onboarding, & more…";
 
@@ -42,6 +50,9 @@ export default function Layout({
   pageTitle,
   fullWidth,
   description,
+  image,
+  imageAlt,
+  publishedTime,
   header,
   hero,
   illustration,
@@ -73,6 +84,9 @@ export default function Layout({
   const resolvedTitle = pageTitle || (typeof title === "string" ? title : "");
   const fullTitle = `${resolvedTitle ? resolvedTitle + " – " : ""}${siteTitle}`;
   const resolvedDescription = description || DEFAULT_DESCRIPTION;
+  const resolvedImage = image || DEFAULT_IMAGE;
+  const resolvedImageAlt = imageAlt || (image ? "" : "Screenshot of Outline");
+  const ogTitle = resolvedTitle || siteTitle;
 
   // asPath is the requested path, including any query string or hash, which
   // shouldn't be part of the canonical URL.
@@ -104,27 +118,37 @@ export default function Layout({
         />
         <link rel="canonical" href={canonicalURL} />
         <meta name="description" content={resolvedDescription} />
-        <meta property="og:description" content={resolvedDescription} />
-        <meta property="og:url" content={canonicalURL} />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
         <meta name="slack-app-id" content="A0W3UMKBQ" />
-        <meta name="site_name" property="og:site_name" content="Outline" />
-        <meta name="type" property="og:type" content="website" />
+        <meta property="og:site_name" content="Outline" />
+        <meta property="og:locale" content="en_US" />
         <meta
-          property="og:title"
-          key="og:title"
-          content={resolvedTitle || siteTitle}
+          property="og:type"
+          content={publishedTime ? "article" : "website"}
         />
-        <meta
-          property="og:image"
-          key="og:image"
-          content="https://www.getoutline.com/images/screenshot.png"
-        />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={ogTitle} />
+        <meta property="og:description" content={resolvedDescription} />
+        <meta property="og:image" content={resolvedImage} />
+        {!image && <meta property="og:image:width" content="2876" />}
+        {!image && <meta property="og:image:height" content="1792" />}
+        {resolvedImageAlt && (
+          <meta property="og:image:alt" content={resolvedImageAlt} />
+        )}
+        {publishedTime && (
+          <meta property="article:published_time" content={publishedTime} />
+        )}
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:domain" content="getoutline.com" />
         <meta name="twitter:site" content="@getoutline" />
+        <meta name="twitter:title" content={ogTitle} />
+        <meta name="twitter:description" content={resolvedDescription} />
+        <meta name="twitter:image" content={resolvedImage} />
+        {resolvedImageAlt && (
+          <meta name="twitter:image:alt" content={resolvedImageAlt} />
+        )}
       </Head>
       <header>
         <div className={fullWidth ? "container fullWidth" : "container"}>
