@@ -126,6 +126,9 @@ jobs:
 
       - name: Build
         run: yarn build
+        env:
+          # Raises the GitHub API rate limit for scripts/fetch-agent-skills.js
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Add custom domain
         run: |

@@ -1,0 +1,25 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://app.getoutline.com/api",
+      "service-desc": [
+        {
+          "href": "https://www.getoutline.com/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.getoutline.com/developers",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://status.getoutline.com",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}

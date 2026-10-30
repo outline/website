@@ -21,6 +21,8 @@
 /public/scalar.css
 /public/changelog
 /public/integrations
+/public/.well-known/agent-skills
+/public/.well-known/ai-catalog.json
 /.generated
 
 # misc
