@@ -12,8 +12,19 @@ export default function Document() {
           title="Outline API OpenAPI specification"
           href="/openapi.json"
         />
-        {/* Sitemap is also advertised here, not only in robots.txt, as that
-            file is served by Cloudflare rather than from this repository. */}
+        {/* RFC 9727 API catalog, and the AI Catalog listing the MCP server.
+            These would normally be advertised with Link response headers,
+            which a static export can't set. */}
+        <link
+          rel="api-catalog"
+          type="application/linkset+json"
+          href="/.well-known/api-catalog"
+        />
+        <link
+          rel="ai-catalog"
+          type="application/json"
+          href="/.well-known/ai-catalog.json"
+        />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <link
           rel="stylesheet"
