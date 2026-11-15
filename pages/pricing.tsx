@@ -97,16 +97,13 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>What about teams larger than 200 users?</h3>
+            <h3>How are guests billed?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              We're happy to support cloud-hosted teams larger than 200 users.
-              Please{" "}
-              <Link href="/contact" legacyBehavior>
-                <a>contact us</a>
-              </Link>{" "}
-              to discuss pricing.
+              Every paid member includes 5 free guests. Guests only have access
+              to the content explicitly shared with them, and any guests beyond
+              the free allowance are billed as regular users.
             </p>
           </dd>
 
@@ -128,13 +125,15 @@ export default function Pricing() {
           </dd>
 
           <dt className="pure-u-1 pure-u-md-1-2">
-            <h3>How do I choose a specific plan?</h3>
+            <h3>How do I choose or change my plan?</h3>
           </dt>
           <dd className="pure-u-1 pure-u-md-1-2">
             <p>
-              Currently plans are based on the number of members in your team.
-              If your team outgrows your plan then it will automatically move to
-              the next pricing tier.
+              Pick Standard or Business from the billing settings in your
+              workspace. You can switch between plans at any time – the
+              difference in price is charged or credited for the rest of your
+              billing period. Switching between monthly and yearly billing
+              applies at your next renewal.
             </p>
           </dd>
 

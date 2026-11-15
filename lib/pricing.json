@@ -3,34 +3,26 @@
     "id": "cloud",
     "name": "Cloud",
     "summary": "Secure and always up-to-date, hosted by Outline",
-    "priceLabel": "Price tier",
-    "priceNote": "annual pricing available",
+    "priceLabel": "Price",
+    "priceNote": "2 months free with annual billing",
     "tiers": [
       {
-        "id": "starter",
-        "price": "$10",
-        "period": "per month",
-        "members": "1 – 10",
+        "id": "standard",
+        "name": "Standard",
+        "price": "$3",
+        "unit": "/user/mo",
+        "period": "billed monthly, or $30/user yearly",
         "cta": {
           "label": "Start Trial",
-          "href": "https://app.getoutline.com/create?ref=starter"
-        }
-      },
-      {
-        "id": "team",
-        "price": "$79",
-        "period": "per month",
-        "members": "11 – 100",
-        "cta": {
-          "label": "Start Trial",
-          "href": "https://app.getoutline.com/create?ref=team"
+          "href": "https://app.getoutline.com/create?ref=standard"
         }
       },
       {
         "id": "business",
-        "price": "$249",
-        "period": "per month",
-        "members": "101 – 200",
+        "name": "Business",
+        "price": "$4",
+        "unit": "/user/mo",
+        "period": "billed monthly, or $40/user yearly",
         "cta": {
           "label": "Start Trial",
           "href": "https://app.getoutline.com/create?ref=business"
@@ -41,61 +33,82 @@
       {
         "name": "Unlimited docs + version history",
         "description": "No limitations on the number of documents and revisions",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "Realtime collaborative editing",
         "description": "Multiple people can collaborate and edit documents at the same time",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "Commenting + @mentions",
         "description": "Leave comments on documents and mention other users",
-        "tiers": ["starter", "team", "business"]
-      },
-      {
-        "name": "AI question answering",
-        "description": "Ask questions and get direct answers from your workspace content",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "Multi-language translation",
         "description": "Outline is available in 17 different languages",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "SSO authentication",
         "description": "Enforce your company's security policies with SSO",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "20+ integrations (inc Zapier)",
         "description": "Connect to other tools like Slack, GitHub, and more",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "Templating",
         "description": "Create document templates for your team to use",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "Groups + user permissions",
         "description": "Control who can access and edit documents through groups and individual permissions",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
       },
       {
         "name": "API + webhooks",
         "description": "Programmatically interact with every part of Outline using the API",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["standard", "business"]
+      },
+      {
+        "name": "MCP server",
+        "description": "Connect AI assistants and agents to your workspace content",
+        "tiers": ["standard", "business"]
+      },
+      {
+        "name": "5 free guests per paid member",
+        "description": "Guest users have access only to content explicitly shared with them. Guests beyond the free allowance are billed as users",
+        "tiers": ["standard", "business"]
+      },
+      {
+        "name": "AI question answering",
+        "description": "Ask questions and get direct answers from your workspace content",
+        "tiers": ["business"]
       },
       {
         "name": "Security audit log",
         "description": "Track and filter edits and user activity in the workspace",
-        "tiers": ["starter", "team", "business"]
+        "tiers": ["business"]
       },
       {
-        "name": "Email support",
-        "tiers": ["starter", "team", "business"]
+        "name": "Workspace analytics",
+        "description": "Insights into how documents are read and edited across your workspace",
+        "tiers": ["business"]
+      },
+      {
+        "name": "Additional security controls",
+        "description": "Restrict sign-in, API keys, and more…",
+        "tiers": ["business"]
+      },
+      {
+        "name": "Microsoft group sync",
+        "description": "Keep Outline groups in sync with your Microsoft Entra ID groups",
+        "tiers": ["business"]
       }
     ]
   },
