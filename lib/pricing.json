@@ -91,6 +91,11 @@
         "tiers": ["business"]
       },
       {
+        "name": "Data attributes",
+        "description": "Store data properties against documents",
+        "tiers": ["business"]
+      },
+      {
         "name": "Security audit log",
         "description": "Track and filter edits and user activity in the workspace",
         "tiers": ["business"]
@@ -219,7 +224,7 @@
         "tiers": ["business", "enterprise"]
       },
       {
-        "name": "Structured data attributes",
+        "name": "Data attributes",
         "description": "Store data properties against documents",
         "tiers": ["business", "enterprise"]
       },
