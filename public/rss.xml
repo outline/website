@@ -5,9 +5,52 @@
       <link>https://www.getoutline.com/changelog</link>
       <description>New updates and improvements to Outline. Follow us on twitter @getoutline to find out when features are released.</description>
       <language>en</language>
-      <lastBuildDate>Fri, 16 Oct 2026 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 14 Nov 2026 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>search-filters</guid>
+    <title>Upgraded search</title>
+    <link>https://www.getoutline.com/changelog/search-filters</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/search-filters.png" alt="Search filters"/></p>
+<p>Search has a redesigned set of filters, making it much easier to narrow down results in a large knowledge base. Filters now appear as a row of chips below the search box – Collection, Edited by, and Status are always available, and more can be added from the &quot;More&quot; menu.</p>
+<ul>
+<li><strong>New filters</strong> – find documents by who created them, when they were created or published, which template they were made from, or match on titles only</li>
+<li><strong>Custom date ranges</strong> – date filters offer quick options like past week or past month, or pick an exact range from a calendar</li>
+<li><strong>Browse without a query</strong> – set any filter and matching documents are listed immediately, no search term needed</li>
+<li><strong>Data attributes</strong> – On the Business plan, data attributes now appear as filter options</li>
+</ul></div> ]]></description>
+    <pubDate>Sat, 14 Nov 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>gitea-integration</guid>
+    <title>Gitea and Forgejo integration</title>
+    <link>https://www.getoutline.com/changelog/gitea-integration</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/gitlab.png" alt="Gitea and Forgejo integration"/></p>
+<p>Outline now integrates with <a href="https://about.gitea.com">Gitea</a> and <a href="https://forgejo.org">Forgejo</a>, bringing the same rich previews already available for GitHub and GitLab to teams that host their own code. Paste a link to an issue, pull request, or repository into a document and choose &quot;mention&quot; to show its live details inline.</p>
+<ul>
+<li><strong>Issues and pull requests</strong> – see the current status, author, and labels at a glance, including whether a pull request is a draft or merged, and hover for a preview of the description</li>
+<li><strong>Repositories</strong> – mention a repository to show its owner, description, topics, visibility, and progress through its issues</li>
+<li><strong>Always up-to-date</strong> – mentions refresh automatically as issues and pull requests change in Gitea or Forgejo</li>
+<li><strong>Self-hosted friendly</strong> – connect any instance, and connect multiple instances if your team runs more than one</li>
+</ul></div> ]]></description>
+    <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+  </item>
+
+  <item>
+    <guid>pele-mermaid-diagrams</guid>
+    <title>Upgraded diagrams</title>
+    <link>https://www.getoutline.com/changelog/pele-mermaid-diagrams</link>
+    <description><![CDATA[ <div class="jsx-d6580e98a0d8e617 md"><p><img src="https://www.getoutline.com/images/pele-diagrams.png" alt="Upgraded diagrams"/></p>
+<p>Mermaid diagrams in Outline are now rendered with <a href="https://pele.run">Pele</a>, a small and super fast renderer that produces clean SVG diagrams. You write diagrams with the same Mermaid syntax as before, but they now load faster, look sharper, and fit naturally with the rest of your document.</p>
+<ul>
+<li><strong>Beautiful by default</strong> – diagrams take their colors from Outline&#x27;s theme, with tidier layouts and fewer crossing lines</li>
+<li><strong>Instant theme switching</strong> – diagrams change immediately between light and dark mode without re-rendering, and always print in the right theme</li>
+</ul></div> ]]></description>
+    <pubDate>Sun, 18 Oct 2026 00:00:00 GMT</pubDate>
+  </item>
+
   <item>
     <guid>personal-documents</guid>
     <title>Personal documents</title>
